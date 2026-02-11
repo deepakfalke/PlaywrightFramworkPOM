@@ -9,7 +9,7 @@ dotenv.config({path:`Data/.env.${process.env.appenv}`}) //set each env (QA,UAT) 
 const flipdata=JSON.parse(JSON.stringify(require("..//Data/LoginSearchData.json")))
 
 //data driven test from json in loop
-test.describe("Bulk data",function ()
+test.describe("json dd test",function ()
   {
     for(const data of flipdata)
     {

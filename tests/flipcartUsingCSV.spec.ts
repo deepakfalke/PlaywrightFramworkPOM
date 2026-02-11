@@ -23,12 +23,10 @@ await page.goto(flipurl) ;// open url
 })
 
 
-test.only ("Verify page Open login",async({page})=>{
+test.only ("csv test",async({page})=>{
 
   for(const csvdatas of csvdata)
   {
-
-  
    
                await expect.soft(flipcartpage.searchitem).toBeVisible()  //verify search box visible or not
 
