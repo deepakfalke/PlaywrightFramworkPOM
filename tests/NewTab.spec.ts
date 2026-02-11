@@ -21,7 +21,7 @@ test.only("problem to swich",async({page})=>{
 
     ])
 
-// This is for testing
+// This is for testing yes
 await newTab.getByRole('textbox', { name: 'Enter Delivery Pincode' }).fill("412207")
 await newTab.getByText('Check', { exact: true }).click()
 });
