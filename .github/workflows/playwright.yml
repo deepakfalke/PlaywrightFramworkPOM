@@ -1,4 +1,5 @@
 name: Flipcart Tests
+# Playwright Tests
 on:
   push:
     branches: [ main, master ]
