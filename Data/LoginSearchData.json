@@ -1,0 +1,20 @@
+[
+    {      
+           "id":1,
+           "searchproduct":"LedTv",
+           "EmailId":"deepfalke3434#1@gmail.com"
+    
+    },
+    {
+         "id":2,
+           "searchproduct":"Mobile",
+           "EmailId":"deepfalke3434#2@gmail.com"
+    
+    },
+    {
+         "id":3,
+           "searchproduct":"Cooker",
+           "EmailId":"deepfalke3434#3@gmail.com"
+    
+    }
+]

@@ -1,0 +1,14 @@
+{
+ "searchproduct":"LedTv",
+ "EmailId":"deepfalke3434#@2@gmail.com",
+  "Gender":["male","female","other"], 
+  "address" :
+        {
+            "Name":"Deepak",
+            "LastName":"falke",
+            "City":"pune",
+            "pincode":"41207"
+
+        }
+  
+}
