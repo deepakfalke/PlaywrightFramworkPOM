@@ -4,7 +4,7 @@ pipeline {
 
     // Configures tools like NodeJS, ensuring they are available in the PATH.
     tools {
-      //  nodejs 'Node18' // Name must match the configuration in "Global Tool Configuration".
+       nodejs 'Node18' // Name must match the configuration in "Global Tool Configuration".
     }
 
     // The stages section defines the sequence of tasks.
