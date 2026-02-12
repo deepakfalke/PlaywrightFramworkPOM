@@ -39,15 +39,15 @@ test("env test",async({page})=>{
 
                await flipcartpage.searchitem.fill(csvdatas.itemName) // search item data from csv file
 
-               await page.waitForTimeout(6000)
+              await page.waitForTimeout(2000)
 
                await flipcartpage.userlogin.click();
 
-               await page.waitForTimeout(6000)
+               await page.waitForTimeout(2000)
 
                await flipcartpage.emailId.fill(csvdatas.emailid); // email id from csv file 
 
-               await page.waitForTimeout(6000)
+               await page.waitForTimeout(2000)
 
                await flipcartpage.requestOtp.click();
 

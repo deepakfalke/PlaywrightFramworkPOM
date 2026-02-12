@@ -32,15 +32,15 @@ test.describe("Flipcart test",function ()
 
           await flipcartpage.searchitem.fill(data.searchproduct) // search item data from json file
 
-          await page.waitForTimeout(6000)
+          await page.waitForTimeout(2000)
 
           await flipcartpage.userlogin.click();
 
-          await page.waitForTimeout(6000)
+          await page.waitForTimeout(2000)
 
           await flipcartpage.emailId.fill(data.EmailId); // email id from json file
 
-          await page.waitForTimeout(6000)
+          await page.waitForTimeout(2000)
 
           await flipcartpage.requestOtp.click();
 

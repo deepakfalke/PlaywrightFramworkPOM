@@ -25,15 +25,15 @@ await expect.soft(flipcartpage.searchitem).toBeEnabled() //verify search box ena
 
 await flipcartpage.searchitem.fill(flipdata.searchproduct) // search item data from json file
 
-await page.waitForTimeout(6000)
+await page.waitForTimeout(2000)
 
 await flipcartpage.userlogin.click();
 
-await page.waitForTimeout(6000)
+await page.waitForTimeout(2000)
 
 await flipcartpage.emailId.fill(flipdata.EmailId); // email id from json file
 
-await page.waitForTimeout(6000)
+await page.waitForTimeout(2000)
 
 await flipcartpage.requestOtp.click();
 
