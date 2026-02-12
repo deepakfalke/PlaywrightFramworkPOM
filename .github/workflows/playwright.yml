@@ -22,7 +22,7 @@ jobs:
       run: npx playwright install --with-deps
 
     - name: Run Playwright tests
-      run: $env:appenv="QA";npx playwright test -g "json dd test" --project=chromium --headed
+      run: npx playwright test -g "Flipcart test1" --project=chromium --headed
        
 
     - uses: actions/upload-artifact@v4

@@ -4,7 +4,7 @@ import { findPackageJSON } from 'node:module';
 const flipdata=JSON.parse(JSON.stringify(require("..//Data/LoginSearchData.json")))
 
 //data driven test
-test.describe("Flipcart test",function ()
+test.describe("Flipcart test1",function ()
   {
     for(const data of flipdata)
     {
@@ -44,7 +44,7 @@ test.describe("Flipcart test",function ()
 
           await flipcartpage.requestOtp.click();
 
-          await page.pause();
+        //  await page.pause();
 
     } )
 
