@@ -51,7 +51,7 @@ test("env test",async({page})=>{
 
                await flipcartpage.requestOtp.click();
 
-               await page.pause();
+              
 
 
 

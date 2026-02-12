@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test';
 
-test("Verify page Open login",async({page})=>{
+test.only("Verify page Open login",async({page})=>{
 
 //await page.goto("https://playwright.dev/docs/intro");
 

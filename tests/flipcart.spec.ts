@@ -4,7 +4,7 @@ import { findPackageJSON } from 'node:module';
 const flipdata=JSON.parse(JSON.stringify(require("..//Data/LoginSearchData.json")))
 
 //data driven test
-test.describe("Flipcart test1",function ()
+test.describe("Sanity check",function ()
   {
     for(const data of flipdata)
     {
