@@ -22,7 +22,7 @@ test.describe("Flipcart test",function ()
           })
 
 
-           test.only("Verify page Open login",async({page})=>{
+           test("Verify page Open login",async({page})=>{
                     // object of page class
 
 

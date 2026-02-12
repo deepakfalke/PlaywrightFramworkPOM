@@ -11,7 +11,7 @@ await expect(page).toHaveURL("https://www.flipkart.com/")
  
 });
 
-test.only("switch window",async({page})=>{
+test("switch window",async({page})=>{
     const [newTab]=await Promise.all([
     page.waitForEvent("popup"),
     page.getByRole('textbox', { name: 'Search for Products, Brands and More' }).fill("Led TV"),

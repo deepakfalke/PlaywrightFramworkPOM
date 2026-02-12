@@ -26,7 +26,7 @@ await page.goto(applicationUrl) ;// open url
 })
 
 
-test.only ("env test",async({page})=>{
+test("env test",async({page})=>{
 
   for(const csvdatas of csvdata)
   {

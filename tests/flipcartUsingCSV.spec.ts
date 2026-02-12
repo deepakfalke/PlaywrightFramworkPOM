@@ -23,7 +23,7 @@ await page.goto(flipurl) ;// open url
 })
 
 
-test.only ("csv test",async({page})=>{
+test("csv test",async({page})=>{
 
   for(const csvdatas of csvdata)
   {

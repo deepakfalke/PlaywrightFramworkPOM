@@ -13,7 +13,7 @@ await page.goto(flipurl) ;// open url
 })
 
 
-test.only ("Verify page Open login",async({page})=>{
+test("Verify page Open login",async({page})=>{
      // object of page class
 
 //console.log("Title",await page.url())
