@@ -43,7 +43,7 @@ pipeline {
             Please find Jenkins report summary
 
             Thanks''', subject: 'Jenkins report summary', to: 'deepfalke@gmail.com'
-            ])
+            
         }
     }
 }
