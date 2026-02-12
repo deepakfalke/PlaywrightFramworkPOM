@@ -3,10 +3,7 @@ pipeline {
     agent any
 
     // Configures tools like NodeJS, ensuring they are available in the PATH.
-    tools {     
-       git 'Default_Git'  // Name must match the configuration in "Global Tool Configuration".
-    }
-
+    
     // The stages section defines the sequence of tasks.
     stages {
         stage('Build and Install Dependencies') {
