@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     // Configures tools like NodeJS, ensuring they are available in the PATH.
-    tools {
+    tools {     
        nodejs 'Node18' // Name must match the configuration in "Global Tool Configuration".
     }
 
@@ -19,6 +19,7 @@ pipeline {
         stage('Help') {
             steps {
                 // Installs project dependencies defined in package.json.
+                 sh 'npx playwright --help'
                 
                }
         }
