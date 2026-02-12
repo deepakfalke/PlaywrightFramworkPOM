@@ -51,7 +51,7 @@ test.describe("json dd test",function ()
 
           await flipcartpage.requestOtp.click();
 
-          await page.pause();
+        //  await page.pause();
 
     } )
 
