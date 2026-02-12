@@ -4,7 +4,7 @@ pipeline {
 
     // Configures tools like NodeJS, ensuring they are available in the PATH.
     tools {     
-       nodejs 'Node18' // Name must match the configuration in "Global Tool Configuration".
+       git 'Default_Git'  // Name must match the configuration in "Global Tool Configuration".
     }
 
     // The stages section defines the sequence of tasks.
@@ -38,15 +38,11 @@ pipeline {
         // Actions that run regardless of the build result (success, failure, unstable).
         always {
             // Archives the JUnit report so Jenkins can display structured test results.
-            junit 'test-results/junit-report.xml'
-            // Publishes the detailed HTML report for easy viewing in Jenkins UI.
-            publishHTML(target: [
-                allowMissing: false,
-                alwaysLinkToLastBuild: true,
-                keepAll: true,
-                reportDir: 'playwright-report',
-                reportFiles: 'index.html',
-                reportName: 'Playwright Report'
+            emailext body: '''Hi,
+
+            Please find Jenkins report summary
+
+            Thanks''', subject: 'Jenkins report summary', to: 'deepfalke@gmail.com'
             ])
         }
     }
