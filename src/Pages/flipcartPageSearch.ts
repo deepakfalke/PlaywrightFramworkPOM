@@ -1,6 +1,6 @@
 import { Locator,Page } from "@playwright/test";
 
-export class Flipcartpage
+export class FlipcartpageSearch
 {
     readonly searchitem:Locator;
     readonly searchtext:Locator;
@@ -12,16 +12,20 @@ export class Flipcartpage
     constructor(page:Page)
     {
         this.searchitem=page.getByRole('textbox', { name: 'Search for Products, Brands and More' });
-        this.searchtext=page.getByText('VW 60 cm (24 inch) HD Ready LED TV 2025 Edition', { exact: true });           this.userlogin=page.getByText('Login', { exact: true }).first();
+        this.searchtext=page.getByText('VW 60 cm (24 inch) HD Ready LED TV 2025 Edition', { exact: true });      
+        
+        this.userlogin=page.getByText('Login', { exact: true }).first();
+
         this.emailId=page.locator(`//input[@class='c3Bd2c yXUQVt']`);
         this.requestOtp=page.getByRole('button', { name: 'Request OTP' });
     }
 
-    async search(itemName:string,email:string)
+    async searchmyproduct(itemName:string,email:string)
         {
          await this.searchitem.fill(itemName);
-         await this.searchitem.press('Enter');
-         this.emailId.fill(email);
+         await this.userlogin.click();
+         await this.emailId.fill(email);
+         this.requestOtp.click();
         }
     
 

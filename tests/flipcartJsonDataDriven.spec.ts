@@ -24,7 +24,8 @@ test.describe("json dd test",function ()
           { 
             
           const applicationUrl=process.env.url as string  //feach url from env file
-          flipcartpage=new Flipcartpage(page); // object of page class 
+          flipcartpage=new Flipcartpage(page);
+           // object of page class 
           await page.goto(applicationUrl) ;// open url
           })
 
