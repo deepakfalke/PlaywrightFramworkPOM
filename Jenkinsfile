@@ -9,7 +9,7 @@ pipeline {
         stage('Build and Install Dependencies') {
             steps {
                  
-                 echo "Build step"
+                 sh 'npx playwright install --with-deps'
             }
         }
 
