@@ -1,5 +1,5 @@
 import {test,expect} from '@playwright/test';
-import { Flipcartpage } from '../src/Pages/flipcartPage';
+import { Flipcartpage } from '../src/Pages/flipcartPageSearch';
 import { findPackageJSON } from 'node:module';
 
 import {parse} from "csv-parse/sync"
@@ -14,11 +14,11 @@ skipRecordsWithEmptyValues:true
 
 
 const flipurl="https://www.flipkart.com/";
-let flipcartpage:Flipcartpage;
+let flipcartpageSearch:Flipcartpage;    
 
 test.beforeEach(async({page})=>
 { 
-flipcartpage=new Flipcartpage(page); // object of page class 
+flipcartpageSearch=new Flipcartpage(page); // object of page class 
 await page.goto(flipurl) ;// open url
 })
 
@@ -27,29 +27,30 @@ test("csv test",async({page})=>{
 
   for(const csvdatas of csvdata)
   {
-   
-               await expect.soft(flipcartpage.searchitem).toBeVisible()  //verify search box visible or not
+        flipcartpageSearch.search(csvdatas.itemName,csvdatas.emailid)
+        {
+               await expect.soft(flipcartpageSearch.searchitem).toBeVisible()  //verify search box visible or not
 
-               await expect.soft(flipcartpage.searchitem).toBeEnabled() //verify search box enabled  or not
+               await expect.soft(flipcartpageSearch.searchitem).toBeEnabled() //verify search box enabled  or not
 
-               await flipcartpage.searchitem.fill(csvdatas.itemName) // search item data from csv file
-
-               await page.waitForTimeout(2000)
-
-               await flipcartpage.userlogin.click();
+               await flipcartpageSearch.searchitem.fill(csvdatas.itemName) // search item data from csv file
 
                await page.waitForTimeout(2000)
 
-               await flipcartpage.emailId.fill(csvdatas.emailid); // email id from csv file 
+               await flipcartpageSearch.userlogin.click();
 
                await page.waitForTimeout(2000)
 
-               await flipcartpage.requestOtp.click();
+               await flipcartpageSearch.emailId.fill(csvdatas.emailid); // email id from csv file 
 
-               await page.pause();
+               await page.waitForTimeout(2000)
 
+               await flipcartpageSearch.requestOtp.click();
 
+              
+              //  await page.pause();
 
+        }
 }
 
 
