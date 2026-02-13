@@ -23,6 +23,7 @@ export class FlipcartpageSearch
     async searchmyproduct(itemName:string,email:string)
         {
          await this.searchitem.fill(itemName);
+         await this.userlogin.waitFor({state:"visible"});
          await this.userlogin.click();
          await this.emailId.fill(email);
          this.requestOtp.click();

@@ -25,7 +25,8 @@ pipeline {
             steps {
                 // Executes the Playwright tests in headless mode by default.
                 // Configuration can be specified in playwright.config.ts or via command line flags.
-                bat 'npx playwright test flipcartusingEnv.spec.ts --project=chromium --headed'
+              //  bat 'npx playwright test flipcartusingEnv.spec.ts --project=chromium --headed'
+             bat'$env:appenv="QA";npx playwright test -g  "json dd test" --project=chromium --headed'
             }
         }
     }
