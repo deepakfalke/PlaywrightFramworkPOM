@@ -9,14 +9,14 @@ pipeline {
         stage('Build and Install Dependencies') {
             steps {
                  
-                 sh 'npx playwright install --with-deps'
+                  bat'npx playwright install --with-deps'
             }
         }
 
         stage('Help') {
             steps {
                 // Installs project dependencies defined in package.json.
-                 sh 'npx playwright --help'
+                 bat 'npx playwright --help'
                 
                }
         }
@@ -25,7 +25,7 @@ pipeline {
             steps {
                 // Executes the Playwright tests in headless mode by default.
                 // Configuration can be specified in playwright.config.ts or via command line flags.
-                sh 'npx playwright test tests/flipcartusingEnv.spec.ts --project=chromium --headed'
+                bat 'npx playwright test tests/flipcartusingEnv.spec.ts --project=chromium --headed'
             }
         }
     }
