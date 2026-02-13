@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build and Install Dependencies') {
             steps {
-                 
+                 bat 'npm install'
                   bat'npx playwright install --with-deps'
             }
         }
@@ -25,7 +25,7 @@ pipeline {
             steps {
                 // Executes the Playwright tests in headless mode by default.
                 // Configuration can be specified in playwright.config.ts or via command line flags.
-                bat 'npx playwright test tests/flipcartusingEnv.spec.ts --project=chromium --headed'
+                bat 'npx playwright test flipcartusingEnv.spec.ts --project=chromium --headed'
             }
         }
     }
