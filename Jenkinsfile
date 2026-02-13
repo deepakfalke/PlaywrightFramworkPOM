@@ -9,7 +9,7 @@ pipeline {
         stage('Build and Install Dependencies') {
             steps {
                  
-                 sh 'npx playwright install'
+                 echo "Build step"
             }
         }
 
@@ -25,7 +25,7 @@ pipeline {
             steps {
                 // Executes the Playwright tests in headless mode by default.
                 // Configuration can be specified in playwright.config.ts or via command line flags.
-                sh 'npx playwright test -g "Sanity check" --project=chromium --headed'
+                sh 'npx playwright test tests/flipcartusingEnv.spec.ts --project=chromium --headed'
             }
         }
     }
