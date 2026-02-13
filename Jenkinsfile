@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build and Install Dependencies') {
             steps {
-                 sh 'npm install'
+                 
                  sh 'npx playwright install'
             }
         }
