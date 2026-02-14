@@ -35,27 +35,17 @@ test.describe("json dd test",function ()
             {
                    
 
-        await expect.soft(flipcartpage.searchitem).toBeVisible()  //verify search box visible or not
+            await expect.soft(flipcartpage.searchitem).toBeVisible()  //verify search box visible or not
 
-          await expect.soft(flipcartpage.searchitem).toBeEnabled() //verify search box enabled  or not
+            await expect.soft(flipcartpage.searchitem).toBeEnabled() //verify search box enabled  or not
 
-         // await flipcartpage.searchitem.fill(data.searchproduct) // search item data from json file
-         await flipcartpage.searchMyProduct(data.searchproduct) 
-          // search method with product name from json file
-         await flipcartpage.flipcartLogin(data.EmailId) // login method with email id from json file
-        /* await page.waitForTimeout(2000)
+             // search item data from json file
+            await flipcartpage.searchMyProduct(data.searchproduct) 
+            // search method with product name from json file
+            await flipcartpage.flipcartLogin(data.EmailId) // login method with email id from json file
+        
 
-          await flipcartpage.userlogin.click();
-
-         await page.waitForTimeout(2000)
-
-          await flipcartpage.emailId.fill(data.EmailId); // email id from json file
-
-         await page.waitForTimeout(2000)
-
-          await flipcartpage.requestOtp.click(); */
-
-        //  await page.pause(); 
+            //  await page.pause(); 
 
     } )
 

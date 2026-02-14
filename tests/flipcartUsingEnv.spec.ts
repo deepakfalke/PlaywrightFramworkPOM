@@ -33,11 +33,11 @@ test("env test",async({page})=>{
 
   
    
-               await expect.soft(flipcartpage.searchitem).toBeVisible()  //verify search box visible or not
+              await expect.soft(flipcartpage.searchitem).toBeVisible()  //verify search box visible or not
 
-               await expect.soft(flipcartpage.searchitem).toBeEnabled() //verify search box enabled  or not
+              await expect.soft(flipcartpage.searchitem).toBeEnabled() //verify search box enabled  or not
 
-               await flipcartpage.searchitem.fill(csvdatas.itemName) // search item data from csv file
+             // await flipcartpage.searchitem.fill(csvdatas.itemName) // search item data from csv file
               await flipcartpage.searchMyProduct(csvdatas.itemName) // search method with product name from csv file
               await page.waitForTimeout(2000)
 
