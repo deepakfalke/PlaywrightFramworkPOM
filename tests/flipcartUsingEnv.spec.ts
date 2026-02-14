@@ -38,18 +38,19 @@ test("env test",async({page})=>{
                await expect.soft(flipcartpage.searchitem).toBeEnabled() //verify search box enabled  or not
 
                await flipcartpage.searchitem.fill(csvdatas.itemName) // search item data from csv file
-
+              await flipcartpage.searchMyProduct(csvdatas.itemName) // search method with product name from csv file
               await page.waitForTimeout(2000)
 
-               await flipcartpage.userlogin.click();
 
-               await page.waitForTimeout(2000)
+               await flipcartpage.flipcartLogin(csvdatas.emailid) // login method with email id from csv file
 
-               await flipcartpage.emailId.fill(csvdatas.emailid); // email id from csv file 
+               //await page.waitForTimeout(2000)
 
-               await page.waitForTimeout(2000)
+               //await flipcartpage.emailId.fill(csvdatas.emailid); // email id from csv file 
 
-               await flipcartpage.requestOtp.click();
+               //await page.waitForTimeout(2000)
+
+               //await flipcartpage.requestOtp.click();
 
               
 
