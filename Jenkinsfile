@@ -36,11 +36,12 @@ pipeline {
         // Actions that run regardless of the build result (success, failure, unstable).
         always {
             // Archives the JUnit report so Jenkins can display structured test results.
-            emailext body: '''Hi,
-
-            Please find Jenkins report summary
-
-            Thanks''', subject: 'Jenkins report summary', to: 'deepfalke@gmail.com'
+            emailext (
+                subject: "Jenkins Build report: ${env.JOB_NAME}",
+                body: "Project: ${env.JOB_NAME}\nBuild Number: ${env.BUILD_NUMBER}\nView the log at: ${env.BUILD_URL}\n\nStatus details attached.",
+                attachmentsPattern: 'build_status.txt', // Attach the file created by the bat command
+                to: "deepfalke@gmail.com"
+            )
             
         }
     }
