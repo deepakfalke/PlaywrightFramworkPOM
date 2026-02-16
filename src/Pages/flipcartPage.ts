@@ -6,6 +6,7 @@ export class Flipcartpage
     readonly searchtext:Locator;
     
     readonly userLogin_button:Locator;
+    readonly userSignUp_button:Locator;
     readonly emailId:Locator;
     readonly requestOtp:Locator;
     
@@ -13,9 +14,12 @@ export class Flipcartpage
     {
         this.searchitem=page.getByRole('textbox', { name: 'Search for products, brands and more' });
         this.searchtext=page.getByText('VW 60 cm (24 inch) HD Ready LED TV 2025 Edition', { exact: true });         
-        this.userLogin_button=page.getByText('Login', { exact: true }).first();
+       
+       // this.userLogin_button=page.getByText('Login', { exact: true }).first();
+        this.userLogin_button= page.getByRole('link', { name: 'Login' })
+        this.userSignUp_button= page.getByText('Sign Up', { exact: true })
         this.emailId=page.locator(`//input[@class='c3Bd2c yXUQVt']`);
-        this.requestOtp=page.getByRole('button', { name: 'Request OTP' });
+        this.requestOtp=page.getByRole('button', { name: 'Request OTP' })
     }
 
      async searchMyProduct(itemName:string)
@@ -27,11 +31,14 @@ export class Flipcartpage
 
        async flipcartLogin(login_emailId:string)
         { 
-         await this.userLogin_button.waitFor({state:"visible"});
-         await this.userLogin_button.click();
+         await this.userLogin_button.waitFor({state:"visible",timeout:2000});
+         await this.userLogin_button.click({timeout:2000 });
+         await this.userSignUp_button.waitFor({state:"visible",timeout:2000});
+         await this.userSignUp_button.click({timeout:2000 });
+         await this.emailId.waitFor({state:"visible",timeout:2000});
          await this.emailId.fill(login_emailId);
-         await this.requestOtp.waitFor({state:"visible"});
-         await this.requestOtp.click();
+         //await this.requestOtp.waitFor({state:"visible",timeout:2000});
+         await this.requestOtp.click({timeout:2000 });
         }
 
 }

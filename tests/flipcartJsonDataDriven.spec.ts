@@ -45,7 +45,7 @@ test.describe("json dd test",function ()
             await flipcartpage.flipcartLogin(data.EmailId) // login method with email id from json file
         
 
-            //  await page.pause(); 
+           //   await page.pause(); 
 
     } )
 
