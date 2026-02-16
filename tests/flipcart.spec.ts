@@ -12,7 +12,7 @@ test.describe("Sanity check",function ()
       {
 
      // test here
-          const flipurl="https://www.flipkart.com/";
+          const flipurl="https://www.flipkart.com/account/login?ret=/";
           let flipcartpage:Flipcartpage;
 
           test.beforeEach(async({page})=>
