@@ -31,7 +31,7 @@ export class Flipcartpage
 
        async flipcartLogin(login_emailId:string)
         { 
-         await this.userLogin_button.waitFor({state:"visible",timeout:2000});
+         //await this.userLogin_button.waitFor({state:"visible",timeout:2000});
          await this.userLogin_button.click({timeout:2000 });
          await this.userSignUp_button.waitFor({state:"visible",timeout:2000});
          await this.userSignUp_button.click({timeout:2000 });
