@@ -1,0 +1,28 @@
+Step 1: Navigating to Flipkart.com...
+✓ Flipkart.com loaded successfully
+Step 2: Clicking on login button/link...
+✓ Login button found
+✓ Login button clicked
+✓ Login page loaded
+✓ Current URL: https://www.flipkart.com/account/login?ret=/
+Step 3: Entering "974848484" in Email/Mobile number field...
+✓ Email/Mobile number field is visible
+✓ Field placeholder: "Search for products, brands and more"
+✓ Email/Mobile field clicked and focused
+✓ Field cleared
+✓ Entered mobile number: 974848484
+✓ Verified entered value: 974848484
+Step 4: Clicking "Request OTP" button on account login page...
+✓ "Request OTP" button is visible
+✓ Button text: "Request OTP"
+✓ Button enabled: true
+✓ Button scrolled into view
+✓ Clicked "Request OTP" button
+✓ Request processing completed
+Step 5: Verifying OTP request on login page...
+✓ No error messages found
+
+✅✅✅ TEST COMPLETED SUCCESSFULLY ✅✅✅
+Mobile number: 974848484
+Status: OTP Request Submitted
+Login page URL: https://www.flipkart.com/account/login?ret=/

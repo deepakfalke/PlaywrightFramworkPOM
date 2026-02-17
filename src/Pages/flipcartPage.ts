@@ -38,7 +38,7 @@ export class Flipcartpage
          await this.userSignUp_button.click({timeout:2000 });
          await this.emailId.waitFor({state:"visible",timeout:2000});
          await this.emailId.fill(login_emailId,{timeout:2000});
-         //await this.requestOtp.waitFor({state:"visible",timeout:2000});
+         await this.requestOtp.waitFor({state:"visible",timeout:2000});
          await this.requestOtp.click({timeout:2000 });
         }
 
