@@ -1,4 +1,5 @@
-import {test,expect} from '@playwright/test';
+import {expect} from '@playwright/test';
+import {test} from '../tests/url_Fixture';
 import { Flipcartpage } from '../src/Pages/flipcartPage';
 import { findPackageJSON } from 'node:module';
 const flipdata=JSON.parse(JSON.stringify(require("..//Data/LoginSearchData.json")))
@@ -12,19 +13,20 @@ test.describe("Sanity check",function ()
       {
 
      // test here
-          const flipurl="https://www.flipkart.com/account/login?ret=/";
-          let flipcartpage:Flipcartpage;
-
+          
+           let flipcartpage:Flipcartpage;
+       /*   const flipurl="https://www.flipkart.com/account/login?ret=/";
           test.beforeEach(async({page})=>
           { 
-          flipcartpage=new Flipcartpage(page);
+          
           await page.goto(flipurl) ;// open url
-          })
+          })*/
+            
 
-
-           test("Verify page Open login",async({page})=>{
+           test("Verify page Open login",async({page,applicationurl})=>
+           {
                     // object of page class
-
+          flipcartpage=new Flipcartpage(page);
 
           await expect.soft(flipcartpage.searchitem).toBeVisible()  //verify search box visible or not
 

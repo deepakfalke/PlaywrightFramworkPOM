@@ -1,4 +1,5 @@
 import { Locator,Page } from "@playwright/test";
+import { time } from "node:console";
 
 export class Flipcartpage
 {
@@ -36,7 +37,7 @@ export class Flipcartpage
          await this.userSignUp_button.waitFor({state:"visible",timeout:2000});
          await this.userSignUp_button.click({timeout:2000 });
          await this.emailId.waitFor({state:"visible",timeout:2000});
-         await this.emailId.fill(login_emailId);
+         await this.emailId.fill(login_emailId,{timeout:2000});
          //await this.requestOtp.waitFor({state:"visible",timeout:2000});
          await this.requestOtp.click({timeout:2000 });
         }
