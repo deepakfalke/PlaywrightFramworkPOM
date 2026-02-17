@@ -1,6 +1,10 @@
 import {test as baseurl} from '@playwright/test';
 
+import dotenv from "dotenv" // load env file
 
+dotenv.config({path:'Data/.env.uat'}) //set the env file path
+
+const envUrl=process.env.url as string 
 
 type globalFixture={
 
@@ -12,9 +16,9 @@ type globalFixture={
      applicationurl:async({page},use)=>
       {
 
-      const flipurl="https://www.flipkart.com/account/login?ret=/";
-       await page.goto(flipurl) ;
-       await use(flipurl) // use is used to pass value to test case
+      //const flipurl="https://www.flipkart.com/account/login?ret=/";
+       await page.goto(envUrl) ;
+       await use(envUrl) // use is used to pass value to test case
      
      }
 
