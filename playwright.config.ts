@@ -32,7 +32,12 @@ reporter:[['html'],['allure-playwright']],
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     screenshot:"only-on-failure",
-    video:"retain-on-failure"
+    video:"retain-on-failure",
+
+   
+    viewport: { width: 1920, height: 1080 }, // Set a specific, large viewport size
+    // ... other options
+  
   },
 
   /* Configure projects for major browsers */
