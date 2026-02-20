@@ -1,0 +1,1893 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - navigation "Shortcuts menu" [ref=e3]:
+    - heading "Skip to" [level=2] [ref=e4]
+    - list "Skip to" [ref=e5]:
+      - listitem [ref=e6]:
+        - link "main content" [ref=e7] [cursor=pointer]:
+          - /url: "#skippedLink"
+          - text: Main content
+    - separator [ref=e8]
+    - heading "Keyboard shortcuts" [level=2] [ref=e9]
+    - list "Keyboard shortcuts" [ref=e10]:
+      - listitem [ref=e11]:
+        - link "Search, alt, forward slash" [ref=e12] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=e13]:
+            - generic [ref=e14]: Search
+            - generic [ref=e15]:
+              - generic [ref=e16]: alt
+              - generic [ref=e17]: +
+              - generic [ref=e18]: /
+      - listitem [ref=e19]:
+        - link "Cart, shift, alt, c" [ref=e20] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=e21]:
+            - generic [ref=e22]: Cart
+            - generic [ref=e23]:
+              - generic [ref=e24]: shift
+              - generic [ref=e25]: +
+              - generic [ref=e26]: alt
+              - generic [ref=e27]: +
+              - generic [ref=e28]: C
+      - listitem [ref=e29]:
+        - link "Home, shift, alt, h" [ref=e30] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=e31]:
+            - generic [ref=e32]: Home
+            - generic [ref=e33]:
+              - generic [ref=e34]: shift
+              - generic [ref=e35]: +
+              - generic [ref=e36]: alt
+              - generic [ref=e37]: +
+              - generic [ref=e38]: H
+      - listitem [ref=e39]:
+        - link "Your orders, shift, alt, o" [ref=e40] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=e41]:
+            - generic [ref=e42]: Orders
+            - generic [ref=e43]:
+              - generic [ref=e44]: shift
+              - generic [ref=e45]: +
+              - generic [ref=e46]: alt
+              - generic [ref=e47]: +
+              - generic [ref=e48]: O
+      - listitem [ref=e49]:
+        - button "Show/hide shortcuts, shift, alt, z" [ref=e50] [cursor=pointer]:
+          - generic [ref=e51]:
+            - generic [ref=e52]: Show/Hide shortcuts
+            - generic [ref=e53]:
+              - generic [ref=e54]: shift
+              - generic [ref=e55]: +
+              - generic [ref=e56]: alt
+              - generic [ref=e57]: +
+              - generic [ref=e58]: Z
+    - generic [ref=e64]: To move between items, use your keyboard's up or down arrows.
+  - banner [ref=e65]:
+    - navigation "Primary" [ref=e66]:
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - link "Amazon.in" [ref=e70] [cursor=pointer]:
+            - /url: /ref=nav_logo
+            - generic: .in
+          - button "Delivering to Pune 411007 Update location" [ref=e73] [cursor=pointer]:
+            - generic [ref=e75]:
+              - generic [ref=e76]: Delivering to Pune 411007
+              - generic [ref=e77]: Update location
+        - search [ref=e80]:
+          - generic [ref=e83]:
+            - generic [ref=e85]: All
+            - combobox "Select the department you want to search in" [ref=e87] [cursor=pointer]:
+              - option "All Categories" [selected]
+              - option "Alexa Skills"
+              - option "Amazon Devices"
+              - option "Amazon Fashion"
+              - option "Amazon Fresh"
+              - option "Amazon Fresh Meat"
+              - option "Amazon Pharmacy"
+              - option "Appliances"
+              - option "Apps & Games"
+              - option "Audible Audiobooks"
+              - option "Baby"
+              - option "Beauty"
+              - option "Books"
+              - option "Car & Motorbike"
+              - option "Clothing & Accessories"
+              - option "Collectibles"
+              - option "Computers & Accessories"
+              - option "Deals"
+              - option "Electronics"
+              - option "Furniture"
+              - option "Garden & Outdoors"
+              - option "Gift Cards"
+              - option "Grocery & Gourmet Foods"
+              - option "Health & Personal Care"
+              - option "Home & Kitchen"
+              - option "Industrial & Scientific"
+              - option "Jewellery"
+              - option "Kindle Store"
+              - option "Luggage & Bags"
+              - option "Luxury Beauty"
+              - option "Movies & TV Shows"
+              - option "MP3 Music"
+              - option "Music"
+              - option "Musical Instruments"
+              - option "Office Products"
+              - option "Pet Supplies"
+              - option "Prime Video"
+              - option "Shoes & Handbags"
+              - option "Software"
+              - option "Sports, Fitness & Outdoors"
+              - option "Subscribe & Save"
+              - option "Tools & Home Improvement"
+              - option "Toys & Games"
+              - option "Under ₹500"
+              - option "Video Games"
+              - option "Watches"
+          - searchbox "Search Amazon.in" [ref=e90]
+          - generic "Go" [ref=e93] [cursor=pointer]:
+            - button "Go" [ref=e94]
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - link "Choose a language for shopping in Amazon India. The current selection is English (EN)." [ref=e98] [cursor=pointer]:
+              - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+              - generic [ref=e101]:
+                - img "India" [ref=e102]
+                - generic [ref=e103]: EN
+            - button "Expand to Change Language or Country" [ref=e104] [cursor=pointer]
+          - generic [ref=e105]:
+            - link "Hello, sign in Account & Lists" [ref=e106] [cursor=pointer]:
+              - /url: https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+              - generic [ref=e108]: Hello, sign in
+              - generic [ref=e109]: Account & Lists
+            - button "Expand Account and Lists" [ref=e110] [cursor=pointer]
+          - link "Returns & Orders" [ref=e111] [cursor=pointer]:
+            - /url: /gp/css/order-history?ref_=nav_orders_first
+            - generic [ref=e112]: Returns
+            - generic [ref=e113]: "& Orders"
+          - link "0 items in cart" [ref=e114] [cursor=pointer]:
+            - /url: /gp/cart/view.html?ref_=nav_cart
+            - generic [ref=e116]: "0"
+            - generic [ref=e119]: Cart
+      - generic [ref=e120]:
+        - button "Open All Categories Menu" [ref=e122] [cursor=pointer]:
+          - generic [ref=e124]: All
+        - list [ref=e128]:
+          - listitem [ref=e129]:
+            - generic [ref=e130]:
+              - link "Fresh" [ref=e131] [cursor=pointer]:
+                - /url: /fresh?ref_=nav_cs_grocery
+              - button "Fresh Details" [ref=e132] [cursor=pointer]
+          - listitem [ref=e133]:
+            - link "MX Player" [ref=e135] [cursor=pointer]:
+              - /url: /minitv?ref_=nav_avod_desktop_topnav
+          - listitem [ref=e136]:
+            - link "Sell" [ref=e138] [cursor=pointer]:
+              - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+          - listitem [ref=e139]:
+            - link "Bestsellers" [ref=e141] [cursor=pointer]:
+              - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+          - listitem [ref=e142]:
+            - link "Today's Deals" [ref=e144] [cursor=pointer]:
+              - /url: /deals?ref_=nav_cs_gb
+          - listitem [ref=e145]:
+            - link "Mobiles" [ref=e147] [cursor=pointer]:
+              - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+          - listitem [ref=e148]:
+            - link "Customer Service" [ref=e150] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+          - listitem [ref=e151]:
+            - link "New Releases" [ref=e153] [cursor=pointer]:
+              - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+          - listitem [ref=e154]:
+            - link "Fashion" [ref=e156] [cursor=pointer]:
+              - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+          - listitem [ref=e157]:
+            - generic [ref=e158]:
+              - link "Prime" [ref=e159] [cursor=pointer]:
+                - /url: /prime?ref_=nav_cs_primelink_nonmember
+              - button "Prime Details" [ref=e160] [cursor=pointer]
+          - listitem [ref=e161]:
+            - link "Amazon Pay" [ref=e163] [cursor=pointer]:
+              - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+          - listitem [ref=e164]:
+            - link "Electronics" [ref=e166] [cursor=pointer]:
+              - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+          - listitem [ref=e167]:
+            - link "Home & Kitchen" [ref=e169] [cursor=pointer]:
+              - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+          - listitem [ref=e170]:
+            - link "Computers" [ref=e172] [cursor=pointer]:
+              - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+          - listitem [ref=e173]:
+            - link "Books" [ref=e175] [cursor=pointer]:
+              - /url: /Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books
+          - listitem [ref=e176]:
+            - link "Gift Cards" [ref=e178] [cursor=pointer]:
+              - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+          - listitem [ref=e179]:
+            - link "Beauty & Personal Care" [ref=e181] [cursor=pointer]:
+              - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+          - listitem [ref=e182]:
+            - link "Toys & Games" [ref=e184] [cursor=pointer]:
+              - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+          - listitem [ref=e185]:
+            - link "Car & Motorbike" [ref=e187] [cursor=pointer]:
+              - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+          - listitem [ref=e188]:
+            - link "Home Improvement" [ref=e190] [cursor=pointer]:
+              - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+          - listitem [ref=e191]:
+            - link "Grocery & Gourmet Foods" [ref=e193] [cursor=pointer]:
+              - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+          - listitem [ref=e194]:
+            - link "Sports, Fitness & Outdoors" [ref=e196] [cursor=pointer]:
+              - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+          - listitem [ref=e197]:
+            - link "Video Games" [ref=e199] [cursor=pointer]:
+              - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+          - listitem [ref=e200]:
+            - link "Health, Household & Personal Care" [ref=e202] [cursor=pointer]:
+              - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+          - listitem [ref=e203]:
+            - link "Custom Products" [ref=e205] [cursor=pointer]:
+              - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+          - listitem [ref=e206]:
+            - link "Baby" [ref=e208] [cursor=pointer]:
+              - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+          - listitem [ref=e209]:
+            - link "Pet Supplies" [ref=e211] [cursor=pointer]:
+              - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+          - listitem [ref=e212]:
+            - link "AmazonBasics" [ref=e214] [cursor=pointer]:
+              - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+          - listitem [ref=e215]:
+            - link "Audible" [ref=e217] [cursor=pointer]:
+              - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+          - listitem [ref=e218]:
+            - link "Subscribe & Save" [ref=e220] [cursor=pointer]:
+              - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+          - listitem [ref=e221]:
+            - link "Kindle eBooks" [ref=e223] [cursor=pointer]:
+              - /url: /Kindle-eBooks/b/?ie=UTF8&node=1634753031&ref_=nav_cs_kindle_books
+          - listitem [ref=e224]:
+            - link "Flights" [ref=e226] [cursor=pointer]:
+              - /url: /flights?ref_=nav_cs_apay_desktop_topnav_flights
+  - main [ref=e230]:
+    - banner [ref=e232]:
+      - group "Featured content" [ref=e233]:
+        - generic [ref=e235]:
+          - button "Previous slide" [disabled] [ref=e237] [cursor=pointer]:
+            - generic [ref=e239]: Previous slide
+          - group [ref=e241]:
+            - list [ref=e242]:
+              - listitem [ref=e243]:
+                - link "Uber" [ref=e246] [cursor=pointer]:
+                  - /url: /b/?_encoding=UTF8&node=1389402031&pd_rd_w=M1s1B&content-id=amzn1.sym.e5c6dd59-74d9-4afa-8cf7-8b5c3954a1e6&pf_rd_p=e5c6dd59-74d9-4afa-8cf7-8b5c3954a1e6&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=8Mz0s&pd_rd_r=5697efd0-c529-45ab-bea4-ceedac4d52ea&ref_=pd_hp_d_hero_unk
+                  - img "Uber" [ref=e247]
+          - button "Next slide" [ref=e249] [cursor=pointer]:
+            - generic [ref=e251]: Next slide
+    - generic [ref=e252]:
+      - generic [ref=e253]:
+        - generic [ref=e255]:
+          - heading "Revamp your home in style" [level=2] [ref=e257]
+          - generic [ref=e258]:
+            - generic [ref=e259]:
+              - link "Cushion covers, bedsheets & more" [ref=e261] [cursor=pointer]:
+                - /url: /b/?_encoding=UTF8&node=1380442031&pd_rd_w=SQSTj&content-id=amzn1.sym.f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_p=f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=UH0RK&pd_rd_r=985fb8fc-a00a-4fe4-89e5-e9efc6d0d22c&ref_=pd_hp_d_atf_unk
+                - img "Cushion covers, bedsheets & more" [ref=e263]
+                - generic [ref=e265]: Cushion covers, bedsheets & more
+              - link "Figurines, vases & more" [ref=e267] [cursor=pointer]:
+                - /url: /b/?_encoding=UTF8&node=1380374031&pd_rd_w=SQSTj&content-id=amzn1.sym.f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_p=f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=UH0RK&pd_rd_r=985fb8fc-a00a-4fe4-89e5-e9efc6d0d22c&ref_=pd_hp_d_atf_unk
+                - img "Figurines, vases & more" [ref=e269]
+                - generic [ref=e271]: Figurines, vases & more
+            - generic [ref=e272]:
+              - link "Home storage" [ref=e274] [cursor=pointer]:
+                - /url: /b/?_encoding=UTF8&node=1380510031&pd_rd_w=SQSTj&content-id=amzn1.sym.f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_p=f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=UH0RK&pd_rd_r=985fb8fc-a00a-4fe4-89e5-e9efc6d0d22c&ref_=pd_hp_d_atf_unk
+                - img "Home storage" [ref=e276]
+                - generic [ref=e278]: Home storage
+              - link "Lighting solutions" [ref=e280] [cursor=pointer]:
+                - /url: /b/?_encoding=UTF8&node=1380485031&pd_rd_w=SQSTj&content-id=amzn1.sym.f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_p=f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=UH0RK&pd_rd_r=985fb8fc-a00a-4fe4-89e5-e9efc6d0d22c&ref_=pd_hp_d_atf_unk
+                - img "Lighting solutions" [ref=e282]
+                - generic [ref=e284]: Lighting solutions
+          - link "Revamp your home in style - Explore all" [ref=e286] [cursor=pointer]:
+            - /url: /b/?_encoding=UTF8&node=12414705031&pd_rd_w=SQSTj&content-id=amzn1.sym.f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_p=f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=UH0RK&pd_rd_r=985fb8fc-a00a-4fe4-89e5-e9efc6d0d22c&ref_=pd_hp_d_atf_unk
+            - generic [ref=e287]:
+              - generic [ref=e288]: Explore all
+              - generic [ref=e289]: Explore all
+        - generic [ref=e291]:
+          - heading "Bulk order discounts + Up to 18% GST savings" [level=2] [ref=e293]
+          - generic [ref=e294]:
+            - generic [ref=e295]:
+              - link "Up to 45% off | Laptops" [ref=e297] [cursor=pointer]:
+                - /url: /b/ref=vpr_b2c_pqc_reg/?_encoding=UTF8&ie=UTF8&node=80662860031&pd_rd_w=wHFez&content-id=amzn1.sym.808e6a36-0bde-471e-bba5-afba1ba1e906&pf_rd_p=808e6a36-0bde-471e-bba5-afba1ba1e906&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=UH0RK&pd_rd_r=985fb8fc-a00a-4fe4-89e5-e9efc6d0d22c&ref_=pd_hp_d_atf_unk
+                - img "Up to 45% off | Laptops" [ref=e299]
+                - generic [ref=e301]: Up to 45% off | Laptops
+              - link "Up to 60% off | Kitchen appliances" [ref=e303] [cursor=pointer]:
+                - /url: /b/ref=vpr_b2c_pqc_reg/?_encoding=UTF8&ie=UTF8&node=80662860031&pd_rd_w=wHFez&content-id=amzn1.sym.808e6a36-0bde-471e-bba5-afba1ba1e906&pf_rd_p=808e6a36-0bde-471e-bba5-afba1ba1e906&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=UH0RK&pd_rd_r=985fb8fc-a00a-4fe4-89e5-e9efc6d0d22c&ref_=pd_hp_d_atf_unk
+                - img "Up to 60% off | Kitchen appliances" [ref=e305]
+                - generic [ref=e307]: Up to 60% off | Kitchen appliances
+            - generic [ref=e308]:
+              - link "Min. 50% off | Office furniture" [ref=e310] [cursor=pointer]:
+                - /url: /b/ref=vpr_b2c_pqc_reg/?_encoding=UTF8&ie=UTF8&node=80662860031&pd_rd_w=wHFez&content-id=amzn1.sym.808e6a36-0bde-471e-bba5-afba1ba1e906&pf_rd_p=808e6a36-0bde-471e-bba5-afba1ba1e906&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=UH0RK&pd_rd_r=985fb8fc-a00a-4fe4-89e5-e9efc6d0d22c&ref_=pd_hp_d_atf_unk
+                - img "Min. 50% off | Office furniture" [ref=e312]
+                - generic [ref=e314]: Min. 50% off | Office furniture
+              - link "For Business Purchases" [ref=e316] [cursor=pointer]:
+                - /url: /b/ref=vpr_b2c_pqc_reg/?_encoding=UTF8&ie=UTF8&node=80662860031&pd_rd_w=wHFez&content-id=amzn1.sym.808e6a36-0bde-471e-bba5-afba1ba1e906&pf_rd_p=808e6a36-0bde-471e-bba5-afba1ba1e906&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=UH0RK&pd_rd_r=985fb8fc-a00a-4fe4-89e5-e9efc6d0d22c&ref_=pd_hp_d_atf_unk
+                - img "For Business Purchases" [ref=e318]
+                - generic [ref=e320]: Register using GST, Udyam, FSSAI or BPAN
+          - link "Bulk order discounts + Up to 18% GST savings - Create a free account" [ref=e322] [cursor=pointer]:
+            - /url: /b/ref=vpr_b2c_pqc_reg/?_encoding=UTF8&ie=UTF8&node=80662860031&pd_rd_w=wHFez&content-id=amzn1.sym.808e6a36-0bde-471e-bba5-afba1ba1e906&pf_rd_p=808e6a36-0bde-471e-bba5-afba1ba1e906&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=UH0RK&pd_rd_r=985fb8fc-a00a-4fe4-89e5-e9efc6d0d22c&ref_=pd_hp_d_atf_unk
+            - generic [ref=e323]:
+              - generic [ref=e324]: Create a free account
+              - generic [ref=e325]: Create a free account
+        - generic [ref=e327]:
+          - heading "Appliances for your home | Up to 55% off" [level=2] [ref=e329]
+          - generic [ref=e330]:
+            - generic [ref=e331]:
+              - link "ACs" [ref=e333] [cursor=pointer]:
+                - /url: /s/?_encoding=UTF8&bbn=81107432031&rh=n%3A81107432031%2Cp_85%3A10440599031&pd_rd_w=0g5Gz&content-id=amzn1.sym.58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_p=58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=UH0RK&pd_rd_r=985fb8fc-a00a-4fe4-89e5-e9efc6d0d22c&ref_=pd_hp_d_atf_unk
+                - img "ACs" [ref=e335]
+                - generic [ref=e337]: Air conditioners
+              - link "Refrigerators" [ref=e339] [cursor=pointer]:
+                - /url: /s/?_encoding=UTF8&bbn=81107433031&rh=n%3A81107433031%2Cp_85%3A10440599031&pd_rd_w=0g5Gz&content-id=amzn1.sym.58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_p=58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=UH0RK&pd_rd_r=985fb8fc-a00a-4fe4-89e5-e9efc6d0d22c&ref_=pd_hp_d_atf_unk
+                - img "Refrigerators" [ref=e341]
+                - generic [ref=e343]: Refrigerators
+            - generic [ref=e344]:
+              - link "Microwaves" [ref=e346] [cursor=pointer]:
+                - /url: /s/?_encoding=UTF8&bbn=84514739031&rh=n%3A84514739031%2Cp_85%3A10440599031&pd_rd_w=0g5Gz&content-id=amzn1.sym.58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_p=58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=UH0RK&pd_rd_r=985fb8fc-a00a-4fe4-89e5-e9efc6d0d22c&ref_=pd_hp_d_atf_unk
+                - img "Microwaves" [ref=e348]
+                - generic [ref=e350]: Microwaves
+              - link "Washing machines" [ref=e352] [cursor=pointer]:
+                - /url: /s/?_encoding=UTF8&bbn=84514752031&rh=n%3A84514752031%2Cp_85%3A10440599031&pd_rd_w=0g5Gz&content-id=amzn1.sym.58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_p=58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=UH0RK&pd_rd_r=985fb8fc-a00a-4fe4-89e5-e9efc6d0d22c&ref_=pd_hp_d_atf_unk
+                - img "Washing machines" [ref=e354]
+                - generic [ref=e356]: Washing machines
+          - link "Appliances for your home | Up to 55% off - See more" [ref=e358] [cursor=pointer]:
+            - /url: /s/?_encoding=UTF8&bbn=84514735031&rh=n%3A84514735031%2Cp_85%3A10440599031&pd_rd_w=0g5Gz&content-id=amzn1.sym.58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_p=58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=UH0RK&pd_rd_r=985fb8fc-a00a-4fe4-89e5-e9efc6d0d22c&ref_=pd_hp_d_atf_unk
+            - generic [ref=e359]:
+              - generic [ref=e360]: See more
+              - generic [ref=e361]: See more
+        - generic [ref=e363]:
+          - heading "Starting ₹49 | Deals on home essentials" [level=2] [ref=e365]
+          - generic [ref=e366]:
+            - generic [ref=e367]:
+              - link "Cleaning" [ref=e369] [cursor=pointer]:
+                - /url: /s/?_encoding=UTF8&i=home-improvement&bbn=61028133031&rh=n%3A61028133031%2Cp_72%3A1318476031%2Cp_36%3A-19900&_encoding=UTF8&qid=1714749719&rnid=3444809031&ref=sr_nr_p_36_3&pd_rd_w=5eTNu&content-id=amzn1.sym.2eab8373-f2e6-4b01-97aa-c5592db6ec60&pf_rd_p=2eab8373-f2e6-4b01-97aa-c5592db6ec60&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=UH0RK&pd_rd_r=985fb8fc-a00a-4fe4-89e5-e9efc6d0d22c&ref_=pd_hp_d_atf_unk
+                - img "Cleaning" [ref=e371]
+                - generic [ref=e373]: Cleaning supplies
+              - link "Bath accessories" [ref=e375] [cursor=pointer]:
+                - /url: /s/?_encoding=UTF8&i=home-improvement&rh=n%3A60834830031%2Cp_36%3A-39900%2Cp_72%3A1318476031&dc=&fs=true&qid=1714744556&rnid=1318475031&ref=sr_nr_p_72_1&ds=v1%3AObcyf9vB3S72PU7NAfGZ%2FbllKjFxF%2BIh8NlJQg5c1A8%22&pd_rd_w=5eTNu&content-id=amzn1.sym.2eab8373-f2e6-4b01-97aa-c5592db6ec60&pf_rd_p=2eab8373-f2e6-4b01-97aa-c5592db6ec60&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=UH0RK&pd_rd_r=985fb8fc-a00a-4fe4-89e5-e9efc6d0d22c&ref_=pd_hp_d_atf_unk
+                - img "Bath accessories" [ref=e377]
+                - generic [ref=e379]: Bathroom accessories
+            - generic [ref=e380]:
+              - link "Home tools" [ref=e382] [cursor=pointer]:
+                - /url: /s/?_encoding=UTF8&i=home-improvement&rh=n%3A95174669031%2Cp_36%3A3444810031%2Cp_72%3A1318476031&pd_rd_w=5eTNu&content-id=amzn1.sym.2eab8373-f2e6-4b01-97aa-c5592db6ec60&pf_rd_p=2eab8373-f2e6-4b01-97aa-c5592db6ec60&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=UH0RK&pd_rd_r=985fb8fc-a00a-4fe4-89e5-e9efc6d0d22c&ref_=pd_hp_d_atf_unk
+                - img "Home tools" [ref=e384]
+                - generic [ref=e386]: Home tools
+              - link "Wallpapers" [ref=e388] [cursor=pointer]:
+                - /url: /s/?_encoding=UTF8&i=home-improvement&rh=n%3A87322479031%2Cp_36%3A-29900%2Cp_72%3A1318476031&dc=&fs=true&qid=1714750891&rnid=1318475031&ref=sr_nr_p_72_1&ds=v1%3AKT2aFWvve4xsaDjrU17ctKHJFfdbS%2FW1Ex2L5A6belw&pd_rd_w=5eTNu&content-id=amzn1.sym.2eab8373-f2e6-4b01-97aa-c5592db6ec60&pf_rd_p=2eab8373-f2e6-4b01-97aa-c5592db6ec60&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=UH0RK&pd_rd_r=985fb8fc-a00a-4fe4-89e5-e9efc6d0d22c&ref_=pd_hp_d_atf_unk
+                - img "Wallpapers" [ref=e390]
+                - generic [ref=e392]: Wallpapers
+          - link "Starting ₹49 | Deals on home essentials - Explore all" [ref=e394] [cursor=pointer]:
+            - /url: /b/?_encoding=UTF8&node=4286640031&pd_rd_w=5eTNu&content-id=amzn1.sym.2eab8373-f2e6-4b01-97aa-c5592db6ec60&pf_rd_p=2eab8373-f2e6-4b01-97aa-c5592db6ec60&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=UH0RK&pd_rd_r=985fb8fc-a00a-4fe4-89e5-e9efc6d0d22c&ref_=pd_hp_d_atf_unk
+            - generic [ref=e395]:
+              - generic [ref=e396]: Explore all
+              - generic [ref=e397]: Explore all
+      - generic [ref=e399]:
+        - generic [ref=e402]:
+          - generic [ref=e403]:
+            - heading "Starting ₹70,348 | From daily commutes to weekend thrills" [level=2] [ref=e404]
+            - link "See all offers" [ref=e406] [cursor=pointer]:
+              - /url: /b/?_encoding=UTF8&node=28253258031&ref=ls_gwc_mb_en8_&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+          - generic [ref=e407]:
+            - list [ref=e409]:
+              - listitem [ref=e410]:
+                - link "KTM Duke 160 Motorcycle/Bike Atlantic Blue Booking for Ex-Showroom Price" [ref=e412] [cursor=pointer]:
+                  - /url: /KTM-Motorcycle-Atlantic-Booking-Ex-Showroom/dp/B0FND45DX6/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "KTM Duke 160 Motorcycle/Bike Atlantic Blue Booking for Ex-Showroom Price" [ref=e413]
+              - listitem [ref=e414]:
+                - link "KTM Adventure 390 Bike White Booking For Ex-Showroom Price" [ref=e416] [cursor=pointer]:
+                  - /url: /KTM-Adventure-White-Booking-Ex-Showroom/dp/B0F83CRW2W/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "KTM Adventure 390 Bike White Booking For Ex-Showroom Price" [ref=e417]
+              - listitem [ref=e418]:
+                - link "KTM Duke 250 Bike Blue Black Booking for Ex-Showroom Price" [ref=e420] [cursor=pointer]:
+                  - /url: /KTM-Black-Booking-Ex-Showroom-Price/dp/B0F539PWVM/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "KTM Duke 250 Bike Blue Black Booking for Ex-Showroom Price" [ref=e421]
+              - listitem [ref=e422]:
+                - link "KTM Enduro 390 Motercycle/Bike Orange Booking For Ex-Showroom Price" [ref=e424] [cursor=pointer]:
+                  - /url: /KTM-Enduro-Motercycle-Booking-Ex-Showroom/dp/B0F8382VTT/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "KTM Enduro 390 Motercycle/Bike Orange Booking For Ex-Showroom Price" [ref=e425]
+              - listitem [ref=e426]:
+                - link "KTM Duke 200 Bike Grey Booking for Ex-Showroom Price" [ref=e428] [cursor=pointer]:
+                  - /url: /KTM-Duke-Booking-Ex-Showroom-Price/dp/B0F836FH3J/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "KTM Duke 200 Bike Grey Booking for Ex-Showroom Price" [ref=e429]
+              - listitem [ref=e430]:
+                - link "KTM Adventure 250 Bike White Booking For Ex-Showroom Price" [ref=e432] [cursor=pointer]:
+                  - /url: /KTM-Adventure-White-Booking-Ex-Showroom/dp/B0F83F5NX7/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "KTM Adventure 250 Bike White Booking For Ex-Showroom Price" [ref=e433]
+              - listitem [ref=e434]:
+                - link "KTM Rc 200 Bike Black Booking for Ex-Showroom Price" [ref=e436] [cursor=pointer]:
+                  - /url: /KTM-Black-Booking-Ex-Showroom-Price/dp/B0F53C9SPJ/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "KTM Rc 200 Bike Black Booking for Ex-Showroom Price" [ref=e437]
+              - listitem [ref=e438]:
+                - link "KTM Adventure X 390 Bike White Booking For Ex-Showroom Price" [ref=e440] [cursor=pointer]:
+                  - /url: /KTM-Adventure-White-Booking-Ex-Showroom/dp/B0F83F5D6K/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "KTM Adventure X 390 Bike White Booking For Ex-Showroom Price" [ref=e441]
+              - listitem [ref=e442]:
+                - link "Bajaj Avenger 160 Street Motorcycle/Motorbike - Ebony Black(Met) - Ex-Showroom" [ref=e444] [cursor=pointer]:
+                  - /url: /Avenger-Motorcycle-Motorbike-booking-Ex-Showroom/dp/B0D987DGZH/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "Bajaj Avenger 160 Street Motorcycle/Motorbike - Ebony Black(Met) - Ex-Showroom" [ref=e445]
+              - listitem [ref=e446]:
+                - link "HARLEY-DAVIDSON X440 Vivid Motorcycle 440cc Goldfish Silver booking for Ex-Showroom | MY-2025" [ref=e448] [cursor=pointer]:
+                  - /url: /HARLEY-DAVIDSON-Motorcycle-Goldfish-booking-Ex-Showroom/dp/B0FDGV5VXF/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "HARLEY-DAVIDSON X440 Vivid Motorcycle 440cc Goldfish Silver booking for Ex-Showroom | MY-2025" [ref=e449]
+              - listitem [ref=e450]:
+                - link "Hero MotoCorp XTREME 125R FI ABS SEAT DS (OBD2B) Motorcycles/Bike Black Booking for Ex-Showroom Price" [ref=e452] [cursor=pointer]:
+                  - /url: /Hero-MotoCorp-Motorcycles-Booking-Ex-Showroom/dp/B0FGY739Q2/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "Hero MotoCorp XTREME 125R FI ABS SEAT DS (OBD2B) Motorcycles/Bike Black Booking for Ex-Showroom Price" [ref=e453]
+              - listitem [ref=e454]:
+                - link "Bajaj Pulsar 125 Neon Disc Motorcycle/Motorbike - Ebony Black Solar Red Decals - Ex-Showroom" [ref=e456] [cursor=pointer]:
+                  - /url: /Pulsar-Motorbike-Motorcycle-booking-Ex-Showroom/dp/B0D83VPSDC/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "Bajaj Pulsar 125 Neon Disc Motorcycle/Motorbike - Ebony Black Solar Red Decals - Ex-Showroom" [ref=e457]
+              - listitem [ref=e458]:
+                - link "Bajaj Pulsar Ns 125 Ug Abs Motorcycle/Motorbike - Gloss Pewter Grey - Ex-Showroom" [ref=e460] [cursor=pointer]:
+                  - /url: /Bajaj-Pulsar-125-Motorcycle-Motorbike/dp/B0F5Y7B1SG/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "Bajaj Pulsar Ns 125 Ug Abs Motorcycle/Motorbike - Gloss Pewter Grey - Ex-Showroom" [ref=e461]
+              - listitem [ref=e462]:
+                - link "Bajaj Pulsar 125 Sp Seat Di Carbon Ug Motorcycle/Motorbike - Ebony Black & Red Decals - Ex-Showroom" [ref=e464] [cursor=pointer]:
+                  - /url: /Pulsar-Motorbike-Motorcycle-booking-Ex-Showroom/dp/B0D8JGRKF3/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "Bajaj Pulsar 125 Sp Seat Di Carbon Ug Motorcycle/Motorbike - Ebony Black & Red Decals - Ex-Showroom" [ref=e465]
+              - listitem [ref=e466]:
+                - link "TRIUMPH Speed 400 MY25 Bike Phantom Black Booking for Ex-Showroom Price" [ref=e468] [cursor=pointer]:
+                  - /url: /TRIUMPH-Speed-Phantom-Booking-Ex-Showroom/dp/B0F53FKZ12/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "TRIUMPH Speed 400 MY25 Bike Phantom Black Booking for Ex-Showroom Price" [ref=e469]
+              - listitem [ref=e470]:
+                - link "Hero Xtreme 160R 4V Fi (DSCS) Bike Premium Neon Shooting Star Booking For Ex-Showroom Price" [ref=e472] [cursor=pointer]:
+                  - /url: /Hero-Premium-Shooting-Booking-Ex-Showroom/dp/B0F7XLKX8Y/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "Hero Xtreme 160R 4V Fi (DSCS) Bike Premium Neon Shooting Star Booking For Ex-Showroom Price" [ref=e473]
+              - listitem [ref=e474]:
+                - link "HARLEY-DAVIDSON X440 Vivid Motorcycle 440cc Metallic Thick Red booking for Ex-Showroom | MY-2025" [ref=e476] [cursor=pointer]:
+                  - /url: /HARLEY-DAVIDSON-Motorcycle-Metallic-booking-Ex-Showroom/dp/B0FDGWRMMN/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "HARLEY-DAVIDSON X440 Vivid Motorcycle 440cc Metallic Thick Red booking for Ex-Showroom | MY-2025" [ref=e477]
+              - listitem [ref=e478]:
+                - link "KTM Duke 390 Bike Gunmetal Metallic Booking For Ex-Showroom Price" [ref=e480] [cursor=pointer]:
+                  - /url: /KTM-Gunmetal-Metallic-Booking-Ex-Showroom/dp/B0F83362LK/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "KTM Duke 390 Bike Gunmetal Metallic Booking For Ex-Showroom Price" [ref=e481]
+              - listitem [ref=e482]:
+                - link "BAJAJ CT 110 X ES Motorcycle/Motorbike - Blue Red - Ex-Showroom" [ref=e484] [cursor=pointer]:
+                  - /url: /BAJAJ-CT-Motorcycle-Motorbike-Ex-Showroom/dp/B0D8W8QBR2/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "BAJAJ CT 110 X ES Motorcycle/Motorbike - Blue Red - Ex-Showroom" [ref=e485]
+              - listitem [ref=e486]:
+                - link "TRIUMPH Scrambler 400 X Bike Pearl Metallic White Booking for Ex-Showroom Price" [ref=e488] [cursor=pointer]:
+                  - /url: /TRIUMPH-Scrambler-Metallic-Booking-Ex-Showroom/dp/B0F53D4PR8/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "TRIUMPH Scrambler 400 X Bike Pearl Metallic White Booking for Ex-Showroom Price" [ref=e489]
+              - listitem [ref=e490]:
+                - link "Hero Hf Deluxe 19 BS6 BikeBlack Booking For Ex-Showroom Price" [ref=e492] [cursor=pointer]:
+                  - /url: /Hero-Deluxe-BikeBlack-Booking-Ex-Showroom/dp/B0F7XNZ6BG/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "Hero Hf Deluxe 19 BS6 BikeBlack Booking For Ex-Showroom Price" [ref=e493]
+              - listitem [ref=e494]:
+                - link "Bajaj Avenger 220 Cruise Motorcycle/Motorbike - Moon White - Ex-Showroom" [ref=e496] [cursor=pointer]:
+                  - /url: /Avenger-Motorcycle-Motorbike-booking-Ex-Showroom/dp/B0D988K4ZK/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "Bajaj Avenger 220 Cruise Motorcycle/Motorbike - Moon White - Ex-Showroom" [ref=e497]
+              - listitem [ref=e498]:
+                - link "Bajaj Pulsar Ns 400Z Motorcycle/Motorbike - Brooklyn Black - Ex-Showroom" [ref=e500] [cursor=pointer]:
+                  - /url: /Motorcycle-Motorbike-Brooklyn-booking-Ex-Showroom/dp/B0DCK4MB9R/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "Bajaj Pulsar Ns 400Z Motorcycle/Motorbike - Brooklyn Black - Ex-Showroom" [ref=e501]
+              - listitem [ref=e502]:
+                - link "Bajaj Pulsar N 160 Ug Motorcycle/Motorbike - Brooklyn Black - Ex-Showroom" [ref=e504] [cursor=pointer]:
+                  - /url: /Motorbike-Motorcycle-Brooklyn-booking-Ex-Showroom/dp/B0DGCJYYP2/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "Bajaj Pulsar N 160 Ug Motorcycle/Motorbike - Brooklyn Black - Ex-Showroom" [ref=e505]
+              - listitem [ref=e506]:
+                - link "KTM Duke 250 Bike Ebony Black(Matt) Booking for Ex-Showroom Price" [ref=e508] [cursor=pointer]:
+                  - /url: /KTM-Ebony-Black-Booking-Ex-Showroom/dp/B0F5399MQN/?_encoding=UTF8&pd_rd_w=CxTaQ&content-id=amzn1.sym.878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_p=878a9fc2-f43b-4010-87f8-7134831e4967&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+                  - img "KTM Duke 250 Bike Ebony Black(Matt) Booking for Ex-Showroom Price" [ref=e509]
+            - link [ref=e510] [cursor=pointer]:
+              - /url: "#"
+            - link [ref=e512] [cursor=pointer]:
+              - /url: "#"
+        - separator [ref=e516]
+        - generic [ref=e519]:
+          - generic [ref=e520]:
+            - heading "Min. 50% off | Unique home finds | Amazon Brands & more" [level=2] [ref=e521]
+            - link "See all" [ref=e523] [cursor=pointer]:
+              - /url: /s/?_encoding=UTF8&bbn=5925789031&rh=n%3A5925789031%2Cp_n_format_browse-bin%3A19560801031&pd_rd_w=m8uQR&content-id=amzn1.sym.5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_p=5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_PB
+          - list [ref=e526]:
+            - listitem [ref=e527]:
+              - link "One94Store 3D Engraved Deer Crystal Globe Lamp | USB LED Night Light with Wooden Base | Creative 6 cm Crystal Ball Table..." [ref=e529] [cursor=pointer]:
+                - /url: /One94Store-Creative-Engraved-Decoration-Birthday/dp/B0D9XP8FDD/?_encoding=UTF8&pd_rd_w=m8uQR&content-id=amzn1.sym.5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_p=5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_PB
+                - img "One94Store 3D Engraved Deer Crystal Globe Lamp | USB LED Night Light with Wooden Base | Creative 6 cm Crystal Ball Table..." [ref=e530]
+            - listitem [ref=e531]:
+              - link "One94Store 3D Crystal Moon Lamp | Engraved Crystal Ball LED Night Light with Wooden Base, USB Powered | Romantic Home..." [ref=e533] [cursor=pointer]:
+                - /url: /One94Store-3D-Crystal-Moon-Lamp/dp/B0DN1R1XK3/?_encoding=UTF8&pd_rd_w=m8uQR&content-id=amzn1.sym.5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_p=5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_PB
+                - img "One94Store 3D Crystal Moon Lamp | Engraved Crystal Ball LED Night Light with Wooden Base, USB Powered | Romantic Home..." [ref=e534]
+            - listitem [ref=e535]:
+              - link "One94Store Plastic Mini Clip Reading LED Study Lamp with Special Folding Feature for Students, Clip-On Reading Light,..." [ref=e537] [cursor=pointer]:
+                - /url: /One94Store-Reading-Students-Rechargeable-Eye-Caring/dp/B0DPKNT3KP/?_encoding=UTF8&pd_rd_w=m8uQR&content-id=amzn1.sym.5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_p=5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_PB
+                - img "One94Store Plastic Mini Clip Reading LED Study Lamp with Special Folding Feature for Students, Clip-On Reading Light,..." [ref=e538]
+            - listitem [ref=e539]:
+              - link "One94Store Smart Motion Sensor LED Light Bulb with Automatic On/Off and Dimmable Warm White Glow, Energy Efficient 7W..." [ref=e541] [cursor=pointer]:
+                - /url: /One94Store-Bulb-Automatic-Energy-Efficient-Bathroom/dp/B0D324VJ6G/?_encoding=UTF8&pd_rd_w=m8uQR&content-id=amzn1.sym.5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_p=5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_PB
+                - img "One94Store Smart Motion Sensor LED Light Bulb with Automatic On/Off and Dimmable Warm White Glow, Energy Efficient 7W..." [ref=e542]
+            - listitem [ref=e543]:
+              - link "One94Store Smart Night Sensor Light Bulb Comes with Automatic ON/Off Dim LED | Energy-Efficient Night Sensor Light Bulb..." [ref=e545] [cursor=pointer]:
+                - /url: /One94Store-Bulb-Automatic-Energy-Efficient-Walldrobe/dp/B0D326MFH4/?_encoding=UTF8&pd_rd_w=m8uQR&content-id=amzn1.sym.5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_p=5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_PB
+                - img "One94Store Smart Night Sensor Light Bulb Comes with Automatic ON/Off Dim LED | Energy-Efficient Night Sensor Light Bulb..." [ref=e546]
+            - listitem [ref=e547]:
+              - link "One94Store Smart Motion Sensor LED Light Bulb with Automatic On/Off and Dimmable White Glow, Energy Efficient 7W LED..." [ref=e549] [cursor=pointer]:
+                - /url: /One94Store-Automatic-Energy-Saving-Hallway-Bathroom/dp/B0CVXS6WGM/?_encoding=UTF8&pd_rd_w=m8uQR&content-id=amzn1.sym.5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_p=5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_PB
+                - img "One94Store Smart Motion Sensor LED Light Bulb with Automatic On/Off and Dimmable White Glow, Energy Efficient 7W LED..." [ref=e550]
+            - listitem [ref=e551]:
+              - link "One94Store Motion Sensor Light with USB Charging, Wireless, Rechargeable, Adhesive LED Nightlight for Home (Pack of 2,..." [ref=e553] [cursor=pointer]:
+                - /url: /Motion-Sensor-Rechargeable-Warm-White/dp/B0B8ZRNNYM/?_encoding=UTF8&pd_rd_w=m8uQR&content-id=amzn1.sym.5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_p=5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_PB
+                - img "One94Store Motion Sensor Light with USB Charging, Wireless, Rechargeable, Adhesive LED Nightlight for Home (Pack of 2,..." [ref=e554]
+            - listitem [ref=e555]:
+              - link "One94Store Motion Sensor Light for Home with USB Charging Self Adhesive Led Nightlight Rechargeable Body Sensor Wall..." [ref=e557] [cursor=pointer]:
+                - /url: /One94store-Motion-Sensor-Rechargeable-White/dp/B09ZTVHLDB/?_encoding=UTF8&pd_rd_w=m8uQR&content-id=amzn1.sym.5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_p=5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_PB
+                - img "One94Store Motion Sensor Light for Home with USB Charging Self Adhesive Led Nightlight Rechargeable Body Sensor Wall..." [ref=e558]
+            - listitem [ref=e559]:
+              - link "One94Store Crystal Lamp, 16 Color Changing Rose Diamond Table Lamp, USB Rechargeable Touch Night Lamp with Remote..." [ref=e561] [cursor=pointer]:
+                - /url: /One94Store-Diamond-Lamp-Touch-Rechargable/dp/B0BBH3KKJY/?_encoding=UTF8&pd_rd_w=m8uQR&content-id=amzn1.sym.5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_p=5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_PB
+                - img "One94Store Crystal Lamp, 16 Color Changing Rose Diamond Table Lamp, USB Rechargeable Touch Night Lamp with Remote..." [ref=e562]
+            - listitem [ref=e563]:
+              - link "One94Store Rose Flower LED String Fairy Light – 14 LED 3-Meter Night Light for Home Decor, Bedroom & Indoor/Outdoor Use,..." [ref=e565] [cursor=pointer]:
+                - /url: /One94Store-Flower-String-Fairy-Lights/dp/B0CFYQKHJN/?_encoding=UTF8&pd_rd_w=m8uQR&content-id=amzn1.sym.5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_p=5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_PB
+                - img "One94Store Rose Flower LED String Fairy Light – 14 LED 3-Meter Night Light for Home Decor, Bedroom & Indoor/Outdoor Use,..." [ref=e566]
+            - listitem [ref=e567]:
+              - link "One94Store Artificial Leaf Curtain Lights – 200 LED Warm White Fairy String Lights, 3x1m, Remote Control with 8 Lighting..." [ref=e569] [cursor=pointer]:
+                - /url: /One94Store-Artificial-Curtain-Adjustable-Brightness/dp/B0CVGY985K/?_encoding=UTF8&pd_rd_w=m8uQR&content-id=amzn1.sym.5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_p=5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_PB
+                - img "One94Store Artificial Leaf Curtain Lights – 200 LED Warm White Fairy String Lights, 3x1m, Remote Control with 8 Lighting..." [ref=e570]
+            - listitem [ref=e571]:
+              - link "One94Store Plastic Fairy Curtain String Lights for Wall Decoration, Warm White USB Powered 300 LED's, 8 Flashing Modes,..." [ref=e573] [cursor=pointer]:
+                - /url: /One94Store-Fairy-300-Adjustable-Brightness/dp/B0B97N5V97/?_encoding=UTF8&pd_rd_w=m8uQR&content-id=amzn1.sym.5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_p=5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_PB
+                - img "One94Store Plastic Fairy Curtain String Lights for Wall Decoration, Warm White USB Powered 300 LED's, 8 Flashing Modes,..." [ref=e574]
+            - listitem [ref=e575]:
+              - link "One94Store 3D Saturn Crystal Globe Lamp | Engraved Crystal Ball Night Light with Wooden Base | USB LED Table Lamp for..." [ref=e577] [cursor=pointer]:
+                - /url: /One94Store-Crystal-Ball-Night-Lamp/dp/B0CYTDX7GQ/?_encoding=UTF8&pd_rd_w=m8uQR&content-id=amzn1.sym.5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_p=5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_PB
+                - img "One94Store 3D Saturn Crystal Globe Lamp | Engraved Crystal Ball Night Light with Wooden Base | USB LED Table Lamp for..." [ref=e578]
+            - listitem [ref=e579]:
+              - link "One94Store Cotton Ball LED String Light 10 LED 3 Meter Warm White Fairy String Light for Indoor Outdoor Diwali..." [ref=e581] [cursor=pointer]:
+                - /url: /One94Store-Cotton-Ball-Outdoor-Decoration/dp/B0BFLD6QZ1/?_encoding=UTF8&pd_rd_w=m8uQR&content-id=amzn1.sym.5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_p=5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_PB
+                - img "One94Store Cotton Ball LED String Light 10 LED 3 Meter Warm White Fairy String Light for Indoor Outdoor Diwali..." [ref=e582]
+            - listitem [ref=e583]:
+              - link "One94Store 5 Meter 50 LED USB Powered Fairy Light, Waterproof Copper String Light for Indoor & Outdoor Home Decoration,..." [ref=e585] [cursor=pointer]:
+                - /url: /One94Store-Powered-Waterproof-Decoration-Christmas/dp/B0D5M85C3X/?_encoding=UTF8&pd_rd_w=m8uQR&content-id=amzn1.sym.5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_p=5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_PB
+                - img "One94Store 5 Meter 50 LED USB Powered Fairy Light, Waterproof Copper String Light for Indoor & Outdoor Home Decoration,..." [ref=e586]
+            - listitem [ref=e587]:
+              - link "One94Store 5 Meter 50 LED USB Powered Fairy Light, Waterproof Copper String Light for Indoor & Outdoor Home Decoration,..." [ref=e589] [cursor=pointer]:
+                - /url: /One94Store-Powered-Waterproof-Decoration-Christmas/dp/B0D5M7M5M6/?_encoding=UTF8&pd_rd_w=m8uQR&content-id=amzn1.sym.5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_p=5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_PB
+                - img "One94Store 5 Meter 50 LED USB Powered Fairy Light, Waterproof Copper String Light for Indoor & Outdoor Home Decoration,..." [ref=e590]
+            - listitem [ref=e591]:
+              - link "One94Store 5 Meter 50 LED USB Powered Fairy Light, Waterproof Copper String Light for Indoor & Outdoor Home Decoration,..." [ref=e593] [cursor=pointer]:
+                - /url: /One94Store-Powered-Waterproof-Decoration-Christmas/dp/B0D5M6RM2Z/?_encoding=UTF8&pd_rd_w=m8uQR&content-id=amzn1.sym.5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_p=5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_PB
+                - img "One94Store 5 Meter 50 LED USB Powered Fairy Light, Waterproof Copper String Light for Indoor & Outdoor Home Decoration,..." [ref=e594]
+            - listitem [ref=e595]:
+              - link "One94Store 14 LED Metal Diya String Lights – 3 Meter Warm White Plug-in Fairy Lights for Diwali, Mandir, Pooja Room,..." [ref=e597] [cursor=pointer]:
+                - /url: /One94store-Lantern-String-Lights-Decoration/dp/B09JHJL4K9/?_encoding=UTF8&pd_rd_w=m8uQR&content-id=amzn1.sym.5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_p=5c71aec9-f305-470c-a5ee-954c638d1aa3&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_PB
+                - img "One94Store 14 LED Metal Diya String Lights – 3 Meter Warm White Plug-in Fairy Lights for Diwali, Mandir, Pooja Room,..." [ref=e598]
+        - separator [ref=e600]
+        - generic [ref=e602]:
+          - heading "Customers’ Most-Loved Fashion for you" [level=2] [ref=e604]:
+            - generic [ref=e605]:
+              - generic [ref=e606]: Customers’ Most-Loved Fashion for you
+              - generic [ref=e607]: Customers’ Most-Loved Fashion for you
+          - generic [ref=e609]:
+            - link "XYXX Men 100% Cotton Polo Tshirt, Regular Fit, Solid, Pack of 1, XYPTSRT12XL, Indian Blue, XL" [ref=e611] [cursor=pointer]:
+              - /url: /XYXX-Solid-Regular-XY_CR14_Polo-Tshirt_1_Blue/dp/B0CBBB5843/?_encoding=UTF8&pd_rd_w=a1d2H&content-id=amzn1.sym.de84ee3f-a07f-47cd-ac44-50f5d6cbb587&pf_rd_p=de84ee3f-a07f-47cd-ac44-50f5d6cbb587&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_a2i_gw_cml
+              - img "XYXX Men 100% Cotton Polo Tshirt, Regular Fit, Solid, Pack of 1, XYPTSRT12XL, Indian Blue, XL" [ref=e613]
+            - link "Skechers Womens Summits - 896220id Navy/Multi Casual Shoe - 3 UK (6 US) (896220ID-NVMT)" [ref=e615] [cursor=pointer]:
+              - /url: /Skechers-Summits-Womens-Casual-Shoes-896220ID-NVMT-6-Navy-Multi/dp/B0CBVN2SCS/?_encoding=UTF8&pd_rd_w=a1d2H&content-id=amzn1.sym.de84ee3f-a07f-47cd-ac44-50f5d6cbb587&pf_rd_p=de84ee3f-a07f-47cd-ac44-50f5d6cbb587&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_a2i_gw_cml
+              - img "Skechers Womens Summits - 896220id Navy/Multi Casual Shoe - 3 UK (6 US) (896220ID-NVMT)" [ref=e617]
+            - link "Jockey Cotton Blend Crew Neck T-Shirt For Women AW88_White_XL, Relaxed Fit" [ref=e619] [cursor=pointer]:
+              - /url: /Jockey-Crew-T-Shirt-Women-AW88_White_XL/dp/B09MFMVVK5/?_encoding=UTF8&pd_rd_w=a1d2H&content-id=amzn1.sym.de84ee3f-a07f-47cd-ac44-50f5d6cbb587&pf_rd_p=de84ee3f-a07f-47cd-ac44-50f5d6cbb587&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_a2i_gw_cml
+              - img "Jockey Cotton Blend Crew Neck T-Shirt For Women AW88_White_XL, Relaxed Fit" [ref=e621]
+            - link "Skechers Mens Summits - Brisbane Black Sneaker - 11 UK (12 US) (232057ID-BBK)" [ref=e623] [cursor=pointer]:
+              - /url: /Skechers-Black-Mens-Casual-Shoes-232057ID-BBK-SUMMITS-Brisbane-UK11/dp/B09XXPS6MB/?_encoding=UTF8&pd_rd_w=a1d2H&content-id=amzn1.sym.de84ee3f-a07f-47cd-ac44-50f5d6cbb587&pf_rd_p=de84ee3f-a07f-47cd-ac44-50f5d6cbb587&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_a2i_gw_cml
+              - img "Skechers Mens Summits - Brisbane Black Sneaker - 11 UK (12 US) (232057ID-BBK)" [ref=e625]
+          - link "Customers’ Most-Loved Fashion for you - Explore more" [ref=e627] [cursor=pointer]:
+            - /url: /s/?_encoding=UTF8&node=50916365031&pd_rd_w=a1d2H&content-id=amzn1.sym.de84ee3f-a07f-47cd-ac44-50f5d6cbb587&pf_rd_p=de84ee3f-a07f-47cd-ac44-50f5d6cbb587&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_a2i_gw_cml
+            - generic [ref=e628]:
+              - generic [ref=e629]: Explore more
+              - generic [ref=e630]: Explore more
+        - generic [ref=e632]:
+          - heading "Up to 50% off | International brands" [level=2] [ref=e634]
+          - link "Up to 50% off | International brands See all offers" [ref=e635] [cursor=pointer]:
+            - /url: /b/?_encoding=UTF8&node=21469514031&pd_rd_w=KR5mX&content-id=amzn1.sym.4c3ef7b9-b60b-4c0a-be9f-3c4094feadc2&pf_rd_p=4c3ef7b9-b60b-4c0a-be9f-3c4094feadc2&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_unk
+            - img "Up to 50% off | International brands" [ref=e638]
+            - generic [ref=e640]:
+              - generic [ref=e641]: See all offers
+              - generic [ref=e642]: See all offers
+        - generic [ref=e644]:
+          - heading "Up to 70% off | Kitchen products from Emerging Businesses" [level=2] [ref=e646]:
+            - generic [ref=e647]:
+              - generic [ref=e648]: Up to 70% off | Kitchen products from Emerging Businesses
+              - generic [ref=e649]: Up to 70% off | Kitchen products from Emergi…
+          - generic [ref=e651]:
+            - link "Velmora Oil Dispenser 1 Litre Steel - Stainless Steel Oil Bottle for Kitchen - Cooking oil Container/Pourer - Leakproof & Long Lasting (1 Ltr, Silver)" [ref=e653] [cursor=pointer]:
+              - /url: /Velmora-Oil-Dispenser-Steel-Stainless/dp/B0FGKY7FLR/?_encoding=UTF8&pd_rd_w=7T6r0&content-id=amzn1.sym.084986d9-61da-41be-8738-62bfc1f2d36e&pf_rd_p=084986d9-61da-41be-8738-62bfc1f2d36e&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NSS
+              - img "Velmora Oil Dispenser 1 Litre Steel - Stainless Steel Oil Bottle for Kitchen - Cooking oil Container/Pourer - Leakproof & Long Lasting (1 Ltr, Silver)" [ref=e655]
+            - link "Westor Oil Dispenser Bottle for Kitchen 500ml with Silicone Spatula | Food Grade Glass Oil Pourer with Leak-Proof Nozzle | Heat Resistant Silicone Cooking Spatulas for Baking, Frying (Multicolor)" [ref=e657] [cursor=pointer]:
+              - /url: /Westor-Oil-Dispenser-Glass-Leak-Proof/dp/B0FGTNZV9W/?_encoding=UTF8&pd_rd_w=7T6r0&content-id=amzn1.sym.084986d9-61da-41be-8738-62bfc1f2d36e&pf_rd_p=084986d9-61da-41be-8738-62bfc1f2d36e&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NSS
+              - img "Westor Oil Dispenser Bottle for Kitchen 500ml with Silicone Spatula | Food Grade Glass Oil Pourer with Leak-Proof Nozzle | Heat Resistant Silicone Cooking Spatulas for Baking, Frying (Multicolor)" [ref=e659]
+            - link "Tenom Knife Holder Stand for Kitchen, Knife Stand Steel, Knife Stand Without Knife, Knife Block for Kitchen, Knife Storage for Kitchen" [ref=e661] [cursor=pointer]:
+              - /url: /Tenom-Holder-Kitchen-Without-Storage/dp/B0DS1XJG6L/?_encoding=UTF8&pd_rd_w=7T6r0&content-id=amzn1.sym.084986d9-61da-41be-8738-62bfc1f2d36e&pf_rd_p=084986d9-61da-41be-8738-62bfc1f2d36e&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NSS
+              - img "Tenom Knife Holder Stand for Kitchen, Knife Stand Steel, Knife Stand Without Knife, Knife Block for Kitchen, Knife Storage for Kitchen" [ref=e663]
+            - link "Glass Tea Cup Set of 6 140 mL – Heat-Resistant, Lightweight & Durable | Transparent Chai Cups with Handle for Tea, Coffee, Milk & Beverages | Elegant Home & Kitchen Glassware – Ideal Gift Set" [ref=e665] [cursor=pointer]:
+              - /url: /Glass-Tea-Cup-Set-Heat-Resistant/dp/B0F2TKKK7F/?_encoding=UTF8&pd_rd_w=7T6r0&content-id=amzn1.sym.084986d9-61da-41be-8738-62bfc1f2d36e&pf_rd_p=084986d9-61da-41be-8738-62bfc1f2d36e&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NSS
+              - img "Glass Tea Cup Set of 6 140 mL – Heat-Resistant, Lightweight & Durable | Transparent Chai Cups with Handle for Tea, Coffee, Milk & Beverages | Elegant Home & Kitchen Glassware – Ideal Gift Set" [ref=e667]
+        - generic [ref=e669]:
+          - heading "Best Sellers in Home & Kitchen" [level=2] [ref=e671]:
+            - generic [ref=e672]:
+              - generic [ref=e673]: Best Sellers in Home & Kitchen
+              - generic [ref=e674]: Best Sellers in Home & Kitchen
+          - generic [ref=e676]:
+            - link "Amazon Brand - Presto! Garbage Bags | Medium | 180 Count | 30 Bags X 6 Rolls | 19 X 21 Inches | For Dry & Wet Waste | Black" [ref=e678] [cursor=pointer]:
+              - /url: /Amazon-Brand-Presto-Oxo-Biodegradable-Garbage/dp/B0821PN8L4/?_encoding=UTF8&pd_rd_w=IqzsR&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_976442031
+              - img "Amazon Brand - Presto! Garbage Bags | Medium | 180 Count | 30 Bags X 6 Rolls | 19 X 21 Inches | For Dry & Wet Waste | Black" [ref=e680]
+            - link "ATOM ALISTON K1 Series Digital Kitchen Weighing Scale 10 kg, Electronic Weight Machine with LCD Display for Baking, Cooking, Food & Diet, SF-400/A121. 6Months Warranty (Colour May Vary)" [ref=e682] [cursor=pointer]:
+              - /url: /Kitchen-Manufacturer-Warranty-capacity-SF400/dp/B083C6XMKQ/?_encoding=UTF8&pd_rd_w=IqzsR&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_976442031
+              - img "ATOM ALISTON K1 Series Digital Kitchen Weighing Scale 10 kg, Electronic Weight Machine with LCD Display for Baking, Cooking, Food & Diet, SF-400/A121. 6Months Warranty (Colour May Vary)" [ref=e684]
+            - link "Trance 100% Waterproof Premium Cotton Feel Mattress Protector King Size 78x72 Inches | Breathable and Hypoallergenic Ultra Soft Fitted Bed Protector Cover (78\"x72\" King, Grey)" [ref=e686] [cursor=pointer]:
+              - /url: /Trance-Home-Linen-Waterproof-Dustproof/dp/B01A57IV58/?_encoding=UTF8&pd_rd_w=IqzsR&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_976442031
+              - img "Trance 100% Waterproof Premium Cotton Feel Mattress Protector King Size 78x72 Inches | Breathable and Hypoallergenic Ultra Soft Fitted Bed Protector Cover (78\"x72\" King, Grey)" [ref=e688]
+            - link "Godrej aer Matic Kit (Machine + 1 Refill) - Automatic Room Fresheners with Flexi Control Spray | Violet Valley Bloom | 2200 Sprays Guaranteed | Lasts up to 60 days (210ml)" [ref=e690] [cursor=pointer]:
+              - /url: /Godrej-Matic-Spray-Violet-Valley/dp/B07FPKJ7MP/?_encoding=UTF8&pd_rd_w=IqzsR&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_976442031
+              - img "Godrej aer Matic Kit (Machine + 1 Refill) - Automatic Room Fresheners with Flexi Control Spray | Violet Valley Bloom | 2200 Sprays Guaranteed | Lasts up to 60 days (210ml)" [ref=e692]
+        - separator [ref=e693]
+        - generic [ref=e696]:
+          - generic [ref=e697]:
+            - heading "Up to 60% off | Cookware, kitchen tool & more | Amazon Launchpad" [level=2] [ref=e698]
+            - link "See all" [ref=e700] [cursor=pointer]:
+              - /url: /l/10894223031/?_encoding=UTF8&pd_rd_w=uaYjv&content-id=amzn1.sym.0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_p=0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_LPDEALS
+          - list [ref=e703]:
+            - listitem [ref=e704]:
+              - link "VAYA HauteChef Cast Iron Kadai, 24 cm, Pre-Seasoned & Naturally Non-Stick, 100% Pure & Toxin-Free, Deep Design for..." [ref=e706] [cursor=pointer]:
+                - /url: /VAYA-Hautechef-Pre-Seasoned-Cast-Kadhai/dp/B0F44BLP6X/?_encoding=UTF8&pd_rd_w=uaYjv&content-id=amzn1.sym.0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_p=0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_LPDEALS
+                - img "VAYA HauteChef Cast Iron Kadai, 24 cm, Pre-Seasoned & Naturally Non-Stick, 100% Pure & Toxin-Free, Deep Design for..." [ref=e707]
+            - listitem [ref=e708]:
+              - link "Machado Hybrid Hand-Sharpened Mongolian Viking Knife with Leather Sheath - Forged Boning Multipurpose Meat Cleaver..." [ref=e710] [cursor=pointer]:
+                - /url: /Machado-Hybrid-Hand-Sharpened-Mongolian-Leather/dp/B0D2S2DR36/?_encoding=UTF8&pd_rd_w=uaYjv&content-id=amzn1.sym.0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_p=0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_LPDEALS
+                - img "Machado Hybrid Hand-Sharpened Mongolian Viking Knife with Leather Sheath - Forged Boning Multipurpose Meat Cleaver..." [ref=e711]
+            - listitem [ref=e712]:
+              - link "KitchEase 6 Pcs Drain Basket Set with Handles - Versatile Kitchen Colander for Rice, Pasta, Spaghetti, Fruits,..." [ref=e714] [cursor=pointer]:
+                - /url: /KitchEase-Pcs-Drain-Basket-Handles/dp/B0DG6P57NC/?_encoding=UTF8&pd_rd_w=uaYjv&content-id=amzn1.sym.0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_p=0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_LPDEALS
+                - img "KitchEase 6 Pcs Drain Basket Set with Handles - Versatile Kitchen Colander for Rice, Pasta, Spaghetti, Fruits,..." [ref=e715]
+            - listitem [ref=e716]:
+              - link "Spooky Creative Starry Sky Ceramic Mug – Cute 3D Cat Design with Lid & Spoon, Perfect for Office, Breakfast, & Gifts –..." [ref=e718] [cursor=pointer]:
+                - /url: /Spooky-Creative-Starry-Sky-Ceramic/dp/B0FBG8MPNY/?_encoding=UTF8&pd_rd_w=uaYjv&content-id=amzn1.sym.0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_p=0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_LPDEALS
+                - img "Spooky Creative Starry Sky Ceramic Mug – Cute 3D Cat Design with Lid & Spoon, Perfect for Office, Breakfast, & Gifts –..." [ref=e719]
+            - listitem [ref=e720]:
+              - link "YELONA Insulated Lunch Box | 3-Tier Stainless Steel Food Jar with Built-in Cutlery | 900ml Leakproof Lunch Pot,..." [ref=e722] [cursor=pointer]:
+                - /url: /YELONA-Insulated-Stainless-Leakproof-Dishwasher/dp/B0FMS3YN5Y/?_encoding=UTF8&pd_rd_w=uaYjv&content-id=amzn1.sym.0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_p=0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_LPDEALS
+                - img "YELONA Insulated Lunch Box | 3-Tier Stainless Steel Food Jar with Built-in Cutlery | 900ml Leakproof Lunch Pot,..." [ref=e723]
+            - listitem [ref=e724]:
+              - link "HENIJ 1 Pcs Extra Dense Furniture Table Wall Edge Protectors Foam Baby Safety Bumper Guard Protector, Table Protection..." [ref=e726] [cursor=pointer]:
+                - /url: /HENIJ-Furniture-Protectors-Protector-Protection/dp/B09N7C3PQ3/?_encoding=UTF8&pd_rd_w=uaYjv&content-id=amzn1.sym.0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_p=0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_LPDEALS
+                - img "HENIJ 1 Pcs Extra Dense Furniture Table Wall Edge Protectors Foam Baby Safety Bumper Guard Protector, Table Protection..." [ref=e727]
+            - listitem [ref=e728]:
+              - link "KitchEase 730ml Stainless Steel Lunch Pot – Leakproof Meal Jar with Foldable Spoon, Ideal Tiffin Box for Meals, Lunch,..." [ref=e730] [cursor=pointer]:
+                - /url: /KitchEase-730ml-Stainless-Steel-Lunch/dp/B0DGHKMM6L/?_encoding=UTF8&pd_rd_w=uaYjv&content-id=amzn1.sym.0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_p=0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_LPDEALS
+                - img "KitchEase 730ml Stainless Steel Lunch Pot – Leakproof Meal Jar with Foldable Spoon, Ideal Tiffin Box for Meals, Lunch,..." [ref=e731]
+            - listitem [ref=e732]:
+              - link "Machado Japanese Style Mini Pocket Katana Kitchen Knife with Sheath - Ebony Handle - Perfect for Fruit, Vegetable..." [ref=e734] [cursor=pointer]:
+                - /url: /Machado-Japanese-Pocket-Katana-Kitchen/dp/B0D45K4D4R/?_encoding=UTF8&pd_rd_w=uaYjv&content-id=amzn1.sym.0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_p=0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_LPDEALS
+                - img "Machado Japanese Style Mini Pocket Katana Kitchen Knife with Sheath - Ebony Handle - Perfect for Fruit, Vegetable..." [ref=e735]
+            - listitem [ref=e736]:
+              - link "daiDokoro Plastic 4 Insulated Container Lunch Box Set With Thermal Bag & Cutlery For Students/Office/College/Picnic -..." [ref=e738] [cursor=pointer]:
+                - /url: /daiDokoro-Insulated-Container-Thermal-Students/dp/B0CXY9W4KT/?_encoding=UTF8&pd_rd_w=uaYjv&content-id=amzn1.sym.0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_p=0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_LPDEALS
+                - img "daiDokoro Plastic 4 Insulated Container Lunch Box Set With Thermal Bag & Cutlery For Students/Office/College/Picnic -..." [ref=e739]
+            - listitem [ref=e740]:
+              - link "Aquaminder Smart Water Bottle | Customised LED & Timer Hydration Reminder with BT Mobile Phone Connection, Thames with..." [ref=e742] [cursor=pointer]:
+                - /url: /Aquaminder-Customised-Hydration-Reminder-Connection/dp/B0F8NPRS2T/?_encoding=UTF8&pd_rd_w=uaYjv&content-id=amzn1.sym.0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_p=0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_LPDEALS
+                - img "Aquaminder Smart Water Bottle | Customised LED & Timer Hydration Reminder with BT Mobile Phone Connection, Thames with..." [ref=e743]
+            - listitem [ref=e744]:
+              - link "Machado Serbian Chef Knife - High Carbon Clad Steel Unagisaki Butcher Cleaver, Full Tang Kitchen Chef Knives - Ideal..." [ref=e746] [cursor=pointer]:
+                - /url: /Machado-Serbian-Chef-Knife-Unagisaki/dp/B0D6KNMPCG/?_encoding=UTF8&pd_rd_w=uaYjv&content-id=amzn1.sym.0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_p=0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_LPDEALS
+                - img "Machado Serbian Chef Knife - High Carbon Clad Steel Unagisaki Butcher Cleaver, Full Tang Kitchen Chef Knives - Ideal..." [ref=e747]
+            - listitem [ref=e748]:
+              - link "daiDokoro Plastic 4 Insulated Container Lunch Box Set With Thermal Bag & Cutlery For Students/Office/College/Picnic -..." [ref=e750] [cursor=pointer]:
+                - /url: /daiDokoro-Insulated-Container-Thermal-Students/dp/B0CXY9PZP1/?_encoding=UTF8&pd_rd_w=uaYjv&content-id=amzn1.sym.0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_p=0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_LPDEALS
+                - img "daiDokoro Plastic 4 Insulated Container Lunch Box Set With Thermal Bag & Cutlery For Students/Office/College/Picnic -..." [ref=e751]
+            - listitem [ref=e752]:
+              - link "VAYA Tydbyt Stainless Steel Lunch Box for Boys, 650 ml, 3 Containers, Bento Box for Adults, Slim Compact & Travel..." [ref=e754] [cursor=pointer]:
+                - /url: /VAYA-Stainless-Containers-Friendly-Materials/dp/B0G253LCGV/?_encoding=UTF8&pd_rd_w=uaYjv&content-id=amzn1.sym.0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_p=0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_LPDEALS
+                - img "VAYA Tydbyt Stainless Steel Lunch Box for Boys, 650 ml, 3 Containers, Bento Box for Adults, Slim Compact & Travel..." [ref=e755]
+            - listitem [ref=e756]:
+              - link "MOSO NATURAL Fridge Deodorizer, Keeps Your Refrigerator and Freezer; Fresh, Dry and Odor Free For Up To Two Years. 75gm,..." [ref=e758] [cursor=pointer]:
+                - /url: /Natural-Purifying-Refrigerator-Freezer-Cooler/dp/B00EPNDYRE/?_encoding=UTF8&pd_rd_w=uaYjv&content-id=amzn1.sym.0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_p=0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_LPDEALS
+                - img "MOSO NATURAL Fridge Deodorizer, Keeps Your Refrigerator and Freezer; Fresh, Dry and Odor Free For Up To Two Years. 75gm,..." [ref=e759]
+            - listitem [ref=e760]:
+              - link "Spooky Creative Starry Sky Ceramic Mug – Cute 3D Cat Design with Lid & Spoon, Perfect for Office, Breakfast, & Gifts –..." [ref=e762] [cursor=pointer]:
+                - /url: /Spooky-Creative-Starry-Sky-Ceramic/dp/B0FBG92PPW/?_encoding=UTF8&pd_rd_w=uaYjv&content-id=amzn1.sym.0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_p=0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_LPDEALS
+                - img "Spooky Creative Starry Sky Ceramic Mug – Cute 3D Cat Design with Lid & Spoon, Perfect for Office, Breakfast, & Gifts –..." [ref=e763]
+            - listitem [ref=e764]:
+              - link "YELONA Stainless Steel Lunch Pot for Meals, Lunch, Tiffin Box for Men, Women, Kids Leakproof Meal Jar with Foldable..." [ref=e766] [cursor=pointer]:
+                - /url: /YELONA-Stainless-Leakproof-Fern-Green/dp/B0CJ53HRS4/?_encoding=UTF8&pd_rd_w=uaYjv&content-id=amzn1.sym.0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_p=0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_LPDEALS
+                - img "YELONA Stainless Steel Lunch Pot for Meals, Lunch, Tiffin Box for Men, Women, Kids Leakproof Meal Jar with Foldable..." [ref=e767]
+            - listitem [ref=e768]:
+              - link "KitchEase 730ml Stainless Steel Lunch Pot – Leakproof Meal Jar with Foldable Spoon, Ideal Tiffin Box for Meals, Lunch,..." [ref=e770] [cursor=pointer]:
+                - /url: /KitchEase-730ml-Stainless-Steel-Lunch/dp/B0DGHMVNQN/?_encoding=UTF8&pd_rd_w=uaYjv&content-id=amzn1.sym.0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_p=0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_LPDEALS
+                - img "KitchEase 730ml Stainless Steel Lunch Pot – Leakproof Meal Jar with Foldable Spoon, Ideal Tiffin Box for Meals, Lunch,..." [ref=e771]
+            - listitem [ref=e772]:
+              - link "YELONA Insulated Lunch Box | 3-Tier Stainless Steel Food Jar with Built-in Cutlery | 900ml Leakproof Lunch Pot,..." [ref=e774] [cursor=pointer]:
+                - /url: /YELONA-Insulated-Stainless-Leakproof-Dishwasher/dp/B0FMS6L4GY/?_encoding=UTF8&pd_rd_w=uaYjv&content-id=amzn1.sym.0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_p=0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_LPDEALS
+                - img "YELONA Insulated Lunch Box | 3-Tier Stainless Steel Food Jar with Built-in Cutlery | 900ml Leakproof Lunch Pot,..." [ref=e775]
+            - listitem [ref=e776]:
+              - link "VAYA HauteChef Pre-Seasoned Cast Iron Skillet/Omelette Pan, 15 cm, Naturally Non-Stick, 100% Pure, Premium & Toxin-Free,..." [ref=e778] [cursor=pointer]:
+                - /url: /VAYA-Hautechef-Pre-Seasoned-Skillet-Toxin-Free/dp/B0F48RT3ZH/?_encoding=UTF8&pd_rd_w=uaYjv&content-id=amzn1.sym.0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_p=0962086d-8ca4-4681-bd45-4e8837fac490&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_LPDEALS
+                - img "VAYA HauteChef Pre-Seasoned Cast Iron Skillet/Omelette Pan, 15 cm, Naturally Non-Stick, 100% Pure, Premium & Toxin-Free,..." [ref=e779]
+        - separator [ref=e781]
+        - generic [ref=e784]:
+          - heading "Best Sellers in Clothing & Accessories" [level=2] [ref=e786]
+          - list [ref=e789]:
+            - listitem [ref=e790]:
+              - link "KLOSIA Women's Rayon Printed Anarkali Kurta and Pant with Dupatta Set" [ref=e792] [cursor=pointer]:
+                - /url: /KLOSIA-Women-Printed-Anarkali-Dupatta/dp/B0FDW55HNT/?_encoding=UTF8&pd_rd_w=LIYNK&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+                - img "KLOSIA Women's Rayon Printed Anarkali Kurta and Pant with Dupatta Set" [ref=e793]
+            - listitem [ref=e794]:
+              - link "SWAGR 12 Pairs Sports Cotton Ankle Length Socks for Men, Pack of 12., Assorted" [ref=e796] [cursor=pointer]:
+                - /url: /SWAGR-Sports-Cotton-Length-Assorted/dp/B0DGX12XXV/?_encoding=UTF8&pd_rd_w=LIYNK&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+                - img "SWAGR 12 Pairs Sports Cotton Ankle Length Socks for Men, Pack of 12., Assorted" [ref=e797]
+            - listitem [ref=e798]:
+              - link "KLOSIA Women Embroidery Solid Anarkali Kurta and Pant Set with Dupatta" [ref=e800] [cursor=pointer]:
+                - /url: /KLOSIA-Women-Embroidery-Anarkali-Dupatta/dp/B0FMYKFFQ4/?_encoding=UTF8&pd_rd_w=LIYNK&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+                - img "KLOSIA Women Embroidery Solid Anarkali Kurta and Pant Set with Dupatta" [ref=e801]
+            - listitem [ref=e802]:
+              - link "Allen Solly Men’s Polo T Shirt | Comfortable Rich Cotton Blend, Band Collar, Regular Fit | Stylish & Premium All Day Wear" [ref=e804] [cursor=pointer]:
+                - /url: /Allen-Solly-Regular-AMKP317G04249_Jet-Black_Large/dp/B06Y2FG6R7/?_encoding=UTF8&pd_rd_w=LIYNK&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+                - img "Allen Solly Men’s Polo T Shirt | Comfortable Rich Cotton Blend, Band Collar, Regular Fit | Stylish & Premium All Day Wear" [ref=e805]
+            - listitem [ref=e806]:
+              - link "Amazon Brand - Symbol Men's Cotton Rich Solid Polo Tshirt | Collar Tshirts | Half Sleeves | Plain-Regular Fit (Available..." [ref=e808] [cursor=pointer]:
+                - /url: /Amazon-Brand-Symbol-Polo_SS19PLS2_Fog-Teal_Large/dp/B07MZG27XK/?_encoding=UTF8&pd_rd_w=LIYNK&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+                - img "Amazon Brand - Symbol Men's Cotton Rich Solid Polo Tshirt | Collar Tshirts | Half Sleeves | Plain-Regular Fit (Available..." [ref=e809]
+            - listitem [ref=e810]:
+              - link "Jockey 8820 Men's Super Combed Cotton Round Neck Sleeveless Vest with Extended Length for Easy Tuck (Pack of 3)" [ref=e812] [cursor=pointer]:
+                - /url: /Jockey-Mens-Cotton-Assorted-Medium/dp/B07C666KVN/?_encoding=UTF8&pd_rd_w=LIYNK&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+                - img "Jockey 8820 Men's Super Combed Cotton Round Neck Sleeveless Vest with Extended Length for Easy Tuck (Pack of 3)" [ref=e813]
+            - listitem [ref=e814]:
+              - link "PARTHVI Women's Pure Cotton Printed Straight Kurta Set with Palazzo Pants & Dupatta- Ethnic Wear, Green" [ref=e816] [cursor=pointer]:
+                - /url: /PARTHVI-Printed-Straight-Palazzo-Dupatta/dp/B0FVSG25HR/?_encoding=UTF8&pd_rd_w=LIYNK&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+                - img "PARTHVI Women's Pure Cotton Printed Straight Kurta Set with Palazzo Pants & Dupatta- Ethnic Wear, Green" [ref=e817]
+            - listitem [ref=e818]:
+              - link "Lux Cozi Men's White Round Neck Sleeveless Cotton Regular Fit Vest (Pack of 3)" [ref=e820] [cursor=pointer]:
+                - /url: /Lux-Cozi-Mens-Cotton-8904209871077_COZI_WH_RN_90_White/dp/B071KKRY5N/?_encoding=UTF8&pd_rd_w=LIYNK&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+                - img "Lux Cozi Men's White Round Neck Sleeveless Cotton Regular Fit Vest (Pack of 3)" [ref=e821]
+            - listitem [ref=e822]:
+              - link "Anni Designer Pure Cotton Maroon Kurta Pant Set with Dupatta for Women | 3 Piece Gold Hand Block Printed Suit Set |..." [ref=e824] [cursor=pointer]:
+                - /url: /ANNI-DESIGNER-Straight-CHAKORI-MAROON-VKS05_S_Maroon_Small/dp/B0F8ZR5LLB/?_encoding=UTF8&pd_rd_w=LIYNK&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+                - img "Anni Designer Pure Cotton Maroon Kurta Pant Set with Dupatta for Women | 3 Piece Gold Hand Block Printed Suit Set |..." [ref=e825]
+            - listitem [ref=e826]:
+              - link "ANNI Designer Pure Cotton Embroidered Kurta Set for Women | Rust Orange Kurta with Pants & Dupatta | Floral Neck & Hem..." [ref=e828] [cursor=pointer]:
+                - /url: /ANNI-DESIGNER-Embroidery-FULKUMARI-RUST_XL_RUST_X-Large/dp/B0FTX3WDH8/?_encoding=UTF8&pd_rd_w=LIYNK&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+                - img "ANNI Designer Pure Cotton Embroidered Kurta Set for Women | Rust Orange Kurta with Pants & Dupatta | Floral Neck & Hem..." [ref=e829]
+            - listitem [ref=e830]:
+              - link "Lux Cozi Men's Half Sleeve Soild Casual Regular Fit T-Shirt with Chest Pocket | Polo Tshirt for Men" [ref=e832] [cursor=pointer]:
+                - /url: /Lux-Cozi-Sleeve-T-Shirt-Pocket_COZI_2122_MTGRN_L_1PC/dp/B0CVXQ9SKB/?_encoding=UTF8&pd_rd_w=LIYNK&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+                - img "Lux Cozi Men's Half Sleeve Soild Casual Regular Fit T-Shirt with Chest Pocket | Polo Tshirt for Men" [ref=e833]
+            - listitem [ref=e834]:
+              - link "KOTTY Mens Regular Fit|Classic Design with Stylish Look |Day Comfort|Mide Rise Strachable Jeans" [ref=e836] [cursor=pointer]:
+                - /url: /KOTTY-Regular-Distressed-Fashionable-Trendy/dp/B0DWK2B887/?_encoding=UTF8&pd_rd_w=LIYNK&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+                - img "KOTTY Mens Regular Fit|Classic Design with Stylish Look |Day Comfort|Mide Rise Strachable Jeans" [ref=e837]
+            - listitem [ref=e838]:
+              - link "Van Heusen Men's Cotton Solid Regular Fit Collar Polo T-Shirt" [ref=e840] [cursor=pointer]:
+                - /url: /Van-Heusen-Solid-Regular-VSKP517S011419_Nautical_X-Large/dp/B076CNJ1YN/?_encoding=UTF8&pd_rd_w=LIYNK&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+                - img "Van Heusen Men's Cotton Solid Regular Fit Collar Polo T-Shirt" [ref=e841]
+            - listitem [ref=e842]:
+              - link "Klosia Women Solid Embroidery Kurta and pant set With Dupatta" [ref=e844] [cursor=pointer]:
+                - /url: /Klosia-Women-Solid-Embroidery-Dupatta/dp/B0G4F7HZFW/?_encoding=UTF8&pd_rd_w=LIYNK&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+                - img "Klosia Women Solid Embroidery Kurta and pant set With Dupatta" [ref=e845]
+            - listitem [ref=e846]:
+              - link "Shasmi Girl's & Women's Solid Color V-Neck A-Line Maxi Dress for Women | New Year Party Outfit | Waist Cinched Puff..." [ref=e848] [cursor=pointer]:
+                - /url: /Shasmi-Cinched-Western-Elegant-246/dp/B0FLK4B4FL/?_encoding=UTF8&pd_rd_w=LIYNK&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+                - img "Shasmi Girl's & Women's Solid Color V-Neck A-Line Maxi Dress for Women | New Year Party Outfit | Waist Cinched Puff..." [ref=e849]
+            - listitem [ref=e850]:
+              - link "SJeware Unisex Cotton Men And Women Solid Ankle Length Socks (Pack Of 5) Sjw-2013, Assorted" [ref=e852] [cursor=pointer]:
+                - /url: /SJeware-Women-Solid-Length-SJW-2013/dp/B0C3DH4XPJ/?_encoding=UTF8&pd_rd_w=LIYNK&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+                - img "SJeware Unisex Cotton Men And Women Solid Ankle Length Socks (Pack Of 5) Sjw-2013, Assorted" [ref=e853]
+            - listitem [ref=e854]:
+              - link "GoSriKi Women's Rayon Viscose Printed Straight Kurta with Pant & Dupatta" [ref=e856] [cursor=pointer]:
+                - /url: /GoSriKi-Viscose-Straight-SDF-Green-VKS01-GS_L_Green_Large/dp/B0F8ZWPQPT/?_encoding=UTF8&pd_rd_w=LIYNK&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+                - img "GoSriKi Women's Rayon Viscose Printed Straight Kurta with Pant & Dupatta" [ref=e857]
+            - listitem [ref=e858]:
+              - link "Vincent Chase By Lenskart | Full Rim Square | Polarized Stylish Sunglasses | 100% UV Protected | For Men & Women" [ref=e860] [cursor=pointer]:
+                - /url: /Polarized-Protected-Sunglasses-VC-S13973/dp/B0999SJPWC/?_encoding=UTF8&pd_rd_w=LIYNK&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+                - img "Vincent Chase By Lenskart | Full Rim Square | Polarized Stylish Sunglasses | 100% UV Protected | For Men & Women" [ref=e861]
+            - listitem [ref=e862]:
+              - link "SWAGR 12 Pairs Solid Cotton Ankle Length Socks for Men Women, Pack of 12., Assorted" [ref=e864] [cursor=pointer]:
+                - /url: /SWAGR-Pairs-Solid-Cotton-Ankle/dp/B0DC14CYKR/?_encoding=UTF8&pd_rd_w=LIYNK&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+                - img "SWAGR 12 Pairs Solid Cotton Ankle Length Socks for Men Women, Pack of 12., Assorted" [ref=e865]
+            - listitem [ref=e866]:
+              - link "Lymio Jackets || Jacket for men || Lightweight Outwear Jacket (J-04-06)" [ref=e868] [cursor=pointer]:
+                - /url: /Lymio-Jackets-Lightweight-Outwear-J-06-Green-XL/dp/B0FMDNZ61S/?_encoding=UTF8&pd_rd_w=LIYNK&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+                - img "Lymio Jackets || Jacket for men || Lightweight Outwear Jacket (J-04-06)" [ref=e869]
+        - separator [ref=e871]
+        - generic [ref=e873]:
+          - heading "Up to 80% off | Latest collections from Indian artisans" [level=2] [ref=e875]:
+            - generic [ref=e876]:
+              - generic [ref=e877]: Up to 80% off | Latest collections from Indian artisans
+              - generic [ref=e878]: Up to 80% off | Latest collections from Indian…
+          - generic [ref=e880]:
+            - link "ireka HOMES Blue Nebula Acacia Wood Coaster Set (Set of 4) – Premium Handcrafted Wooden Drink Coasters with Stunning Enamel Artwork, Stylish & Durable Tabletop Protection for Home & Office" [ref=e882] [cursor=pointer]:
+              - /url: /Ireka-Homes-Nebula-Acacia-Coaster/dp/B0DYK79L9X/?_encoding=UTF8&pd_rd_w=jHpec&content-id=amzn1.sym.460652cf-4360-497b-bf2c-6d705a9510a7&pf_rd_p=460652cf-4360-497b-bf2c-6d705a9510a7&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_kar_gw_pc_en_
+              - img "ireka HOMES Blue Nebula Acacia Wood Coaster Set (Set of 4) – Premium Handcrafted Wooden Drink Coasters with Stunning Enamel Artwork, Stylish & Durable Tabletop Protection for Home & Office" [ref=e884]
+            - link "TreeEdge Arts Wooden Serving Trays, 7 Piece Set, Rustic Nesting Food Trays with Handles, Decorative Rectangular Platter for Ottoman, Desktop, Coffee Table, Countertop Centerpiece" [ref=e886] [cursor=pointer]:
+              - /url: /TreeEdge-Arts-Serving-Rectangular-Centerpiece/dp/B0F1N4VHVN/?_encoding=UTF8&pd_rd_w=jHpec&content-id=amzn1.sym.460652cf-4360-497b-bf2c-6d705a9510a7&pf_rd_p=460652cf-4360-497b-bf2c-6d705a9510a7&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_kar_gw_pc_en_
+              - img "TreeEdge Arts Wooden Serving Trays, 7 Piece Set, Rustic Nesting Food Trays with Handles, Decorative Rectangular Platter for Ottoman, Desktop, Coffee Table, Countertop Centerpiece" [ref=e888]
+            - link "ireka HOMES Harvest Glow Metal Fruit Basket with Acacia Wood – Elegant Countertop Storage for Fresh Fruits & Vegetables" [ref=e890] [cursor=pointer]:
+              - /url: /ireka-HOMES-Harvest-Basket-Acacia/dp/B0DYK7LT8H/?_encoding=UTF8&pd_rd_w=jHpec&content-id=amzn1.sym.460652cf-4360-497b-bf2c-6d705a9510a7&pf_rd_p=460652cf-4360-497b-bf2c-6d705a9510a7&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_kar_gw_pc_en_
+              - img "ireka HOMES Harvest Glow Metal Fruit Basket with Acacia Wood – Elegant Countertop Storage for Fresh Fruits & Vegetables" [ref=e892]
+            - link "TreeEdge Arts Round Wooden Decorative Tray, 2 Pcs for Coffee Table, Bathroom Vanity Kitchen Counter Tray, Rustic Wood Decor, Round Serving (Walnut)" [ref=e894] [cursor=pointer]:
+              - /url: /TreeEdge-Arts-Decorative-Bathroom-Kitchen/dp/B0DXVQ8PYX/?_encoding=UTF8&pd_rd_w=jHpec&content-id=amzn1.sym.460652cf-4360-497b-bf2c-6d705a9510a7&pf_rd_p=460652cf-4360-497b-bf2c-6d705a9510a7&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_kar_gw_pc_en_
+              - img "TreeEdge Arts Round Wooden Decorative Tray, 2 Pcs for Coffee Table, Bathroom Vanity Kitchen Counter Tray, Rustic Wood Decor, Round Serving (Walnut)" [ref=e896]
+        - generic [ref=e898]:
+          - heading "Min. 30% off | Curated collections from Small Businesses" [level=2] [ref=e900]:
+            - generic [ref=e901]:
+              - generic [ref=e902]: Min. 30% off | Curated collections from Small Businesses
+              - generic [ref=e903]: Min. 30% off | Curated collections from Small…
+          - generic [ref=e905]:
+            - link "Rifa Artism Black Iron Dish Drying Rack – Compact 3-Slot Countertop Plate Holder & Cutlery Organizer, Space-Saving Design, 8x5x6 Inches" [ref=e907] [cursor=pointer]:
+              - /url: /Rifa-Artism-Black-Iron-Drying/dp/B0FGY2TBLC/?_encoding=UTF8&pd_rd_w=i3iWA&content-id=amzn1.sym.459ef89a-10c5-4de7-a9f8-e261a258133d&pf_rd_p=459ef89a-10c5-4de7-a9f8-e261a258133d&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NAMBOTTLES
+              - img "Rifa Artism Black Iron Dish Drying Rack – Compact 3-Slot Countertop Plate Holder & Cutlery Organizer, Space-Saving Design, 8x5x6 Inches" [ref=e909]
+            - link "ARMONIA Decorative Rabbit Butler Tray Holder, Matte Finish, Modern Art Showpiece, Decorations for Home Table, Living Room, Bedroom & Office, 25 x 20 x 20 cm, Anti-Scratch Base" [ref=e911] [cursor=pointer]:
+              - /url: /Decorative-Showpiece-Decorations-Bedroom-Anti-Scratch/dp/B0FB8TK2XM/?_encoding=UTF8&pd_rd_w=i3iWA&content-id=amzn1.sym.459ef89a-10c5-4de7-a9f8-e261a258133d&pf_rd_p=459ef89a-10c5-4de7-a9f8-e261a258133d&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NAMBOTTLES
+              - img "ARMONIA Decorative Rabbit Butler Tray Holder, Matte Finish, Modern Art Showpiece, Decorations for Home Table, Living Room, Bedroom & Office, 25 x 20 x 20 cm, Anti-Scratch Base" [ref=e913]
+            - link "DEBAANS 100% Bamboo Large Bath Towel | Buttery Soft, Ultra-Absorbent, Lightweight, Anti-Microbial, Hypoallergenic, Quick Dry | Suitable for Daily use, Travel, Gym, Swimming (Ivory)" [ref=e915] [cursor=pointer]:
+              - /url: /DEBAANS-Ultra-Absorbent-Lightweight-Anti-Microbial-Hypoallergenic/dp/B0F3V3H91Q/?_encoding=UTF8&pd_rd_w=i3iWA&content-id=amzn1.sym.459ef89a-10c5-4de7-a9f8-e261a258133d&pf_rd_p=459ef89a-10c5-4de7-a9f8-e261a258133d&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NAMBOTTLES
+              - img "DEBAANS 100% Bamboo Large Bath Towel | Buttery Soft, Ultra-Absorbent, Lightweight, Anti-Microbial, Hypoallergenic, Quick Dry | Suitable for Daily use, Travel, Gym, Swimming (Ivory)" [ref=e917]
+            - link "GOOD HOMES WITH WORD YSR Melamine Round Serving Tray Mt-2410, Multicolor" [ref=e919] [cursor=pointer]:
+              - /url: /GOOD-HOMES-WORD-YSR-Multicolor/dp/B0BSFQNSDR/?_encoding=UTF8&pd_rd_w=i3iWA&content-id=amzn1.sym.459ef89a-10c5-4de7-a9f8-e261a258133d&pf_rd_p=459ef89a-10c5-4de7-a9f8-e261a258133d&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NAMBOTTLES
+              - img "GOOD HOMES WITH WORD YSR Melamine Round Serving Tray Mt-2410, Multicolor" [ref=e921]
+        - generic [ref=e923]:
+          - heading "Up to 60% off | Bestsellers from women-led brands" [level=2] [ref=e925]:
+            - generic [ref=e926]:
+              - generic [ref=e927]: Up to 60% off | Bestsellers from women-led brands
+              - generic [ref=e928]: Up to 60% off | Bestsellers from wome…
+          - generic [ref=e930]:
+            - link "hago Refrigerator Organizer Container with 6 Grid Compartments | 1200 ML Fridge Storage Box for Vegetables & Fruits | BPA-Free Kitchen Storage Container for Fridge Organisation" [ref=e932] [cursor=pointer]:
+              - /url: /Hago-Containers-Container-Vegetable-Refrigerator/dp/B0CQ1XDP1T/?_encoding=UTF8&pd_rd_w=ISmvB&content-id=amzn1.sym.966443ae-01a3-4f6e-8ec8-db2cdd3e9cd0&pf_rd_p=966443ae-01a3-4f6e-8ec8-db2cdd3e9cd0&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_sah_gw_pc_en_
+              - img "hago Refrigerator Organizer Container with 6 Grid Compartments | 1200 ML Fridge Storage Box for Vegetables & Fruits | BPA-Free Kitchen Storage Container for Fridge Organisation" [ref=e934]
+            - link "Satpurush Multipurpose bathroom accessories Kitchen Bathroom Shelf Wall Holder Storage Rack Bathro0om Organizer Rack Storage Box Strong Adhesive Sticker Shower Rack Shelf (4 Bath Blue)" [ref=e936] [cursor=pointer]:
+              - /url: /Multipurpose-Kitchen-Bathroom-Organizer-Adhesive/dp/B095C981FC/?_encoding=UTF8&pd_rd_w=ISmvB&content-id=amzn1.sym.966443ae-01a3-4f6e-8ec8-db2cdd3e9cd0&pf_rd_p=966443ae-01a3-4f6e-8ec8-db2cdd3e9cd0&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_sah_gw_pc_en_
+              - img "Satpurush Multipurpose bathroom accessories Kitchen Bathroom Shelf Wall Holder Storage Rack Bathro0om Organizer Rack Storage Box Strong Adhesive Sticker Shower Rack Shelf (4 Bath Blue)" [ref=e938]
+            - link "HAGO Premium PU Leather Desk Mat for Office & Home | Reversible Dual-Side Desk Pad (Brown & Grey) | Waterproof Anti-Slip Table Mat – 35×60 CM" [ref=e940] [cursor=pointer]:
+              - /url: /Reversible-Dual-Side-Brown-Grey-Waterproof/dp/B0CMT9CZQ3/?_encoding=UTF8&pd_rd_w=ISmvB&content-id=amzn1.sym.966443ae-01a3-4f6e-8ec8-db2cdd3e9cd0&pf_rd_p=966443ae-01a3-4f6e-8ec8-db2cdd3e9cd0&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_sah_gw_pc_en_
+              - img "HAGO Premium PU Leather Desk Mat for Office & Home | Reversible Dual-Side Desk Pad (Brown & Grey) | Waterproof Anti-Slip Table Mat – 35×60 CM" [ref=e942]
+            - link "Satpurush Self-Adhesive Soap Holder for Bathroom (Pack of 2) Wall Mounted No-Drill Soap Stand with Water Drainage | Strong Sticker Plastic Soap Dish for Wash Basin & Kitchen (White & Gray)" [ref=e944] [cursor=pointer]:
+              - /url: /Satpurush-Soap-Holder-Bathroom-Self-Adhesive/dp/B0C862QPZ7/?_encoding=UTF8&pd_rd_w=ISmvB&content-id=amzn1.sym.966443ae-01a3-4f6e-8ec8-db2cdd3e9cd0&pf_rd_p=966443ae-01a3-4f6e-8ec8-db2cdd3e9cd0&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_sah_gw_pc_en_
+              - img "Satpurush Self-Adhesive Soap Holder for Bathroom (Pack of 2) Wall Mounted No-Drill Soap Stand with Water Drainage | Strong Sticker Plastic Soap Dish for Wash Basin & Kitchen (White & Gray)" [ref=e946]
+        - generic [ref=e948]:
+          - heading "Min. 30% off | Top offers in home essentials | Small Businesses" [level=2] [ref=e950]:
+            - generic [ref=e951]:
+              - generic [ref=e952]: Min. 30% off | Top offers in home essentials | Small Businesses
+              - generic [ref=e953]: Min. 30% off | Top offers in home essentials | S…
+          - generic [ref=e955]:
+            - link "WEAVE INDIA Premium Cotton Cushion Cover, 20 Inch x 20 Inch, Circular Knit Neutral Textured, Square Accent, Cushion Cover Set of 4 for Living Room, Sofa (Diamond-10)" [ref=e957] [cursor=pointer]:
+              - /url: /WEAVE-INDIA-Circular-Textured-Diamond-10/dp/B0FQ1TZG7Q/?_encoding=UTF8&pd_rd_w=PndP4&content-id=amzn1.sym.f873c373-15a4-42e4-a288-fa1b025edc64&pf_rd_p=f873c373-15a4-42e4-a288-fa1b025edc64&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NAMBOTTLES
+              - img "WEAVE INDIA Premium Cotton Cushion Cover, 20 Inch x 20 Inch, Circular Knit Neutral Textured, Square Accent, Cushion Cover Set of 4 for Living Room, Sofa (Diamond-10)" [ref=e959]
+            - link "Modern Homes Cotton Designer Decorative Throw Pillow Covers/Cushion Covers (Navy Blue, 16x16 inches) - Set of 6" [ref=e961] [cursor=pointer]:
+              - /url: /MODERN-HOMES-Designer-Decorative-Cushion/dp/B076T74NH3/?_encoding=UTF8&pd_rd_w=PndP4&content-id=amzn1.sym.f873c373-15a4-42e4-a288-fa1b025edc64&pf_rd_p=f873c373-15a4-42e4-a288-fa1b025edc64&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NAMBOTTLES
+              - img "Modern Homes Cotton Designer Decorative Throw Pillow Covers/Cushion Covers (Navy Blue, 16x16 inches) - Set of 6" [ref=e963]
+            - link "Glimpse Homes Pebble Vase | Ceramic Flower Vase | 11 inch | Greyrock (Grey)" [ref=e965] [cursor=pointer]:
+              - /url: /Glimpse-Homes-Ceramic-Greyrock-Grey/dp/B0CJV49MNX/?_encoding=UTF8&pd_rd_w=PndP4&content-id=amzn1.sym.f873c373-15a4-42e4-a288-fa1b025edc64&pf_rd_p=f873c373-15a4-42e4-a288-fa1b025edc64&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NAMBOTTLES
+              - img "Glimpse Homes Pebble Vase | Ceramic Flower Vase | 11 inch | Greyrock (Grey)" [ref=e967]
+            - link "Spiaty Plastic Motorcycle Analog Desk Alarm Clock, Black, 4 cm , 5 cm" [ref=e969] [cursor=pointer]:
+              - /url: /Spiaty-Plastic-Motorcycle-Analog-Alarm/dp/B0DNVXKQ79/?_encoding=UTF8&pd_rd_w=PndP4&content-id=amzn1.sym.f873c373-15a4-42e4-a288-fa1b025edc64&pf_rd_p=f873c373-15a4-42e4-a288-fa1b025edc64&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NAMBOTTLES
+              - img "Spiaty Plastic Motorcycle Analog Desk Alarm Clock, Black, 4 cm , 5 cm" [ref=e971]
+        - separator [ref=e972]
+        - generic [ref=e975]:
+          - generic [ref=e976]:
+            - heading "Up to 60% off | Trending products from Emerging Businesses" [level=2] [ref=e977]
+            - link "See more" [ref=e979] [cursor=pointer]:
+              - /url: /b/?_encoding=UTF8&node=100293361031&pd_rd_w=w5vK0&content-id=amzn1.sym.35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_p=35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NSS
+          - list [ref=e982]:
+            - listitem [ref=e983]:
+              - link "JustLatest Scalp Massage, Solar Powered Scalp Massager (Marble Pink), Head Massager, Hair Massager For Hair Growth" [ref=e985] [cursor=pointer]:
+                - /url: /JustLatest-Massager-Marble-Scrubber-Shampoo/dp/B0D3Z2BSPB/?_encoding=UTF8&pd_rd_w=w5vK0&content-id=amzn1.sym.35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_p=35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NSS
+                - img "JustLatest Scalp Massage, Solar Powered Scalp Massager (Marble Pink), Head Massager, Hair Massager For Hair Growth" [ref=e986]
+            - listitem [ref=e987]:
+              - link "Pack of 50 - Mixed Vintage Stickers - Retro Stickers for Scrapbooks, Laptops, Guitars, Phones, Pads, Skateboards,..." [ref=e989] [cursor=pointer]:
+                - /url: /Pack-50-Scrapbooks-Skateboards-Motorcycles/dp/B0F6JSDKSZ/?_encoding=UTF8&pd_rd_w=w5vK0&content-id=amzn1.sym.35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_p=35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NSS
+                - img "Pack of 50 - Mixed Vintage Stickers - Retro Stickers for Scrapbooks, Laptops, Guitars, Phones, Pads, Skateboards,..." [ref=e990]
+            - listitem [ref=e991]:
+              - link "Chardonnay Shoe Horn | Travel Friendly Shoe Wearing Stick for Men & Women | Medium Handle | Easy Slip-On for Shoes |..." [ref=e993] [cursor=pointer]:
+                - /url: /Chardonnay-Friendly-Business-Footwear-Accessory/dp/B0F29NDFX6/?_encoding=UTF8&pd_rd_w=w5vK0&content-id=amzn1.sym.35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_p=35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NSS
+                - img "Chardonnay Shoe Horn | Travel Friendly Shoe Wearing Stick for Men & Women | Medium Handle | Easy Slip-On for Shoes |..." [ref=e994]
+            - listitem [ref=e995]:
+              - link "100% Organic Alum Stone, Fitkari Stone, Phitkari, White Crystak Stones, Fitkari (400gm)" [ref=e997] [cursor=pointer]:
+                - /url: /100-Organic-Fitkari-Phitkari-Crystak/dp/B0DCTSFRTW/?_encoding=UTF8&pd_rd_w=w5vK0&content-id=amzn1.sym.35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_p=35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NSS
+                - img "100% Organic Alum Stone, Fitkari Stone, Phitkari, White Crystak Stones, Fitkari (400gm)" [ref=e998]
+            - listitem [ref=e999]:
+              - link "Gel Sales Automotive Oil Film Cleaning Brush, Glass Cleaning Board, Car Glass Oil Film Removal Cleaner, Powerful..." [ref=e1001] [cursor=pointer]:
+                - /url: /Automotive-Cleaning-Removal-Powerful-Windshield/dp/B0F9X2LR58/?_encoding=UTF8&pd_rd_w=w5vK0&content-id=amzn1.sym.35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_p=35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NSS
+                - img "Gel Sales Automotive Oil Film Cleaning Brush, Glass Cleaning Board, Car Glass Oil Film Removal Cleaner, Powerful..." [ref=e1002]
+            - listitem [ref=e1003]:
+              - link "Gel Sales 2 in 1 Peeler Julienne for Salad, Potato, Vegetable Slicer, Multi-Functional, Fruit Slicer, Adjustable Veggie..." [ref=e1005] [cursor=pointer]:
+                - /url: /Julienne-Vegetable-Multi-Functional-Adjustable-Stainless/dp/B0F9WQMJV3/?_encoding=UTF8&pd_rd_w=w5vK0&content-id=amzn1.sym.35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_p=35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NSS
+                - img "Gel Sales 2 in 1 Peeler Julienne for Salad, Potato, Vegetable Slicer, Multi-Functional, Fruit Slicer, Adjustable Veggie..." [ref=e1006]
+            - listitem [ref=e1007]:
+              - link "MIXOSA Washing Machine Cleaner Descaler 12 Pack - Deep Cleaning Tablets For HE Front Loader & Top Load Washer, Clean..." [ref=e1009] [cursor=pointer]:
+                - /url: /MIXOSA-Washing-Machine-Cleaner-Descaler/dp/B0DYQ6Q3RV/?_encoding=UTF8&pd_rd_w=w5vK0&content-id=amzn1.sym.35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_p=35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NSS
+                - img "MIXOSA Washing Machine Cleaner Descaler 12 Pack - Deep Cleaning Tablets For HE Front Loader & Top Load Washer, Clean..." [ref=e1010]
+            - listitem [ref=e1011]:
+              - link "Green Gainz Roasted Edamame Classic Flavour – 100gm | 100% Veg High Protein Snack | No Added Sugar | Non-GMO | Rich in..." [ref=e1013] [cursor=pointer]:
+                - /url: /Green-Gainz-Roasted-Edamame-Classic/dp/B0DRS8FGX7/?_encoding=UTF8&pd_rd_w=w5vK0&content-id=amzn1.sym.35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_p=35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NSS
+                - img "Green Gainz Roasted Edamame Classic Flavour – 100gm | 100% Veg High Protein Snack | No Added Sugar | Non-GMO | Rich in..." [ref=e1014]
+            - listitem [ref=e1015]:
+              - link "QEEIG Multiuse Finger Counter Portable Hand Finger Ring Counting Machine Digital Head Electronic Tally Counter Jap..." [ref=e1017] [cursor=pointer]:
+                - /url: /QEEIG-Multiuse-Portable-Electronic-Multi-Colour/dp/B0DZHXB381/?_encoding=UTF8&pd_rd_w=w5vK0&content-id=amzn1.sym.35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_p=35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NSS
+                - img "QEEIG Multiuse Finger Counter Portable Hand Finger Ring Counting Machine Digital Head Electronic Tally Counter Jap..." [ref=e1018]
+            - listitem [ref=e1019]:
+              - link "PET WORLD Dog Toys | Dog Chew Toys + Puppy Teething Toys + Rope Toys + Toys for Small to Medium Dog | Washable Cotton..." [ref=e1021] [cursor=pointer]:
+                - /url: /PET-WORLD-Teething-Medium-Washable/dp/B0DYD5DQ28/?_encoding=UTF8&pd_rd_w=w5vK0&content-id=amzn1.sym.35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_p=35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NSS
+                - img "PET WORLD Dog Toys | Dog Chew Toys + Puppy Teething Toys + Rope Toys + Toys for Small to Medium Dog | Washable Cotton..." [ref=e1022]
+            - listitem [ref=e1023]:
+              - link "PAPIX Transparent Kitchen Wall Protection Film, Solid, Self-Adhesive Wallpaper| Tile Cover Kitchen, Oil Proof,..." [ref=e1025] [cursor=pointer]:
+                - /url: /PAPIX-Transparent-Protection-Self-Adhesive-Waterproof/dp/B0F27SWTW3/?_encoding=UTF8&pd_rd_w=w5vK0&content-id=amzn1.sym.35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_p=35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NSS
+                - img "PAPIX Transparent Kitchen Wall Protection Film, Solid, Self-Adhesive Wallpaper| Tile Cover Kitchen, Oil Proof,..." [ref=e1026]
+            - listitem [ref=e1027]:
+              - link "Rays Of Ink Peace Quotes Magnetic Bookmarks/Magnetic Page Markers/Magnetic Page Clips with Positive Affirmations. Ideal..." [ref=e1029] [cursor=pointer]:
+                - /url: /Rays-Ink-Bookmarks-Affirmations-Bookworms/dp/B09RQ6RX8R/?_encoding=UTF8&pd_rd_w=w5vK0&content-id=amzn1.sym.35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_p=35827ebe-9162-4dde-a4ca-9b8eabc86f05&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_NSS
+                - img "Rays Of Ink Peace Quotes Magnetic Bookmarks/Magnetic Page Markers/Magnetic Page Clips with Positive Affirmations. Ideal..." [ref=e1030]
+        - separator [ref=e1032]
+        - generic [ref=e1034]:
+          - generic [ref=e1036]:
+            - heading "Amazon LIVE - Watch, Chat & Shop LIVE" [level=2] [ref=e1037]
+            - link "See more from Amazon Live" [ref=e1038] [cursor=pointer]:
+              - /url: /live/ref=gw_l_live
+          - generic [ref=e1039]:
+            - generic [ref=e1040]:
+              - generic [ref=e1041]:
+                - region "Live video “Smartphone Deals Top Brands Best Prices” from Techno Bhawesh" [ref=e1042]:     ●     
+                - generic "Overlay" [ref=e1046]:
+                  - generic [ref=e1047]:
+                    - generic [ref=e1049]: LIVE
+                    - generic [ref=e1050]:
+                      - img "Live viewers eye icon" [ref=e1051]
+                      - generic [ref=e1058]: 1.9K
+                  - generic:
+                    - generic: "Smartphone Deals: Top Brands, Best Prices!"
+                  - button "Watch now" [ref=e1059] [cursor=pointer]
+                  - button "Tap Watch now to see broadcast in immersive view" [ref=e1060] [cursor=pointer]:
+                    - generic [ref=e1062]: Watch now
+                  - generic [ref=e1063]:
+                    - button "Unmute" [ref=e1064] [cursor=pointer]
+                    - button "Play" [ref=e1065] [cursor=pointer]
+                  - status [ref=e1066]
+              - generic [ref=e1067]:
+                - generic [ref=e1068]: Techno Bhawesh
+                - button "Earns commissions" [ref=e1070] [cursor=pointer]
+            - generic [ref=e1072]:
+              - list [ref=e1073]:
+                - listitem [ref=e1074]:
+                  - generic "Entering Carousel Tile" [ref=e1075] [cursor=pointer]:
+                    - link "Lava Storm Play 5G (Dune Titanium, 6+6*GB RAM, 128GB Storage) | World's First MTK D7060 Processor | 500k+ Antutu | LPDDR5 RAM | UFS 3.1 Storage | 50MP AI Camera | 120Hz Refresh Rate | IP64 Protection" [ref=e1077]
+                    - generic [ref=e1080]:
+                      - button "Lava Storm Play 5G (Dune Titanium, 6+6*GB RAM, 128GB Storage) | World's First MTK D7060 Processor | 500k+ Antutu | LPDDR5 RAM | UFS 3.1 Storage | 50MP AI Camera | 120Hz Refresh Rate | IP64 Protection" [ref=e1081]
+                      - generic [ref=e1082]:
+                        - generic [ref=e1083]:
+                          - generic [ref=e1084]: Deal price is ₹10,499.00
+                          - text: ₹
+                          - generic [ref=e1085]: 10,499 00
+                        - generic [ref=e1086]:
+                          - generic [ref=e1087]: List price is
+                          - text: ₹13,499.00
+                - listitem [ref=e1088]:
+                  - generic "Entering Carousel Tile" [ref=e1089] [cursor=pointer]:
+                    - link "iQOO Z10x 5G (Titanium, 6GB RAM, 128GB Storage) | 6500 mAh Large Capacity Battery | Dimensity 7300 Processor | Military-Grade Durability" [ref=e1091]
+                    - generic [ref=e1094]:
+                      - button "iQOO Z10x 5G (Titanium, 6GB RAM, 128GB Storage) | 6500 mAh Large Capacity Battery | Dimensity 7300 Processor | Military-Grade Durability" [ref=e1095]
+                      - generic [ref=e1096]:
+                        - generic [ref=e1097]: 14% off
+                        - generic [ref=e1098]: Limited time deal
+                      - generic [ref=e1099]:
+                        - generic [ref=e1100]:
+                          - generic [ref=e1101]: Deal price is ₹14,998.00
+                          - text: ₹
+                          - generic [ref=e1102]: 14,998 00
+                        - generic [ref=e1103]:
+                          - generic [ref=e1104]: List price is
+                          - text: ₹17,499.00
+                - listitem [ref=e1105]:
+                  - generic "Entering Carousel Tile" [ref=e1106] [cursor=pointer]:
+                    - link "Samsung Galaxy M56 5G Mobile (Light Green,8GB RAM,128GB Storage)| Segment's Slimmest|Gorilla Glass Victus+| 10 Bit HDR Video| 50MP Camera| AI | Vapour Cooling Chamber| Lag-free Gaming| Without Charger" [ref=e1108]
+                    - generic [ref=e1111]:
+                      - button "Samsung Galaxy M56 5G Mobile (Light Green,8GB RAM,128GB Storage)| Segment's Slimmest|Gorilla Glass Victus+| 10 Bit HDR Video| 50MP Camera| AI | Vapour Cooling Chamber| Lag-free Gaming| Without Charger" [ref=e1112]
+                      - generic [ref=e1113]:
+                        - generic [ref=e1114]:
+                          - generic [ref=e1115]: Deal price is ₹20,999.00
+                          - text: ₹
+                          - generic [ref=e1116]: 20,999 00
+                        - generic [ref=e1117]:
+                          - generic [ref=e1118]: List price is
+                          - text: ₹33,999.00
+                - listitem [ref=e1119]:
+                  - generic "Entering Carousel Tile" [ref=e1120] [cursor=pointer]:
+                    - link "Lava Agni 4 5G (8GB RAM, 256GB Storage, Phantom Black) | Metal Body | MTK Dimensity 8350 Processor (1.4Mn+ Antutu) | 1.5K AMOLED Display | 50MP OIS Camera | LPDDR5X RAM | UFS 4.0 | 4K@ 60fps | Vayu AI" [ref=e1122]
+                    - generic [ref=e1125]:
+                      - button "Lava Agni 4 5G (8GB RAM, 256GB Storage, Phantom Black) | Metal Body | MTK Dimensity 8350 Processor (1.4Mn+ Antutu) | 1.5K AMOLED Display | 50MP OIS Camera | LPDDR5X RAM | UFS 4.0 | 4K@ 60fps | Vayu AI" [ref=e1126]
+                      - generic [ref=e1127]:
+                        - generic [ref=e1128]:
+                          - generic [ref=e1129]: Deal price is ₹26,999.00
+                          - text: ₹
+                          - generic [ref=e1130]: 26,999 00
+                        - generic [ref=e1131]:
+                          - generic [ref=e1132]: List price is
+                          - text: ₹28,999.00
+                - listitem [ref=e1133]:
+                  - generic "Entering Carousel Tile Featured Now" [ref=e1134] [cursor=pointer]:
+                    - link "OnePlus Nord CE5 | MediaTek Dimensity | Massive 7100mAh Battery | Powered by OnePlus AI | 8GB + 128GB | Nexus Blue" [ref=e1136]
+                    - generic [ref=e1139]:
+                      - heading "The product OnePlus Nord CE5 | MediaTek Dimensity | Massive 7100mAh Battery | Powered by OnePlus AI | 8GB + 128GB | Nexus Blue is currently highlighted" [ref=e1140]:
+                        - generic [ref=e1141]: Featured now
+                      - button "OnePlus Nord CE5 | MediaTek Dimensity | Massive 7100mAh Battery | Powered by OnePlus AI | 8GB + 128GB | Nexus Blue" [ref=e1142]
+                      - generic [ref=e1143]:
+                        - generic [ref=e1144]:
+                          - generic [ref=e1145]: Deal price is ₹24,999.00
+                          - text: ₹
+                          - generic [ref=e1146]: 24,999 00
+                        - generic [ref=e1147]:
+                          - generic [ref=e1148]: List price is
+                          - text: ₹28,999.00
+                - listitem [ref=e1149]:
+                  - generic "Entering Carousel Tile" [ref=e1150] [cursor=pointer]:
+                    - link "OnePlus Nord 5 | Snapdragon 8s Gen 3 | Stable 144FPS Gaming | Dual 50MP Flagship Camera | Powered by OnePlus AI | 256GB 8GB | Phantom Grey" [ref=e1152]
+                    - generic [ref=e1155]:
+                      - button "OnePlus Nord 5 | Snapdragon 8s Gen 3 | Stable 144FPS Gaming | Dual 50MP Flagship Camera | Powered by OnePlus AI | 256GB 8GB | Phantom Grey" [ref=e1156]
+                      - generic [ref=e1157]:
+                        - generic [ref=e1158]:
+                          - generic [ref=e1159]: Deal price is ₹33,999.00
+                          - text: ₹
+                          - generic [ref=e1160]: 33,999 00
+                        - generic [ref=e1161]:
+                          - generic [ref=e1162]: List price is
+                          - text: ₹34,999.00
+                - listitem [ref=e1163]:
+                  - generic "Entering Carousel Tile" [ref=e1164] [cursor=pointer]:
+                    - link "iQOO Neo 10 (Inferno Red, 12GB RAM, 256GB Storage) | Snapdragon 8s Gen 4 Processor & SuperComputing Chip Q1 | 7000 mAh Battery | Segment’s Highest 144 FPS Gaming Smartphone" [ref=e1166]
+                    - generic [ref=e1169]:
+                      - button "iQOO Neo 10 (Inferno Red, 12GB RAM, 256GB Storage) | Snapdragon 8s Gen 4 Processor & SuperComputing Chip Q1 | 7000 mAh Battery | Segment’s Highest 144 FPS Gaming Smartphone" [ref=e1170]
+                      - generic [ref=e1171]:
+                        - generic [ref=e1172]: 5% off
+                        - generic [ref=e1173]: Limited time deal
+                      - generic [ref=e1174]:
+                        - generic [ref=e1175]:
+                          - generic [ref=e1176]: Deal price is ₹38,998.00
+                          - text: ₹
+                          - generic [ref=e1177]: 38,998 00
+                        - generic [ref=e1178]:
+                          - generic [ref=e1179]: List price is
+                          - text: ₹40,999.00
+                - listitem [ref=e1180]:
+                  - generic "Entering Carousel Tile" [ref=e1181] [cursor=pointer]:
+                    - link "Vivo V60 5G (Mist Gray, 16GB RAM, 512GB Storage) with No Cost EMI/Additional Exchange Offers" [ref=e1183]
+                    - generic [ref=e1186]:
+                      - button "Vivo V60 5G (Mist Gray, 16GB RAM, 512GB Storage) with No Cost EMI/Additional Exchange Offers" [ref=e1187]
+                      - generic [ref=e1188]:
+                        - generic [ref=e1189]: 10% off
+                        - generic [ref=e1190]: Limited time deal
+                      - generic [ref=e1191]:
+                        - generic [ref=e1192]:
+                          - generic [ref=e1193]: Deal price is ₹45,999.00
+                          - text: ₹
+                          - generic [ref=e1194]: 45,999 00
+                        - generic [ref=e1195]:
+                          - generic [ref=e1196]: List price is
+                          - text: ₹50,999.00
+                - listitem [ref=e1197]:
+                  - generic "Entering Carousel Tile" [ref=e1198] [cursor=pointer]:
+                    - link "OnePlus 15R | 12GB+256GB | Charcoal Black | World's First Snapdragon® 8 Gen 5 | 7400mAh Battery | Personalised AI | Game-Changing 165Hz Display | IP68 IP69 IP66 & IP69K | 4K 120fps Video" [ref=e1200]
+                    - generic [ref=e1203]:
+                      - button "OnePlus 15R | 12GB+256GB | Charcoal Black | World's First Snapdragon® 8 Gen 5 | 7400mAh Battery | Personalised AI | Game-Changing 165Hz Display | IP68 IP69 IP66 & IP69K | 4K 120fps Video" [ref=e1204]
+                      - generic [ref=e1205]:
+                        - generic [ref=e1206]:
+                          - generic [ref=e1207]: Deal price is ₹47,999.00
+                          - text: ₹
+                          - generic [ref=e1208]: 47,999 00
+                        - generic [ref=e1209]:
+                          - generic [ref=e1210]: List price is
+                          - text: ₹54,999.00
+                - listitem [ref=e1211]:
+                  - generic "Entering Carousel Tile" [ref=e1212] [cursor=pointer]:
+                    - link "OnePlus 15 | 16GB+512GB | Sand Storm | India's First Snapdragon® 8 Elite Gen 5 | 7300mAh Battery | Personalised AI | Game-Changing 165Hz Display | Triple 50MP Camera with 4K 120fps Dolby Vision" [ref=e1214]
+                    - generic [ref=e1217]:
+                      - button "OnePlus 15 | 16GB+512GB | Sand Storm | India's First Snapdragon® 8 Elite Gen 5 | 7300mAh Battery | Personalised AI | Game-Changing 165Hz Display | Triple 50MP Camera with 4K 120fps Dolby Vision" [ref=e1218]
+                      - generic [ref=e1219]:
+                        - generic [ref=e1220]:
+                          - generic [ref=e1221]: Deal price is ₹79,999.00
+                          - text: ₹
+                          - generic [ref=e1222]: 79,999 00
+                        - generic [ref=e1223]:
+                          - generic [ref=e1224]: List price is
+                          - text: ₹96,999.00
+                - listitem [ref=e1225]:
+                  - generic "Entering Carousel Tile" [ref=e1226] [cursor=pointer]:
+                    - link "vivo X300 Pro 5G (Dune Gold, 16GB RAM, 512GB Storage) with No Cost EMI/Additional Exchange Offers" [ref=e1228]
+                    - generic [ref=e1231]:
+                      - button "vivo X300 Pro 5G (Dune Gold, 16GB RAM, 512GB Storage) with No Cost EMI/Additional Exchange Offers" [ref=e1232]
+                      - generic [ref=e1233]:
+                        - generic [ref=e1234]: 8% off
+                        - generic [ref=e1235]: Limited time deal
+                      - generic [ref=e1236]:
+                        - generic [ref=e1237]:
+                          - generic [ref=e1238]: Deal price is ₹1,09,998.00
+                          - text: ₹
+                          - generic [ref=e1239]: 1,09,998 00
+                        - generic [ref=e1240]:
+                          - generic [ref=e1241]: List price is
+                          - text: ₹1,19,999.00
+                - listitem [ref=e1242]:
+                  - generic "Entering Carousel Tile" [ref=e1243] [cursor=pointer]:
+                    - 'link "iPhone 17 Pro 256 GB: 15.93 cm (6.3″) Display with Promotion up to 120Hz, A19 Pro Chip, Breakthrough Battery Life, Pro Fusion Camera System with Center Stage Front Camera; Cosmic Orange" [ref=e1245]'
+                    - generic [ref=e1248]:
+                      - 'button "iPhone 17 Pro 256 GB: 15.93 cm (6.3″) Display with Promotion up to 120Hz, A19 Pro Chip, Breakthrough Battery Life, Pro Fusion Camera System with Center Stage Front Camera; Cosmic Orange" [ref=e1249]'
+                      - generic [ref=e1251]:
+                        - generic [ref=e1252]: Deal price is ₹1,34,900.00
+                        - text: ₹
+                        - generic [ref=e1253]: 1,34,900 00
+                - listitem [ref=e1254]:
+                  - generic "Entering Carousel Tile" [ref=e1255] [cursor=pointer]:
+                    - link "Samsung Galaxy M06 5G Mobile (Sage Green, 4GB RAM, 64GB Storage) | MediaTek Dimensity 6300 | AnTuTu 623K+ | 12 5G Bands | 25W Fast Charging | 4 Gen OS Upgrades | 50MP Camera | Without Charger" [ref=e1257]
+                    - generic [ref=e1260]:
+                      - button "Samsung Galaxy M06 5G Mobile (Sage Green, 4GB RAM, 64GB Storage) | MediaTek Dimensity 6300 | AnTuTu 623K+ | 12 5G Bands | 25W Fast Charging | 4 Gen OS Upgrades | 50MP Camera | Without Charger" [ref=e1261]
+                      - generic [ref=e1262]:
+                        - generic [ref=e1263]:
+                          - generic [ref=e1264]: Deal price is ₹9,499.00
+                          - text: ₹
+                          - generic [ref=e1265]: 9,499 00
+                        - generic [ref=e1266]:
+                          - generic [ref=e1267]: List price is
+                          - text: ₹12,499.00
+                - listitem [ref=e1268]:
+                  - generic "Entering Carousel Tile" [ref=e1269] [cursor=pointer]:
+                    - link "Oppo Find X9 Pro 5G (Silk White, 16GB RAM, 512GB Storage) with No Cost EMI/Additional Exchange Offers" [ref=e1271]
+                    - generic [ref=e1274]:
+                      - button "Oppo Find X9 Pro 5G (Silk White, 16GB RAM, 512GB Storage) with No Cost EMI/Additional Exchange Offers" [ref=e1275]
+                      - generic [ref=e1276]:
+                        - generic [ref=e1277]: 21% off
+                        - generic [ref=e1278]: Limited time deal
+                      - generic [ref=e1279]:
+                        - generic [ref=e1280]:
+                          - generic [ref=e1281]: Deal price is ₹1,09,999.00
+                          - text: ₹
+                          - generic [ref=e1282]: 1,09,999 00
+                        - generic [ref=e1283]:
+                          - generic [ref=e1284]: List price is
+                          - text: ₹1,39,999.00
+                - listitem [ref=e1285]:
+                  - generic "Entering Carousel Tile" [ref=e1286] [cursor=pointer]:
+                    - link "iQOO Z10 5G (Glacier Silver, 8GB RAM, 128GB Stroage) | India's Biggest Ever 7300 mAh Battery | Snapdragon 7s Gen 3 Processor | Brightest Quad Curved AMOLED Display in The Segment" [ref=e1288]
+                    - generic [ref=e1291]:
+                      - button "iQOO Z10 5G (Glacier Silver, 8GB RAM, 128GB Stroage) | India's Biggest Ever 7300 mAh Battery | Snapdragon 7s Gen 3 Processor | Brightest Quad Curved AMOLED Display in The Segment" [ref=e1292]
+                      - generic [ref=e1293]:
+                        - generic [ref=e1294]: 12% off
+                        - generic [ref=e1295]: Limited time deal
+                      - generic [ref=e1296]:
+                        - generic [ref=e1297]:
+                          - generic [ref=e1298]: Deal price is ₹22,998.00
+                          - text: ₹
+                          - generic [ref=e1299]: 22,998 00
+                        - generic [ref=e1300]:
+                          - generic [ref=e1301]: List price is
+                          - text: ₹25,999.00
+                - listitem [ref=e1302]:
+                  - generic "Entering Carousel Tile" [ref=e1303] [cursor=pointer]:
+                    - link "Samsung Galaxy S24 FE 5G AI Smartphone (Mint, 8GB RAM, 128GB Storage)" [ref=e1305]
+                    - generic [ref=e1308]:
+                      - button "Samsung Galaxy S24 FE 5G AI Smartphone (Mint, 8GB RAM, 128GB Storage)" [ref=e1309]
+                      - generic [ref=e1310]:
+                        - generic [ref=e1311]:
+                          - generic [ref=e1312]: Deal price is ₹39,799.00
+                          - text: ₹
+                          - generic [ref=e1313]: 39,799 00
+                        - generic [ref=e1314]:
+                          - generic [ref=e1315]: List price is
+                          - text: ₹59,999.00
+                - listitem [ref=e1316]:
+                  - generic "Entering Carousel Tile" [ref=e1317] [cursor=pointer]:
+                    - link "iQOO 15 (Legend, 12GB RAM, 256GB Storage) | Fastest Snapdragon 8 Elite Gen 5 Processor* | Origin OS 6 - Out of The Box* | Samsung 2K M14 Lead OLED Display" [ref=e1319]
+                    - generic [ref=e1322]:
+                      - button "iQOO 15 (Legend, 12GB RAM, 256GB Storage) | Fastest Snapdragon 8 Elite Gen 5 Processor* | Origin OS 6 - Out of The Box* | Samsung 2K M14 Lead OLED Display" [ref=e1323]
+                      - generic [ref=e1324]:
+                        - generic [ref=e1325]: 5% off
+                        - generic [ref=e1326]: Limited time deal
+                      - generic [ref=e1327]:
+                        - generic [ref=e1328]:
+                          - generic [ref=e1329]: Deal price is ₹72,998.00
+                          - text: ₹
+                          - generic [ref=e1330]: 72,998 00
+                        - generic [ref=e1331]:
+                          - generic [ref=e1332]: List price is
+                          - text: ₹76,999.00
+                - listitem [ref=e1333]:
+                  - generic "Entering Carousel Tile" [ref=e1334] [cursor=pointer]:
+                    - link "OnePlus 13R| Smarter with OnePlus AI (12GB RAM, 256GB Storage Nebula Noir)" [ref=e1336]
+                    - generic [ref=e1339]:
+                      - button "OnePlus 13R| Smarter with OnePlus AI (12GB RAM, 256GB Storage Nebula Noir)" [ref=e1340]
+                      - generic [ref=e1341]:
+                        - generic [ref=e1342]:
+                          - generic [ref=e1343]: Deal price is ₹39,999.00
+                          - text: ₹
+                          - generic [ref=e1344]: 39,999 00
+                        - generic [ref=e1345]:
+                          - generic [ref=e1346]: List price is
+                          - text: ₹44,999.00
+                - listitem [ref=e1347]:
+                  - generic "Entering Carousel Tile" [ref=e1348] [cursor=pointer]:
+                    - link "OnePlus 13 | Smarter with OnePlus AI | Lifetime Display Warranty |12GB RAM 256GB Storage Black Eclipse | Official Smartphone for BGMS 2025" [ref=e1350]
+                    - generic [ref=e1353]:
+                      - button "OnePlus 13 | Smarter with OnePlus AI | Lifetime Display Warranty |12GB RAM 256GB Storage Black Eclipse | Official Smartphone for BGMS 2025" [ref=e1354]
+                      - generic [ref=e1355]:
+                        - generic [ref=e1356]: 16% off
+                        - generic [ref=e1357]: Limited time deal
+                      - generic [ref=e1358]:
+                        - generic [ref=e1359]:
+                          - generic [ref=e1360]: Deal price is ₹60,999.00
+                          - text: ₹
+                          - generic [ref=e1361]: 60,999 00
+                        - generic [ref=e1362]:
+                          - generic [ref=e1363]: List price is
+                          - text: ₹72,999.00
+                - listitem [ref=e1364]:
+                  - generic "Entering Carousel Tile" [ref=e1365] [cursor=pointer]:
+                    - link "OnePlus 13s | Snapdragon® 8 Elite | Smarter with OnePlus AI | Lifetime Display Warranty | 12GB+256GB | Green Silk" [ref=e1367]
+                    - generic [ref=e1370]:
+                      - button "OnePlus 13s | Snapdragon® 8 Elite | Smarter with OnePlus AI | Lifetime Display Warranty | 12GB+256GB | Green Silk" [ref=e1371]
+                      - generic [ref=e1372]:
+                        - generic [ref=e1373]: 12% off
+                        - generic [ref=e1374]: Limited time deal
+                      - generic [ref=e1375]:
+                        - generic [ref=e1376]:
+                          - generic [ref=e1377]: Deal price is ₹50,999.00
+                          - text: ₹
+                          - generic [ref=e1378]: 50,999 00
+                        - generic [ref=e1379]:
+                          - generic [ref=e1380]: List price is
+                          - text: ₹57,999.00
+                - listitem [ref=e1381]:
+                  - generic "Entering Carousel Tile" [ref=e1382] [cursor=pointer]:
+                    - link "realme GT 7 Pro (Mars Orange,12GB+256GB) | India's First Snapdragon 8 Elite Processor | 3X Periscope Flagship Camera| RealWorld Eco² OLED Plus Display" [ref=e1384]
+                    - generic [ref=e1387]:
+                      - button "realme GT 7 Pro (Mars Orange,12GB+256GB) | India's First Snapdragon 8 Elite Processor | 3X Periscope Flagship Camera| RealWorld Eco² OLED Plus Display" [ref=e1388]
+                      - generic [ref=e1389]:
+                        - generic [ref=e1390]:
+                          - generic [ref=e1391]: Deal price is ₹49,999.00
+                          - text: ₹
+                          - generic [ref=e1392]: 49,999 00
+                        - generic [ref=e1393]:
+                          - generic [ref=e1394]: List price is
+                          - text: ₹69,999.00
+                - listitem [ref=e1395]:
+                  - generic "Entering Carousel Tile" [ref=e1396] [cursor=pointer]:
+                    - link "realme 15 Pro 5G Smartphone 12+256GB Purple,4K 60FPS,144Hz HyperGlow 4D Curve Display,7000mAh Battery,80W SuperVOOC, Camera Triple 50MP, Snapdragon 7 Gen 4, IP69" [ref=e1398]
+                    - generic [ref=e1401]:
+                      - button "realme 15 Pro 5G Smartphone 12+256GB Purple,4K 60FPS,144Hz HyperGlow 4D Curve Display,7000mAh Battery,80W SuperVOOC, Camera Triple 50MP, Snapdragon 7 Gen 4, IP69" [ref=e1402]
+                      - generic [ref=e1403]:
+                        - generic [ref=e1404]:
+                          - generic [ref=e1405]: Deal price is ₹37,999.00
+                          - text: ₹
+                          - generic [ref=e1406]: 37,999 00
+                        - generic [ref=e1407]:
+                          - generic [ref=e1408]: List price is
+                          - text: ₹39,999.00
+                - listitem [ref=e1409]:
+                  - generic "Entering Carousel Tile" [ref=e1410] [cursor=pointer]:
+                    - link "Samsung Galaxy S24 5G AI Smartphone (Cobalt Violet, 8GB, 256GB Storage)" [ref=e1412]
+                    - generic [ref=e1415]:
+                      - button "Samsung Galaxy S24 5G AI Smartphone (Cobalt Violet, 8GB, 256GB Storage)" [ref=e1416]
+                      - generic [ref=e1417]:
+                        - generic [ref=e1418]:
+                          - generic [ref=e1419]: Deal price is ₹48,650.00
+                          - text: ₹
+                          - generic [ref=e1420]: 48,650 00
+                        - generic [ref=e1421]:
+                          - generic [ref=e1422]: List price is
+                          - text: ₹79,999.00
+                - listitem [ref=e1423]:
+                  - generic "Entering Carousel Tile" [ref=e1424] [cursor=pointer]:
+                    - link "realme NARZO 90x 5G (Nitro Blue,6GB+128GB) | 7000mAh + 60W Biggest Battery & Fastest Charging in The Segment* | 144Hz Bright Display | Sony 50MP AI Rear Camera | AI Assist | 400% Ultra Boom Speaker" [ref=e1426]
+                    - generic [ref=e1429]:
+                      - button "realme NARZO 90x 5G (Nitro Blue,6GB+128GB) | 7000mAh + 60W Biggest Battery & Fastest Charging in The Segment* | 144Hz Bright Display | Sony 50MP AI Rear Camera | AI Assist | 400% Ultra Boom Speaker" [ref=e1430]
+                      - generic [ref=e1431]:
+                        - generic [ref=e1432]:
+                          - generic [ref=e1433]: Deal price is ₹15,499.00
+                          - text: ₹
+                          - generic [ref=e1434]: 15,499 00
+                        - generic [ref=e1435]:
+                          - generic [ref=e1436]: List price is
+                          - text: ₹16,499.00
+                - listitem [ref=e1437]:
+                  - generic "Entering Carousel Tile" [ref=e1438] [cursor=pointer]:
+                    - link "Samsung Galaxy S25 Plus 5G (12GB RAM + 256GB Storage) Silver Shadow" [ref=e1440]
+                    - generic [ref=e1443]:
+                      - button "Samsung Galaxy S25 Plus 5G (12GB RAM + 256GB Storage) Silver Shadow" [ref=e1444]
+                      - generic [ref=e1445]:
+                        - generic [ref=e1446]:
+                          - generic [ref=e1447]: Deal price is ₹74,994.00
+                          - text: ₹
+                          - generic [ref=e1448]: 74,994 00
+                        - generic [ref=e1449]:
+                          - generic [ref=e1450]: List price is
+                          - text: ₹99,999.00
+                - listitem [ref=e1451]:
+                  - generic "Entering Carousel Tile" [ref=e1452] [cursor=pointer]:
+                    - link "Lava Play Ultra 5G (Arctic Frost, 8+8*GB RAM, 128GB Storage)|MTK D7300 Processor-700K+ Antutu| 6.67\" FHD+AMOLED Display | 64MP Camera | UFS 3.1 Storage | 5000mAh Battery-33W fast charging | IP64 Rated" [ref=e1454]
+                    - generic [ref=e1457]:
+                      - button "Lava Play Ultra 5G (Arctic Frost, 8+8*GB RAM, 128GB Storage)|MTK D7300 Processor-700K+ Antutu| 6.67\" FHD+AMOLED Display | 64MP Camera | UFS 3.1 Storage | 5000mAh Battery-33W fast charging | IP64 Rated" [ref=e1458]
+                      - generic [ref=e1459]:
+                        - generic [ref=e1460]:
+                          - generic [ref=e1461]: Deal price is ₹17,499.00
+                          - text: ₹
+                          - generic [ref=e1462]: 17,499 00
+                        - generic [ref=e1463]:
+                          - generic [ref=e1464]: List price is
+                          - text: ₹17,999.00
+                - listitem [ref=e1465]:
+                  - generic "Entering Carousel Tile" [ref=e1466] [cursor=pointer]:
+                    - link "OnePlus 13 | Smarter with OnePlus AI | Lifetime Display Warranty |12GB RAM 256GB Storage Midnight Ocean | Official Smartphone for BGMS 2025" [ref=e1468]
+                    - generic [ref=e1471]:
+                      - button "OnePlus 13 | Smarter with OnePlus AI | Lifetime Display Warranty |12GB RAM 256GB Storage Midnight Ocean | Official Smartphone for BGMS 2025" [ref=e1472]
+                      - generic [ref=e1473]:
+                        - generic [ref=e1474]: 16% off
+                        - generic [ref=e1475]: Limited time deal
+                      - generic [ref=e1476]:
+                        - generic [ref=e1477]:
+                          - generic [ref=e1478]: Deal price is ₹60,999.00
+                          - text: ₹
+                          - generic [ref=e1479]: 60,999 00
+                        - generic [ref=e1480]:
+                          - generic [ref=e1481]: List price is
+                          - text: ₹72,999.00
+                - listitem [ref=e1482]:
+                  - generic "Entering Carousel Tile" [ref=e1483] [cursor=pointer]:
+                    - link "Galaxy Z Fold6 5G Mobile with Galaxy AI (Silver Shadow, 12GB RAM, 256GB Storage), 50MP High-Resolution Camera, Ultra-Smooth Gaming with Snapdragon 8 Gen 3, Google Gemini" [ref=e1485]
+                    - generic [ref=e1488]:
+                      - button "Galaxy Z Fold6 5G Mobile with Galaxy AI (Silver Shadow, 12GB RAM, 256GB Storage), 50MP High-Resolution Camera, Ultra-Smooth Gaming with Snapdragon 8 Gen 3, Google Gemini" [ref=e1489]
+                      - generic [ref=e1490]:
+                        - generic [ref=e1491]: 33% off
+                        - generic [ref=e1492]: Limited time deal
+                      - generic [ref=e1493]:
+                        - generic [ref=e1494]:
+                          - generic [ref=e1495]: Deal price is ₹1,09,999.00
+                          - text: ₹
+                          - generic [ref=e1496]: 1,09,999 00
+                        - generic [ref=e1497]:
+                          - generic [ref=e1498]: List price is
+                          - text: ₹1,64,999.00
+                - listitem [ref=e1499]:
+                  - generic "Entering Carousel Tile" [ref=e1500] [cursor=pointer]:
+                    - link "realme NARZO 80 Lite 5G (Onyx Black, 6GB+128GB) | 6000mAh Long-Lasting Battery | MediaTek Dimensity 6300 5G | AI Assist | IP64 Rated Water & Dust Resistance | Military-Grade Durability" [ref=e1502]
+                    - generic [ref=e1505]:
+                      - button "realme NARZO 80 Lite 5G (Onyx Black, 6GB+128GB) | 6000mAh Long-Lasting Battery | MediaTek Dimensity 6300 5G | AI Assist | IP64 Rated Water & Dust Resistance | Military-Grade Durability" [ref=e1506]
+                      - generic [ref=e1507]:
+                        - generic [ref=e1508]:
+                          - generic [ref=e1509]: Deal price is ₹12,499.00
+                          - text: ₹
+                          - generic [ref=e1510]: 12,499 00
+                        - generic [ref=e1511]:
+                          - generic [ref=e1512]: List price is
+                          - text: ₹14,999.00
+                - listitem [ref=e1513]:
+                  - generic "Entering Carousel Tile" [ref=e1514] [cursor=pointer]:
+                    - link "Samsung Galaxy S25 5G Smartphone with Galaxy AI (Icyblue, 12GB RAM, 256GB Storage), Snapdragon 8 Elite, 50 MP Camera with ProVisual Engine and 4000mAh Battery" [ref=e1516]
+                    - generic [ref=e1519]:
+                      - button "Samsung Galaxy S25 5G Smartphone with Galaxy AI (Icyblue, 12GB RAM, 256GB Storage), Snapdragon 8 Elite, 50 MP Camera with ProVisual Engine and 4000mAh Battery" [ref=e1520]
+                      - generic [ref=e1521]:
+                        - generic [ref=e1522]:
+                          - generic [ref=e1523]: Deal price is ₹74,999.00
+                          - text: ₹
+                          - generic [ref=e1524]: 74,999 00
+                        - generic [ref=e1525]:
+                          - generic [ref=e1526]: List price is
+                          - text: ₹80,999.00
+                - listitem [ref=e1527]:
+                  - generic "Entering Carousel Tile" [ref=e1528] [cursor=pointer]:
+                    - link "Oppo Reno15 5G (Glacier White, 8GB RAM, 256GB Storage) with No Cost EMI/Additional Exchange Offers" [ref=e1530]
+                    - generic [ref=e1533]:
+                      - button "Oppo Reno15 5G (Glacier White, 8GB RAM, 256GB Storage) with No Cost EMI/Additional Exchange Offers" [ref=e1534]
+                      - generic [ref=e1535]:
+                        - generic [ref=e1536]:
+                          - generic [ref=e1537]: Deal price is ₹45,999.00
+                          - text: ₹
+                          - generic [ref=e1538]: 45,999 00
+                        - generic [ref=e1539]:
+                          - generic [ref=e1540]: List price is
+                          - text: ₹49,999.00
+                - listitem [ref=e1541]:
+                  - generic "Entering Carousel Tile" [ref=e1542] [cursor=pointer]:
+                    - 'link "iPhone 17 Pro Max 512 GB: 17.42 cm (6.9″) Display with Promotion, A19 Pro Chip, Best Battery Life in Any iPhone Ever, Pro Fusion Camera System, Center Stage Front Camera; Deep Blue" [ref=e1544]'
+                    - generic [ref=e1547]:
+                      - 'button "iPhone 17 Pro Max 512 GB: 17.42 cm (6.9″) Display with Promotion, A19 Pro Chip, Best Battery Life in Any iPhone Ever, Pro Fusion Camera System, Center Stage Front Camera; Deep Blue" [ref=e1548]'
+                      - generic [ref=e1550]:
+                        - generic [ref=e1551]: Deal price is ₹1,69,900.00
+                        - text: ₹
+                        - generic [ref=e1552]: 1,69,900 00
+                - listitem [ref=e1553]:
+                  - generic "Entering Carousel Tile" [ref=e1554] [cursor=pointer]:
+                    - 'link "iPhone Air 512 GB: Thinnest iPhone Ever, 16.63 cm (6.5″) Display with Promotion up to 120Hz, Powerful A19 Pro Chip, Center Stage Front Camera, All-Day Battery Life; Sky Blue" [ref=e1556]'
+                    - generic [ref=e1559]:
+                      - 'button "iPhone Air 512 GB: Thinnest iPhone Ever, 16.63 cm (6.5″) Display with Promotion up to 120Hz, Powerful A19 Pro Chip, Center Stage Front Camera, All-Day Battery Life; Sky Blue" [ref=e1560]'
+                      - generic [ref=e1561]:
+                        - generic [ref=e1562]:
+                          - generic [ref=e1563]: Deal price is ₹1,13,990.00
+                          - text: ₹
+                          - generic [ref=e1564]: 1,13,990 00
+                        - generic [ref=e1565]:
+                          - generic [ref=e1566]: List price is
+                          - text: ₹1,39,900.00
+                - listitem [ref=e1567]:
+                  - generic "Entering Carousel Tile" [ref=e1568] [cursor=pointer]:
+                    - link "VIVO T4R 5G, Twilight Blue (8GB, 256GB)" [ref=e1570]
+                    - generic [ref=e1573]:
+                      - button "VIVO T4R 5G, Twilight Blue (8GB, 256GB)" [ref=e1574]
+                      - generic [ref=e1575]:
+                        - generic [ref=e1576]:
+                          - generic [ref=e1577]: Deal price is ₹23,715.00
+                          - text: ₹
+                          - generic [ref=e1578]: 23,715 00
+                        - generic [ref=e1579]:
+                          - generic [ref=e1580]: List price is
+                          - text: ₹24,999.00
+                - listitem [ref=e1581]:
+                  - generic "Entering Carousel Tile" [ref=e1582] [cursor=pointer]:
+                    - link "realme NARZO 90x 5G (Flash Blue,6GB+128GB) | 7000mAh + 60W Biggest Battery & Fastest Charging in The Segment* | 144Hz Bright Display | Sony 50MP AI Rear Camera | AI Assist | 400% Ultra Boom Speaker" [ref=e1584]
+                    - generic [ref=e1587]:
+                      - button "realme NARZO 90x 5G (Flash Blue,6GB+128GB) | 7000mAh + 60W Biggest Battery & Fastest Charging in The Segment* | 144Hz Bright Display | Sony 50MP AI Rear Camera | AI Assist | 400% Ultra Boom Speaker" [ref=e1588]
+                      - generic [ref=e1589]:
+                        - generic [ref=e1590]:
+                          - generic [ref=e1591]: Deal price is ₹15,499.00
+                          - text: ₹
+                          - generic [ref=e1592]: 15,499 00
+                        - generic [ref=e1593]:
+                          - generic [ref=e1594]: List price is
+                          - text: ₹16,999.00
+                - listitem [ref=e1595]:
+                  - generic "Entering Carousel Tile" [ref=e1596] [cursor=pointer]:
+                    - link "realme NARZO 80 Pro 5G (Speed Silver,8GB+128GB) | Segment's 1st MediaTek Dimensity 7400 Chipset | 6000mAh Titan Battery + 80W Ultra Charge | 4500nits HyperGlow Esports Display | IP69 Waterproof" [ref=e1598]
+                    - generic [ref=e1601]:
+                      - button "realme NARZO 80 Pro 5G (Speed Silver,8GB+128GB) | Segment's 1st MediaTek Dimensity 7400 Chipset | 6000mAh Titan Battery + 80W Ultra Charge | 4500nits HyperGlow Esports Display | IP69 Waterproof" [ref=e1602]
+                      - generic [ref=e1603]:
+                        - generic [ref=e1604]:
+                          - generic [ref=e1605]: Deal price is ₹17,999.00
+                          - text: ₹
+                          - generic [ref=e1606]: 17,999 00
+                        - generic [ref=e1607]:
+                          - generic [ref=e1608]: List price is
+                          - text: ₹23,999.00
+                - listitem [ref=e1609]:
+                  - generic "Entering Carousel Tile" [ref=e1610] [cursor=pointer]:
+                    - link "Oppo Reno15Pro mini 5G (Cocoa Brown, 12GB RAM, 256GB Storage) with No Cost EMI/Additional Exchange Offers" [ref=e1612]
+                    - generic [ref=e1615]:
+                      - button "Oppo Reno15Pro mini 5G (Cocoa Brown, 12GB RAM, 256GB Storage) with No Cost EMI/Additional Exchange Offers" [ref=e1616]
+                      - generic [ref=e1617]:
+                        - generic [ref=e1618]:
+                          - generic [ref=e1619]: Deal price is ₹59,999.00
+                          - text: ₹
+                          - generic [ref=e1620]: 59,999 00
+                        - generic [ref=e1621]:
+                          - generic [ref=e1622]: List price is
+                          - text: ₹64,999.00
+                - listitem [ref=e1623]:
+                  - generic "Entering Carousel Tile" [ref=e1624] [cursor=pointer]:
+                    - link "OnePlus 15R - ACE Edition | 12GB+256GB | Electric Violet | World's First Snapdragon® 8 Gen 5 | 7400mAh Battery| Personalised AI | Game-changing 165Hz Display | IP68 IP69 IP66 & IP69K | 4K 120fps video" [ref=e1626]
+                    - generic [ref=e1629]:
+                      - button "OnePlus 15R - ACE Edition | 12GB+256GB | Electric Violet | World's First Snapdragon® 8 Gen 5 | 7400mAh Battery| Personalised AI | Game-changing 165Hz Display | IP68 IP69 IP66 & IP69K | 4K 120fps video" [ref=e1630]
+                      - generic [ref=e1631]:
+                        - generic [ref=e1632]:
+                          - generic [ref=e1633]: Deal price is ₹47,999.00
+                          - text: ₹
+                          - generic [ref=e1634]: 47,999 00
+                        - generic [ref=e1635]:
+                          - generic [ref=e1636]: List price is
+                          - text: ₹54,999.00
+                - listitem [ref=e1637]:
+                  - generic "Entering Carousel Tile" [ref=e1638] [cursor=pointer]:
+                    - link "Oppo Reno15Pro 5G (Sunset Gold 12GB RAM, 256GB Storage) with No Cost EMI/Additional Exchange Offers" [ref=e1640]
+                    - generic [ref=e1643]:
+                      - button "Oppo Reno15Pro 5G (Sunset Gold 12GB RAM, 256GB Storage) with No Cost EMI/Additional Exchange Offers" [ref=e1644]
+                      - generic [ref=e1645]:
+                        - generic [ref=e1646]:
+                          - generic [ref=e1647]: Deal price is ₹67,999.00
+                          - text: ₹
+                          - generic [ref=e1648]: 67,999 00
+                        - generic [ref=e1649]:
+                          - generic [ref=e1650]: List price is
+                          - text: ₹74,999.00
+                - listitem [ref=e1651]:
+                  - generic "Entering Carousel Tile" [ref=e1652] [cursor=pointer]:
+                    - button "Title:Watch more livestreams LinkText:See more" [ref=e1654]
+                    - generic [ref=e1657]:
+                      - button "Watch more livestreams" [ref=e1658]
+                      - link "Watch more livestreams" [ref=e1659]: See more
+              - generic [ref=e1660]: ∟
+              - generic [ref=e1661]: ∟
+        - separator [ref=e1662]
+        - generic [ref=e1664]:
+          - heading "Best Sellers in Computers & Accessories" [level=2] [ref=e1666]:
+            - generic [ref=e1667]:
+              - generic [ref=e1668]: Best Sellers in Computers & Accessories
+              - generic [ref=e1669]: Best Sellers in Computers & Accesso…
+          - generic [ref=e1671]:
+            - link "Ambrane Unbreakable 3A Fast Charging 1.5m Braided Type C Cable for Smartphones, Tablets & other Type C devices, 480Mbps Data Sync, Quick Charge 3.0 (RCT15A, Black)" [ref=e1673] [cursor=pointer]:
+              - /url: /Ambrane-Unbreakable-Charging-Braided-Cable/dp/B098NS6PVG/?_encoding=UTF8&pd_rd_w=Gmej4&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_976392031
+              - img "Ambrane Unbreakable 3A Fast Charging 1.5m Braided Type C Cable for Smartphones, Tablets & other Type C devices, 480Mbps Data Sync, Quick Charge 3.0 (RCT15A, Black)" [ref=e1675]
+            - link "Safari Omega spacious/large laptop backpack with Raincover, college bag, travel bag for men and women, Black, 30 Litre" [ref=e1677] [cursor=pointer]:
+              - /url: /Safari-Laptop-Backpack-Raincover-college/dp/B097JJ2CK6/?_encoding=UTF8&pd_rd_w=Gmej4&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_976392031
+              - img "Safari Omega spacious/large laptop backpack with Raincover, college bag, travel bag for men and women, Black, 30 Litre" [ref=e1679]
+            - link "STRIFF World Map Extended Size (800 mm x 300 mm x 2 mm) Gaming Mouse Pad| Desk Mat | Stitched Edges| Non-Slip Rubber Base|Computer Laptop|Keyboard Mouse Pad for Office & Home (World Map)" [ref=e1681] [cursor=pointer]:
+              - /url: /STRIFF-Extended-Stitched-Non-Slip-Computer/dp/B0CXDN7V9N/?_encoding=UTF8&pd_rd_w=Gmej4&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_976392031
+              - img "STRIFF World Map Extended Size (800 mm x 300 mm x 2 mm) Gaming Mouse Pad| Desk Mat | Stitched Edges| Non-Slip Rubber Base|Computer Laptop|Keyboard Mouse Pad for Office & Home (World Map)" [ref=e1683]
+            - link "Dyazo Water Resistant Laptop Sleeve/Laptop case/laptop cover with Handle Compatible for 15 Inch to 15.6\" Inches laptops & Notebooks - Grey" [ref=e1685] [cursor=pointer]:
+              - /url: /Dyazo-Resistant-Compatible-laptops-Notebooks/dp/B09BFV96TS/?_encoding=UTF8&pd_rd_w=Gmej4&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_976392031
+              - img "Dyazo Water Resistant Laptop Sleeve/Laptop case/laptop cover with Handle Compatible for 15 Inch to 15.6\" Inches laptops & Notebooks - Grey" [ref=e1687]
+        - generic [ref=e1689]:
+          - heading "Best Sellers in Beauty" [level=2] [ref=e1691]:
+            - generic [ref=e1692]:
+              - generic [ref=e1693]: Best Sellers in Beauty
+              - generic [ref=e1694]: Best Sellers in Beauty
+          - generic [ref=e1695]:
+            - 'link "Cetaphil Gentle Skin Hydrating Face Wash 118ml, Paraben Free, Sulphate-Free Gentle Skin Hydrating Cleanser with... Price: ₹380.00, M.R.P.: ₹459.00" [ref=e1698] [cursor=pointer]':
+              - /url: /Cetaphil-Hydrating-Sulphate-Free-Niacinamide-Sensitive/dp/B01CCGW4OE/?_encoding=UTF8&pd_rd_w=HtNWq&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1355016031
+              - generic [ref=e1702]:
+                - generic [ref=e1703]: Cetaphil Gentle Skin Hydrating Face Wash 118ml, Paraben Free, Sulphate-Free Gentle Skin Hydrating Cleanser with...
+                - generic [ref=e1704]: Cetaphil Gentle Skin Hydrating Face Wash 118ml, Paraben Free, Sulphate-Free Ge…
+              - 'generic "Price: ₹380.00, M.R.P.: ₹459.00" [ref=e1706]':
+                - generic [ref=e1707]:
+                  - generic [ref=e1708]: ₹380.00
+                  - generic [ref=e1709]:
+                    - text: ₹
+                    - generic [ref=e1710]:
+                      - text: "380"
+                      - generic [ref=e1711]: .
+                    - text: "00"
+                - text: "M.R.P:"
+                - generic [ref=e1712]:
+                  - generic [ref=e1713]: ₹459.00
+                  - text: ₹459.00
+            - radiogroup [ref=e1715]:
+              - radio "Cetaphil Gentle Skin Hydrating Face Wash 118ml, Paraben Free, Sulphate-Free Gentle Skin Hydrating Cleanser with..." [ref=e1716]:
+                - link "Cetaphil Gentle Skin Hydrating Face Wash 118ml, Paraben Free, Sulphate-Free Gentle Skin Hydrating Cleanser with..." [ref=e1720] [cursor=pointer]:
+                  - /url: /Cetaphil-Hydrating-Sulphate-Free-Niacinamide-Sensitive/dp/B01CCGW4OE/?_encoding=UTF8&pd_rd_w=HtNWq&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1355016031
+                  - img "Cetaphil Gentle Skin Hydrating Face Wash 118ml, Paraben Free, Sulphate-Free Gentle Skin Hydrating Cleanser with..." [ref=e1722]
+              - radio "The Derma Co 1% Hyaluronic Sunscreen Aqua Gel SPF 50 PA++++ | Hydrating, Lightweight & Non-Greasy | No White Cast |..." [ref=e1723]:
+                - link "The Derma Co 1% Hyaluronic Sunscreen Aqua Gel SPF 50 PA++++ | Hydrating, Lightweight & Non-Greasy | No White Cast |..." [ref=e1727] [cursor=pointer]:
+                  - /url: /Derma-Co-Hyaluronic-Sunscreen-Protection/dp/B095CRM8NF/?_encoding=UTF8&pd_rd_w=HtNWq&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1355016031
+                  - img "The Derma Co 1% Hyaluronic Sunscreen Aqua Gel SPF 50 PA++++ | Hydrating, Lightweight & Non-Greasy | No White Cast |..." [ref=e1729]
+              - radio "Bare Anatomy Anti-Dandruff Shampoo | Up To 100% Dandruff Reduction | ZPTO-Free | pH 5.3 | Salicylic Acid, Piroctone..." [ref=e1730]:
+                - link "Bare Anatomy Anti-Dandruff Shampoo | Up To 100% Dandruff Reduction | ZPTO-Free | pH 5.3 | Salicylic Acid, Piroctone..." [ref=e1734] [cursor=pointer]:
+                  - /url: /Bare-Anatomy-Dandruff-Strengthens-Salicylic/dp/B0F5BLYYCN/?_encoding=UTF8&pd_rd_w=HtNWq&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1355016031
+                  - img "Bare Anatomy Anti-Dandruff Shampoo | Up To 100% Dandruff Reduction | ZPTO-Free | pH 5.3 | Salicylic Acid, Piroctone..." [ref=e1736]
+              - radio "Simple Kind To Skin Refreshing Facial Wash 150 ml | 100% Soap-Free Facewash that doesn't dry out your skin| For All Skin..." [ref=e1737]:
+                - link "Simple Kind To Skin Refreshing Facial Wash 150 ml | 100% Soap-Free Facewash that doesn't dry out your skin| For All Skin..." [ref=e1741] [cursor=pointer]:
+                  - /url: /Simple-Kind-Refreshing-Facial-Globalbeauty/dp/B000LQUA6M/?_encoding=UTF8&pd_rd_w=HtNWq&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_crs_zg_bs_1355016031
+                  - img "Simple Kind To Skin Refreshing Facial Wash 150 ml | 100% Soap-Free Facewash that doesn't dry out your skin| For All Skin..." [ref=e1743]
+        - generic [ref=e1745]:
+          - heading "Minimum 50% off | Men's clothing" [level=2] [ref=e1747]
+          - generic [ref=e1748]:
+            - generic [ref=e1749]:
+              - link "T-shirts" [ref=e1751] [cursor=pointer]:
+                - /url: /s/?_encoding=UTF8&i=apparel&bbn=1968120031&rh=n%3A1571271031%2Cn%3A1968024031%2Cn%3A1968120031%2Cn%3A1968123031%2Cp_85%3A10440599031%2Cp_36%3A60000-%2Cp_n_pct-off-with-tax%3A2665401031%2Cp_n_feature_browse-bin%3A95166419031%2Cp_89%3AAllen%20Solly%7CAmazon%20Brand%20-%20Symbol%7CArrow%7CBeing%20Human%7CBewakoof%7CCalvin%20Klein%7CCalvin%20Klein%20Jeans%7CJack%20%26%20Jones%7CKingdom%20of%20White%7CLacoste%7CLee%7CLevi%27s%7CLinen%20Club%7CMarks%20%26%20Spencer%7CPepe%20Jeans%7CPeter%20England%7CRed%20Tape%7CSNITCH%7CSimon%20Carter%7CSpykar%7CSymbol%20Premium%7CThe%20Indian%20Garage%20Co%7CThe%20Souled%20Store%7CTommy%20Hilfiger%7CU.S.%20POLO%20ASSN.%7CU.S.%20Polo%20Assn%7CUNITED%20COLORS%20OF%20BENETTON%7CVan%20Heusen%7CWrangler%7Cadidas&dc=&hidden-keywords=-Woman-Women-Boy-Girl-Kid-Vest-Tank-Jacket-Hooded-Track-Amazon-Pack-polo&qid=1718376693&rnid=3837712031&ref=sr_nr_p_89_7&ds=v1%3AYq9Yuh4JZqXKwCXxj76AKVYMnF73wu53nwUK8Zv30GY&pd_rd_w=bXFja&content-id=amzn1.sym.eaac1fe1-8b01-4aee-b5c5-aeccbfcaeb54&pf_rd_p=eaac1fe1-8b01-4aee-b5c5-aeccbfcaeb54&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_unk
+                - img "T-shirts" [ref=e1753]
+                - generic [ref=e1755]: T-shirts
+              - link "Polos" [ref=e1757] [cursor=pointer]:
+                - /url: /s/?_encoding=UTF8&i=apparel&bbn=1968122031&rh=n%3A1968122031%2Cp_85%3A10440599031%2Cp_36%3A60000-%2Cp_n_pct-off-with-tax%3A2665401031%2Cp_89%3AAllen%20Solly%7CAmazon%20Brand%20-%20Symbol%7CArrow%7CBeing%20Human%7CBewakoof%7CCalvin%20Klein%7CCalvin%20Klein%20Jeans%7CChromozome%7CJack%20%26%20Jones%7CKETCH%7CLacoste%7CLee%7CLevi%27s%7CMarks%20%26%20Spencer%7CMax%7CNobero%7CPepe%20Jeans%7CPeter%20England%7CRed%20Tape%7CSNITCH%7CSimon%20Carter%7CSpykar%7CSymbol%20Premium%7CThe%20Indian%20Garage%20Co%7CThe%20Souled%20Store%7CTommy%20Hilfiger%7CU.S.%20POLO%20ASSN.%7CUNITED%20COLORS%20OF%20BENETTON%7CVan%20Heusen%7CVeirdo%7CWrangler&s=apparel&hidden-keywords=-women-woman-girl-shoe-tailored-kid-boy-Pack-Amazon&pd_rd_w=bXFja&content-id=amzn1.sym.eaac1fe1-8b01-4aee-b5c5-aeccbfcaeb54&pf_rd_p=eaac1fe1-8b01-4aee-b5c5-aeccbfcaeb54&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_unk
+                - img "Polos" [ref=e1759]
+                - generic [ref=e1761]: Classic polos
+            - generic [ref=e1762]:
+              - link "T-shirts, Polos & more" [ref=e1764] [cursor=pointer]:
+                - /url: /s/?_encoding=UTF8&i=apparel&bbn=94998646031&rh=n%3A94998646031%2Cp_85%3A10440599031%2Cp_n_feature_browse-bin%3A95166419031%2Cp_89%3AAllen%20Solly%7CAmazon%20Brand%20-%20Symbol%7CArrow%7CBeing%20Human%7CBewakoof%7CCalvin%20Klein%7CCalvin%20Klein%20Jeans%7CJack%20%26%20Jones%7CLacoste%7CLee%7CLevi%27s%7CMarks%20%26%20Spencer%7CMax%7CNobero%7CPepe%20Jeans%7CPeter%20England%7CRed%20Tape%7CSNITCH%7CSimon%20Carter%7CSpykar%7CSymbol%20Premium%7CThe%20Indian%20Garage%20Co%7CThe%20Souled%20Store%7CTommy%20Hilfiger%7CU.S.%20POLO%20ASSN.%7CUNITED%20COLORS%20OF%20BENETTON%7CVan%20Heusen%7CVeirdo%7CWrangler%7Cadidas%2Cp_n_deal_type%3A26921224031%2Cp_n_pct-off-with-tax%3A2665402031&s=apparel&dc=&hidden-keywords=-woman-women-boy-girl-kid-raymond-park-B0BGF1GYQ9-B0BD7R4347-Jacket-Green-B0BD7Q5NN1-B0CGXGD1BB-B0CF5157CW-B0CMPC5DRJ-B0C9DYKB4K&qid=1716534025&rnid=4595083031&ref=sr_nr_p_36_0_0&low-price=&high-price=&pd_rd_w=bXFja&content-id=amzn1.sym.eaac1fe1-8b01-4aee-b5c5-aeccbfcaeb54&pf_rd_p=eaac1fe1-8b01-4aee-b5c5-aeccbfcaeb54&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_unk
+                - img "T-shirts, Polos & more" [ref=e1766]
+                - generic [ref=e1768]: Casual shirts
+              - link "Jeans" [ref=e1770] [cursor=pointer]:
+                - /url: /s/?_encoding=UTF8&i=apparel&bbn=1968076031&rh=n%3A1571271031%2Cn%3A1968024031%2Cn%3A1968076031%2Cp_85%3A10440599031%2Cp_n_pct-off-with-tax%3A2665401031%2Cp_36%3A110000-%2Cp_89%3AAllen%20Solly%7CAmazon%20Brand%20-%20Symbol%7CAmazon%20Essentials%7CBeing%20Human%7CBewakoof%7CCalvin%20Klein%20Jeans%7CIndian%20Terrain%7CJack%20%26%20Jones%7CLee%7CLevi%27s%7CMUFTI%7CPepe%20Jeans%7CPeter%20England%7CRed%20Tape%7CSNITCH%7CSpykar%7CThe%20Pant%20Project%7CThe%20Souled%20Store%7CTommy%20Hilfiger%7CU.S.%20POLO%20ASSN.%7CUNITED%20COLORS%20OF%20BENETTON%7CWrangler&s=apparel&dc=&hidden-keywords=-women-woman-girl-shoe-shirt&pf_rd_i=1968024031&pf_rd_i=1968024031%2C1968024031%2C1968024031&pf_rd_i=58779633031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF%2CA1VBAL9TL5WCBF%2CA1VBAL9TL5WCBF&pf_rd_s=merchandised-search-8%2Cmerchandised-search-8%2Cmobile-hybrid-9&pf_rd_s=mobile-hybrid-16&pf_rd_s=mobile-hybrid-8&pf_rd_t=30901&pf_rd_t=30901&pf_rd_t=30901&qid=1713950680&rnid=4595083031&ref=sr_nr_p_36_3&pd_rd_w=bXFja&content-id=amzn1.sym.eaac1fe1-8b01-4aee-b5c5-aeccbfcaeb54&pf_rd_p=eaac1fe1-8b01-4aee-b5c5-aeccbfcaeb54&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_unk
+                - img "Jeans" [ref=e1772]
+                - generic [ref=e1774]: Jeans
+          - link "Minimum 50% off | Men's clothing - See all deals" [ref=e1776] [cursor=pointer]:
+            - /url: /b/?_encoding=UTF8&node=27109201031&pd_rd_w=bXFja&content-id=amzn1.sym.eaac1fe1-8b01-4aee-b5c5-aeccbfcaeb54&pf_rd_p=eaac1fe1-8b01-4aee-b5c5-aeccbfcaeb54&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_unk
+            - generic [ref=e1777]:
+              - generic [ref=e1778]: See all deals
+              - generic [ref=e1779]: See all deals
+        - generic [ref=e1781]:
+          - heading "Starting ₹199 | Deals on gulal, water balloons & more" [level=2] [ref=e1783]:
+            - generic [ref=e1784]:
+              - generic [ref=e1785]: Starting ₹199 | Deals on gulal, water balloons & more
+              - generic [ref=e1786]: Starting ₹199 | Deals on gulal, water balloons &…
+          - generic [ref=e1788]:
+            - link "DISILA Traders Holi Magic Balloons for Kids- Pack of 2 | 222 Self Sealing Water Balloons | Fast Fill Gubbare for Holi Festival | Outdoor Water Play | Summer Party Fun Toy | Multicolor" [ref=e1790] [cursor=pointer]:
+              - /url: /DISILA-Traders-Ballons-festival-balloons/dp/B0CWDG9N35/?_encoding=UTF8&pd_rd_w=XG2pf&content-id=amzn1.sym.e97f6158-08b1-4295-bb23-288b95bac2a6&pf_rd_p=e97f6158-08b1-4295-bb23-288b95bac2a6&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_gulalholi
+              - img "DISILA Traders Holi Magic Balloons for Kids- Pack of 2 | 222 Self Sealing Water Balloons | Fast Fill Gubbare for Holi Festival | Outdoor Water Play | Summer Party Fun Toy | Multicolor" [ref=e1792]
+            - link "Niku Holi Colour - Herbal Organic Holi Gulal | Tropical Fruit Based Natural gulal | Non Toxic, Easy to Remove, Soft Skin Friendly | Pack of 4-50gm *5 | Holi Gift Pack for Family, Party" [ref=e1794] [cursor=pointer]:
+              - /url: /Niku-Holi-Colour-Tropical-Friendly/dp/B0DSTR82YS/?_encoding=UTF8&pd_rd_w=XG2pf&content-id=amzn1.sym.e97f6158-08b1-4295-bb23-288b95bac2a6&pf_rd_p=e97f6158-08b1-4295-bb23-288b95bac2a6&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_gulalholi
+              - img "Niku Holi Colour - Herbal Organic Holi Gulal | Tropical Fruit Based Natural gulal | Non Toxic, Easy to Remove, Soft Skin Friendly | Pack of 4-50gm *5 | Holi Gift Pack for Family, Party" [ref=e1796]
+            - link "DISILA Traders Holi Magic Balloons-Pack of 3 | 333 Self Sealing Water Balloons | Quick Fill Gubbare for Kids | Outdoor Holi Festival & Summer Party Fun Toy | Multicolor" [ref=e1798] [cursor=pointer]:
+              - /url: /DISILA-Balloons-Pack-Balloons-Party-Multicolor/dp/B0CWDHB4TK/?_encoding=UTF8&pd_rd_w=XG2pf&content-id=amzn1.sym.e97f6158-08b1-4295-bb23-288b95bac2a6&pf_rd_p=e97f6158-08b1-4295-bb23-288b95bac2a6&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_gulalholi
+              - img "DISILA Traders Holi Magic Balloons-Pack of 3 | 333 Self Sealing Water Balloons | Quick Fill Gubbare for Kids | Outdoor Holi Festival & Summer Party Fun Toy | Multicolor" [ref=e1800]
+            - link "Niku Herbal Organic Holi Gulal Color | 4 Seasons Colours | Non Toxic, Easy to Remove, Soft Skin Friendly | Pack of 4-50gm *4 | Holi Gift Pack for Family, Party" [ref=e1802] [cursor=pointer]:
+              - /url: /Niku-Organic-Seasons-Colours-Friendly/dp/B0DXM35SWN/?_encoding=UTF8&pd_rd_w=XG2pf&content-id=amzn1.sym.e97f6158-08b1-4295-bb23-288b95bac2a6&pf_rd_p=e97f6158-08b1-4295-bb23-288b95bac2a6&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_gulalholi
+              - img "Niku Herbal Organic Holi Gulal Color | 4 Seasons Colours | Non Toxic, Easy to Remove, Soft Skin Friendly | Pack of 4-50gm *4 | Holi Gift Pack for Family, Party" [ref=e1804]
+        - separator [ref=e1805]
+        - generic [ref=e1808]:
+          - generic [ref=e1809]:
+            - heading "Up to 40% off | Smart storage, clutter-free living" [level=2] [ref=e1810]
+            - link "See all offers" [ref=e1812] [cursor=pointer]:
+              - /url: /b/?_encoding=UTF8&node=28253258031&ref=ls_gwc_mb_en8_&pd_rd_w=mo9Pp&content-id=amzn1.sym.0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_p=0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+          - list [ref=e1815]:
+            - listitem [ref=e1816]:
+              - link "Amazon Basics Plastic 5 Rack Multipurpose Modular Drawer Storage Rack | Kitchen & Home Essentials Organizer Storage Box..." [ref=e1818] [cursor=pointer]:
+                - /url: /Multipurpose-Essentials-Organizer-Stationary-Cosmetic/dp/B0F7496BJK/?_encoding=UTF8&pd_rd_w=mo9Pp&content-id=amzn1.sym.0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_p=0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+                - img "Amazon Basics Plastic 5 Rack Multipurpose Modular Drawer Storage Rack | Kitchen & Home Essentials Organizer Storage Box..." [ref=e1819]
+            - listitem [ref=e1820]:
+              - link "Plastic Multi-Purpose Organizer Modular Storage Box for Clothes, Kitchen, Bedroom & Living Room | Stackable Rack,..." [ref=e1822] [cursor=pointer]:
+                - /url: /Multi-Purpose-Organizer-Stackable-Space-Saving-Wardrobe/dp/B0GCG6FBSX/?_encoding=UTF8&pd_rd_w=mo9Pp&content-id=amzn1.sym.0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_p=0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+                - img "Plastic Multi-Purpose Organizer Modular Storage Box for Clothes, Kitchen, Bedroom & Living Room | Stackable Rack,..." [ref=e1823]
+            - listitem [ref=e1824]:
+              - link "VOLTURI 100% Cotton Vegetable Bags for Fridge Storage (Pack of 6), Eco-Friendly Natural Cotton Mesh Net Fridge Storage..." [ref=e1826] [cursor=pointer]:
+                - /url: /VOLTURI-Eco-Friendly-Drawstrings-Vegetables-Biodegradable/dp/B0D841G1WW/?_encoding=UTF8&pd_rd_w=mo9Pp&content-id=amzn1.sym.0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_p=0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+                - img "VOLTURI 100% Cotton Vegetable Bags for Fridge Storage (Pack of 6), Eco-Friendly Natural Cotton Mesh Net Fridge Storage..." [ref=e1827]
+            - listitem [ref=e1828]:
+              - link "Goelite Key Holder for Home Without Drill with Storage | No Drilling Required | Home Keyholders with 8 Hooks with 2..." [ref=e1830] [cursor=pointer]:
+                - /url: /Goelite-Key-Holder-Drilling-Keyholders/dp/B0FG38YDLM/?_encoding=UTF8&pd_rd_w=mo9Pp&content-id=amzn1.sym.0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_p=0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+                - img "Goelite Key Holder for Home Without Drill with Storage | No Drilling Required | Home Keyholders with 8 Hooks with 2..." [ref=e1831]
+            - listitem [ref=e1832]:
+              - link "Boniry 1 Pcs Double-Row 12 Hooks for Kitchen Storage - Cupboard Hanging Organizer for Coffee, Tea Cups, Towels, and More..." [ref=e1834] [cursor=pointer]:
+                - /url: /Boniry-Double-Row-Hooks-Kitchen-Storage/dp/B0D77HR8R4/?_encoding=UTF8&pd_rd_w=mo9Pp&content-id=amzn1.sym.0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_p=0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+                - img "Boniry 1 Pcs Double-Row 12 Hooks for Kitchen Storage - Cupboard Hanging Organizer for Coffee, Tea Cups, Towels, and More..." [ref=e1835]
+            - listitem [ref=e1836]:
+              - link "Eightiz Fridge Storage Boxes (Pack of 6) Freezer & Refrigerator Organizer Containers Kitchen Storage Container Set..." [ref=e1838] [cursor=pointer]:
+                - /url: /Eightiz-Refrigerator-Organizer-Containers-Accessories/dp/B0FG3FT9JG/?_encoding=UTF8&pd_rd_w=mo9Pp&content-id=amzn1.sym.0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_p=0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+                - img "Eightiz Fridge Storage Boxes (Pack of 6) Freezer & Refrigerator Organizer Containers Kitchen Storage Container Set..." [ref=e1839]
+            - listitem [ref=e1840]:
+              - link "Xiran 6 Fridge Storage Boxes Fridge Organizer With Removable Drain Plate&Lid Stackable Fridge Storage Containers Plastic..." [ref=e1842] [cursor=pointer]:
+                - /url: /Xiran-Fridge-Organizer-Containers-Vegetables/dp/B0BQZ25WQX/?_encoding=UTF8&pd_rd_w=mo9Pp&content-id=amzn1.sym.0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_p=0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+                - img "Xiran 6 Fridge Storage Boxes Fridge Organizer With Removable Drain Plate&Lid Stackable Fridge Storage Containers Plastic..." [ref=e1843]
+            - listitem [ref=e1844]:
+              - link "TEX-RO Storage Box and Organiser | Storage Organiser | Organizer Storage Box for Home & Kitchen | Durable Storage Basket..." [ref=e1846] [cursor=pointer]:
+                - /url: /TEX-RO-Storage-Organiser-Organizer-Kitchen/dp/B0DXK6R9SJ/?_encoding=UTF8&pd_rd_w=mo9Pp&content-id=amzn1.sym.0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_p=0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+                - img "TEX-RO Storage Box and Organiser | Storage Organiser | Organizer Storage Box for Home & Kitchen | Durable Storage Basket..." [ref=e1847]
+            - listitem [ref=e1848]:
+              - link "SKYFUN (LABEL) Collapsible Fabric 3-Layered Pocket Wall Door Cloth Wardrobe Hanging Storage Cabinet Hanger Bags Box..." [ref=e1850] [cursor=pointer]:
+                - /url: /SKYFUN-LABEL-3-Layer-Wardrobe-Box-Grey/dp/B083K8GQGJ/?_encoding=UTF8&pd_rd_w=mo9Pp&content-id=amzn1.sym.0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_p=0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+                - img "SKYFUN (LABEL) Collapsible Fabric 3-Layered Pocket Wall Door Cloth Wardrobe Hanging Storage Cabinet Hanger Bags Box..." [ref=e1851]
+            - listitem [ref=e1852]:
+              - link "Kuber Industries Multipurpose Solitaire Storage Basket with Lid|Strong Plastic Material & Side Grip|Size Small 25 x 19 x..." [ref=e1854] [cursor=pointer]:
+                - /url: /Kuber-Industries-Plastic-Multipurpose-Solitaire/dp/B07TVC2SDQ/?_encoding=UTF8&pd_rd_w=mo9Pp&content-id=amzn1.sym.0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_p=0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+                - img "Kuber Industries Multipurpose Solitaire Storage Basket with Lid|Strong Plastic Material & Side Grip|Size Small 25 x 19 x..." [ref=e1855]
+            - listitem [ref=e1856]:
+              - link "Satpurush Fridge Storage Boxes (Pack of 8) Freezer & Refrigerator Organizer Containers Kitchen Storage Container Set..." [ref=e1858] [cursor=pointer]:
+                - /url: /Satpurush-Refrigerator-Organizer-Containers-Accessories/dp/B0DZT1RQGS/?_encoding=UTF8&pd_rd_w=mo9Pp&content-id=amzn1.sym.0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_p=0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+                - img "Satpurush Fridge Storage Boxes (Pack of 8) Freezer & Refrigerator Organizer Containers Kitchen Storage Container Set..." [ref=e1859]
+            - listitem [ref=e1860]:
+              - link "DAREV 4 Pcs Wardrobe Organizer for Clothes with Metal Frame Rectangle Storage Baskets for Clothing Fabric Storage Box..." [ref=e1862] [cursor=pointer]:
+                - /url: /DAREV-Wardrobe-Organizer-Rectangle-Clothing/dp/B0D3F7XWBH/?_encoding=UTF8&pd_rd_w=mo9Pp&content-id=amzn1.sym.0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_p=0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+                - img "DAREV 4 Pcs Wardrobe Organizer for Clothes with Metal Frame Rectangle Storage Baskets for Clothing Fabric Storage Box..." [ref=e1863]
+            - listitem [ref=e1864]:
+              - link "HomeWiz 4 Section Kitchen Storage Box | Fridge Storage Containers | Airtight, Durable, BPA-Free Plastic Container |..." [ref=e1866] [cursor=pointer]:
+                - /url: /HomeWiz-Multipurpose-Compartments-Transparent-Container/dp/B0F6LRWF85/?_encoding=UTF8&pd_rd_w=mo9Pp&content-id=amzn1.sym.0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_p=0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+                - img "HomeWiz 4 Section Kitchen Storage Box | Fridge Storage Containers | Airtight, Durable, BPA-Free Plastic Container |..." [ref=e1867]
+            - listitem [ref=e1868]:
+              - link "Xmart India Multipurpose Plastic Storage Box and Organiser for Drawers, Kitchen, Bathroom & Desk | Slim Organizer Bins..." [ref=e1870] [cursor=pointer]:
+                - /url: /Multipurpose-Organiser-Organizer-Stationery-26-5x10x9/dp/B0F7XYHSFX/?_encoding=UTF8&pd_rd_w=mo9Pp&content-id=amzn1.sym.0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_p=0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+                - img "Xmart India Multipurpose Plastic Storage Box and Organiser for Drawers, Kitchen, Bathroom & Desk | Slim Organizer Bins..." [ref=e1871]
+            - listitem [ref=e1872]:
+              - link "Kuber industries Plastic 3 Layer Multi-Purpose Kitchen Storage Basket Rack|Vegetable Basket for Kitchen (Grey Tiered Shelf)" [ref=e1874] [cursor=pointer]:
+                - /url: /Kuber-industries-Plastic-Multi-Purpose-Kitchen/dp/B081K31S1B/?_encoding=UTF8&pd_rd_w=mo9Pp&content-id=amzn1.sym.0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_p=0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+                - img "Kuber industries Plastic 3 Layer Multi-Purpose Kitchen Storage Basket Rack|Vegetable Basket for Kitchen (Grey Tiered Shelf)" [ref=e1875]
+            - listitem [ref=e1876]:
+              - link "TEX-RO Storage Box and Organiser - Cloth Organizer for Storage, Wardrobe Organizer for Storage, Clothes Organizer,..." [ref=e1878] [cursor=pointer]:
+                - /url: /TEX-RO-Storage-Box-Organiser-Multi-colour/dp/B0DKCX3R6C/?_encoding=UTF8&pd_rd_w=mo9Pp&content-id=amzn1.sym.0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_p=0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+                - img "TEX-RO Storage Box and Organiser - Cloth Organizer for Storage, Wardrobe Organizer for Storage, Clothes Organizer,..." [ref=e1879]
+            - listitem [ref=e1880]:
+              - link "WOOMZY 5-Layer Heavy Duty Plastic Storage Drawer with Wheels | Stackable Modular Cabinet for Home & Office |..." [ref=e1882] [cursor=pointer]:
+                - /url: /WOOMZY-5-Layer-Stackable-Multi-Purpose-Organiser/dp/B0GK2998VR/?_encoding=UTF8&pd_rd_w=mo9Pp&content-id=amzn1.sym.0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_p=0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+                - img "WOOMZY 5-Layer Heavy Duty Plastic Storage Drawer with Wheels | Stackable Modular Cabinet for Home & Office |..." [ref=e1883]
+            - listitem [ref=e1884]:
+              - link "SOLSTICE Cotton Saree Bags/Covers For Storage Set Of - 12 Big Size Single (16 X 14 Inches) With Zip Closure For Clothes..." [ref=e1886] [cursor=pointer]:
+                - /url: /SOLSTICE-Cotton-Saree-Covers-Storage/dp/B09KY4C3J5/?_encoding=UTF8&pd_rd_w=mo9Pp&content-id=amzn1.sym.0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_p=0f0cd048-aa67-4f0a-a39c-e8e9622af22b&pf_rd_r=GDAWAG2DAS4MRB7XWEJ6&pd_rd_wg=Omtkt&pd_rd_r=92ccb01f-0ef1-4baa-b224-b72c39633379&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+                - img "SOLSTICE Cotton Saree Bags/Covers For Storage Set Of - 12 Big Size Single (16 X 14 Inches) With Zip Closure For Clothes..." [ref=e1887]
+  - complementary "Your recently viewed items and featured recommendations"
+  - generic [ref=e1889]:
+    - button "Back to top" [ref=e1890] [cursor=pointer]:
+      - generic [ref=e1891]: Back to top
+    - generic [ref=e1892]:
+      - generic [ref=e1893]:
+        - heading "Get to Know Us" [level=6] [ref=e1894]
+        - list [ref=e1895]:
+          - listitem [ref=e1896]:
+            - link "About Amazon" [ref=e1897] [cursor=pointer]:
+              - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+          - listitem [ref=e1898]:
+            - link "Careers" [ref=e1899] [cursor=pointer]:
+              - /url: https://amazon.jobs
+          - listitem [ref=e1900]:
+            - link "Press Releases" [ref=e1901] [cursor=pointer]:
+              - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+          - listitem [ref=e1902]:
+            - link "Amazon Science" [ref=e1903] [cursor=pointer]:
+              - /url: https://www.amazon.science
+      - generic [ref=e1905]:
+        - heading "Connect with Us" [level=6] [ref=e1906]
+        - list [ref=e1907]:
+          - listitem [ref=e1908]:
+            - link "Facebook" [ref=e1909] [cursor=pointer]:
+              - /url: https://www.facebook.com/AmazonIN
+          - listitem [ref=e1910]:
+            - link "Twitter" [ref=e1911] [cursor=pointer]:
+              - /url: https://x.com/AmazonIN
+          - listitem [ref=e1912]:
+            - link "Instagram" [ref=e1913] [cursor=pointer]:
+              - /url: https://www.instagram.com/amazondotin
+      - generic [ref=e1915]:
+        - heading "Make Money with Us" [level=6] [ref=e1916]
+        - list [ref=e1917]:
+          - listitem [ref=e1918]:
+            - link "Sell on Amazon" [ref=e1919] [cursor=pointer]:
+              - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+          - listitem [ref=e1920]:
+            - link "Sell under Amazon Accelerator" [ref=e1921] [cursor=pointer]:
+              - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+          - listitem [ref=e1922]:
+            - link "Protect and Build Your Brand" [ref=e1923] [cursor=pointer]:
+              - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+          - listitem [ref=e1924]:
+            - link "Amazon Global Selling" [ref=e1925] [cursor=pointer]:
+              - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+          - listitem [ref=e1926]:
+            - link "Supply to Amazon" [ref=e1927] [cursor=pointer]:
+              - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+          - listitem [ref=e1928]:
+            - link "Become an Affiliate" [ref=e1929] [cursor=pointer]:
+              - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+          - listitem [ref=e1930]:
+            - link "Fulfilment by Amazon" [ref=e1931] [cursor=pointer]:
+              - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+          - listitem [ref=e1932]:
+            - link "Advertise Your Products" [ref=e1933] [cursor=pointer]:
+              - /url: https://advertising.amazon.in/?ref=Amz.in
+          - listitem [ref=e1934]:
+            - link "Amazon Pay on Merchants" [ref=e1935] [cursor=pointer]:
+              - /url: https://www.amazonpay.in/merchant
+      - generic [ref=e1937]:
+        - heading "Let Us Help You" [level=6] [ref=e1938]
+        - list [ref=e1939]:
+          - listitem [ref=e1940]:
+            - link "Your Account" [ref=e1941] [cursor=pointer]:
+              - /url: /gp/css/homepage.html?ref_=footer_ya
+          - listitem [ref=e1942]:
+            - link "Returns Centre" [ref=e1943] [cursor=pointer]:
+              - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+          - listitem [ref=e1944]:
+            - link "Recalls and Product Safety Alerts" [ref=e1945] [cursor=pointer]:
+              - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+          - listitem [ref=e1946]:
+            - link "100% Purchase Protection" [ref=e1947] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+          - listitem [ref=e1948]:
+            - link "Amazon App Download" [ref=e1949] [cursor=pointer]:
+              - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+          - listitem [ref=e1950]:
+            - link "Help" [ref=e1951] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+    - generic [ref=e1953]:
+      - link "Amazon India Home" [ref=e1956] [cursor=pointer]:
+        - /url: /ref=footer_logo
+      - generic [ref=e1959]:
+        - generic [ref=e1960]:
+          - link "Choose a language for shopping. Current selection is English." [ref=e1961] [cursor=pointer]:
+            - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=footer_lang
+            - generic [ref=e1963]: English
+          - button "Expand to Change Language or Country" [ref=e1964] [cursor=pointer]
+        - button "Choose a country/region for shopping. The current selection is India." [ref=e1965] [cursor=pointer]:
+          - generic [ref=e1967]: India
+    - generic "More on Amazon" [ref=e1968]:
+      - generic "More on Amazon" [ref=e1969]:
+        - list [ref=e1970]:
+          - listitem [ref=e1971]:
+            - link "AbeBooks Books, art & collectibles" [ref=e1972] [cursor=pointer]:
+              - /url: https://www.abebooks.com/
+              - heading "AbeBooks" [level=5] [ref=e1973]
+              - generic [ref=e1974]:
+                - text: Books, art
+                - text: "& collectibles"
+          - listitem [ref=e1975]
+          - listitem [ref=e1976]:
+            - link "Amazon Web Services Scalable Cloud Computing Services" [ref=e1977] [cursor=pointer]:
+              - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+              - heading "Amazon Web Services" [level=5] [ref=e1978]
+              - generic [ref=e1979]:
+                - text: Scalable Cloud
+                - text: Computing Services
+          - listitem [ref=e1980]
+          - listitem [ref=e1981]:
+            - link "Audible Download Audio Books" [ref=e1982] [cursor=pointer]:
+              - /url: https://www.audible.in/
+              - heading "Audible" [level=5] [ref=e1983]
+              - generic [ref=e1984]:
+                - text: Download
+                - text: Audio Books
+          - listitem [ref=e1985]
+          - listitem [ref=e1986]:
+            - link "IMDb Movies, TV & Celebrities" [ref=e1987] [cursor=pointer]:
+              - /url: https://www.imdb.com/
+              - heading "IMDb" [level=5] [ref=e1988]
+              - generic [ref=e1989]:
+                - text: Movies, TV
+                - text: "& Celebrities"
+        - list [ref=e1990]:
+          - listitem [ref=e1991]:
+            - link "Shopbop Designer Fashion Brands" [ref=e1992] [cursor=pointer]:
+              - /url: https://www.shopbop.com/
+              - heading "Shopbop" [level=5] [ref=e1993]
+              - generic [ref=e1994]:
+                - text: Designer
+                - text: Fashion Brands
+          - listitem [ref=e1995]
+          - listitem [ref=e1996]:
+            - link "Amazon Business Everything For Your Business" [ref=e1997] [cursor=pointer]:
+              - /url: /business?ref=footer_aingw
+              - heading "Amazon Business" [level=5] [ref=e1998]
+              - generic [ref=e1999]:
+                - text: Everything For
+                - text: Your Business
+          - listitem [ref=e2000]
+          - listitem [ref=e2001]:
+            - link "Amazon Prime Music 100 million songs, ad-free Over 15 million podcast episodes" [ref=e2002] [cursor=pointer]:
+              - /url: /music/prime?ref=footer_apm
+              - heading "Amazon Prime Music" [level=5] [ref=e2003]
+              - generic [ref=e2004]:
+                - text: 100 million songs, ad-free
+                - text: Over 15 million podcast episodes
+          - listitem [ref=e2005]
+          - listitem [ref=e2006]
+    - generic [ref=e2007]:
+      - list [ref=e2008]:
+        - listitem [ref=e2009]:
+          - link "Conditions of Use & Sale" [ref=e2010] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+        - listitem [ref=e2011]:
+          - link "Privacy Notice" [ref=e2012] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+        - listitem [ref=e2013]:
+          - link "Interest-Based Ads" [ref=e2014] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+      - generic [ref=e2015]: © 1996-2026, Amazon.com, Inc. or its affiliates
+  - iframe [ref=e2017]:
+    - iframe [ref=f1e2]:
+      - generic [active]:
+        - img [ref=f2e1]
+        - img [ref=f2e2]
+        - img [ref=f2e3]
+        - img [ref=f2e4]
+        - img [ref=f2e5]
+        - img [ref=f2e6]
+        - img [ref=f2e7]
+        - img [ref=f2e8]
+        - img [ref=f2e9]
+        - img [ref=f2e10]
+        - img [ref=f2e11]
+        - img [ref=f2e12]
+        - img [ref=f2e13]
+        - img [ref=f2e14]
+        - img [ref=f2e15]
+        - img [ref=f2e16]
+        - img [ref=f2e17]
+        - img [ref=f2e18]
+        - img [ref=f2e19]
+        - img [ref=f2e20]
+        - img [ref=f2e21]
+        - img [ref=f2e22]
+        - img [ref=f2e23]
+        - img [ref=f2e24]
+        - img [ref=f2e25]
+        - img [ref=f2e26]
+        - img [ref=f2e27]
+        - img [ref=f2e28]
+        - img [ref=f2e29]
+        - img [ref=f2e30]
+        - img [ref=f2e31]
+        - img [ref=f2e32]
+        - img [ref=f2e33]
+        - img [ref=f2e34]
+        - img [ref=f2e35]
+        - img [ref=f2e36]
+        - img [ref=f2e37]
+```

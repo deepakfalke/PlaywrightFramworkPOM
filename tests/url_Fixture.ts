@@ -1,6 +1,7 @@
 import {test as baseurl} from '@playwright/test';
 
 import dotenv from "dotenv" // load env file
+import { time } from 'node:console';
 
 dotenv.config({path:'Data/.env.uat'}) //set the env file path
 
@@ -17,7 +18,7 @@ type globalFixture={
       {
 
       //const flipurl="https://www.flipkart.com/account/login?ret=/";
-       await page.goto(envUrl) ;
+       await page.goto(envUrl,{waitUntil:"networkidle"}); // open url
        await use(envUrl) // use is used to pass value to test case
      
      }
