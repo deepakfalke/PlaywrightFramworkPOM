@@ -27,15 +27,7 @@ await flipcartpage.searchitem.fill(flipdata.searchproduct) // search item data f
 
 await page.waitForTimeout(2000)
 
-await flipcartpage.userlogin.click();
-
-await page.waitForTimeout(2000)
-
-await flipcartpage.emailId.fill(flipdata.EmailId); // email id from json file
-
-await page.waitForTimeout(2000)
-
-await flipcartpage.requestOtp.click();
+await flipcartpage.flipcartLogin(flipdata.EmailId)
 
 await page.pause();
 
