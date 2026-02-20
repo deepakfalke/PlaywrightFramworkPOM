@@ -1,4 +1,6 @@
 import { Locator,Page } from "@playwright/test";
+import { time } from "node:console";
+import { TIMEOUT } from "node:dns";
 
 export class FlipcartpageSearch
 {
@@ -17,7 +19,7 @@ export class FlipcartpageSearch
         this.userlogin=page.getByText('Login', { exact: true }).first();
 
         this.emailId=page.locator(`//input[@class='c3Bd2c yXUQVt']`);
-        this.requestOtp=page.getByRole('button', { name: 'Request OTP' });
+        this.requestOtp=page.getByRole('button', { name: 'Request OTP' })
     }
 
     async searchmyproduct(itemName:string,email:string)
@@ -26,7 +28,7 @@ export class FlipcartpageSearch
          await this.userlogin.waitFor({state:"visible"});
          await this.userlogin.click();
          await this.emailId.fill(email);
-         this.requestOtp.click();
+         await this.requestOtp.click({timeout:2000});
         }
     
 

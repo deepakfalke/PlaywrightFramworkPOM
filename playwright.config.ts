@@ -35,7 +35,7 @@ export default defineConfig({
     video:"retain-on-failure",
 
    
-    viewport: { width: 1920, height: 1080 }, // Set a specific, large viewport size
+   // viewport: { width: 1920, height: 1080 }, // Set a specific, large viewport size
     // ... other options
   
   },

@@ -14,7 +14,7 @@ skipRecordsWithEmptyValues:true
 let flipcartpageSearchobj:FlipcartpageSearch;
 
 
-const flipurl="https://www.flipkart.com/";
+     const flipurl="https://www.flipkart.com/account/login?ret=/";
   
 
 

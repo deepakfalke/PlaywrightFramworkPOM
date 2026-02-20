@@ -42,7 +42,10 @@ test("env test",async({page})=>{
               await page.waitForTimeout(2000)
 
 
-               await flipcartpage.flipcartLogin(csvdatas.emailid) // login method with email id from csv file
+               await flipcartpage.flipcartLogin(csvdatas.emailid) 
+               
+                // close browser after each record login
+               // login method with email id from csv file
 
                //await page.waitForTimeout(2000)
 
