@@ -17,7 +17,7 @@ test("switch window",async({page})=>{
     page.getByRole('textbox', { name: 'Search for Products, Brands and More' }).fill("Led TV"),
     page.keyboard.press("Enter"),
     page.getByText('VW 60 cm (24 inch) HD Ready LED TV 2025 Edition', { exact: true }).click()
-
+    
 
     ])
 
