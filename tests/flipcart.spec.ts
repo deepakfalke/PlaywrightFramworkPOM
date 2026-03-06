@@ -36,6 +36,8 @@ test.describe("Sanity check",function ()
             // search method with product name from json file
           await flipcartpage.flipcartLogin(data.EmailId)
 
+          // testing the git
+
         //  await page.pause();
 
     } )
