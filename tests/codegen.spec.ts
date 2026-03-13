@@ -14,4 +14,5 @@ test('test', async ({ page }) => {
   await page.getByRole('button', { name: 'Proceed to Buy Buy Amazon' }).click();
   await page.getByRole('textbox', { name: 'Enter mobile number or email' }).click();
   await page.getByRole('button', { name: 'Continue' }).click();
+  //test the script
 }); 
