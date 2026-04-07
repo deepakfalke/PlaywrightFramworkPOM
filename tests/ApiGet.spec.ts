@@ -12,7 +12,7 @@ test('getApi', async ({ request }) => {
 
     // validation 
     expect(response.status()).toBe(200);
-    expect(response.status()).not.toBe(400);
+    expect(response.status()).not.toBe(400); //bad request
      expect (responsetext).toContain("delectus aut autem");   
  
     expect (body.id).toBe(1);
