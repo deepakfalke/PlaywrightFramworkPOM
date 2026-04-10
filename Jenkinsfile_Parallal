@@ -6,7 +6,7 @@ pipeline {
     
     // The stages section defines the sequence of tasks.
     stages {
-        stage('Build and Install Dependencies') {
+        stage('Build') {
             steps {
                  bat 'npm install'
                   bat'npx playwright install --with-deps'
@@ -20,7 +20,7 @@ pipeline {
                 
                }
         }
-        stage('Run Playwright Tests (Parallel Browsers)') {
+        stage('Tests (Parallel Browsers)') {
             parallel 
             {
                 stage('Chromium Tests') {
@@ -50,6 +50,13 @@ pipeline {
 
         
             
+        }
+         stage('Deployement') {
+            steps {
+                // Installs project dependencies defined in package.json.
+                // bat 'npx playwright --help'
+                
+               }
         }
     }
 
