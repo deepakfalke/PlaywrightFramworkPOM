@@ -20,7 +20,8 @@ export class Flipcartpage
         this.userLogin_button= page.getByRole('link', { name: 'Login' })
         this.userSignUp_button= page.getByText('Sign Up', { exact: true })
         this.emailId=page.locator(`//input[@class='c3Bd2c yXUQVt']`);
-        this.requestOtp=page.getByRole('button', { name: 'Request OTP' })
+        this.requestOtp=page.getByRole('button', { name: 'Request OTP' })  //
+        
     }
 
      async searchMyProduct(itemName:string)

@@ -20,14 +20,36 @@ pipeline {
                 
                }
         }
-
-        stage('Run Playwright Tests') {
-            steps {
-                // Executes the Playwright tests in headless mode by default.
-                // Configuration can be specified in playwright.config.ts or via command line flags.
-              //  bat 'npx playwright test flipcartusingEnv.spec.ts --project=chromium --headed'
-             bat 'npx playwright test -g "json dd test" --project=chromium --headed'
+        stage('Run Playwright Tests (Parallel Browsers)') {
+            parallel 
+            {
+                stage('Chromium Tests') {
+                steps {
+                 // Executes the Playwright tests in headless mode by default.
+                 // Configuration can be specified in playwright.config.ts or via command line flags.
+                //  bat 'npx playwright test flipcartusingEnv.spec.ts --project=chromium --headed'
+                  bat 'npx playwright test -g "json dd test" --project=chromium --headed'
+                }
+                }
+                stage('Firefox Tests') {
+                    steps 
+                {
+                  // Runs tests in Firefox, allowing for cross-browser testing.
+               // bat 'npx playwright test flipcartusingEnv.spec.ts --project=firefox --headed'
+                 bat 'npx playwright test -g "json dd test" --project=firefox --headed'
+                }
+                }
+                stage('WebKit Tests') {
+                    steps {
+                // Executes tests in WebKit, ensuring coverage across all major browsers.
+               // bat 'npx playwright test flipcartusingEnv.spec.ts --project=webkit --headed'
+             bat 'npx playwright test -g "json dd test" --project=webkit --headed'
             }
+                }
+            }
+
+        
+            
         }
     }
 
