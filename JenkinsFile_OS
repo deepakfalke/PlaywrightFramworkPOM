@@ -1,0 +1,96 @@
+pipeline {
+    // Defines where the pipeline will run. Using 'agent any' lets Jenkins allocate an available agent.
+    agent any
+
+    // Configures tools like NodeJS, ensuring they are available in the PATH.
+    
+    // The stages section defines the sequence of tasks.
+   
+    agent none
+
+    stages {
+        stage('Matrix Build') {
+            matrix {
+                axes {
+                    axis {
+                        name 'OS'
+                        values 'windows', 'linux'
+                    }
+                    axis {
+                        name 'BROWSER'
+                        values 'chromium', 'firefox', 'webkit'
+                    }
+                }
+
+                agent {
+                    label "${OS}"
+                }
+
+                stages {
+                    stage('Install Dependencies') {
+                        steps {
+                            script {
+                                if (OS == 'windows') {
+                                    bat 'npm install'
+                                    bat 'npx playwright install --with-deps'
+                                } else {
+                                    sh 'npm install'
+                                    sh 'npx playwright install --with-deps'
+                                }
+                            }
+                        }
+                    }
+
+                    stage('Help') {
+                        steps {
+                            script {
+                                if (OS == 'windows') {
+                                    bat 'npx playwright --help'
+                                } else {
+                                    sh 'npx playwright --help'
+                                }
+                            }
+                        }
+                    }
+
+                    stage('Run Playwright Tests') {
+                        steps {
+                            script {
+                                if (OS == 'windows') {
+                                    bat "npx playwright test -g \"json dd test\" --project=${BROWSER} --headed"
+                                } else {
+                                    sh "npx playwright test -g 'json dd test' --project=${BROWSER} --headed"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+    // The post section defines actions to run after the stages are complete.
+    post {
+        // Actions that run regardless of the build result (success, failure, unstable).
+        success {
+            // Archives the JUnit report so Jenkins can display structured test results.
+            emailext (
+                subject: "Jenkins Build success: ${env.JOB_NAME}",
+                body: "Project: ${env.JOB_NAME}\nBuild Number: ${env.BUILD_NUMBER}\nView the log at: ${env.BUILD_URL}\n\nStatus details attached.",
+                attachmentsPattern: 'build_status.txt', // Attach the file created by the bat command
+                to: "deepfalke@gmail.com"
+            )
+            
+               }
+        failure {
+            emailext (
+                subject: "Jenkins Build failed: ${env.JOB_NAME}",
+                body: "Project: ${env.JOB_NAME}\nBuild Number: ${env.BUILD_NUMBER}\nView the log at: ${env.BUILD_URL}\n\nStatus details attached.",
+                attachmentsPattern: 'build_status.txt', // Attach the file created by the bat command
+                to: "deepfalke@gmail.com"
+            )
+        }
+    }
+}
+
