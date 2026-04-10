@@ -51,13 +51,13 @@ pipeline {
         
             
         }
-         /*stage('Deployement') {
+        stage('Deployement') {
             steps {
                 // Installs project dependencies defined in package.json.
                 // bat 'npx playwright --help'
-                
+                bat 'echo "Deployment steps would go here"'
                }
-        }*/
+        }
     }
 
     // The post section defines actions to run after the stages are complete.
