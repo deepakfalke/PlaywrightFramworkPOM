@@ -9,6 +9,13 @@ pipeline {
   //  agent none
 
     stages {
+        stage('Build') {
+            steps {
+                 bat 'npm install'
+                  bat'npx playwright install --with-deps'
+            }
+        }
+        
         stage('Matrix Build') {
             matrix {
                 axes {
@@ -26,32 +33,8 @@ pipeline {
                     label "${OS}"
                 }
 
-                stages {
-                    stage('Install Dependencies') {
-                        steps {
-                            script {
-                                if (OS == 'windows') {
-                                    bat 'npm install'
-                                    bat 'npx playwright install --with-deps'
-                                } else {
-                                    sh 'npm install'
-                                    sh 'npx playwright install --with-deps'
-                                }
-                            }
-                        }
-                    }
-
-                    stage('Help') {
-                        steps {
-                            script {
-                                if (OS == 'windows') {
-                                    bat 'npx playwright --help'
-                                } else {
-                                    sh 'npx playwright --help'
-                                }
-                            }
-                        }
-                    }
+                stages {                   
+                    
 
                     stage('Run Playwright Tests') {
                         steps {
@@ -66,6 +49,13 @@ pipeline {
                     }
                 }
             }
+        }
+        stage('Deployement') {
+            steps {
+                // Installs project dependencies defined in package.json.
+                // bat 'npx playwright --help'
+                bat 'echo "Deployment steps would go here"'
+               }
         }
     }
 
