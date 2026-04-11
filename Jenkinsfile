@@ -49,7 +49,7 @@ pipeline {
                 to: "deepfalke@gmail.com"
                 -s "Playwright Test Report" */
 
-                #!/bin/bash
+               // #!/bin/bash
 
                         BUILD_NUMBER=${BUILD_NUMBER:-"Staging Build"}
 
