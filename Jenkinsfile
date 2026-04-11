@@ -32,8 +32,9 @@ pipeline {
          stage('Reporting') {
             steps {
                 // Publish JUnit test results to Jenkins for better visualization and tracking.
-             //  bat 'npx playwright show-report'
-             sh 'npx playwright show-report'
+             
+                bat 'npx playwright show-report'    
+
             }
            }
     }
