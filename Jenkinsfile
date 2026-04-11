@@ -33,7 +33,7 @@ pipeline {
             steps {
                 // Publish JUnit test results to Jenkins for better visualization and tracking.
              
-                bat 'npx playwright show-report'    
+                bat 'npx playwright show-report --port=9333'    
 
             }
            }
