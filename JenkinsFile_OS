@@ -79,13 +79,12 @@ pipeline {
                 }
             }
         }
-        stage('Deployement') {
+        stage('Reporting') {
             steps {
-                // Installs project dependencies defined in package.json.
-                // bat 'npx playwright --help'
-                bat 'echo "Deployment steps would go here"'
-               }
-        }
+                // Publish JUnit test results to Jenkins for better visualization and tracking.
+               bat 'npx playwright show-report'
+            }
+           }
     }
 
 
