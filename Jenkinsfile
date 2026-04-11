@@ -29,6 +29,12 @@ pipeline {
              bat 'npx playwright test -g "json dd test" --project=chromium --headed'
             }
         }
+         reporting {
+            steps {
+                // Publish JUnit test results to Jenkins for better visualization and tracking.
+                junit 'test-results/*.xml'
+            }
+        }
     }
 
     // The post section defines actions to run after the stages are complete.

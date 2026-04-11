@@ -64,14 +64,9 @@ pipeline {
 
         
             
-        }
-        stage('Deployement') {
-            steps {
-               
-                  bat 'echo "Deployment steps would go here"'
-                
-               }
-        }
+        }       
+        
+       
        
     }
 
