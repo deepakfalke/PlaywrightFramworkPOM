@@ -34,13 +34,6 @@ pipeline {
             }
            }
 
-        stage('Help') {
-            steps {
-                // Installs project dependencies defined in package.json.
-                 bat 'npx playwright --help'
-                
-               }
-        }
         stage('Tests (Parallel Browsers)') {
             parallel 
             {
