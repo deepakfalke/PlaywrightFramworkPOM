@@ -51,7 +51,7 @@ pipeline {
 
                 #!/bin/bash
 
-                        BUILD_NUMBER=${BUILD_NUMBER:-"local"}
+                        BUILD_NUMBER=${BUILD_NUMBER:-"Staging Build"}
 
                         SUBJECT="Playwright Test Report - Build #${BUILD_NUMBER}"
 
@@ -67,7 +67,7 @@ pipeline {
                         -a "Content-Type: text/html" \
                         -s "$SUBJECT" \
                         -A playwright-report/index.html \
-                        your-email@example.com
+                        deepfalke@gmail.com
             )
             
                }
