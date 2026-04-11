@@ -43,17 +43,10 @@ pipeline {
         success {
             // Archives the JUnit report so Jenkins can display structured test results.
             emailext (
-             /*   subject: "Jenkins Build success: ${env.JOB_NAME}",
+              subject: "Jenkins Build success: ${env.JOB_NAME}",
                 body: "Project: ${env.JOB_NAME}\nBuild Number: ${env.BUILD_NUMBER}\nView the log at: ${env.BUILD_URL}\n\nStatus details attached.",
                 attachmentsPattern: 'build_status.txt', // Attach the file created by the bat command
-                to: "deepfalke@gmail.com"
-                -s "Playwright Test Report" */
-
-                subject: "Jenkins Build success: ${env.JOB_NAME}",
-                body: "Project: ${env.JOB_NAME}\nBuild Number: ${env.B  UILD_NUMBER}\nView the log at: ${env.BUILD_URL}\n\nStatus details attached.",
-                attachmentsPattern: 'build_status.txt',
-                     // Attach the file created by the bat command    
-                to: "deepfalke@gmail.com"    
+                to: "deepfalke@gmail.com"                
 
             )
             
