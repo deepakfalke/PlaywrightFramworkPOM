@@ -64,8 +64,7 @@ pipeline {
                 body: "Project: ${env.JOB_NAME}\nBuild Number: ${env.BUILD_NUMBER}\nView the log at: ${env.BUILD_URL}\n\nStatus details attached.",
                 attachmentsPattern: 'build_status.txt', // Attach the file created by the bat command
                 to: "deepfalke@gmail.com"
-                -s "Playwright Test Report" \ 
-                
+                               
             )
         }
     }
