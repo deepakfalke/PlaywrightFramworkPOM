@@ -49,25 +49,12 @@ pipeline {
                 to: "deepfalke@gmail.com"
                 -s "Playwright Test Report" */
 
-               // #!/bin/bash
+                subject: "Jenkins Build success: ${env.JOB_NAME}",
+                body: "Project: ${env.JOB_NAME}\nBuild Number: ${env.B  UILD_NUMBER}\nView the log at: ${env.BUILD_URL}\n\nStatus details attached.",
+                attachmentsPattern: 'build_status.txt',
+                     // Attach the file created by the bat command    
+                to: "deepfalke@gmail.com"    
 
-                        BUILD_NUMBER:${BUILD_NUMBER:-"Staging Build"}
-
-                        SUBJECT:"Playwright Test Report - Build #${BUILD_NUMBER}"
-
-                        BODY:$(cat <<EOF
-                        <h2>Playwright Test Execution Report</h2>
-                        <p>Build Number: ${BUILD_NUMBER}</p>
-                        <p>Check attached HTML report.</p>
-                        <p>Or view report in Jenkins artifacts.</p>
-                        EOF
-                        )
-
-                        echo "$BODY" | mailx \
-                        -a "Content-Type: text/html" \
-                        -s "$SUBJECT" \
-                        -A playwright-report/index.html \
-                        deepfalke@gmail.com
             )
             
                }
