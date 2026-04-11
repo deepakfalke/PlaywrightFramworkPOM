@@ -9,7 +9,36 @@ pipeline {
   //  agent none
 
     stages {
-        stage('Build') {
+        stage('Clone Repo') {
+            steps {
+                // Get some code from a GitHub repository
+               git 'https://github.com/deepakfalke/PlaywrightFramworkPOM.git'
+                bat 'echo "Clone Repository succefull"'
+                 }
+            }
+            stage('Maven Build') {
+            steps {
+                // To run Maven on a Windows agent, use
+               //  bat "mvn -Dmaven.test.failure.ignore=true clean package"
+                // bat "mvn clean package"
+                 bat 'echo "Mavn build successfull"'
+                   }
+            }
+            stage('Docker Image') {
+            steps {
+                // Create docker image
+            //  bat 'eco"docker build -t deepak/mavenwebapp"'
+            bat 'echo "Docker Image created"'
+                }
+            }
+             stage('Deployment-Kubernet') {
+            steps {
+                // To run Maven on a Windows agent, use
+                // sh 'kubect1 apply -f mavep-web-app-deploy.yml'
+                bat 'echo "Deployement is here on kubenet"'
+                 }
+               }
+        stage('Automation Build') {
             steps {
                  bat 'npm install'
                   bat'npx playwright install --with-deps'

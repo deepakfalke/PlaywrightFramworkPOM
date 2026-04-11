@@ -11,7 +11,7 @@ pipeline {
                  bat 'npm install'
                   bat'npx playwright install --with-deps'
             }
-        }
+           }
 
         stage('Help') {
             steps {
