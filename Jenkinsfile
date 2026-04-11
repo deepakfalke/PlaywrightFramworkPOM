@@ -51,11 +51,11 @@ pipeline {
 
                // #!/bin/bash
 
-                        BUILD_NUMBER=${BUILD_NUMBER:-"Staging Build"}
+                        BUILD_NUMBER:${BUILD_NUMBER:-"Staging Build"}
 
-                        SUBJECT="Playwright Test Report - Build #${BUILD_NUMBER}"
+                        SUBJECT:"Playwright Test Report - Build #${BUILD_NUMBER}"
 
-                        BODY=$(cat <<EOF
+                        BODY:$(cat <<EOF
                         <h2>Playwright Test Execution Report</h2>
                         <p>Build Number: ${BUILD_NUMBER}</p>
                         <p>Check attached HTML report.</p>
