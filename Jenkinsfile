@@ -29,16 +29,15 @@ pipeline {
              bat 'npx playwright test -g "json dd test" --project=chromium --headed'
             }
         }
-         stage('Reporting') {
+        /* stage('Reporting') {
             steps {
                 // Publish JUnit test results to Jenkins for better visualization and tracking.
              
-                bat 'npx playwright show-report --port=9333' 
+                bat 'npx playwright show-report --port=9333'             
                
-                trap "echo 'Process interrupted!'; exit 1" SIGINT
 
 
-            }
+            } */
            }
     }
 
