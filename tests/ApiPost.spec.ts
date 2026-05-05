@@ -19,7 +19,7 @@ const postdata={
         // validation
 
         const responsebody = await response.json();
-        expect(response.status()).toBe(200);
+        expect(response.status()).toBe(201);
         expect(responsebody.token).not.toBeNull();
 
 
