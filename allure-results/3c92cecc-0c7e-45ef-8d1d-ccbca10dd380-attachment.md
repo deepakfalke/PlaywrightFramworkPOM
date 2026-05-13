@@ -1,0 +1,1929 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: amazon.spec.ts >> Amazon Automation >> Navigate to Amazon, search, add to cart, go to cart
+- Location: tests\amazon.spec.ts:8:9
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('.s-result-item h2 a').first()
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Shortcuts menu" [ref=e3]:
+      - heading "Skip to" [level=2] [ref=e4]
+      - list "Skip to" [ref=e5]:
+        - listitem [ref=e6]:
+          - link "main content" [ref=e7] [cursor=pointer]:
+            - /url: "#skippedLink"
+            - text: Main content
+        - listitem [ref=e8]:
+          - link "Results" [ref=e9] [cursor=pointer]:
+            - /url: .s-asin a:has(h2)
+        - listitem [ref=e10]:
+          - link "Filters" [ref=e11] [cursor=pointer]:
+            - /url: "#s-refinements > div.a-section > div:first-child"
+      - separator [ref=e12]
+      - heading "Keyboard shortcuts" [level=2] [ref=e13]
+      - list "Keyboard shortcuts" [ref=e14]:
+        - listitem [ref=e15]:
+          - link "Search, alt, forward slash" [ref=e16] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - generic [ref=e17]:
+              - generic [ref=e18]: Search
+              - generic [ref=e19]:
+                - generic [ref=e20]: alt
+                - generic [ref=e21]: +
+                - generic [ref=e22]: /
+        - listitem [ref=e23]:
+          - link "Cart, shift, alt, c" [ref=e24] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - generic [ref=e25]:
+              - generic [ref=e26]: Cart
+              - generic [ref=e27]:
+                - generic [ref=e28]: shift
+                - generic [ref=e29]: +
+                - generic [ref=e30]: alt
+                - generic [ref=e31]: +
+                - generic [ref=e32]: C
+        - listitem [ref=e33]:
+          - link "Home, shift, alt, h" [ref=e34] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - generic [ref=e35]:
+              - generic [ref=e36]: Home
+              - generic [ref=e37]:
+                - generic [ref=e38]: shift
+                - generic [ref=e39]: +
+                - generic [ref=e40]: alt
+                - generic [ref=e41]: +
+                - generic [ref=e42]: H
+        - listitem [ref=e43]:
+          - link "Your orders, shift, alt, o" [ref=e44] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - generic [ref=e45]:
+              - generic [ref=e46]: Orders
+              - generic [ref=e47]:
+                - generic [ref=e48]: shift
+                - generic [ref=e49]: +
+                - generic [ref=e50]: alt
+                - generic [ref=e51]: +
+                - generic [ref=e52]: O
+        - listitem [ref=e53]:
+          - button "Show/hide shortcuts, shift, alt, z" [ref=e54] [cursor=pointer]:
+            - generic [ref=e55]:
+              - generic [ref=e56]: Show/Hide shortcuts
+              - generic [ref=e57]:
+                - generic [ref=e58]: shift
+                - generic [ref=e59]: +
+                - generic [ref=e60]: alt
+                - generic [ref=e61]: +
+                - generic [ref=e62]: Z
+      - generic [ref=e68]: To move between items, use your keyboard's up or down arrows.
+    - banner [ref=e69]:
+      - navigation "Primary" [ref=e70]:
+        - generic [ref=e71]:
+          - generic [ref=e72]:
+            - link "Amazon" [ref=e74] [cursor=pointer]:
+              - /url: /ref=nav_logo
+            - button "Deliver to India" [ref=e77] [cursor=pointer]:
+              - generic [ref=e79]:
+                - generic [ref=e80]: Deliver to
+                - generic [ref=e81]: India
+          - search [ref=e84]:
+            - generic [ref=e87]:
+              - generic [ref=e89]: All
+              - combobox "Select the department you want to search in" [ref=e91] [cursor=pointer]:
+                - option "All Departments" [selected]
+                - option "Arts & Crafts"
+                - option "Automotive"
+                - option "Baby"
+                - option "Beauty & Personal Care"
+                - option "Books"
+                - option "Boys' Fashion"
+                - option "Computers"
+                - option "Deals"
+                - option "Digital Music"
+                - option "Electronics"
+                - option "Girls' Fashion"
+                - option "Health & Household"
+                - option "Home & Kitchen"
+                - option "Industrial & Scientific"
+                - option "Kindle Store"
+                - option "Luggage"
+                - option "Men's Fashion"
+                - option "Movies & TV"
+                - option "Music, CDs & Vinyl"
+                - option "Pet Supplies"
+                - option "Prime Video"
+                - option "Software"
+                - option "Sports & Outdoors"
+                - option "Tools & Home Improvement"
+                - option "Toys & Games"
+                - option "Video Games"
+                - option "Women's Fashion"
+            - searchbox "Search Amazon" [ref=e94]: 55 inch LG LED TV
+            - generic "Go" [ref=e97] [cursor=pointer]:
+              - button "Go" [ref=e98]
+          - generic [ref=e100]:
+            - generic [ref=e101]:
+              - link "Choose a language for shopping in Amazon United States. The current selection is English (EN)." [ref=e102] [cursor=pointer]:
+                - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang_ais
+                - generic [ref=e105]:
+                  - img "United States" [ref=e106]
+                  - generic [ref=e107]: EN
+              - button "Expand to Change Language or Country" [ref=e108] [cursor=pointer]
+            - generic [ref=e109]:
+              - link "Hello, sign in Account & Lists" [ref=e110] [cursor=pointer]:
+                - /url: https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fs%3Fk%3D55%2Binch%2BLG%2BLED%2BTV%26ref%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+                - generic [ref=e112]: Hello, sign in
+                - generic [ref=e113]: Account & Lists
+              - button "Expand Account and Lists" [ref=e114] [cursor=pointer]
+            - link "Returns & Orders" [ref=e115] [cursor=pointer]:
+              - /url: /gp/css/order-history?ref_=nav_orders_first
+              - generic [ref=e116]: Returns
+              - generic [ref=e117]: "& Orders"
+            - link "0 items in cart" [ref=e118] [cursor=pointer]:
+              - /url: /gp/cart/view.html?ref_=nav_cart
+              - generic [ref=e120]: "0"
+              - generic [ref=e123]: Cart
+        - alertdialog "International Shopping Transition Alert" [ref=e124]:
+          - generic [ref=e125]:
+            - generic [ref=e129]:
+              - text: We're showing you items that ship to
+              - strong [ref=e130]: India
+              - text: . To see items that ship to a different country, change your delivery address.
+            - generic [ref=e131]:
+              - generic [ref=e133] [cursor=pointer]:
+                - button "Submit" [ref=e134]
+                - generic [ref=e135]: Dismiss
+              - generic [ref=e137] [cursor=pointer]:
+                - button "Submit" [ref=e138]
+                - generic [ref=e139]: Change Address
+        - generic [ref=e140]:
+          - button "Open All Categories Menu" [ref=e142] [cursor=pointer]:
+            - generic [ref=e144]: All
+          - list [ref=e148]:
+            - listitem [ref=e149]:
+              - link "Today's Deals" [ref=e151] [cursor=pointer]:
+                - /url: /gp/goldbox?ref_=nav_cs_gb
+            - listitem [ref=e152]:
+              - link "Gift Cards" [ref=e154] [cursor=pointer]:
+                - /url: /gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc
+            - listitem [ref=e155]:
+              - link "Sell" [ref=e157] [cursor=pointer]:
+                - /url: /b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell
+            - listitem [ref=e158]:
+              - link "Registry" [ref=e160] [cursor=pointer]:
+                - /url: /gp/browse.html?node=16115931011&ref_=nav_cs_registry
+            - listitem [ref=e161]:
+              - link "Prime Video" [ref=e163] [cursor=pointer]:
+                - /url: /Amazon-Video/b/?ie=UTF8&node=2858778011&ref_=nav_cs_prime_video
+            - listitem [ref=e164]:
+              - link "Customer Service" [ref=e166] [cursor=pointer]:
+                - /url: /gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice
+            - link "Click to call our Disability Customer Support line, or reach us directly at 1-888-283-1678" [ref=e167] [cursor=pointer]:
+              - /url: /gp/help/customer/accessibility
+              - text: Disability Customer Support
+        - dialog [ref=e170]
+    - generic [ref=e172]:
+      - 'heading "1-16 of 73 results for \"55 inch LG LED TV\" Sort by: Featured" [level=1] [ref=e175]':
+        - generic [ref=e176]:
+          - heading "1-16 of 73 results for \"55 inch LG LED TV\"" [level=2] [ref=e179]
+          - generic [ref=e184]:
+            - generic [ref=e185]: "Sort by:"
+            - combobox "Sort by:" [ref=e186]:
+              - option "Featured" [selected]
+              - 'option "Price: Low to High"'
+              - 'option "Price: High to Low"'
+              - option "Avg. Customer Review"
+              - option "Newest Arrivals"
+              - option "Best Sellers"
+            - generic [ref=e189] [cursor=pointer]: Sort by:Featured
+      - generic [ref=e191]:
+        - generic [ref=e193]:
+          - generic [ref=e195]:
+            - generic [ref=e197]:
+              - generic [ref=e200]:
+                - heading "Results" [level=2] [ref=e201]
+                - generic [ref=e202]: Check each product page for other buying options.
+              - generic:
+                - list:
+                  - listitem [ref=e203]:
+                    - generic [ref=e209]:
+                      - link [ref=e215] [cursor=pointer]:
+                        - /url: /LG-Upscaling-Filmmaker-Compatible-55UA7700PUB/dp/B0F5SFM2MR/ref=sr_1_1?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-1
+                        - img [ref=e217]
+                      - generic [ref=e220]:
+                        - generic [ref=e221]:
+                          - heading "LG" [level=2] [ref=e224]
+                          - link "55-Inch Class UHD AI 4K UA77 Series Smart TV w/AI Sound Pro, HDR10, 4K Super Upscaling, Filmmaker Mode, Wow Orchestra, Compatible with Alexa (55UA7700PUB, 2025)" [ref=e225] [cursor=pointer]:
+                            - /url: /LG-Upscaling-Filmmaker-Compatible-55UA7700PUB/dp/B0F5SFM2MR/ref=sr_1_1?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-1
+                            - heading "55-Inch Class UHD AI 4K UA77 Series Smart TV w/AI Sound Pro, HDR10, 4K Super Upscaling, Filmmaker Mode, Wow Orchestra, Compatible with Alexa (55UA7700PUB, 2025)" [level=2] [ref=e226]
+                        - generic [ref=e229]:
+                          - generic [ref=e230]: "Options:"
+                          - 'link "Options: 5 sizes" [ref=e231] [cursor=pointer]':
+                            - /url: /LG-Upscaling-Filmmaker-Compatible-55UA7700PUB/dp/B0F5SFM2MR/ref=vo_sr_l_dp?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-1
+                            - generic [ref=e232]:
+                              - generic [ref=e233]: 5 sizes
+                              - generic [ref=e234]: 5 sizes
+                        - generic [ref=e236]:
+                          - text: "4.5"
+                          - button "4.5 out of 5 stars, rating details" [ref=e238] [cursor=pointer]:
+                            - generic [ref=e240]: 4.5 out of 5 stars
+                          - link "583 ratings" [ref=e244] [cursor=pointer]:
+                            - /url: /LG-Upscaling-Filmmaker-Compatible-55UA7700PUB/dp/B0F5SFM2MR/ref=sr_1_1?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-1#customerReviews
+                            - text: (583)
+                        - generic [ref=e247]:
+                          - link "See options" [ref=e255] [cursor=pointer]:
+                            - /url: /LG-Upscaling-Filmmaker-Compatible-55UA7700PUB/dp/B0F5SFM2MR/ref=sr_1_1_so_TELEVISION?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-1
+                          - generic [ref=e257]:
+                            - text: No featured offers available
+                            - text: INR 33,063.28
+                            - link "(13 used & new offers)" [ref=e259] [cursor=pointer]:
+                              - /url: /gp/offer-listing/B0F5SFM2MR/ref=sr_1_1_olp?keywords=55+inch+LG+LED+TV&dib_tag=se&dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&qid=1778233499&sr=8-1
+                  - listitem [ref=e262]:
+                    - generic [ref=e268]:
+                      - link [ref=e274] [cursor=pointer]:
+                        - /url: /LG-3840-2160-Commercial-Backlit/dp/B0GSSSL9T8/ref=sr_1_2?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-2
+                        - img [ref=e276]
+                      - generic [ref=e279]:
+                        - generic [ref=e280]:
+                          - heading "LG" [level=2] [ref=e283]
+                          - link "55\" 3840 x 2160 UHD Commercial Lite LED Backlit LCD TV - Black" [ref=e284] [cursor=pointer]:
+                            - /url: /LG-3840-2160-Commercial-Backlit/dp/B0GSSSL9T8/ref=sr_1_2?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-2
+                            - heading "55\" 3840 x 2160 UHD Commercial Lite LED Backlit LCD TV - Black" [level=2] [ref=e285]
+                        - generic [ref=e288]:
+                          - link "See options" [ref=e296] [cursor=pointer]:
+                            - /url: /LG-3840-2160-Commercial-Backlit/dp/B0GSSSL9T8/ref=sr_1_2_so_TELEVISION?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-2
+                          - generic [ref=e298]:
+                            - text: No featured offers available
+                            - text: INR 68,686.96
+                            - link "(8 new offers)" [ref=e300] [cursor=pointer]:
+                              - /url: /gp/offer-listing/B0GSSSL9T8/ref=sr_1_2_olp?keywords=55+inch+LG+LED+TV&dib_tag=se&dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&qid=1778233499&sr=8-2
+                  - listitem [ref=e303]:
+                    - generic [ref=e309]:
+                      - link [ref=e315] [cursor=pointer]:
+                        - /url: /LG-50UR640S9UD-SuperSign-Embedded-Management/dp/B0B2DG1Z1G/ref=sr_1_3?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-3
+                        - img [ref=e317]
+                      - generic [ref=e320]:
+                        - generic [ref=e321]:
+                          - heading "LG" [level=2] [ref=e324]
+                          - link "50UR640S9UD 50\" Smart LED-LCD TV - 4K UHDTV - TAA Compliant" [ref=e325] [cursor=pointer]:
+                            - /url: /LG-50UR640S9UD-SuperSign-Embedded-Management/dp/B0B2DG1Z1G/ref=sr_1_3?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-3
+                            - heading "50UR640S9UD 50\" Smart LED-LCD TV - 4K UHDTV - TAA Compliant" [level=2] [ref=e326]
+                        - generic [ref=e328]:
+                          - text: "3.6"
+                          - button "3.6 out of 5 stars, rating details" [ref=e330] [cursor=pointer]:
+                            - generic [ref=e332]: 3.6 out of 5 stars
+                          - link "4 ratings" [ref=e336] [cursor=pointer]:
+                            - /url: /LG-50UR640S9UD-SuperSign-Embedded-Management/dp/B0B2DG1Z1G/ref=sr_1_3?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-3#customerReviews
+                            - text: (4)
+                        - generic [ref=e339]:
+                          - link "See options" [ref=e347] [cursor=pointer]:
+                            - /url: /LG-50UR640S9UD-SuperSign-Embedded-Management/dp/B0B2DG1Z1G/ref=sr_1_3_so_TELEVISION?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-3
+                          - generic [ref=e349]:
+                            - text: No featured offers available
+                            - text: INR 42,421.52
+                            - link "(4 used & new offers)" [ref=e351] [cursor=pointer]:
+                              - /url: /gp/offer-listing/B0B2DG1Z1G/ref=sr_1_3_olp?keywords=55+inch+LG+LED+TV&dib_tag=se&dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&qid=1778233499&sr=8-3
+                  - listitem [ref=e354]:
+                    - generic [ref=e360]:
+                      - link [ref=e366] [cursor=pointer]:
+                        - /url: /LG-Commercial-Direct-Lit-Platform-Management/dp/B0GTBQYBHR/ref=sr_1_4?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-4
+                        - img [ref=e368]
+                      - generic [ref=e371]:
+                        - generic [ref=e372]:
+                          - heading "LG" [level=2] [ref=e375]
+                          - link "PK640S 55\" UHD 4K HDR Commercial Signage TV Direct-Lit LED, webOS 25 Smart Platform, 300-Nit Bright, HDMI/LAN/Wi-Fi Control, Content & Group Management" [ref=e376] [cursor=pointer]:
+                            - /url: /LG-Commercial-Direct-Lit-Platform-Management/dp/B0GTBQYBHR/ref=sr_1_4?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-4
+                            - heading "PK640S 55\" UHD 4K HDR Commercial Signage TV Direct-Lit LED, webOS 25 Smart Platform, 300-Nit Bright, HDMI/LAN/Wi-Fi Control, Content & Group Management" [level=2] [ref=e377]
+                        - generic [ref=e380]:
+                          - link "See options" [ref=e388] [cursor=pointer]:
+                            - /url: /LG-Commercial-Direct-Lit-Platform-Management/dp/B0GTBQYBHR/ref=sr_1_4_so_NOTEBOOK_COMPUTER?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-4
+                          - generic [ref=e390]:
+                            - text: No featured offers available
+                            - text: INR 69,915.20
+                            - link "(1 new offer)" [ref=e392] [cursor=pointer]:
+                              - /url: /gp/offer-listing/B0GTBQYBHR/ref=sr_1_4_olp?keywords=55+inch+LG+LED+TV&dib_tag=se&dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&qid=1778233499&sr=8-4
+                  - listitem [ref=e395]:
+                    - generic [ref=e401]:
+                      - link [ref=e407] [cursor=pointer]:
+                        - /url: /PANMILED-Backlight-55LB650V-55LB561V-55LB6100/dp/B09ZNMPWNZ/ref=sr_1_5?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-5
+                        - img [ref=e409]
+                      - generic [ref=e412]:
+                        - generic [ref=e413]:
+                          - link "10pcs LED Backlight Strips for LG 55\" TV DRT 3.0 55LB650V 55LB561V 55LB6100 55LB629V 55LB570V 55LB5900 55LB5500 55LF652V 55LF5800 55LB6500 55LF6000 55LB6300" [ref=e414] [cursor=pointer]:
+                            - /url: /PANMILED-Backlight-55LB650V-55LB561V-55LB6100/dp/B09ZNMPWNZ/ref=sr_1_5?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-5
+                            - heading "10pcs LED Backlight Strips for LG 55\" TV DRT 3.0 55LB650V 55LB561V 55LB6100 55LB629V 55LB570V 55LB5900 55LB5500 55LF652V 55LF5800 55LB6500 55LF6000 55LB6300" [level=2] [ref=e415]
+                          - generic [ref=e418]: LED
+                        - generic [ref=e420]:
+                          - text: "4.3"
+                          - button "4.3 out of 5 stars, rating details" [ref=e422] [cursor=pointer]:
+                            - generic [ref=e424]: 4.3 out of 5 stars
+                          - link "93 ratings" [ref=e428] [cursor=pointer]:
+                            - /url: /PANMILED-Backlight-55LB650V-55LB561V-55LB6100/dp/B09ZNMPWNZ/ref=sr_1_5?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-5#customerReviews
+                            - text: (93)
+                        - generic [ref=e431]:
+                          - link "See options" [ref=e439] [cursor=pointer]:
+                            - /url: /PANMILED-Backlight-55LB650V-55LB561V-55LB6100/dp/B09ZNMPWNZ/ref=sr_1_5_so_STRING_LIGHT?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-5
+                          - generic [ref=e441]:
+                            - text: No featured offers available
+                            - text: INR 3,684.72
+                            - link "(6 used & new offers)" [ref=e443] [cursor=pointer]:
+                              - /url: /gp/offer-listing/B09ZNMPWNZ/ref=sr_1_5_olp?keywords=55+inch+LG+LED+TV&dib_tag=se&dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&qid=1778233499&sr=8-5
+                  - listitem [ref=e446]:
+                    - generic [ref=e452]:
+                      - link [ref=e458] [cursor=pointer]:
+                        - /url: /LG-55QNED82AUA-3-1-1-Channel-Matching-Soundbar/dp/B0FQPGD51P/ref=sr_1_6?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-6
+                        - img [ref=e460]
+                      - generic [ref=e463]:
+                        - generic [ref=e464]:
+                          - heading "LG" [level=2] [ref=e467]
+                          - link "55-Inch Class QNED AI 4K QNED82A Series Smart TV (55QNED82AUA, 2025) S70TY 3.1.1-Channel QNED TV Matching Soundbar (2024 Model)" [ref=e468] [cursor=pointer]:
+                            - /url: /LG-55QNED82AUA-3-1-1-Channel-Matching-Soundbar/dp/B0FQPGD51P/ref=sr_1_6?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-6
+                            - heading "55-Inch Class QNED AI 4K QNED82A Series Smart TV (55QNED82AUA, 2025) S70TY 3.1.1-Channel QNED TV Matching Soundbar (2024 Model)" [level=2] [ref=e469]
+                        - generic [ref=e472]:
+                          - generic [ref=e473]: "Options:"
+                          - 'link "Options: 7 sizes" [ref=e474] [cursor=pointer]':
+                            - /url: /LG-55QNED82AUA-3-1-1-Channel-Matching-Soundbar/dp/B0FQPGD51P/ref=vo_sr_l_dp?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-6
+                            - generic [ref=e475]:
+                              - generic [ref=e476]: 7 sizes
+                              - generic [ref=e477]: 7 sizes
+                        - generic [ref=e480]:
+                          - link "See options" [ref=e488] [cursor=pointer]:
+                            - /url: /LG-55QNED82AUA-3-1-1-Channel-Matching-Soundbar/dp/B0FQPGD51P/ref=sr_1_6_so_TELEVISION?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-6
+                          - generic [ref=e490]:
+                            - text: No featured offers available
+                            - text: INR 66,037.74
+                            - link "(1 new offer)" [ref=e492] [cursor=pointer]:
+                              - /url: /gp/offer-listing/B0FQPGD51P/ref=sr_1_6_olp?keywords=55+inch+LG+LED+TV&dib_tag=se&dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&qid=1778233499&sr=8-6
+                  - listitem [ref=e495]:
+                    - generic [ref=e501]:
+                      - link [ref=e507] [cursor=pointer]:
+                        - /url: /LG-Commercial-Management-Scheduler-Connected%C2%AE/dp/B0B2DCDKX6/ref=sr_1_7?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-7
+                        - img [ref=e509]
+                      - generic [ref=e512]:
+                        - generic [ref=e513]:
+                          - heading "LG" [level=2] [ref=e516]
+                          - link "Commercial Lite UR340C 55UR340C9UD 55\" LED-LCD TV - 4K UHDTV - Navy Blue - TAA Compliant" [ref=e517] [cursor=pointer]:
+                            - /url: /LG-Commercial-Management-Scheduler-Connected%C2%AE/dp/B0B2DCDKX6/ref=sr_1_7?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-7
+                            - heading "Commercial Lite UR340C 55UR340C9UD 55\" LED-LCD TV - 4K UHDTV - Navy Blue - TAA Compliant" [level=2] [ref=e518]
+                        - generic [ref=e520]:
+                          - text: "5.0"
+                          - button "5.0 out of 5 stars, rating details" [ref=e522] [cursor=pointer]:
+                            - generic [ref=e524]: 5.0 out of 5 stars
+                          - link "3 ratings" [ref=e528] [cursor=pointer]:
+                            - /url: /LG-Commercial-Management-Scheduler-Connected%C2%AE/dp/B0B2DCDKX6/ref=sr_1_7?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-7#customerReviews
+                            - text: (3)
+                        - generic [ref=e531]:
+                          - link "See options" [ref=e539] [cursor=pointer]:
+                            - /url: /LG-Commercial-Management-Scheduler-Connected%C2%AE/dp/B0B2DCDKX6/ref=sr_1_7_so_TELEVISION?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-7
+                          - generic [ref=e541]:
+                            - text: No featured offers available
+                            - text: INR 75,583.06
+                            - link "(4 used & new offers)" [ref=e543] [cursor=pointer]:
+                              - /url: /gp/offer-listing/B0B2DCDKX6/ref=sr_1_7_olp?keywords=55+inch+LG+LED+TV&dib_tag=se&dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&qid=1778233499&sr=8-7
+                  - listitem [ref=e546]:
+                    - generic [ref=e552]:
+                      - link [ref=e558] [cursor=pointer]:
+                        - /url: /LG-55QNED85AUA-3-1-3-Channel-Matching-Soundbar/dp/B0FQPLNJJZ/ref=sr_1_8?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-8
+                        - img [ref=e560]
+                      - generic [ref=e563]:
+                        - generic [ref=e564]:
+                          - heading "LG" [level=2] [ref=e567]
+                          - link "55-Inch Class QNED evo AI QNED85A Series Mini LED 4K Smart TV (55QNED85AUA, 2025) SC9S 3.1.3-Channel Perfect Matching Soundbar (2024 Model)" [ref=e568] [cursor=pointer]:
+                            - /url: /LG-55QNED85AUA-3-1-3-Channel-Matching-Soundbar/dp/B0FQPLNJJZ/ref=sr_1_8?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-8
+                            - heading "55-Inch Class QNED evo AI QNED85A Series Mini LED 4K Smart TV (55QNED85AUA, 2025) SC9S 3.1.3-Channel Perfect Matching Soundbar (2024 Model)" [level=2] [ref=e569]
+                        - generic [ref=e572]:
+                          - generic [ref=e573]: "Options:"
+                          - 'link "Options: 6 sizes" [ref=e574] [cursor=pointer]':
+                            - /url: /LG-55QNED85AUA-3-1-3-Channel-Matching-Soundbar/dp/B0FQPLNJJZ/ref=vo_sr_l_dp?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-8
+                            - generic [ref=e575]:
+                              - generic [ref=e576]: 6 sizes
+                              - generic [ref=e577]: 6 sizes
+                        - generic [ref=e580]:
+                          - link "See options" [ref=e588] [cursor=pointer]:
+                            - /url: /LG-55QNED85AUA-3-1-3-Channel-Matching-Soundbar/dp/B0FQPLNJJZ/ref=sr_1_8_so_TELEVISION?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-8
+                          - generic [ref=e590]:
+                            - text: No featured offers available
+                            - text: INR 108,706.80
+                            - link "(1 new offer)" [ref=e592] [cursor=pointer]:
+                              - /url: /gp/offer-listing/B0FQPLNJJZ/ref=sr_1_8_olp?keywords=55+inch+LG+LED+TV&dib_tag=se&dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&qid=1778233499&sr=8-8
+                  - listitem [ref=e595]:
+                    - generic [ref=e601]:
+                      - link [ref=e607] [cursor=pointer]:
+                        - /url: /LG-55UR640S9UD-SuperSign-Embedded-Management/dp/B0B2DF6ZR3/ref=sr_1_9?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-9
+                        - img [ref=e609]
+                      - generic [ref=e612]:
+                        - generic [ref=e613]:
+                          - heading "LG" [level=2] [ref=e616]
+                          - link "55UR640S9UD 55\" Smart LED-LCD TV - 4K UHDTV - TAA Compliant" [ref=e617] [cursor=pointer]:
+                            - /url: /LG-55UR640S9UD-SuperSign-Embedded-Management/dp/B0B2DF6ZR3/ref=sr_1_9?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-9
+                            - heading "55UR640S9UD 55\" Smart LED-LCD TV - 4K UHDTV - TAA Compliant" [level=2] [ref=e618]
+                        - generic [ref=e620]:
+                          - text: "3.2"
+                          - button "3.2 out of 5 stars, rating details" [ref=e622] [cursor=pointer]:
+                            - generic [ref=e624]: 3.2 out of 5 stars
+                          - link "2 ratings" [ref=e628] [cursor=pointer]:
+                            - /url: /LG-55UR640S9UD-SuperSign-Embedded-Management/dp/B0B2DF6ZR3/ref=sr_1_9?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-9#customerReviews
+                            - text: (2)
+                        - generic [ref=e631]:
+                          - link "See options" [ref=e639] [cursor=pointer]:
+                            - /url: /LG-55UR640S9UD-SuperSign-Embedded-Management/dp/B0B2DF6ZR3/ref=sr_1_9_so_TELEVISION?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-9
+                          - generic [ref=e641]:
+                            - text: No featured offers available
+                            - text: INR 63,300.66
+                            - link "(4 used & new offers)" [ref=e643] [cursor=pointer]:
+                              - /url: /gp/offer-listing/B0B2DF6ZR3/ref=sr_1_9_olp?keywords=55+inch+LG+LED+TV&dib_tag=se&dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&qid=1778233499&sr=8-9
+                  - listitem [ref=e646]:
+                    - generic [ref=e652]:
+                      - link [ref=e658] [cursor=pointer]:
+                        - /url: /LG-55IN-Hospitality-Commercial-LITE/dp/B0CG4T8R6M/ref=sr_1_10?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-10
+                        - img [ref=e660]
+                      - generic [ref=e663]:
+                        - generic [ref=e664]:
+                          - heading "LG" [level=2] [ref=e667]
+                          - link "UN343H 55UN343H0UA 55\" LCD TV - 4K UHDTV - High Dynamic Range (HDR) - Dark Charcoal Gray - HDR10 Pro, HLG - 3840 x 2160 Resolution" [ref=e668] [cursor=pointer]:
+                            - /url: /LG-55IN-Hospitality-Commercial-LITE/dp/B0CG4T8R6M/ref=sr_1_10?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-10
+                            - heading "UN343H 55UN343H0UA 55\" LCD TV - 4K UHDTV - High Dynamic Range (HDR) - Dark Charcoal Gray - HDR10 Pro, HLG - 3840 x 2160 Resolution" [level=2] [ref=e669]
+                        - generic [ref=e671]:
+                          - text: "3.2"
+                          - button "3.2 out of 5 stars, rating details" [ref=e673] [cursor=pointer]:
+                            - generic [ref=e675]: 3.2 out of 5 stars
+                          - link "2 ratings" [ref=e679] [cursor=pointer]:
+                            - /url: /LG-55IN-Hospitality-Commercial-LITE/dp/B0CG4T8R6M/ref=sr_1_10?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-10#customerReviews
+                            - text: (2)
+                        - generic [ref=e682]:
+                          - link "See options" [ref=e690] [cursor=pointer]:
+                            - /url: /LG-55IN-Hospitality-Commercial-LITE/dp/B0CG4T8R6M/ref=sr_1_10_so_TELEVISION?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-10
+                          - generic [ref=e692]:
+                            - text: No featured offers available
+                            - text: INR 67,743.10
+                            - link "(9 new offers)" [ref=e694] [cursor=pointer]:
+                              - /url: /gp/offer-listing/B0CG4T8R6M/ref=sr_1_10_olp?keywords=55+inch+LG+LED+TV&dib_tag=se&dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&qid=1778233499&sr=8-10
+                  - listitem [ref=e697]:
+                    - generic [ref=e703]:
+                      - link [ref=e709] [cursor=pointer]:
+                        - /url: /LG-55QNED82AUA-3-1-3-Channel-Matching-Soundbar/dp/B0FQPQ59RK/ref=sr_1_11?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-11
+                        - img [ref=e711]
+                      - generic [ref=e714]:
+                        - generic [ref=e715]:
+                          - heading "LG" [level=2] [ref=e718]
+                          - link "55-Inch Class QNED AI 4K QNED82A Series Smart TV (55QNED82AUA, 2025) SC9S 3.1.3-Channel Perfect Matching Soundbar (2024 Model)" [ref=e719] [cursor=pointer]:
+                            - /url: /LG-55QNED82AUA-3-1-3-Channel-Matching-Soundbar/dp/B0FQPQ59RK/ref=sr_1_11?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-11
+                            - heading "55-Inch Class QNED AI 4K QNED82A Series Smart TV (55QNED82AUA, 2025) SC9S 3.1.3-Channel Perfect Matching Soundbar (2024 Model)" [level=2] [ref=e720]
+                        - generic [ref=e723]:
+                          - generic [ref=e724]: "Options:"
+                          - 'link "Options: 7 sizes" [ref=e725] [cursor=pointer]':
+                            - /url: /LG-55QNED82AUA-3-1-3-Channel-Matching-Soundbar/dp/B0FQPQ59RK/ref=vo_sr_l_dp?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-11
+                            - generic [ref=e726]:
+                              - generic [ref=e727]: 7 sizes
+                              - generic [ref=e728]: 7 sizes
+                        - generic [ref=e731]:
+                          - link "See options" [ref=e739] [cursor=pointer]:
+                            - /url: /LG-55QNED82AUA-3-1-3-Channel-Matching-Soundbar/dp/B0FQPQ59RK/ref=sr_1_11_so_TELEVISION?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-11
+                          - generic [ref=e741]:
+                            - text: No featured offers available
+                            - text: INR 75,638.80
+                            - link "(1 new offer)" [ref=e743] [cursor=pointer]:
+                              - /url: /gp/offer-listing/B0FQPQ59RK/ref=sr_1_11_olp?keywords=55+inch+LG+LED+TV&dib_tag=se&dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&qid=1778233499&sr=8-11
+                  - listitem [ref=e746]:
+                    - generic [ref=e752]:
+                      - link [ref=e758] [cursor=pointer]:
+                        - /url: /LG-C4-Processor-OLED55C4PUA-Matching/dp/B0D1475ZFX/ref=sr_1_12?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-12
+                        - img [ref=e760]
+                      - generic [ref=e763]:
+                        - generic [ref=e764]:
+                          - heading "LG" [level=2] [ref=e767]
+                          - link "55-Inch Class OLED evo C4 Series Smart TV 4K Processor Flat Screen with Alexa Built-in (OLED55C4PUA, 2024), Sound Bar SC9S Perfect Matching for OLED C TV and Dolby Atmos" [ref=e768] [cursor=pointer]:
+                            - /url: /LG-C4-Processor-OLED55C4PUA-Matching/dp/B0D1475ZFX/ref=sr_1_12?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-12
+                            - heading "55-Inch Class OLED evo C4 Series Smart TV 4K Processor Flat Screen with Alexa Built-in (OLED55C4PUA, 2024), Sound Bar SC9S Perfect Matching for OLED C TV and Dolby Atmos" [level=2] [ref=e769]
+                        - generic [ref=e772]:
+                          - link "See options" [ref=e780] [cursor=pointer]:
+                            - /url: /LG-C4-Processor-OLED55C4PUA-Matching/dp/B0D1475ZFX/ref=sr_1_12_so_TELEVISION?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-12
+                          - generic [ref=e782]:
+                            - text: No featured offers available
+                            - text: INR 158,690.50
+                            - link "(1 new offer)" [ref=e784] [cursor=pointer]:
+                              - /url: /gp/offer-listing/B0D1475ZFX/ref=sr_1_12_olp?keywords=55+inch+LG+LED+TV&dib_tag=se&dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&qid=1778233499&sr=8-12
+                  - listitem [ref=e787]:
+                    - generic [ref=e793]:
+                      - generic [ref=e795]:
+                        - generic "Amazon's Choice" [ref=e798]:
+                          - generic [ref=e807]: Overall Pick
+                        - link [ref=e812] [cursor=pointer]:
+                          - /url: /Philips-Monitor-Capacity-200x200-Lockable/dp/B07VFKMTF9/ref=sr_1_13?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-13
+                          - img [ref=e814]
+                      - generic [ref=e817]:
+                        - generic [ref=e818]:
+                          - heading "Philips" [level=2] [ref=e821]
+                          - link "Fixed TV Monitor Wall Mount Bracket for Most 17-55 Inch LED LCD OLED HDTV Flat Curved Screen TVs and Monitors with Max VESA 200x200 up to 55lbs, Lockable Safety Bar, SQM3221/27" [ref=e822] [cursor=pointer]:
+                            - /url: /Philips-Monitor-Capacity-200x200-Lockable/dp/B07VFKMTF9/ref=sr_1_13?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-13
+                            - heading "Fixed TV Monitor Wall Mount Bracket for Most 17-55 Inch LED LCD OLED HDTV Flat Curved Screen TVs and Monitors with Max VESA 200x200 up to 55lbs, Lockable Safety Bar, SQM3221/27" [level=2] [ref=e823]
+                        - generic [ref=e825]:
+                          - text: "4.2"
+                          - button "4.2 out of 5 stars, rating details" [ref=e827] [cursor=pointer]:
+                            - generic [ref=e829]: 4.2 out of 5 stars
+                          - link "497 ratings" [ref=e833] [cursor=pointer]:
+                            - /url: /Philips-Monitor-Capacity-200x200-Lockable/dp/B07VFKMTF9/ref=sr_1_13?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-13#customerReviews
+                            - text: (497)
+                        - generic [ref=e836]:
+                          - generic [ref=e839]:
+                            - generic [ref=e840]: Price, product page
+                            - link "INR 1,332.17" [ref=e841] [cursor=pointer]:
+                              - /url: /Philips-Monitor-Capacity-200x200-Lockable/dp/B07VFKMTF9/ref=sr_1_13?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-13
+                              - generic [ref=e842]:
+                                - generic [ref=e843]: INR 1,332.17
+                                - generic [ref=e844]:
+                                  - text: INR
+                                  - generic [ref=e845]:
+                                    - text: 1,332
+                                    - generic [ref=e846]: .
+                                  - text: "17"
+                          - generic [ref=e847]:
+                            - generic [ref=e853]: INR 1,308.55 delivery Mon, Jun 1
+                            - generic [ref=e854]: Ships to India
+                          - button "Add to cart" [ref=e868] [cursor=pointer]
+                          - group "colors available" [ref=e870]:
+                            - list [ref=e871]:
+                              - generic [ref=e872]:
+                                - listitem:
+                                  - link "Fixed Mount":
+                                    - /url: /Philips-Monitor-Capacity-200x200-Lockable/dp/B07VFKMTF9/ref=cs_sr_dp_loc_1?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-13
+                              - generic [ref=e875]:
+                                - listitem:
+                                  - link "Black":
+                                    - /url: /Philips-Monitor-Capacity-200x200-Lockable/dp/B07VDGKZDF/ref=cs_sr_dp_loc_2?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-13
+                              - generic [ref=e878]:
+                                - listitem:
+                                  - link "Tilt Mount":
+                                    - /url: /Philips-Monitor-Capacity-200x200-Lockable/dp/B084NTKNCG/ref=cs_sr_dp_loc_3?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-13
+                  - listitem [ref=e883]:
+                    - generic [ref=e889]:
+                      - link [ref=e895] [cursor=pointer]:
+                        - /url: /Sony-Exclusive-Features-Playstation%C2%AE5-K-55XR70/dp/B0D53DJKKZ/ref=sr_1_14?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-14
+                        - img [ref=e897]
+                      - generic [ref=e900]:
+                        - generic [ref=e901]:
+                          - heading "Sony" [level=2] [ref=e904]
+                          - link "55 Inch Mini LED QLED 4K Ultra HD TV BRAVIA 7 Smart Google TV with Dolby Vision HDR and Exclusive Features for PlayStation®5 (K-55XR70), 2024 Model BRAVIA Theater Bar 9 Sound Bar" [ref=e905] [cursor=pointer]:
+                            - /url: /Sony-Exclusive-Features-Playstation%C2%AE5-K-55XR70/dp/B0D53DJKKZ/ref=sr_1_14?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-14
+                            - heading "55 Inch Mini LED QLED 4K Ultra HD TV BRAVIA 7 Smart Google TV with Dolby Vision HDR and Exclusive Features for PlayStation®5 (K-55XR70), 2024 Model BRAVIA Theater Bar 9 Sound Bar" [level=2] [ref=e906]
+                        - generic [ref=e909]:
+                          - link "See options" [ref=e917] [cursor=pointer]:
+                            - /url: /Sony-Exclusive-Features-Playstation%C2%AE5-K-55XR70/dp/B0D53DJKKZ/ref=sr_1_14_so_TELEVISION?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-14
+                          - generic [ref=e919]:
+                            - text: No featured offers available
+                            - text: INR 273,614.08
+                            - link "(1 new offer)" [ref=e921] [cursor=pointer]:
+                              - /url: /gp/offer-listing/B0D53DJKKZ/ref=sr_1_14_olp?keywords=55+inch+LG+LED+TV&dib_tag=se&dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&qid=1778233499&sr=8-14
+                  - listitem [ref=e924]:
+                    - generic [ref=e930]:
+                      - link [ref=e936] [cursor=pointer]:
+                        - /url: /Samsung-55-Inch-Processor-Upscaling-Xcelerator/dp/B0DXN7PBFC/ref=sr_1_15?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-15
+                        - img [ref=e938]
+                      - generic [ref=e941]:
+                        - generic [ref=e942]:
+                          - heading "Samsung" [level=2] [ref=e945]
+                          - link "55-Inch Class S90F Smart TV (2025 Model, 55S90F), NQ4 Gen3 Processor, Upscaling Pro, HDR+, Motion Xcelerator 144Hz, Vision, Alexa Built-in" [ref=e946] [cursor=pointer]:
+                            - /url: /Samsung-55-Inch-Processor-Upscaling-Xcelerator/dp/B0DXN7PBFC/ref=sr_1_15?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-15
+                            - heading "55-Inch Class S90F Smart TV (2025 Model, 55S90F), NQ4 Gen3 Processor, Upscaling Pro, HDR+, Motion Xcelerator 144Hz, Vision, Alexa Built-in" [level=2] [ref=e947]
+                        - generic [ref=e950]:
+                          - generic [ref=e951]: "Options:"
+                          - 'link "Options: 9 sizes" [ref=e952] [cursor=pointer]':
+                            - /url: /Samsung-55-Inch-Processor-Upscaling-Xcelerator/dp/B0DXN7PBFC/ref=vo_sr_l_dp?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-15
+                            - generic [ref=e953]:
+                              - generic [ref=e954]: 9 sizes
+                              - generic [ref=e955]: 9 sizes
+                        - generic [ref=e956]:
+                          - generic [ref=e957]:
+                            - text: "4.3"
+                            - button "4.3 out of 5 stars, rating details" [ref=e959] [cursor=pointer]:
+                              - generic [ref=e961]: 4.3 out of 5 stars
+                            - link "423 ratings" [ref=e965] [cursor=pointer]:
+                              - /url: /Samsung-55-Inch-Processor-Upscaling-Xcelerator/dp/B0DXN7PBFC/ref=sr_1_15?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-15#customerReviews
+                              - text: (423)
+                          - generic [ref=e966]: 100+ bought in past month
+                        - generic [ref=e969]:
+                          - link "See options" [ref=e977] [cursor=pointer]:
+                            - /url: /Samsung-55-Inch-Processor-Upscaling-Xcelerator/dp/B0DXN7PBFC/ref=sr_1_15_so_TELEVISION?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-15
+                          - generic [ref=e979]:
+                            - text: No featured offers available
+                            - text: INR 79,835.60
+                            - link "(37 used & new offers)" [ref=e981] [cursor=pointer]:
+                              - /url: /gp/offer-listing/B0DXN7PBFC/ref=sr_1_15_olp?keywords=55+inch+LG+LED+TV&dib_tag=se&dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&qid=1778233499&sr=8-15
+                  - listitem [ref=e984]:
+                    - generic [ref=e990]:
+                      - link [ref=e996] [cursor=pointer]:
+                        - /url: /PANMILED-55UK6200PUA-55UK6300PUE-55UK6090PUA-SSC_Trident_55UK63_S/dp/B0BJ2DKJPV/ref=sr_1_16?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-16
+                        - img [ref=e998]
+                      - generic [ref=e1001]:
+                        - generic [ref=e1002]:
+                          - link "3 Pieces LED Backlight Strips for LG 55\" TV SSC_Trident_55UK63 SSC_55UK63_8LED_SVL550AS48AT5 55UK6200PUA 55UK6300PUE 55UK6090PUA 55UM6910PUC 55UU340C 55UM6950DUB 55UN7000PUB" [ref=e1003] [cursor=pointer]:
+                            - /url: /PANMILED-55UK6200PUA-55UK6300PUE-55UK6090PUA-SSC_Trident_55UK63_S/dp/B0BJ2DKJPV/ref=sr_1_16?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-16
+                            - heading "3 Pieces LED Backlight Strips for LG 55\" TV SSC_Trident_55UK63 SSC_55UK63_8LED_SVL550AS48AT5 55UK6200PUA 55UK6300PUE 55UK6090PUA 55UM6910PUC 55UU340C 55UM6950DUB 55UN7000PUB" [level=2] [ref=e1004]
+                          - generic [ref=e1007]: LED
+                        - generic [ref=e1009]:
+                          - text: "5.0"
+                          - button "5.0 out of 5 stars, rating details" [ref=e1011] [cursor=pointer]:
+                            - generic [ref=e1013]: 5.0 out of 5 stars
+                          - link "1 ratings" [ref=e1017] [cursor=pointer]:
+                            - /url: /PANMILED-55UK6200PUA-55UK6300PUE-55UK6090PUA-SSC_Trident_55UK63_S/dp/B0BJ2DKJPV/ref=sr_1_16?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-16#customerReviews
+                            - text: (1)
+                        - generic [ref=e1020]:
+                          - link "See options" [ref=e1028] [cursor=pointer]:
+                            - /url: /PANMILED-55UK6200PUA-55UK6300PUE-55UK6090PUA-SSC_Trident_55UK63_S/dp/B0BJ2DKJPV/ref=sr_1_16_so_STRING_LIGHT?dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&dib_tag=se&keywords=55+inch+LG+LED+TV&qid=1778233499&sr=8-16
+                          - generic [ref=e1030]:
+                            - text: No featured offers available
+                            - text: INR 2,833.46
+                            - link "(2 used & new offers)" [ref=e1032] [cursor=pointer]:
+                              - /url: /gp/offer-listing/B0BJ2DKJPV/ref=sr_1_16_olp?keywords=55+inch+LG+LED+TV&dib_tag=se&dib=eyJ2IjoiMSJ9.dPTXTjmSGqo0LmjjmxEamgFMkgo6zBh5t1e_Xr9a1L_xNiPyPE9tZQMpd9DQxwAwuYtZ1J6c2rjQvqPdHqwbQRI5g-ZD4YbifY50fABlWxlZS_npzS8Bu0L297P_wjiW2Wd1PmY_ZOAxvYnSdUBHkDO_bHJWApxU_t-8ZeuvsAX2M507AN2SbPskx5I-teRczA1DzkrdK-6Jeun5BHX-kVkIJAfqii87IHXMDorkJPw.Mn-bOfB3qpqat_GPInLSFFSdIIxUxYXtSmxpDIAoFIk&qid=1778233499&sr=8-16
+            - generic [ref=e1042]:
+              - link "Sponsored video, click to navigate to featured product page. DeckTok TV LED Backlight 15.5ft - TV Lights That Change with Screen for 55-100'' RGB LED Strip Lights Cuttable with Smart App Control Game & Music Sync Color Changing Light for Home Decor" [ref=e1046] [cursor=pointer]:
+                - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JGErqqzRZdGiikHSibGAaZsAAAGeBvnfcQEAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICAZPjRT/clv1c_ek-wxQfWJbbUDfHY3u_UdmjwufpxsfLW8cJMTPd7dItcwJRkO4W7i7OM59Js1mwN6Ol4IpBsDQz7svCsw1n_nXeZcTRzqqnyHaMoT2k5fLkGj3CXJp4LZbSaYv1iRpJx19uZ9vz0FENGgkB4iOVDA-J6JX2fjk3KE8F6zinCRIZdXGM93sZuP7sIRucVAza5g5IzvjnjbRII1_7fszipUmuaVRwrYUfi8Opf59GX0Z0r-ZDbOwI_lxokhlpISe2MEMXKqCQe-mN3ge2Au9CCh7fpybpBWy4eHO--JIHVdreeY-HsVUIUq2VnL2d5Offwdv4D-15QqnAJnrn7OEmrD2X4BjxjR37Eds2LkJrHUV9RF9dWVGqa8NX3nb1WsucacAgbo_Pd1_ZSZExvio7FNLSGJ1KSHKi13mitJEq8tgiKw4LkBIfv1CZQiXgRdLEugKnxuXzFKk_Y0sX9yBGjtWrtWJ_aNrYVLuC_GfL7k9Qfwntor9vEn-ZotJUanWAKoXjUVLqQuy_Zvlxg-HnqkbiMmSznW-0_kLJ2jm-X9K0ncfOSESkAziyHJz7DJZ4mlwKDoDCIbrB3LixT3ar41wYMCPjJGvUdZpwl7Z8L_-1C6sXdtooDaXsk8iSgQFE9D38-eX9BAq1LN8sxhu9nYy87TY1cup4Fa7yFW65pSdrxIqUl25RvWzoDlomPKu-z-iiorLMeCepmOkZnhi3g3yW6vOd_DipApu8mkTlvL4jY1O-0FTdbt--QF37cpLGDZgLdPdMfje7Z0BoUgtMzl9dysE3Ebk_OHcYy0tAirv_7PI_63RhvsoV5Ee6HPBlIkwZ_8NdcnKl4jsxZhREjiK4HvpJ1XyKHsUXDDM_Yh4Bb3NNsR-T8tH4BK__q4dLcSWFxUdKH339scsFBQ5GzbsU9Al9BiL4C2TK2VEYh2mCK8FMDYHE_ujqzK8OiJvBf_UPO7Q7Yjq2ZshZcdM-DUdKWPzX4ZlpGeA1qLGCXR3KcrX90v-6gps3amgz0rzHHTDBnvoNY3Ve4ap4aOpnIbqHhIuHbbZlbR_jFfpWZb240xgMExIrnpl3LRwhRo3T4D52cy6Nz5eP9XYL-Awd8PZPjW4oqojzw3oubw7zBa1HkXhVJQIz88Epp_wsQd2TqPvmwE7ozqO_GksuTSBHBzlJxzT-eFwKMLZn6twUVSJjYnyCFLgqRbHPSbFNmGnmlrodxwy9syDYdkVZGFEE2szxGUYFwBoROhK9WF2gPvbAWoE_zvRSMHWLmMBwDzwcXsSaTC86lhLiB_JYxWgctm-bwsttnc0p4Jaztw8R2wmX7zAZfjhRqk-3lvk4jHy7kXyQLeVGMkv5FoTvo5BLpMtRkF7PJj1ICy4s51fn0bCMjwwgcMvhoFgow1dQzE4IfwLUJgRNuq4gKX1oi8Xah4P-zZxmyuU_lkGt2g0BHAIXUsM9wKH0ROVF2-4v6aaf2QON-Ph_jjFe5th31YI99HjLHs-Eo4btp7Vg8jtM9btbmN_wUheucoespPrfBmIia2a2vSEH9RMwcAu7Bi6u-KeBxnDcyn8aZmQpZOHHvKeO2kGk_WPPcvVklCAbzJni4g-SNE7ifHtlUaojfA_C69x60kX7ghLWdiuhReP0EGEiO8tEvQp7Onod3N27aAti572o_aVt4qdfzRZM/https://www.amazon.com/dp/B0FC6KTYQK?pd_rd_i=B0FC6KTYQK&pf_rd_p=37132d36-da68-4ed0-8d23-842f0825e4d6&pf_rd_r=G43N4J5432C9TCHQG3HF&pd_rd_wg=Sl09h&pd_rd_w=PAewU&pd_rd_r=0686346b-7ef9-472a-b705-0936544b0eae
+                - generic "Sponsored video, click to navigate to featured product page. DeckTok TV LED Backlight 15.5ft - TV Lights That Change with Screen for 55-100'' RGB LED Strip Lights Cuttable with Smart App Control Game & Music Sync Color Changing Light for Home Decor" [ref=e1047]
+              - generic [ref=e1055]:
+                - link [ref=e1061] [cursor=pointer]:
+                  - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JGErqqzRZdGiikHSibGAaZsAAAGeBvnfcQEAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICAZPjRT/clv1c_ek-wxQfWJbbUDfHY3u_UdmjwufpxsfLW8cJMTPd7dItcwJRkO4W7i7OM59Js1mwN6Ol4IpBsDQz7svCsw1n_nXeZcTRzqqnyHaMoT2k5fLkGj3CXJp4LZbSaYv1iRpJx19uZ9vz0FENGgkB4iOVDA-J6JX2fjk3KE8F6zinCRIZdXGM93sZuP7sIRucVAza5g5IzvjnjbRII1_7fszipUmuaVRwrYUfi8Opf59GX0Z0r-ZDbOwI_lxokhlpISe2MEMXKqCQe-mN3ge2Au9CCh7fpybpBWy4eHO--JIHVdreeY-HsVUIUq2VnL2d5Offwdv4D-15QqnAJnrn7OEmrD2X4BjxjR37Eds2LkJrHUV9RF9dWVGqa8NX3nb1WsucacAgbo_Pd1_ZSZExvio7FNLSGJ1KSHKi13mitJEq8tgiKw4LkBIfv1CZQiXgRdLEugKnxuXzFKk_Y0sX9yBGjtWrtWJ_aNrYVLuC_GfL7k9Qfwntor9vEn-ZotJUanWAKoXjUVLqQuy_Zvlxg-HnqkbiMmSznW-0_kLJ2jm-X9K0ncfOSESkAziyHJz7DJZ4mlwKDoDCIbrB3LixT3ar41wYMCPjJGvUdZpwl7Z8L_-1C6sXdtooDaXsk8iSgQFE9D38-eX9BAq1LN8sxhu9nYy87TY1cup4Fa7yFW65pSdrxIqUl25RvWzoDlomPKu-z-iiorLMeCepmOkZnhi3g3yW6vOd_DipApu8mkTlvL4jY1O-0FTdbt--QF37cpLGDZgLdPdMfje7Z0BoUgtMzl9dysE3Ebk_OHcYy0tAirv_7PI_63RhvsoV5Ee6HPBlIkwZ_8NdcnKl4jsxZhREjiK4HvpJ1XyKHsUXDDM_Yh4Bb3NNsR-T8tH4BK__q4dLcSWFxUdKH339scsFBQ5GzbsU9Al9BiL4C2TK2VEYh2mCK8FMDYHE_ujqzK8OiJvBf_UPO7Q7Yjq2ZshZcdM-DUdKWPzX4ZlpGeA1qLGCXR3KcrX90v-6gps3amgz0rzHHTDBnvoNY3Ve4ap4aOpnIbqHhIuHbbZlbR_jFfpWZb240xgMExIrnpl3LRwhRo3T4D52cy6Nz5eP9XYL-Awd8PZPjW4oqojzw3oubw7zBa1HkXhVJQIz88Epp_wsQd2TqPvmwE7ozqO_GksuTSBHBzlJxzT-eFwKMLZn6twUVSJjYnyCFLgqRbHPSbFNmGnmlrodxwy9syDYdkVZGFEE2szxGUYFwBoROhK9WF2gPvbAWoE_zvRSMHWLmMBwDzwcXsSaTC86lhLiB_JYxWgctm-bwsttnc0p4Jaztw8R2wmX7zAZfjhRqk-3lvk4jHy7kXyQLeVGMkv5FoTvo5BLpMtRkF7PJj1ICy4s51fn0bCMjwwgcMvhoFgow1dQzE4IfwLUJgRNuq4gKX1oi8Xah4P-zZxmyuU_lkGt2g0BHAIXUsM9wKH0ROVF2-4v6aaf2QON-Ph_jjFe5th31YI99HjLHs-Eo4btp7Vg8jtM9btbmN_wUheucoespPrfBmIia2a2vSEH9RMwcAu7Bi6u-KeBxnDcyn8aZmQpZOHHvKeO2kGk_WPPcvVklCAbzJni4g-SNE7ifHtlUaojfA_C69x60kX7ghLWdiuhReP0EGEiO8tEvQp7Onod3N27aAti572o_aVt4qdfzRZM/https://www.amazon.com/DeckTok-TV-LED-Backlight-15-5ft/dp/B0FC6KTYQK/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.37132d36-da68-4ed0-8d23-842f0825e4d6%3Aamzn1.sym.37132d36-da68-4ed0-8d23-842f0825e4d6&cv_ct_cx=55+inch+LG+LED+TV&keywords=55+inch+LG+LED+TV&pd_rd_i=B0FC6KTYQK&pd_rd_r=0686346b-7ef9-472a-b705-0936544b0eae&pd_rd_w=PAewU&pd_rd_wg=Sl09h&pf_rd_p=37132d36-da68-4ed0-8d23-842f0825e4d6&pf_rd_r=G43N4J5432C9TCHQG3HF&qid=1778233499&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-a61ee601-6e56-4862-a8a2-1d3da5a5406f
+                  - img [ref=e1063]
+                - generic [ref=e1066]:
+                  - generic [ref=e1067]:
+                    - generic [ref=e1070] [cursor=pointer]: Sponsored
+                    - link "DeckTok TV LED Backlight 15.5ft - TV Lights That Change with Screen for 55-100'' RGB LED Strip Lights Cuttable with Smart App Control Game & Music Sync Color Changing Light for Home Decor" [ref=e1072] [cursor=pointer]:
+                      - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JGErqqzRZdGiikHSibGAaZsAAAGeBvnfcQEAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICAZPjRT/clv1c_ek-wxQfWJbbUDfHY3u_UdmjwufpxsfLW8cJMTPd7dItcwJRkO4W7i7OM59Js1mwN6Ol4IpBsDQz7svCsw1n_nXeZcTRzqqnyHaMoT2k5fLkGj3CXJp4LZbSaYv1iRpJx19uZ9vz0FENGgkB4iOVDA-J6JX2fjk3KE8F6zinCRIZdXGM93sZuP7sIRucVAza5g5IzvjnjbRII1_7fszipUmuaVRwrYUfi8Opf59GX0Z0r-ZDbOwI_lxokhlpISe2MEMXKqCQe-mN3ge2Au9CCh7fpybpBWy4eHO--JIHVdreeY-HsVUIUq2VnL2d5Offwdv4D-15QqnAJnrn7OEmrD2X4BjxjR37Eds2LkJrHUV9RF9dWVGqa8NX3nb1WsucacAgbo_Pd1_ZSZExvio7FNLSGJ1KSHKi13mitJEq8tgiKw4LkBIfv1CZQiXgRdLEugKnxuXzFKk_Y0sX9yBGjtWrtWJ_aNrYVLuC_GfL7k9Qfwntor9vEn-ZotJUanWAKoXjUVLqQuy_Zvlxg-HnqkbiMmSznW-0_kLJ2jm-X9K0ncfOSESkAziyHJz7DJZ4mlwKDoDCIbrB3LixT3ar41wYMCPjJGvUdZpwl7Z8L_-1C6sXdtooDaXsk8iSgQFE9D38-eX9BAq1LN8sxhu9nYy87TY1cup4Fa7yFW65pSdrxIqUl25RvWzoDlomPKu-z-iiorLMeCepmOkZnhi3g3yW6vOd_DipApu8mkTlvL4jY1O-0FTdbt--QF37cpLGDZgLdPdMfje7Z0BoUgtMzl9dysE3Ebk_OHcYy0tAirv_7PI_63RhvsoV5Ee6HPBlIkwZ_8NdcnKl4jsxZhREjiK4HvpJ1XyKHsUXDDM_Yh4Bb3NNsR-T8tH4BK__q4dLcSWFxUdKH339scsFBQ5GzbsU9Al9BiL4C2TK2VEYh2mCK8FMDYHE_ujqzK8OiJvBf_UPO7Q7Yjq2ZshZcdM-DUdKWPzX4ZlpGeA1qLGCXR3KcrX90v-6gps3amgz0rzHHTDBnvoNY3Ve4ap4aOpnIbqHhIuHbbZlbR_jFfpWZb240xgMExIrnpl3LRwhRo3T4D52cy6Nz5eP9XYL-Awd8PZPjW4oqojzw3oubw7zBa1HkXhVJQIz88Epp_wsQd2TqPvmwE7ozqO_GksuTSBHBzlJxzT-eFwKMLZn6twUVSJjYnyCFLgqRbHPSbFNmGnmlrodxwy9syDYdkVZGFEE2szxGUYFwBoROhK9WF2gPvbAWoE_zvRSMHWLmMBwDzwcXsSaTC86lhLiB_JYxWgctm-bwsttnc0p4Jaztw8R2wmX7zAZfjhRqk-3lvk4jHy7kXyQLeVGMkv5FoTvo5BLpMtRkF7PJj1ICy4s51fn0bCMjwwgcMvhoFgow1dQzE4IfwLUJgRNuq4gKX1oi8Xah4P-zZxmyuU_lkGt2g0BHAIXUsM9wKH0ROVF2-4v6aaf2QON-Ph_jjFe5th31YI99HjLHs-Eo4btp7Vg8jtM9btbmN_wUheucoespPrfBmIia2a2vSEH9RMwcAu7Bi6u-KeBxnDcyn8aZmQpZOHHvKeO2kGk_WPPcvVklCAbzJni4g-SNE7ifHtlUaojfA_C69x60kX7ghLWdiuhReP0EGEiO8tEvQp7Onod3N27aAti572o_aVt4qdfzRZM/https://www.amazon.com/DeckTok-TV-LED-Backlight-15-5ft/dp/B0FC6KTYQK/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.37132d36-da68-4ed0-8d23-842f0825e4d6%3Aamzn1.sym.37132d36-da68-4ed0-8d23-842f0825e4d6&cv_ct_cx=55+inch+LG+LED+TV&keywords=55+inch+LG+LED+TV&pd_rd_i=B0FC6KTYQK&pd_rd_r=0686346b-7ef9-472a-b705-0936544b0eae&pd_rd_w=PAewU&pd_rd_wg=Sl09h&pf_rd_p=37132d36-da68-4ed0-8d23-842f0825e4d6&pf_rd_r=G43N4J5432C9TCHQG3HF&qid=1778233499&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-a61ee601-6e56-4862-a8a2-1d3da5a5406f
+                      - heading "DeckTok TV LED Backlight 15.5ft - TV Lights That Change with Screen for 55-100'' RGB LED Strip Lights Cuttable with Smart App Control Game & Music Sync Color Changing Light for Home Decor" [level=2] [ref=e1073]
+                  - generic [ref=e1075]:
+                    - text: "3.8"
+                    - button "3.8 out of 5 stars, rating details" [ref=e1077] [cursor=pointer]:
+                      - generic [ref=e1079]: 3.8 out of 5 stars
+                    - link "85 ratings" [ref=e1083] [cursor=pointer]:
+                      - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JGErqqzRZdGiikHSibGAaZsAAAGeBvnfcQEAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICAZPjRT/clv1c_ek-wxQfWJbbUDfHY3u_UdmjwufpxsfLW8cJMTPd7dItcwJRkO4W7i7OM59Js1mwN6Ol4IpBsDQz7svCsw1n_nXeZcTRzqqnyHaMoT2k5fLkGj3CXJp4LZbSaYv1iRpJx19uZ9vz0FENGgkB4iOVDA-J6JX2fjk3KE8F6zinCRIZdXGM93sZuP7sIRucVAza5g5IzvjnjbRII1_7fszipUmuaVRwrYUfi8Opf59GX0Z0r-ZDbOwI_lxokhlpISe2MEMXKqCQe-mN3ge2Au9CCh7fpybpBWy4eHO--JIHVdreeY-HsVUIUq2VnL2d5Offwdv4D-15QqnAJnrn7OEmrD2X4BjxjR37Eds2LkJrHUV9RF9dWVGqa8NX3nb1WsucacAgbo_Pd1_ZSZExvio7FNLSGJ1KSHKi13mitJEq8tgiKw4LkBIfv1CZQiXgRdLEugKnxuXzFKk_Y0sX9yBGjtWrtWJ_aNrYVLuC_GfL7k9Qfwntor9vEn-ZotJUanWAKoXjUVLqQuy_Zvlxg-HnqkbiMmSznW-0_kLJ2jm-X9K0ncfOSESkAziyHJz7DJZ4mlwKDoDCIbrB3LixT3ar41wYMCPjJGvUdZpwl7Z8L_-1C6sXdtooDaXsk8iSgQFE9D38-eX9BAq1LN8sxhu9nYy87TY1cup4Fa7yFW65pSdrxIqUl25RvWzoDlomPKu-z-iiorLMeCepmOkZnhi3g3yW6vOd_DipApu8mkTlvL4jY1O-0FTdbt--QF37cpLGDZgLdPdMfje7Z0BoUgtMzl9dysE3Ebk_OHcYy0tAirv_7PI_63RhvsoV5Ee6HPBlIkwZ_8NdcnKl4jsxZhREjiK4HvpJ1XyKHsUXDDM_Yh4Bb3NNsR-T8tH4BK__q4dLcSWFxUdKH339scsFBQ5GzbsU9Al9BiL4C2TK2VEYh2mCK8FMDYHE_ujqzK8OiJvBf_UPO7Q7Yjq2ZshZcdM-DUdKWPzX4ZlpGeA1qLGCXR3KcrX90v-6gps3amgz0rzHHTDBnvoNY3Ve4ap4aOpnIbqHhIuHbbZlbR_jFfpWZb240xgMExIrnpl3LRwhRo3T4D52cy6Nz5eP9XYL-Awd8PZPjW4oqojzw3oubw7zBa1HkXhVJQIz88Epp_wsQd2TqPvmwE7ozqO_GksuTSBHBzlJxzT-eFwKMLZn6twUVSJjYnyCFLgqRbHPSbFNmGnmlrodxwy9syDYdkVZGFEE2szxGUYFwBoROhK9WF2gPvbAWoE_zvRSMHWLmMBwDzwcXsSaTC86lhLiB_JYxWgctm-bwsttnc0p4Jaztw8R2wmX7zAZfjhRqk-3lvk4jHy7kXyQLeVGMkv5FoTvo5BLpMtRkF7PJj1ICy4s51fn0bCMjwwgcMvhoFgow1dQzE4IfwLUJgRNuq4gKX1oi8Xah4P-zZxmyuU_lkGt2g0BHAIXUsM9wKH0ROVF2-4v6aaf2QON-Ph_jjFe5th31YI99HjLHs-Eo4btp7Vg8jtM9btbmN_wUheucoespPrfBmIia2a2vSEH9RMwcAu7Bi6u-KeBxnDcyn8aZmQpZOHHvKeO2kGk_WPPcvVklCAbzJni4g-SNE7ifHtlUaojfA_C69x60kX7ghLWdiuhReP0EGEiO8tEvQp7Onod3N27aAti572o_aVt4qdfzRZM/https://www.amazon.com/DeckTok-TV-LED-Backlight-15-5ft/dp/B0FC6KTYQK/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.37132d36-da68-4ed0-8d23-842f0825e4d6%3Aamzn1.sym.37132d36-da68-4ed0-8d23-842f0825e4d6&cv_ct_cx=55+inch+LG+LED+TV&keywords=55+inch+LG+LED+TV&pd_rd_i=B0FC6KTYQK&pd_rd_r=0686346b-7ef9-472a-b705-0936544b0eae&pd_rd_w=PAewU&pd_rd_wg=Sl09h&pf_rd_p=37132d36-da68-4ed0-8d23-842f0825e4d6&pf_rd_r=G43N4J5432C9TCHQG3HF&qid=1778233499&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-a61ee601-6e56-4862-a8a2-1d3da5a5406f#customerReviews
+                      - text: (85)
+            - navigation "pagination" [ref=e1090]:
+              - list [ref=e1092]:
+                - listitem [ref=e1093]:
+                  - button "Previous" [disabled] [ref=e1095]:
+                    - img [ref=e1096]
+                    - text: Previous
+                - listitem [ref=e1098]:
+                  - button "Page 1" [ref=e1100]: "1"
+                - listitem [ref=e1101]:
+                  - button "Go to page 2" [ref=e1103] [cursor=pointer]: "2"
+                - listitem [ref=e1104]:
+                  - button "Go to page 3" [ref=e1106] [cursor=pointer]: "3"
+                - listitem [ref=e1107]:
+                  - button "Go to page 4" [ref=e1109] [cursor=pointer]: "4"
+                - listitem [ref=e1110]:
+                  - button "Go to page 5" [ref=e1112] [cursor=pointer]: "5"
+                - listitem [ref=e1113]:
+                  - button "Go to next page, page 2" [ref=e1115] [cursor=pointer]:
+                    - text: Next
+                    - img [ref=e1116]
+            - generic [ref=e1120]:
+              - separator [ref=e1121]
+              - generic [ref=e1122]:
+                - heading "Brands related to your search" [ref=e1123]
+                - button "Leave feedback on Sponsored ad" [ref=e1128] [cursor=pointer]: Sponsored
+                - generic [ref=e1132]:
+                  - generic [ref=e1134]:
+                    - generic:
+                      - generic:
+                        - link:
+                          - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JCKsWTnO93pn6U-ZyOlSG8kAAAGeBvngPgEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICDVc74P/clv1c_ek-wBIHXFcbWDn2nI5drJ16WtD5jqoDm-NqBs1fmHpU55Z3aUcADVqcRPdlHyj_0qVSX82cK-kUZk9j7lo8CbtIM9kqz9ME_Y6lFwfVqzar64yG6zWjUHn6MojnwrP8j9pGXCrGvMJAzgTxVjycN6fhbody0BtVZggQzzTG_pJ4v-M7dl1uR35N-IVuC7HYvyl4P7nEzR1ep5kT9vIvk4n6CWTtbgQYExWpDDwMtbyttJHXvp0IkCPv-eMU1z-VHumwZAQvGjatbe-4Cmhr9waMb7YV9tlY7s6z84HVku46is9N4FXygoBLR2rGDmtlgnX944bwRuQpsRYazUExwzWwG4fz9gSjeE-XcSoLHTdUOr6py_doUHs2KvjtsLWxwol58FC1piWzPbTKp9uuoLbbKlE7KmRgBQpWFcQdjmZV8v6PjSE-R-RwqukzeNjmbKrkgM8ES4iTuDv3kakwdaDYWnCk1YCXsGtO4QIvM_P-7YT6YhSMUbgtpZEvaEg8urFMx3bXJ6AfZNT9Rho43fYHUaR2nEkxusmCJZdyXfXTQfNCgK9wsGd-qeV0TQ06xO_LyxctmwpxdhwEE69Zp7ckjXiSC6w5g7QGc16-EsP0N1rRY7ZUyXhXwI6TvgnvB5duYy2eaCCzHn2EBVrjFx9M8xhmnEUSatldnQFj2HySe6xsaV9m3WZF1r_j4Upg434vr8qsxo-ev8gDaqS-bQj8IEcmgfvhDsSDfDwEzEw3l2hKlwr3frIopAzAG-p6Y99WMs1REFQjIK_d6KvmZUROqqOJLGp3eI2GOBTUayb0oK_UKinMVokNDNqGLpYYXWZlwy4Vg0q2i7_tpTHHgnhPTeLEiR4MmWlvNlWLlzPi87YDc7qLzY25jUyObEwlbKwKH1nRA6bq-esavHmycGYjvDS3COZNxkvJF3mgLt_7nYKt6MMsD_icvb1qRkqiHVwUdhVkgason577rxdkCtuYI9S9B8QoNsgtic19SOF9_zhOpC8YSf5-VKlYLN0Dj-Bto3pjOyuJjXqX_jXCDBUKsfOBnm5Zpj3SCQ5LG9UCgB4dquKxM469-hfsy6NbvTADdcBbq233lxHeDFTTdmLsnxgLBGDzlLBtuPC9BGKfJF2YLXYIsVhgiSK_a2iP8GpZ8dk-BM9hI3rUIaEyvQT1OHbccJQKpaEKq7nr4TdWHGKXjmP5ekHB97nQloySvS16TJt8B6g-l0QHXYKY5cQ1TJ5uGRjLOEdrQVz0-zuWw2kGTPbk-ehWfMvW1BavT9BN0uV2SS74qslf3-Rb-oVrIpRJ4F89_8luOslEVzREJE4aSE39B7Dql25Ga4B5tw6cwOCyZgR5Dn6sQ53SXsXoJe4OWFDd1htxWwywwk1dxtG4a69W5_ArIaJRuibiO4BgSG5bwfopP1JuC_H78SjRqSl6UyAoGcKjBy2X_EFB2lGAF8M9HS3v5YPLdeUT_vygDybGXzeiEfzuVT80EvufBH3PPKRbxzpcGy3CdK8uLG-OqE20tQiLJYs_WB0XAGeQzkt_pye-5xVFDj-25VztEjvtDl3f8oFM1gb2nfBSfJz6VIiFjrnZCq9mWzdEJ2IsaxOfA1AB4WxJ6WcNhw9ZclnbBZwUvCoG4fcYCsJiQGUlbubRqN6Fl7sjs5tCInBI4Aa9MkMQ7UvymafZX4v_U5A/https://www.amazon.com/stores/page/9276076F-0D70-41D4-9045-E3DA0D06835C/?_encoding=UTF8&store_ref=SB_A03660332AZUGM8C31UCZ-A0210876JWK0ST3UCHI&pd_rd_plhdr=t&aaxitk=eadbac9cf3af2d01e7a6db3b4465626b&hsa_cr_id=0&lp_asins=B0CVRDK4P6%2CB0DYQF1Q3Z%2CB0CVRMHRSZ&lp_query=55%20inch%20LG%20LED%20TV&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_bkgd&pd_rd_w=BNcCa&content-id=amzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87%3Aamzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_p=cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_r=G43N4J5432C9TCHQG3HF&pd_rd_wg=LDys9&pd_rd_r=13087348-2109-4d72-a072-38d407f8ff13
+                        - link "LG Electronics (TV)" [ref=e1135] [cursor=pointer]:
+                          - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JCKsWTnO93pn6U-ZyOlSG8kAAAGeBvngPgEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICDVc74P/clv1c_ek-wBIHXFcbWDn2nI5drJ16WtD5jqoDm-NqBs1fmHpU55Z3aUcADVqcRPdlHyj_0qVSX82cK-kUZk9j7lo8CbtIM9kqz9ME_Y6lFwfVqzar64yG6zWjUHn6MojnwrP8j9pGXCrGvMJAzgTxVjycN6fhbody0BtVZggQzzTG_pJ4v-M7dl1uR35N-IVuC7HYvyl4P7nEzR1ep5kT9vIvk4n6CWTtbgQYExWpDDwMtbyttJHXvp0IkCPv-eMU1z-VHumwZAQvGjatbe-4Cmhr9waMb7YV9tlY7s6z84HVku46is9N4FXygoBLR2rGDmtlgnX944bwRuQpsRYazUExwzWwG4fz9gSjeE-XcSoLHTdUOr6py_doUHs2KvjtsLWxwol58FC1piWzPbTKp9uuoLbbKlE7KmRgBQpWFcQdjmZV8v6PjSE-R-RwqukzeNjmbKrkgM8ES4iTuDv3kakwdaDYWnCk1YCXsGtO4QIvM_P-7YT6YhSMUbgtpZEvaEg8urFMx3bXJ6AfZNT9Rho43fYHUaR2nEkxusmCJZdyXfXTQfNCgK9wsGd-qeV0TQ06xO_LyxctmwpxdhwEE69Zp7ckjXiSC6w5g7QGc16-EsP0N1rRY7ZUyXhXwI6TvgnvB5duYy2eaCCzHn2EBVrjFx9M8xhmnEUSatldnQFj2HySe6xsaV9m3WZF1r_j4Upg434vr8qsxo-ev8gDaqS-bQj8IEcmgfvhDsSDfDwEzEw3l2hKlwr3frIopAzAG-p6Y99WMs1REFQjIK_d6KvmZUROqqOJLGp3eI2GOBTUayb0oK_UKinMVokNDNqGLpYYXWZlwy4Vg0q2i7_tpTHHgnhPTeLEiR4MmWlvNlWLlzPi87YDc7qLzY25jUyObEwlbKwKH1nRA6bq-esavHmycGYjvDS3COZNxkvJF3mgLt_7nYKt6MMsD_icvb1qRkqiHVwUdhVkgason577rxdkCtuYI9S9B8QoNsgtic19SOF9_zhOpC8YSf5-VKlYLN0Dj-Bto3pjOyuJjXqX_jXCDBUKsfOBnm5Zpj3SCQ5LG9UCgB4dquKxM469-hfsy6NbvTADdcBbq233lxHeDFTTdmLsnxgLBGDzlLBtuPC9BGKfJF2YLXYIsVhgiSK_a2iP8GpZ8dk-BM9hI3rUIaEyvQT1OHbccJQKpaEKq7nr4TdWHGKXjmP5ekHB97nQloySvS16TJt8B6g-l0QHXYKY5cQ1TJ5uGRjLOEdrQVz0-zuWw2kGTPbk-ehWfMvW1BavT9BN0uV2SS74qslf3-Rb-oVrIpRJ4F89_8luOslEVzREJE4aSE39B7Dql25Ga4B5tw6cwOCyZgR5Dn6sQ53SXsXoJe4OWFDd1htxWwywwk1dxtG4a69W5_ArIaJRuibiO4BgSG5bwfopP1JuC_H78SjRqSl6UyAoGcKjBy2X_EFB2lGAF8M9HS3v5YPLdeUT_vygDybGXzeiEfzuVT80EvufBH3PPKRbxzpcGy3CdK8uLG-OqE20tQiLJYs_WB0XAGeQzkt_pye-5xVFDj-25VztEjvtDl3f8oFM1gb2nfBSfJz6VIiFjrnZCq9mWzdEJ2IsaxOfA1AB4WxJ6WcNhw9ZclnbBZwUvCoG4fcYCsJiQGUlbubRqN6Fl7sjs5tCInBI4Aa9MkMQ7UvymafZX4v_U5A/https://www.amazon.com/stores/page/9276076F-0D70-41D4-9045-E3DA0D06835C/?_encoding=UTF8&store_ref=SB_A03660332AZUGM8C31UCZ-A0210876JWK0ST3UCHI&pd_rd_plhdr=t&aaxitk=eadbac9cf3af2d01e7a6db3b4465626b&hsa_cr_id=0&lp_asins=B0CVRDK4P6%2CB0DYQF1Q3Z%2CB0CVRMHRSZ&lp_query=55%20inch%20LG%20LED%20TV&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_ls&pd_rd_w=BNcCa&content-id=amzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87%3Aamzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_p=cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_r=G43N4J5432C9TCHQG3HF&pd_rd_wg=LDys9&pd_rd_r=13087348-2109-4d72-a072-38d407f8ff13
+                          - img "LG Electronics (TV)" [ref=e1136]
+                        - generic [ref=e1138]:
+                          - generic [ref=e1139]:
+                            - link [ref=e1140] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JCKsWTnO93pn6U-ZyOlSG8kAAAGeBvngPgEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICDVc74P/clv1c_ek-wBIHXFcbWDn2nI5drJ16WtD5jqoDm-NqBs1fmHpU55Z3aUcADVqcRPdlHyj_0qVSX82cK-kUZk9j7lo8CbtIM9kqz9ME_Y6lFwfVqzar64yG6zWjUHn6MojnwrP8j9pGXCrGvMJAzgTxVjycN6fhbody0BtVZggQzzTG_pJ4v-M7dl1uR35N-IVuC7HYvyl4P7nEzR1ep5kT9vIvk4n6CWTtbgQYExWpDDwMtbyttJHXvp0IkCPv-eMU1z-VHumwZAQvGjatbe-4Cmhr9waMb7YV9tlY7s6z84HVku46is9N4FXygoBLR2rGDmtlgnX944bwRuQpsRYazUExwzWwG4fz9gSjeE-XcSoLHTdUOr6py_doUHs2KvjtsLWxwol58FC1piWzPbTKp9uuoLbbKlE7KmRgBQpWFcQdjmZV8v6PjSE-R-RwqukzeNjmbKrkgM8ES4iTuDv3kakwdaDYWnCk1YCXsGtO4QIvM_P-7YT6YhSMUbgtpZEvaEg8urFMx3bXJ6AfZNT9Rho43fYHUaR2nEkxusmCJZdyXfXTQfNCgK9wsGd-qeV0TQ06xO_LyxctmwpxdhwEE69Zp7ckjXiSC6w5g7QGc16-EsP0N1rRY7ZUyXhXwI6TvgnvB5duYy2eaCCzHn2EBVrjFx9M8xhmnEUSatldnQFj2HySe6xsaV9m3WZF1r_j4Upg434vr8qsxo-ev8gDaqS-bQj8IEcmgfvhDsSDfDwEzEw3l2hKlwr3frIopAzAG-p6Y99WMs1REFQjIK_d6KvmZUROqqOJLGp3eI2GOBTUayb0oK_UKinMVokNDNqGLpYYXWZlwy4Vg0q2i7_tpTHHgnhPTeLEiR4MmWlvNlWLlzPi87YDc7qLzY25jUyObEwlbKwKH1nRA6bq-esavHmycGYjvDS3COZNxkvJF3mgLt_7nYKt6MMsD_icvb1qRkqiHVwUdhVkgason577rxdkCtuYI9S9B8QoNsgtic19SOF9_zhOpC8YSf5-VKlYLN0Dj-Bto3pjOyuJjXqX_jXCDBUKsfOBnm5Zpj3SCQ5LG9UCgB4dquKxM469-hfsy6NbvTADdcBbq233lxHeDFTTdmLsnxgLBGDzlLBtuPC9BGKfJF2YLXYIsVhgiSK_a2iP8GpZ8dk-BM9hI3rUIaEyvQT1OHbccJQKpaEKq7nr4TdWHGKXjmP5ekHB97nQloySvS16TJt8B6g-l0QHXYKY5cQ1TJ5uGRjLOEdrQVz0-zuWw2kGTPbk-ehWfMvW1BavT9BN0uV2SS74qslf3-Rb-oVrIpRJ4F89_8luOslEVzREJE4aSE39B7Dql25Ga4B5tw6cwOCyZgR5Dn6sQ53SXsXoJe4OWFDd1htxWwywwk1dxtG4a69W5_ArIaJRuibiO4BgSG5bwfopP1JuC_H78SjRqSl6UyAoGcKjBy2X_EFB2lGAF8M9HS3v5YPLdeUT_vygDybGXzeiEfzuVT80EvufBH3PPKRbxzpcGy3CdK8uLG-OqE20tQiLJYs_WB0XAGeQzkt_pye-5xVFDj-25VztEjvtDl3f8oFM1gb2nfBSfJz6VIiFjrnZCq9mWzdEJ2IsaxOfA1AB4WxJ6WcNhw9ZclnbBZwUvCoG4fcYCsJiQGUlbubRqN6Fl7sjs5tCInBI4Aa9MkMQ7UvymafZX4v_U5A/https://www.amazon.com/stores/page/9276076F-0D70-41D4-9045-E3DA0D06835C/?_encoding=UTF8&store_ref=SB_A03660332AZUGM8C31UCZ-A0210876JWK0ST3UCHI&pd_rd_plhdr=t&aaxitk=eadbac9cf3af2d01e7a6db3b4465626b&hsa_cr_id=0&lp_asins=B0CVRDK4P6%2CB0DYQF1Q3Z%2CB0CVRMHRSZ&lp_query=55%20inch%20LG%20LED%20TV&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_bkgd&pd_rd_w=BNcCa&content-id=amzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87%3Aamzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_p=cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_r=G43N4J5432C9TCHQG3HF&pd_rd_wg=LDys9&pd_rd_r=13087348-2109-4d72-a072-38d407f8ff13
+                            - link "LG Electronics (TV)" [ref=e1141] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JCKsWTnO93pn6U-ZyOlSG8kAAAGeBvngPgEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICDVc74P/clv1c_ek-wBIHXFcbWDn2nI5drJ16WtD5jqoDm-NqBs1fmHpU55Z3aUcADVqcRPdlHyj_0qVSX82cK-kUZk9j7lo8CbtIM9kqz9ME_Y6lFwfVqzar64yG6zWjUHn6MojnwrP8j9pGXCrGvMJAzgTxVjycN6fhbody0BtVZggQzzTG_pJ4v-M7dl1uR35N-IVuC7HYvyl4P7nEzR1ep5kT9vIvk4n6CWTtbgQYExWpDDwMtbyttJHXvp0IkCPv-eMU1z-VHumwZAQvGjatbe-4Cmhr9waMb7YV9tlY7s6z84HVku46is9N4FXygoBLR2rGDmtlgnX944bwRuQpsRYazUExwzWwG4fz9gSjeE-XcSoLHTdUOr6py_doUHs2KvjtsLWxwol58FC1piWzPbTKp9uuoLbbKlE7KmRgBQpWFcQdjmZV8v6PjSE-R-RwqukzeNjmbKrkgM8ES4iTuDv3kakwdaDYWnCk1YCXsGtO4QIvM_P-7YT6YhSMUbgtpZEvaEg8urFMx3bXJ6AfZNT9Rho43fYHUaR2nEkxusmCJZdyXfXTQfNCgK9wsGd-qeV0TQ06xO_LyxctmwpxdhwEE69Zp7ckjXiSC6w5g7QGc16-EsP0N1rRY7ZUyXhXwI6TvgnvB5duYy2eaCCzHn2EBVrjFx9M8xhmnEUSatldnQFj2HySe6xsaV9m3WZF1r_j4Upg434vr8qsxo-ev8gDaqS-bQj8IEcmgfvhDsSDfDwEzEw3l2hKlwr3frIopAzAG-p6Y99WMs1REFQjIK_d6KvmZUROqqOJLGp3eI2GOBTUayb0oK_UKinMVokNDNqGLpYYXWZlwy4Vg0q2i7_tpTHHgnhPTeLEiR4MmWlvNlWLlzPi87YDc7qLzY25jUyObEwlbKwKH1nRA6bq-esavHmycGYjvDS3COZNxkvJF3mgLt_7nYKt6MMsD_icvb1qRkqiHVwUdhVkgason577rxdkCtuYI9S9B8QoNsgtic19SOF9_zhOpC8YSf5-VKlYLN0Dj-Bto3pjOyuJjXqX_jXCDBUKsfOBnm5Zpj3SCQ5LG9UCgB4dquKxM469-hfsy6NbvTADdcBbq233lxHeDFTTdmLsnxgLBGDzlLBtuPC9BGKfJF2YLXYIsVhgiSK_a2iP8GpZ8dk-BM9hI3rUIaEyvQT1OHbccJQKpaEKq7nr4TdWHGKXjmP5ekHB97nQloySvS16TJt8B6g-l0QHXYKY5cQ1TJ5uGRjLOEdrQVz0-zuWw2kGTPbk-ehWfMvW1BavT9BN0uV2SS74qslf3-Rb-oVrIpRJ4F89_8luOslEVzREJE4aSE39B7Dql25Ga4B5tw6cwOCyZgR5Dn6sQ53SXsXoJe4OWFDd1htxWwywwk1dxtG4a69W5_ArIaJRuibiO4BgSG5bwfopP1JuC_H78SjRqSl6UyAoGcKjBy2X_EFB2lGAF8M9HS3v5YPLdeUT_vygDybGXzeiEfzuVT80EvufBH3PPKRbxzpcGy3CdK8uLG-OqE20tQiLJYs_WB0XAGeQzkt_pye-5xVFDj-25VztEjvtDl3f8oFM1gb2nfBSfJz6VIiFjrnZCq9mWzdEJ2IsaxOfA1AB4WxJ6WcNhw9ZclnbBZwUvCoG4fcYCsJiQGUlbubRqN6Fl7sjs5tCInBI4Aa9MkMQ7UvymafZX4v_U5A/https://www.amazon.com/stores/page/9276076F-0D70-41D4-9045-E3DA0D06835C/?_encoding=UTF8&store_ref=SB_A03660332AZUGM8C31UCZ-A0210876JWK0ST3UCHI&pd_rd_plhdr=t&aaxitk=eadbac9cf3af2d01e7a6db3b4465626b&hsa_cr_id=0&lp_asins=B0CVRDK4P6%2CB0DYQF1Q3Z%2CB0CVRMHRSZ&lp_query=55%20inch%20LG%20LED%20TV&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_logo&pd_rd_w=BNcCa&content-id=amzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87%3Aamzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_p=cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_r=G43N4J5432C9TCHQG3HF&pd_rd_wg=LDys9&pd_rd_r=13087348-2109-4d72-a072-38d407f8ff13
+                              - img "LG Electronics (TV)" [ref=e1143]
+                          - generic [ref=e1144]:
+                            - link [ref=e1145] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JCKsWTnO93pn6U-ZyOlSG8kAAAGeBvngPgEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICDVc74P/clv1c_ek-wBIHXFcbWDn2nI5drJ16WtD5jqoDm-NqBs1fmHpU55Z3aUcADVqcRPdlHyj_0qVSX82cK-kUZk9j7lo8CbtIM9kqz9ME_Y6lFwfVqzar64yG6zWjUHn6MojnwrP8j9pGXCrGvMJAzgTxVjycN6fhbody0BtVZggQzzTG_pJ4v-M7dl1uR35N-IVuC7HYvyl4P7nEzR1ep5kT9vIvk4n6CWTtbgQYExWpDDwMtbyttJHXvp0IkCPv-eMU1z-VHumwZAQvGjatbe-4Cmhr9waMb7YV9tlY7s6z84HVku46is9N4FXygoBLR2rGDmtlgnX944bwRuQpsRYazUExwzWwG4fz9gSjeE-XcSoLHTdUOr6py_doUHs2KvjtsLWxwol58FC1piWzPbTKp9uuoLbbKlE7KmRgBQpWFcQdjmZV8v6PjSE-R-RwqukzeNjmbKrkgM8ES4iTuDv3kakwdaDYWnCk1YCXsGtO4QIvM_P-7YT6YhSMUbgtpZEvaEg8urFMx3bXJ6AfZNT9Rho43fYHUaR2nEkxusmCJZdyXfXTQfNCgK9wsGd-qeV0TQ06xO_LyxctmwpxdhwEE69Zp7ckjXiSC6w5g7QGc16-EsP0N1rRY7ZUyXhXwI6TvgnvB5duYy2eaCCzHn2EBVrjFx9M8xhmnEUSatldnQFj2HySe6xsaV9m3WZF1r_j4Upg434vr8qsxo-ev8gDaqS-bQj8IEcmgfvhDsSDfDwEzEw3l2hKlwr3frIopAzAG-p6Y99WMs1REFQjIK_d6KvmZUROqqOJLGp3eI2GOBTUayb0oK_UKinMVokNDNqGLpYYXWZlwy4Vg0q2i7_tpTHHgnhPTeLEiR4MmWlvNlWLlzPi87YDc7qLzY25jUyObEwlbKwKH1nRA6bq-esavHmycGYjvDS3COZNxkvJF3mgLt_7nYKt6MMsD_icvb1qRkqiHVwUdhVkgason577rxdkCtuYI9S9B8QoNsgtic19SOF9_zhOpC8YSf5-VKlYLN0Dj-Bto3pjOyuJjXqX_jXCDBUKsfOBnm5Zpj3SCQ5LG9UCgB4dquKxM469-hfsy6NbvTADdcBbq233lxHeDFTTdmLsnxgLBGDzlLBtuPC9BGKfJF2YLXYIsVhgiSK_a2iP8GpZ8dk-BM9hI3rUIaEyvQT1OHbccJQKpaEKq7nr4TdWHGKXjmP5ekHB97nQloySvS16TJt8B6g-l0QHXYKY5cQ1TJ5uGRjLOEdrQVz0-zuWw2kGTPbk-ehWfMvW1BavT9BN0uV2SS74qslf3-Rb-oVrIpRJ4F89_8luOslEVzREJE4aSE39B7Dql25Ga4B5tw6cwOCyZgR5Dn6sQ53SXsXoJe4OWFDd1htxWwywwk1dxtG4a69W5_ArIaJRuibiO4BgSG5bwfopP1JuC_H78SjRqSl6UyAoGcKjBy2X_EFB2lGAF8M9HS3v5YPLdeUT_vygDybGXzeiEfzuVT80EvufBH3PPKRbxzpcGy3CdK8uLG-OqE20tQiLJYs_WB0XAGeQzkt_pye-5xVFDj-25VztEjvtDl3f8oFM1gb2nfBSfJz6VIiFjrnZCq9mWzdEJ2IsaxOfA1AB4WxJ6WcNhw9ZclnbBZwUvCoG4fcYCsJiQGUlbubRqN6Fl7sjs5tCInBI4Aa9MkMQ7UvymafZX4v_U5A/https://www.amazon.com/stores/page/9276076F-0D70-41D4-9045-E3DA0D06835C/?_encoding=UTF8&store_ref=SB_A03660332AZUGM8C31UCZ-A0210876JWK0ST3UCHI&pd_rd_plhdr=t&aaxitk=eadbac9cf3af2d01e7a6db3b4465626b&hsa_cr_id=0&lp_asins=B0CVRDK4P6%2CB0DYQF1Q3Z%2CB0CVRMHRSZ&lp_query=55%20inch%20LG%20LED%20TV&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_bkgd&pd_rd_w=BNcCa&content-id=amzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87%3Aamzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_p=cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_r=G43N4J5432C9TCHQG3HF&pd_rd_wg=LDys9&pd_rd_r=13087348-2109-4d72-a072-38d407f8ff13
+                            - 'link "World''s #1 OLED TV Brand" [ref=e1146] [cursor=pointer]':
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JCKsWTnO93pn6U-ZyOlSG8kAAAGeBvngPgEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICDVc74P/clv1c_ek-wBIHXFcbWDn2nI5drJ16WtD5jqoDm-NqBs1fmHpU55Z3aUcADVqcRPdlHyj_0qVSX82cK-kUZk9j7lo8CbtIM9kqz9ME_Y6lFwfVqzar64yG6zWjUHn6MojnwrP8j9pGXCrGvMJAzgTxVjycN6fhbody0BtVZggQzzTG_pJ4v-M7dl1uR35N-IVuC7HYvyl4P7nEzR1ep5kT9vIvk4n6CWTtbgQYExWpDDwMtbyttJHXvp0IkCPv-eMU1z-VHumwZAQvGjatbe-4Cmhr9waMb7YV9tlY7s6z84HVku46is9N4FXygoBLR2rGDmtlgnX944bwRuQpsRYazUExwzWwG4fz9gSjeE-XcSoLHTdUOr6py_doUHs2KvjtsLWxwol58FC1piWzPbTKp9uuoLbbKlE7KmRgBQpWFcQdjmZV8v6PjSE-R-RwqukzeNjmbKrkgM8ES4iTuDv3kakwdaDYWnCk1YCXsGtO4QIvM_P-7YT6YhSMUbgtpZEvaEg8urFMx3bXJ6AfZNT9Rho43fYHUaR2nEkxusmCJZdyXfXTQfNCgK9wsGd-qeV0TQ06xO_LyxctmwpxdhwEE69Zp7ckjXiSC6w5g7QGc16-EsP0N1rRY7ZUyXhXwI6TvgnvB5duYy2eaCCzHn2EBVrjFx9M8xhmnEUSatldnQFj2HySe6xsaV9m3WZF1r_j4Upg434vr8qsxo-ev8gDaqS-bQj8IEcmgfvhDsSDfDwEzEw3l2hKlwr3frIopAzAG-p6Y99WMs1REFQjIK_d6KvmZUROqqOJLGp3eI2GOBTUayb0oK_UKinMVokNDNqGLpYYXWZlwy4Vg0q2i7_tpTHHgnhPTeLEiR4MmWlvNlWLlzPi87YDc7qLzY25jUyObEwlbKwKH1nRA6bq-esavHmycGYjvDS3COZNxkvJF3mgLt_7nYKt6MMsD_icvb1qRkqiHVwUdhVkgason577rxdkCtuYI9S9B8QoNsgtic19SOF9_zhOpC8YSf5-VKlYLN0Dj-Bto3pjOyuJjXqX_jXCDBUKsfOBnm5Zpj3SCQ5LG9UCgB4dquKxM469-hfsy6NbvTADdcBbq233lxHeDFTTdmLsnxgLBGDzlLBtuPC9BGKfJF2YLXYIsVhgiSK_a2iP8GpZ8dk-BM9hI3rUIaEyvQT1OHbccJQKpaEKq7nr4TdWHGKXjmP5ekHB97nQloySvS16TJt8B6g-l0QHXYKY5cQ1TJ5uGRjLOEdrQVz0-zuWw2kGTPbk-ehWfMvW1BavT9BN0uV2SS74qslf3-Rb-oVrIpRJ4F89_8luOslEVzREJE4aSE39B7Dql25Ga4B5tw6cwOCyZgR5Dn6sQ53SXsXoJe4OWFDd1htxWwywwk1dxtG4a69W5_ArIaJRuibiO4BgSG5bwfopP1JuC_H78SjRqSl6UyAoGcKjBy2X_EFB2lGAF8M9HS3v5YPLdeUT_vygDybGXzeiEfzuVT80EvufBH3PPKRbxzpcGy3CdK8uLG-OqE20tQiLJYs_WB0XAGeQzkt_pye-5xVFDj-25VztEjvtDl3f8oFM1gb2nfBSfJz6VIiFjrnZCq9mWzdEJ2IsaxOfA1AB4WxJ6WcNhw9ZclnbBZwUvCoG4fcYCsJiQGUlbubRqN6Fl7sjs5tCInBI4Aa9MkMQ7UvymafZX4v_U5A/https://www.amazon.com/stores/page/9276076F-0D70-41D4-9045-E3DA0D06835C/?_encoding=UTF8&store_ref=SB_A03660332AZUGM8C31UCZ-A0210876JWK0ST3UCHI&pd_rd_plhdr=t&aaxitk=eadbac9cf3af2d01e7a6db3b4465626b&hsa_cr_id=0&lp_asins=B0CVRDK4P6%2CB0DYQF1Q3Z%2CB0CVRMHRSZ&lp_query=55%20inch%20LG%20LED%20TV&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_hl&pd_rd_w=BNcCa&content-id=amzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87%3Aamzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_p=cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_r=G43N4J5432C9TCHQG3HF&pd_rd_wg=LDys9&pd_rd_r=13087348-2109-4d72-a072-38d407f8ff13
+                              - generic [ref=e1148]:
+                                - generic [ref=e1149]: "World's #1 OLED TV Brand"
+                                - generic [ref=e1150]: "World's #1 OLED TV Brand"
+                  - generic [ref=e1152]:
+                    - generic:
+                      - generic:
+                        - link:
+                          - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JABuZljLJ3uxrV2XKQZkyNAAAAGeBvngQAEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICA7r13d/clv1c_ek-IBPHXbcbWXixXZLvfbmIzcVQl65YEDvK3aeDB2hpwvlnzmXlhmqQuccsy9wzE9htvyt7KY_IMfSd7xcpaebH5WBC-pn_SUHDxisnHWP30gzrxEFL9tRa6YvNcPuKQh1sPPuEALs4JbQ7sth8Gg0rfqj3clFP-gqiUfwcqiYEZQx81knRB6Vh9tWo0flCUYAqu60hhRx9YtNbdtk9NvkqzL9eXrEQn8C-PnrtVCypU6yR9SxNZUgUtGZasDyyHE2Mcmn1D_R2VybPDbfCtqsTW4ODkGDx3nG63VhaYz1mmjBAxnCBxvC22NXFdGPU-lCBCAYF3EKwsTC8PENLqOEbpXYeAgF-A-wSrgxX5RtQBJwE_i0NX_fzxnLFtRhzawyHCgnPbNtFHbzEhoLWOU5kyxAzlHwtgZMnxP-ck4x5iuiKjYxSwuzdUGjO5ei_ohnG28mWECx189XZLjxV5Emyk6DZJuid2KO1xrj-hfP-naX6IBT-Q5YFDLD-3yx7lf2d-XCSQvUYQkp0-rM3JP617ESY9-1fNApwDWgaMA42Oya2kjaE5w-EuEtJNEieAYBwxX7eNasesKeRq9w1P49vAaK1DSlBBDKIB283qV1d_BmTeKYi5XJouJz_nfPFW8r2rQFA09gJlow1v7IkohPxIfBA-yDnSHhWxO0rH1DmsVzQhIk2T1i6oRGcvaRX_dynWslcGIlwzF1e7bVmjWNLgY--9Ht4rufYAdAXiRHqrSv-nX_KR-wEo-vTdAIYqa2H4MURaoiVS0wEVU4X0qPGBRCFndyk_0sCjKHjL4Sc201eNg49aAGYXpHbUDmdxZRpHbwS7cHGn5w2OnW73vqM8IDe1UBKuIqgimroJryXzcBnJcgGfgsOI_dDYH2KHSNxhweasxZ3Ehd0priMaHcTTussPDcHMF-1_-9OcFWtSSfJbV9WQBTfGMnRYHGo1j3MzkHajJGMlV4De2817aOVzE5B-2LJhvVxzIFQpuGKbsqpex1MXlJ_cjf5mEVceuh7M0_eY5cqXQEml1Bu6WGJTiSixiKNkkGu-VGTnMo7spsozFqYQEO2O_SxHfkrjMXFieaOUeWk1jyOZmNLWaQl0vHXZv_hGj2caYRsnX9Xvhk-ZLUk8IZFZmP9Hj2LDpEG7uRPBBmNY7pECirPUHJpsKRbSrDuTuoIFj9QRwUKFFFeZji_1lh2MTxuNK8YT3AIgFpQ_xsnu-V2h0u09A2OwxbLGo8C6zz7HZ3s6RDCQ7_325uZ7gJv07O7cL7_cVnXNR4QzkzoNKh4TNY0037364ADDRWVOcwtEeGvBun66O0aNMxaPxbBXuuGW_Zp0SCCKtFQb4O-fUAC8hNfLI4w--dnaMJSiFMlUvLLG4CypptF6HEQB9-BhyY_GNHcUjOvXBRKvoP0UcuwMerjgZJ1ab6MHIu_l3ICPnwiK9mbU8y-P0uH_5BcR3LvynixEo4fgx3T0SIkmlt0Hb0YCg_niEhYNziXF6cJroxvlrTHoQwocVdoO087dGyM9od-jmzHxGZPU95ljtJzq8QUJeK25JGHfk05SMLJ58xkmurYbL490NskO26JQvVFPPXCw5paeEVvTynMWDISfO5jY_fReGX9MxVH4DC7KSWWBmUuG9sMLOhzCveVutKFfU5-ecbMlA081fW9OvAk/https://www.amazon.com/stores/page/211133A1-3989-443B-B069-5FCBC7EF09E2/?_encoding=UTF8&store_ref=SB_A06926552BCG6RSB8F430-A03452651IUTD5G6JSAVY&pd_rd_plhdr=t&aaxitk=a87b48b67657c32acd9e2c5870ef3a84&hsa_cr_id=0&lp_asins=B0FJXTRMX9%2CB0FJXV5YDF&lp_query=55%20inch%20LG%20LED%20TV&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_bkgd&pd_rd_w=BNcCa&content-id=amzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87%3Aamzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_p=cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_r=G43N4J5432C9TCHQG3HF&pd_rd_wg=LDys9&pd_rd_r=13087348-2109-4d72-a072-38d407f8ff13
+                        - link "Romorgniz" [ref=e1153] [cursor=pointer]:
+                          - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JABuZljLJ3uxrV2XKQZkyNAAAAGeBvngQAEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICA7r13d/clv1c_ek-IBPHXbcbWXixXZLvfbmIzcVQl65YEDvK3aeDB2hpwvlnzmXlhmqQuccsy9wzE9htvyt7KY_IMfSd7xcpaebH5WBC-pn_SUHDxisnHWP30gzrxEFL9tRa6YvNcPuKQh1sPPuEALs4JbQ7sth8Gg0rfqj3clFP-gqiUfwcqiYEZQx81knRB6Vh9tWo0flCUYAqu60hhRx9YtNbdtk9NvkqzL9eXrEQn8C-PnrtVCypU6yR9SxNZUgUtGZasDyyHE2Mcmn1D_R2VybPDbfCtqsTW4ODkGDx3nG63VhaYz1mmjBAxnCBxvC22NXFdGPU-lCBCAYF3EKwsTC8PENLqOEbpXYeAgF-A-wSrgxX5RtQBJwE_i0NX_fzxnLFtRhzawyHCgnPbNtFHbzEhoLWOU5kyxAzlHwtgZMnxP-ck4x5iuiKjYxSwuzdUGjO5ei_ohnG28mWECx189XZLjxV5Emyk6DZJuid2KO1xrj-hfP-naX6IBT-Q5YFDLD-3yx7lf2d-XCSQvUYQkp0-rM3JP617ESY9-1fNApwDWgaMA42Oya2kjaE5w-EuEtJNEieAYBwxX7eNasesKeRq9w1P49vAaK1DSlBBDKIB283qV1d_BmTeKYi5XJouJz_nfPFW8r2rQFA09gJlow1v7IkohPxIfBA-yDnSHhWxO0rH1DmsVzQhIk2T1i6oRGcvaRX_dynWslcGIlwzF1e7bVmjWNLgY--9Ht4rufYAdAXiRHqrSv-nX_KR-wEo-vTdAIYqa2H4MURaoiVS0wEVU4X0qPGBRCFndyk_0sCjKHjL4Sc201eNg49aAGYXpHbUDmdxZRpHbwS7cHGn5w2OnW73vqM8IDe1UBKuIqgimroJryXzcBnJcgGfgsOI_dDYH2KHSNxhweasxZ3Ehd0priMaHcTTussPDcHMF-1_-9OcFWtSSfJbV9WQBTfGMnRYHGo1j3MzkHajJGMlV4De2817aOVzE5B-2LJhvVxzIFQpuGKbsqpex1MXlJ_cjf5mEVceuh7M0_eY5cqXQEml1Bu6WGJTiSixiKNkkGu-VGTnMo7spsozFqYQEO2O_SxHfkrjMXFieaOUeWk1jyOZmNLWaQl0vHXZv_hGj2caYRsnX9Xvhk-ZLUk8IZFZmP9Hj2LDpEG7uRPBBmNY7pECirPUHJpsKRbSrDuTuoIFj9QRwUKFFFeZji_1lh2MTxuNK8YT3AIgFpQ_xsnu-V2h0u09A2OwxbLGo8C6zz7HZ3s6RDCQ7_325uZ7gJv07O7cL7_cVnXNR4QzkzoNKh4TNY0037364ADDRWVOcwtEeGvBun66O0aNMxaPxbBXuuGW_Zp0SCCKtFQb4O-fUAC8hNfLI4w--dnaMJSiFMlUvLLG4CypptF6HEQB9-BhyY_GNHcUjOvXBRKvoP0UcuwMerjgZJ1ab6MHIu_l3ICPnwiK9mbU8y-P0uH_5BcR3LvynixEo4fgx3T0SIkmlt0Hb0YCg_niEhYNziXF6cJroxvlrTHoQwocVdoO087dGyM9od-jmzHxGZPU95ljtJzq8QUJeK25JGHfk05SMLJ58xkmurYbL490NskO26JQvVFPPXCw5paeEVvTynMWDISfO5jY_fReGX9MxVH4DC7KSWWBmUuG9sMLOhzCveVutKFfU5-ecbMlA081fW9OvAk/https://www.amazon.com/stores/page/211133A1-3989-443B-B069-5FCBC7EF09E2/?_encoding=UTF8&store_ref=SB_A06926552BCG6RSB8F430-A03452651IUTD5G6JSAVY&pd_rd_plhdr=t&aaxitk=a87b48b67657c32acd9e2c5870ef3a84&hsa_cr_id=0&lp_asins=B0FJXTRMX9%2CB0FJXV5YDF&lp_query=55%20inch%20LG%20LED%20TV&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_ls&pd_rd_w=BNcCa&content-id=amzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87%3Aamzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_p=cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_r=G43N4J5432C9TCHQG3HF&pd_rd_wg=LDys9&pd_rd_r=13087348-2109-4d72-a072-38d407f8ff13
+                          - img "Romorgniz" [ref=e1154]
+                        - generic [ref=e1156]:
+                          - generic [ref=e1157]:
+                            - link [ref=e1158] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JABuZljLJ3uxrV2XKQZkyNAAAAGeBvngQAEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICA7r13d/clv1c_ek-IBPHXbcbWXixXZLvfbmIzcVQl65YEDvK3aeDB2hpwvlnzmXlhmqQuccsy9wzE9htvyt7KY_IMfSd7xcpaebH5WBC-pn_SUHDxisnHWP30gzrxEFL9tRa6YvNcPuKQh1sPPuEALs4JbQ7sth8Gg0rfqj3clFP-gqiUfwcqiYEZQx81knRB6Vh9tWo0flCUYAqu60hhRx9YtNbdtk9NvkqzL9eXrEQn8C-PnrtVCypU6yR9SxNZUgUtGZasDyyHE2Mcmn1D_R2VybPDbfCtqsTW4ODkGDx3nG63VhaYz1mmjBAxnCBxvC22NXFdGPU-lCBCAYF3EKwsTC8PENLqOEbpXYeAgF-A-wSrgxX5RtQBJwE_i0NX_fzxnLFtRhzawyHCgnPbNtFHbzEhoLWOU5kyxAzlHwtgZMnxP-ck4x5iuiKjYxSwuzdUGjO5ei_ohnG28mWECx189XZLjxV5Emyk6DZJuid2KO1xrj-hfP-naX6IBT-Q5YFDLD-3yx7lf2d-XCSQvUYQkp0-rM3JP617ESY9-1fNApwDWgaMA42Oya2kjaE5w-EuEtJNEieAYBwxX7eNasesKeRq9w1P49vAaK1DSlBBDKIB283qV1d_BmTeKYi5XJouJz_nfPFW8r2rQFA09gJlow1v7IkohPxIfBA-yDnSHhWxO0rH1DmsVzQhIk2T1i6oRGcvaRX_dynWslcGIlwzF1e7bVmjWNLgY--9Ht4rufYAdAXiRHqrSv-nX_KR-wEo-vTdAIYqa2H4MURaoiVS0wEVU4X0qPGBRCFndyk_0sCjKHjL4Sc201eNg49aAGYXpHbUDmdxZRpHbwS7cHGn5w2OnW73vqM8IDe1UBKuIqgimroJryXzcBnJcgGfgsOI_dDYH2KHSNxhweasxZ3Ehd0priMaHcTTussPDcHMF-1_-9OcFWtSSfJbV9WQBTfGMnRYHGo1j3MzkHajJGMlV4De2817aOVzE5B-2LJhvVxzIFQpuGKbsqpex1MXlJ_cjf5mEVceuh7M0_eY5cqXQEml1Bu6WGJTiSixiKNkkGu-VGTnMo7spsozFqYQEO2O_SxHfkrjMXFieaOUeWk1jyOZmNLWaQl0vHXZv_hGj2caYRsnX9Xvhk-ZLUk8IZFZmP9Hj2LDpEG7uRPBBmNY7pECirPUHJpsKRbSrDuTuoIFj9QRwUKFFFeZji_1lh2MTxuNK8YT3AIgFpQ_xsnu-V2h0u09A2OwxbLGo8C6zz7HZ3s6RDCQ7_325uZ7gJv07O7cL7_cVnXNR4QzkzoNKh4TNY0037364ADDRWVOcwtEeGvBun66O0aNMxaPxbBXuuGW_Zp0SCCKtFQb4O-fUAC8hNfLI4w--dnaMJSiFMlUvLLG4CypptF6HEQB9-BhyY_GNHcUjOvXBRKvoP0UcuwMerjgZJ1ab6MHIu_l3ICPnwiK9mbU8y-P0uH_5BcR3LvynixEo4fgx3T0SIkmlt0Hb0YCg_niEhYNziXF6cJroxvlrTHoQwocVdoO087dGyM9od-jmzHxGZPU95ljtJzq8QUJeK25JGHfk05SMLJ58xkmurYbL490NskO26JQvVFPPXCw5paeEVvTynMWDISfO5jY_fReGX9MxVH4DC7KSWWBmUuG9sMLOhzCveVutKFfU5-ecbMlA081fW9OvAk/https://www.amazon.com/stores/page/211133A1-3989-443B-B069-5FCBC7EF09E2/?_encoding=UTF8&store_ref=SB_A06926552BCG6RSB8F430-A03452651IUTD5G6JSAVY&pd_rd_plhdr=t&aaxitk=a87b48b67657c32acd9e2c5870ef3a84&hsa_cr_id=0&lp_asins=B0FJXTRMX9%2CB0FJXV5YDF&lp_query=55%20inch%20LG%20LED%20TV&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_bkgd&pd_rd_w=BNcCa&content-id=amzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87%3Aamzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_p=cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_r=G43N4J5432C9TCHQG3HF&pd_rd_wg=LDys9&pd_rd_r=13087348-2109-4d72-a072-38d407f8ff13
+                            - link "Romorgniz" [ref=e1159] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JABuZljLJ3uxrV2XKQZkyNAAAAGeBvngQAEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICA7r13d/clv1c_ek-IBPHXbcbWXixXZLvfbmIzcVQl65YEDvK3aeDB2hpwvlnzmXlhmqQuccsy9wzE9htvyt7KY_IMfSd7xcpaebH5WBC-pn_SUHDxisnHWP30gzrxEFL9tRa6YvNcPuKQh1sPPuEALs4JbQ7sth8Gg0rfqj3clFP-gqiUfwcqiYEZQx81knRB6Vh9tWo0flCUYAqu60hhRx9YtNbdtk9NvkqzL9eXrEQn8C-PnrtVCypU6yR9SxNZUgUtGZasDyyHE2Mcmn1D_R2VybPDbfCtqsTW4ODkGDx3nG63VhaYz1mmjBAxnCBxvC22NXFdGPU-lCBCAYF3EKwsTC8PENLqOEbpXYeAgF-A-wSrgxX5RtQBJwE_i0NX_fzxnLFtRhzawyHCgnPbNtFHbzEhoLWOU5kyxAzlHwtgZMnxP-ck4x5iuiKjYxSwuzdUGjO5ei_ohnG28mWECx189XZLjxV5Emyk6DZJuid2KO1xrj-hfP-naX6IBT-Q5YFDLD-3yx7lf2d-XCSQvUYQkp0-rM3JP617ESY9-1fNApwDWgaMA42Oya2kjaE5w-EuEtJNEieAYBwxX7eNasesKeRq9w1P49vAaK1DSlBBDKIB283qV1d_BmTeKYi5XJouJz_nfPFW8r2rQFA09gJlow1v7IkohPxIfBA-yDnSHhWxO0rH1DmsVzQhIk2T1i6oRGcvaRX_dynWslcGIlwzF1e7bVmjWNLgY--9Ht4rufYAdAXiRHqrSv-nX_KR-wEo-vTdAIYqa2H4MURaoiVS0wEVU4X0qPGBRCFndyk_0sCjKHjL4Sc201eNg49aAGYXpHbUDmdxZRpHbwS7cHGn5w2OnW73vqM8IDe1UBKuIqgimroJryXzcBnJcgGfgsOI_dDYH2KHSNxhweasxZ3Ehd0priMaHcTTussPDcHMF-1_-9OcFWtSSfJbV9WQBTfGMnRYHGo1j3MzkHajJGMlV4De2817aOVzE5B-2LJhvVxzIFQpuGKbsqpex1MXlJ_cjf5mEVceuh7M0_eY5cqXQEml1Bu6WGJTiSixiKNkkGu-VGTnMo7spsozFqYQEO2O_SxHfkrjMXFieaOUeWk1jyOZmNLWaQl0vHXZv_hGj2caYRsnX9Xvhk-ZLUk8IZFZmP9Hj2LDpEG7uRPBBmNY7pECirPUHJpsKRbSrDuTuoIFj9QRwUKFFFeZji_1lh2MTxuNK8YT3AIgFpQ_xsnu-V2h0u09A2OwxbLGo8C6zz7HZ3s6RDCQ7_325uZ7gJv07O7cL7_cVnXNR4QzkzoNKh4TNY0037364ADDRWVOcwtEeGvBun66O0aNMxaPxbBXuuGW_Zp0SCCKtFQb4O-fUAC8hNfLI4w--dnaMJSiFMlUvLLG4CypptF6HEQB9-BhyY_GNHcUjOvXBRKvoP0UcuwMerjgZJ1ab6MHIu_l3ICPnwiK9mbU8y-P0uH_5BcR3LvynixEo4fgx3T0SIkmlt0Hb0YCg_niEhYNziXF6cJroxvlrTHoQwocVdoO087dGyM9od-jmzHxGZPU95ljtJzq8QUJeK25JGHfk05SMLJ58xkmurYbL490NskO26JQvVFPPXCw5paeEVvTynMWDISfO5jY_fReGX9MxVH4DC7KSWWBmUuG9sMLOhzCveVutKFfU5-ecbMlA081fW9OvAk/https://www.amazon.com/stores/page/211133A1-3989-443B-B069-5FCBC7EF09E2/?_encoding=UTF8&store_ref=SB_A06926552BCG6RSB8F430-A03452651IUTD5G6JSAVY&pd_rd_plhdr=t&aaxitk=a87b48b67657c32acd9e2c5870ef3a84&hsa_cr_id=0&lp_asins=B0FJXTRMX9%2CB0FJXV5YDF&lp_query=55%20inch%20LG%20LED%20TV&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_logo&pd_rd_w=BNcCa&content-id=amzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87%3Aamzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_p=cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_r=G43N4J5432C9TCHQG3HF&pd_rd_wg=LDys9&pd_rd_r=13087348-2109-4d72-a072-38d407f8ff13
+                              - img "Romorgniz" [ref=e1161]
+                          - generic [ref=e1162]:
+                            - link [ref=e1163] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JABuZljLJ3uxrV2XKQZkyNAAAAGeBvngQAEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICA7r13d/clv1c_ek-IBPHXbcbWXixXZLvfbmIzcVQl65YEDvK3aeDB2hpwvlnzmXlhmqQuccsy9wzE9htvyt7KY_IMfSd7xcpaebH5WBC-pn_SUHDxisnHWP30gzrxEFL9tRa6YvNcPuKQh1sPPuEALs4JbQ7sth8Gg0rfqj3clFP-gqiUfwcqiYEZQx81knRB6Vh9tWo0flCUYAqu60hhRx9YtNbdtk9NvkqzL9eXrEQn8C-PnrtVCypU6yR9SxNZUgUtGZasDyyHE2Mcmn1D_R2VybPDbfCtqsTW4ODkGDx3nG63VhaYz1mmjBAxnCBxvC22NXFdGPU-lCBCAYF3EKwsTC8PENLqOEbpXYeAgF-A-wSrgxX5RtQBJwE_i0NX_fzxnLFtRhzawyHCgnPbNtFHbzEhoLWOU5kyxAzlHwtgZMnxP-ck4x5iuiKjYxSwuzdUGjO5ei_ohnG28mWECx189XZLjxV5Emyk6DZJuid2KO1xrj-hfP-naX6IBT-Q5YFDLD-3yx7lf2d-XCSQvUYQkp0-rM3JP617ESY9-1fNApwDWgaMA42Oya2kjaE5w-EuEtJNEieAYBwxX7eNasesKeRq9w1P49vAaK1DSlBBDKIB283qV1d_BmTeKYi5XJouJz_nfPFW8r2rQFA09gJlow1v7IkohPxIfBA-yDnSHhWxO0rH1DmsVzQhIk2T1i6oRGcvaRX_dynWslcGIlwzF1e7bVmjWNLgY--9Ht4rufYAdAXiRHqrSv-nX_KR-wEo-vTdAIYqa2H4MURaoiVS0wEVU4X0qPGBRCFndyk_0sCjKHjL4Sc201eNg49aAGYXpHbUDmdxZRpHbwS7cHGn5w2OnW73vqM8IDe1UBKuIqgimroJryXzcBnJcgGfgsOI_dDYH2KHSNxhweasxZ3Ehd0priMaHcTTussPDcHMF-1_-9OcFWtSSfJbV9WQBTfGMnRYHGo1j3MzkHajJGMlV4De2817aOVzE5B-2LJhvVxzIFQpuGKbsqpex1MXlJ_cjf5mEVceuh7M0_eY5cqXQEml1Bu6WGJTiSixiKNkkGu-VGTnMo7spsozFqYQEO2O_SxHfkrjMXFieaOUeWk1jyOZmNLWaQl0vHXZv_hGj2caYRsnX9Xvhk-ZLUk8IZFZmP9Hj2LDpEG7uRPBBmNY7pECirPUHJpsKRbSrDuTuoIFj9QRwUKFFFeZji_1lh2MTxuNK8YT3AIgFpQ_xsnu-V2h0u09A2OwxbLGo8C6zz7HZ3s6RDCQ7_325uZ7gJv07O7cL7_cVnXNR4QzkzoNKh4TNY0037364ADDRWVOcwtEeGvBun66O0aNMxaPxbBXuuGW_Zp0SCCKtFQb4O-fUAC8hNfLI4w--dnaMJSiFMlUvLLG4CypptF6HEQB9-BhyY_GNHcUjOvXBRKvoP0UcuwMerjgZJ1ab6MHIu_l3ICPnwiK9mbU8y-P0uH_5BcR3LvynixEo4fgx3T0SIkmlt0Hb0YCg_niEhYNziXF6cJroxvlrTHoQwocVdoO087dGyM9od-jmzHxGZPU95ljtJzq8QUJeK25JGHfk05SMLJ58xkmurYbL490NskO26JQvVFPPXCw5paeEVvTynMWDISfO5jY_fReGX9MxVH4DC7KSWWBmUuG9sMLOhzCveVutKFfU5-ecbMlA081fW9OvAk/https://www.amazon.com/stores/page/211133A1-3989-443B-B069-5FCBC7EF09E2/?_encoding=UTF8&store_ref=SB_A06926552BCG6RSB8F430-A03452651IUTD5G6JSAVY&pd_rd_plhdr=t&aaxitk=a87b48b67657c32acd9e2c5870ef3a84&hsa_cr_id=0&lp_asins=B0FJXTRMX9%2CB0FJXV5YDF&lp_query=55%20inch%20LG%20LED%20TV&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_bkgd&pd_rd_w=BNcCa&content-id=amzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87%3Aamzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_p=cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_r=G43N4J5432C9TCHQG3HF&pd_rd_wg=LDys9&pd_rd_r=13087348-2109-4d72-a072-38d407f8ff13
+                            - link "Romorgniz Dresser for Bedroom with 9 Drawers" [ref=e1164] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JABuZljLJ3uxrV2XKQZkyNAAAAGeBvngQAEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICA7r13d/clv1c_ek-IBPHXbcbWXixXZLvfbmIzcVQl65YEDvK3aeDB2hpwvlnzmXlhmqQuccsy9wzE9htvyt7KY_IMfSd7xcpaebH5WBC-pn_SUHDxisnHWP30gzrxEFL9tRa6YvNcPuKQh1sPPuEALs4JbQ7sth8Gg0rfqj3clFP-gqiUfwcqiYEZQx81knRB6Vh9tWo0flCUYAqu60hhRx9YtNbdtk9NvkqzL9eXrEQn8C-PnrtVCypU6yR9SxNZUgUtGZasDyyHE2Mcmn1D_R2VybPDbfCtqsTW4ODkGDx3nG63VhaYz1mmjBAxnCBxvC22NXFdGPU-lCBCAYF3EKwsTC8PENLqOEbpXYeAgF-A-wSrgxX5RtQBJwE_i0NX_fzxnLFtRhzawyHCgnPbNtFHbzEhoLWOU5kyxAzlHwtgZMnxP-ck4x5iuiKjYxSwuzdUGjO5ei_ohnG28mWECx189XZLjxV5Emyk6DZJuid2KO1xrj-hfP-naX6IBT-Q5YFDLD-3yx7lf2d-XCSQvUYQkp0-rM3JP617ESY9-1fNApwDWgaMA42Oya2kjaE5w-EuEtJNEieAYBwxX7eNasesKeRq9w1P49vAaK1DSlBBDKIB283qV1d_BmTeKYi5XJouJz_nfPFW8r2rQFA09gJlow1v7IkohPxIfBA-yDnSHhWxO0rH1DmsVzQhIk2T1i6oRGcvaRX_dynWslcGIlwzF1e7bVmjWNLgY--9Ht4rufYAdAXiRHqrSv-nX_KR-wEo-vTdAIYqa2H4MURaoiVS0wEVU4X0qPGBRCFndyk_0sCjKHjL4Sc201eNg49aAGYXpHbUDmdxZRpHbwS7cHGn5w2OnW73vqM8IDe1UBKuIqgimroJryXzcBnJcgGfgsOI_dDYH2KHSNxhweasxZ3Ehd0priMaHcTTussPDcHMF-1_-9OcFWtSSfJbV9WQBTfGMnRYHGo1j3MzkHajJGMlV4De2817aOVzE5B-2LJhvVxzIFQpuGKbsqpex1MXlJ_cjf5mEVceuh7M0_eY5cqXQEml1Bu6WGJTiSixiKNkkGu-VGTnMo7spsozFqYQEO2O_SxHfkrjMXFieaOUeWk1jyOZmNLWaQl0vHXZv_hGj2caYRsnX9Xvhk-ZLUk8IZFZmP9Hj2LDpEG7uRPBBmNY7pECirPUHJpsKRbSrDuTuoIFj9QRwUKFFFeZji_1lh2MTxuNK8YT3AIgFpQ_xsnu-V2h0u09A2OwxbLGo8C6zz7HZ3s6RDCQ7_325uZ7gJv07O7cL7_cVnXNR4QzkzoNKh4TNY0037364ADDRWVOcwtEeGvBun66O0aNMxaPxbBXuuGW_Zp0SCCKtFQb4O-fUAC8hNfLI4w--dnaMJSiFMlUvLLG4CypptF6HEQB9-BhyY_GNHcUjOvXBRKvoP0UcuwMerjgZJ1ab6MHIu_l3ICPnwiK9mbU8y-P0uH_5BcR3LvynixEo4fgx3T0SIkmlt0Hb0YCg_niEhYNziXF6cJroxvlrTHoQwocVdoO087dGyM9od-jmzHxGZPU95ljtJzq8QUJeK25JGHfk05SMLJ58xkmurYbL490NskO26JQvVFPPXCw5paeEVvTynMWDISfO5jY_fReGX9MxVH4DC7KSWWBmUuG9sMLOhzCveVutKFfU5-ecbMlA081fW9OvAk/https://www.amazon.com/stores/page/211133A1-3989-443B-B069-5FCBC7EF09E2/?_encoding=UTF8&store_ref=SB_A06926552BCG6RSB8F430-A03452651IUTD5G6JSAVY&pd_rd_plhdr=t&aaxitk=a87b48b67657c32acd9e2c5870ef3a84&hsa_cr_id=0&lp_asins=B0FJXTRMX9%2CB0FJXV5YDF&lp_query=55%20inch%20LG%20LED%20TV&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_hl&pd_rd_w=BNcCa&content-id=amzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87%3Aamzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_p=cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_r=G43N4J5432C9TCHQG3HF&pd_rd_wg=LDys9&pd_rd_r=13087348-2109-4d72-a072-38d407f8ff13
+                              - generic [ref=e1166]:
+                                - generic [ref=e1167]: Romorgniz Dresser for Bedroom with 9 Drawers
+                                - generic [ref=e1168]: Romorgniz Dresser for Bedroom with 9 Drawers
+                  - generic [ref=e1170]:
+                    - generic:
+                      - generic:
+                        - link:
+                          - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJh9_77W-nHx9WyR1F8ZGyYAAAGeBvngQQEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICAq6g3a/clv1c_ek-IBIHXFcbWDn2nI5drJ16WtD5jqoAHrtfCClVg34RvZe7-TgDD_cJvu2QztxOFvSLweFsRbtyU9rjgR3w2ELAx_-288gaD-8m5Nd6FUPwVDZjREAb4Hcz74N8gzqYljnphqdPB0l03HlYSP-Ul_dXrgN2ZhKXwm9jcr2crSocMwyWwJ_hojdQMzOtDzIObV5-DNoqKnQ1T3OGlr_5i4j6LTA839AohN_RiZa7q1jPyBRkh-wtMf3A3PYasgAtZ8RNUpYAwEJw-vNnquCZ0oHI2TtWPzv411UGsR9oa_eSQoFnL1dcEoVIjw6hfH26ZOLIeYyUQpx52chrDAyLoGx6oG5K5f3jE2QUjZr3Yc1S9XM9mD8kRcYdK3M8PDOI7fO_r6fGk0wnkowT7NJ1D1QGF4LP2yFv8cg_mqOvIOV_WvLheDskToLICc-2qfy9LMhjrzzJg5ajSxXasnRFzTtXIAmlVZsInBoSzJVVKeOqAXt1BbnMSYfnDLYKhMZScwOpeXASUOjp8RPSRzudyj2OAjTFta-Je5L6pCXiUzhQ9wu_UguOxdrYeHN70poIhHVC8GXa1BDGVVglhqriLvfdeQtnLb4iziqINjz9MgzL1scobr7EJzqkOSt88nmh1DZ6iMqmN0JtciGqPmDRvSjyqD5QyhBGJHn4ctOJB3vCFvmjfGHYG5E53VId-FLrhuElcIMgB0S-wezgfagnMGGg0Re-8-L4itQoCKVyC3jr3xwFzN6-AmU4lyNBXSk5767pkZuW8bzKM-L-qjxOHWoC6lrqHW_H-Mcs4BfcD1Nz_JSxcn7vR5s1SZtn41i41zU6B0-s5TeOMMTNxygmIoD2eD1XZu-xkcD_d-TfiY894UKP_5z62pT-TJHyDHNFNfSaSSp59p_p_UE7arOWcgb47mpFvL-cD9nnYujRdBqYJXf2f4-yy4ctNKJ4nRQTRgOfav9D0VfDwgkm2XA1flk3rXsKkIQSxFuY20IVV9fHwZBIlzut4VDVZkwSIfXnzWbRLVtOC810UsLGtIXbRLWLzaC9TZqVCwssrKtVvGMkF3uH-qfNKGEZq6dDiuOzMcHe3AXTGmrsGbx-dj9yDmZBjokkK1wEz3nPOhsxMSrPh_WZjgStNcRqLAIUvH0_FtN2G5petHWDjn7EBgSgMN_j501EQZVNh590oQRWQLaYn1yMo9Wpuzrca90DiCBqjbMHko5oeoN4VgFVxIJtxf2loKKbBX-5UpToFo_W9PLzomzV6eyvjl2rojr-suVxue1pN12REDr5I5YVzt4UUzSS3XL0XbGJwVRZf2ARg-cIuI-N90O0Biezy27aCentAEVC_W6otYxLwtKNmQQaDocPHMlekHvMT5vAbmkYPJXRKMySAfBdTTwZcLlGc1TPZ1yvnT5QBp1ZbhUsYBzKdjaIHJGI40C5KNOqJ3F9cBSz5ATS3kUs8aFOjvWCeGnfaxuRyA-INodCP_ApoTEQbYyRNHxdRntQ0RVyEFZXj1VL_FL4MhuNmis9eIpeHPtOQ3azJ6XAm-B-svX6GDBnqZNw4cbogtemBBOqsedoy2gwduL3kI537Xx9BH0CHtNubRn-ixXtjcI4hhzYop5NpXbb982tsVPc2Z1rwBUUX3U47lECAwkSVBHAtiQge9eCerRWseetUm3g/https://www.amazon.com/stores/page/7C3353FD-9D5A-4BD3-8B63-ECE3C196575D/?_encoding=UTF8&store_ref=SB_A0979391107JW7CPEHU6I-A050075924L1NMFIHTCDG&pd_rd_plhdr=t&aaxitk=3a95c4212baaa5892ee7b9a29ed735b2&hsa_cr_id=0&lp_asins=B0DXY833HV%2CB09BKCDXZC%2CB0DF44RTTP&lp_query=55%20inch%20LG%20LED%20TV&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_bkgd&pd_rd_w=BNcCa&content-id=amzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87%3Aamzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_p=cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_r=G43N4J5432C9TCHQG3HF&pd_rd_wg=LDys9&pd_rd_r=13087348-2109-4d72-a072-38d407f8ff13
+                        - link "Roku" [ref=e1171] [cursor=pointer]:
+                          - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJh9_77W-nHx9WyR1F8ZGyYAAAGeBvngQQEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICAq6g3a/clv1c_ek-IBIHXFcbWDn2nI5drJ16WtD5jqoAHrtfCClVg34RvZe7-TgDD_cJvu2QztxOFvSLweFsRbtyU9rjgR3w2ELAx_-288gaD-8m5Nd6FUPwVDZjREAb4Hcz74N8gzqYljnphqdPB0l03HlYSP-Ul_dXrgN2ZhKXwm9jcr2crSocMwyWwJ_hojdQMzOtDzIObV5-DNoqKnQ1T3OGlr_5i4j6LTA839AohN_RiZa7q1jPyBRkh-wtMf3A3PYasgAtZ8RNUpYAwEJw-vNnquCZ0oHI2TtWPzv411UGsR9oa_eSQoFnL1dcEoVIjw6hfH26ZOLIeYyUQpx52chrDAyLoGx6oG5K5f3jE2QUjZr3Yc1S9XM9mD8kRcYdK3M8PDOI7fO_r6fGk0wnkowT7NJ1D1QGF4LP2yFv8cg_mqOvIOV_WvLheDskToLICc-2qfy9LMhjrzzJg5ajSxXasnRFzTtXIAmlVZsInBoSzJVVKeOqAXt1BbnMSYfnDLYKhMZScwOpeXASUOjp8RPSRzudyj2OAjTFta-Je5L6pCXiUzhQ9wu_UguOxdrYeHN70poIhHVC8GXa1BDGVVglhqriLvfdeQtnLb4iziqINjz9MgzL1scobr7EJzqkOSt88nmh1DZ6iMqmN0JtciGqPmDRvSjyqD5QyhBGJHn4ctOJB3vCFvmjfGHYG5E53VId-FLrhuElcIMgB0S-wezgfagnMGGg0Re-8-L4itQoCKVyC3jr3xwFzN6-AmU4lyNBXSk5767pkZuW8bzKM-L-qjxOHWoC6lrqHW_H-Mcs4BfcD1Nz_JSxcn7vR5s1SZtn41i41zU6B0-s5TeOMMTNxygmIoD2eD1XZu-xkcD_d-TfiY894UKP_5z62pT-TJHyDHNFNfSaSSp59p_p_UE7arOWcgb47mpFvL-cD9nnYujRdBqYJXf2f4-yy4ctNKJ4nRQTRgOfav9D0VfDwgkm2XA1flk3rXsKkIQSxFuY20IVV9fHwZBIlzut4VDVZkwSIfXnzWbRLVtOC810UsLGtIXbRLWLzaC9TZqVCwssrKtVvGMkF3uH-qfNKGEZq6dDiuOzMcHe3AXTGmrsGbx-dj9yDmZBjokkK1wEz3nPOhsxMSrPh_WZjgStNcRqLAIUvH0_FtN2G5petHWDjn7EBgSgMN_j501EQZVNh590oQRWQLaYn1yMo9Wpuzrca90DiCBqjbMHko5oeoN4VgFVxIJtxf2loKKbBX-5UpToFo_W9PLzomzV6eyvjl2rojr-suVxue1pN12REDr5I5YVzt4UUzSS3XL0XbGJwVRZf2ARg-cIuI-N90O0Biezy27aCentAEVC_W6otYxLwtKNmQQaDocPHMlekHvMT5vAbmkYPJXRKMySAfBdTTwZcLlGc1TPZ1yvnT5QBp1ZbhUsYBzKdjaIHJGI40C5KNOqJ3F9cBSz5ATS3kUs8aFOjvWCeGnfaxuRyA-INodCP_ApoTEQbYyRNHxdRntQ0RVyEFZXj1VL_FL4MhuNmis9eIpeHPtOQ3azJ6XAm-B-svX6GDBnqZNw4cbogtemBBOqsedoy2gwduL3kI537Xx9BH0CHtNubRn-ixXtjcI4hhzYop5NpXbb982tsVPc2Z1rwBUUX3U47lECAwkSVBHAtiQge9eCerRWseetUm3g/https://www.amazon.com/stores/page/7C3353FD-9D5A-4BD3-8B63-ECE3C196575D/?_encoding=UTF8&store_ref=SB_A0979391107JW7CPEHU6I-A050075924L1NMFIHTCDG&pd_rd_plhdr=t&aaxitk=3a95c4212baaa5892ee7b9a29ed735b2&hsa_cr_id=0&lp_asins=B0DXY833HV%2CB09BKCDXZC%2CB0DF44RTTP&lp_query=55%20inch%20LG%20LED%20TV&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_ls&pd_rd_w=BNcCa&content-id=amzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87%3Aamzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_p=cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_r=G43N4J5432C9TCHQG3HF&pd_rd_wg=LDys9&pd_rd_r=13087348-2109-4d72-a072-38d407f8ff13
+                          - img "Roku" [ref=e1172]
+                        - generic [ref=e1174]:
+                          - generic [ref=e1175]:
+                            - link [ref=e1176] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJh9_77W-nHx9WyR1F8ZGyYAAAGeBvngQQEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICAq6g3a/clv1c_ek-IBIHXFcbWDn2nI5drJ16WtD5jqoAHrtfCClVg34RvZe7-TgDD_cJvu2QztxOFvSLweFsRbtyU9rjgR3w2ELAx_-288gaD-8m5Nd6FUPwVDZjREAb4Hcz74N8gzqYljnphqdPB0l03HlYSP-Ul_dXrgN2ZhKXwm9jcr2crSocMwyWwJ_hojdQMzOtDzIObV5-DNoqKnQ1T3OGlr_5i4j6LTA839AohN_RiZa7q1jPyBRkh-wtMf3A3PYasgAtZ8RNUpYAwEJw-vNnquCZ0oHI2TtWPzv411UGsR9oa_eSQoFnL1dcEoVIjw6hfH26ZOLIeYyUQpx52chrDAyLoGx6oG5K5f3jE2QUjZr3Yc1S9XM9mD8kRcYdK3M8PDOI7fO_r6fGk0wnkowT7NJ1D1QGF4LP2yFv8cg_mqOvIOV_WvLheDskToLICc-2qfy9LMhjrzzJg5ajSxXasnRFzTtXIAmlVZsInBoSzJVVKeOqAXt1BbnMSYfnDLYKhMZScwOpeXASUOjp8RPSRzudyj2OAjTFta-Je5L6pCXiUzhQ9wu_UguOxdrYeHN70poIhHVC8GXa1BDGVVglhqriLvfdeQtnLb4iziqINjz9MgzL1scobr7EJzqkOSt88nmh1DZ6iMqmN0JtciGqPmDRvSjyqD5QyhBGJHn4ctOJB3vCFvmjfGHYG5E53VId-FLrhuElcIMgB0S-wezgfagnMGGg0Re-8-L4itQoCKVyC3jr3xwFzN6-AmU4lyNBXSk5767pkZuW8bzKM-L-qjxOHWoC6lrqHW_H-Mcs4BfcD1Nz_JSxcn7vR5s1SZtn41i41zU6B0-s5TeOMMTNxygmIoD2eD1XZu-xkcD_d-TfiY894UKP_5z62pT-TJHyDHNFNfSaSSp59p_p_UE7arOWcgb47mpFvL-cD9nnYujRdBqYJXf2f4-yy4ctNKJ4nRQTRgOfav9D0VfDwgkm2XA1flk3rXsKkIQSxFuY20IVV9fHwZBIlzut4VDVZkwSIfXnzWbRLVtOC810UsLGtIXbRLWLzaC9TZqVCwssrKtVvGMkF3uH-qfNKGEZq6dDiuOzMcHe3AXTGmrsGbx-dj9yDmZBjokkK1wEz3nPOhsxMSrPh_WZjgStNcRqLAIUvH0_FtN2G5petHWDjn7EBgSgMN_j501EQZVNh590oQRWQLaYn1yMo9Wpuzrca90DiCBqjbMHko5oeoN4VgFVxIJtxf2loKKbBX-5UpToFo_W9PLzomzV6eyvjl2rojr-suVxue1pN12REDr5I5YVzt4UUzSS3XL0XbGJwVRZf2ARg-cIuI-N90O0Biezy27aCentAEVC_W6otYxLwtKNmQQaDocPHMlekHvMT5vAbmkYPJXRKMySAfBdTTwZcLlGc1TPZ1yvnT5QBp1ZbhUsYBzKdjaIHJGI40C5KNOqJ3F9cBSz5ATS3kUs8aFOjvWCeGnfaxuRyA-INodCP_ApoTEQbYyRNHxdRntQ0RVyEFZXj1VL_FL4MhuNmis9eIpeHPtOQ3azJ6XAm-B-svX6GDBnqZNw4cbogtemBBOqsedoy2gwduL3kI537Xx9BH0CHtNubRn-ixXtjcI4hhzYop5NpXbb982tsVPc2Z1rwBUUX3U47lECAwkSVBHAtiQge9eCerRWseetUm3g/https://www.amazon.com/stores/page/7C3353FD-9D5A-4BD3-8B63-ECE3C196575D/?_encoding=UTF8&store_ref=SB_A0979391107JW7CPEHU6I-A050075924L1NMFIHTCDG&pd_rd_plhdr=t&aaxitk=3a95c4212baaa5892ee7b9a29ed735b2&hsa_cr_id=0&lp_asins=B0DXY833HV%2CB09BKCDXZC%2CB0DF44RTTP&lp_query=55%20inch%20LG%20LED%20TV&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_bkgd&pd_rd_w=BNcCa&content-id=amzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87%3Aamzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_p=cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_r=G43N4J5432C9TCHQG3HF&pd_rd_wg=LDys9&pd_rd_r=13087348-2109-4d72-a072-38d407f8ff13
+                            - link "Roku" [ref=e1177] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJh9_77W-nHx9WyR1F8ZGyYAAAGeBvngQQEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICAq6g3a/clv1c_ek-IBIHXFcbWDn2nI5drJ16WtD5jqoAHrtfCClVg34RvZe7-TgDD_cJvu2QztxOFvSLweFsRbtyU9rjgR3w2ELAx_-288gaD-8m5Nd6FUPwVDZjREAb4Hcz74N8gzqYljnphqdPB0l03HlYSP-Ul_dXrgN2ZhKXwm9jcr2crSocMwyWwJ_hojdQMzOtDzIObV5-DNoqKnQ1T3OGlr_5i4j6LTA839AohN_RiZa7q1jPyBRkh-wtMf3A3PYasgAtZ8RNUpYAwEJw-vNnquCZ0oHI2TtWPzv411UGsR9oa_eSQoFnL1dcEoVIjw6hfH26ZOLIeYyUQpx52chrDAyLoGx6oG5K5f3jE2QUjZr3Yc1S9XM9mD8kRcYdK3M8PDOI7fO_r6fGk0wnkowT7NJ1D1QGF4LP2yFv8cg_mqOvIOV_WvLheDskToLICc-2qfy9LMhjrzzJg5ajSxXasnRFzTtXIAmlVZsInBoSzJVVKeOqAXt1BbnMSYfnDLYKhMZScwOpeXASUOjp8RPSRzudyj2OAjTFta-Je5L6pCXiUzhQ9wu_UguOxdrYeHN70poIhHVC8GXa1BDGVVglhqriLvfdeQtnLb4iziqINjz9MgzL1scobr7EJzqkOSt88nmh1DZ6iMqmN0JtciGqPmDRvSjyqD5QyhBGJHn4ctOJB3vCFvmjfGHYG5E53VId-FLrhuElcIMgB0S-wezgfagnMGGg0Re-8-L4itQoCKVyC3jr3xwFzN6-AmU4lyNBXSk5767pkZuW8bzKM-L-qjxOHWoC6lrqHW_H-Mcs4BfcD1Nz_JSxcn7vR5s1SZtn41i41zU6B0-s5TeOMMTNxygmIoD2eD1XZu-xkcD_d-TfiY894UKP_5z62pT-TJHyDHNFNfSaSSp59p_p_UE7arOWcgb47mpFvL-cD9nnYujRdBqYJXf2f4-yy4ctNKJ4nRQTRgOfav9D0VfDwgkm2XA1flk3rXsKkIQSxFuY20IVV9fHwZBIlzut4VDVZkwSIfXnzWbRLVtOC810UsLGtIXbRLWLzaC9TZqVCwssrKtVvGMkF3uH-qfNKGEZq6dDiuOzMcHe3AXTGmrsGbx-dj9yDmZBjokkK1wEz3nPOhsxMSrPh_WZjgStNcRqLAIUvH0_FtN2G5petHWDjn7EBgSgMN_j501EQZVNh590oQRWQLaYn1yMo9Wpuzrca90DiCBqjbMHko5oeoN4VgFVxIJtxf2loKKbBX-5UpToFo_W9PLzomzV6eyvjl2rojr-suVxue1pN12REDr5I5YVzt4UUzSS3XL0XbGJwVRZf2ARg-cIuI-N90O0Biezy27aCentAEVC_W6otYxLwtKNmQQaDocPHMlekHvMT5vAbmkYPJXRKMySAfBdTTwZcLlGc1TPZ1yvnT5QBp1ZbhUsYBzKdjaIHJGI40C5KNOqJ3F9cBSz5ATS3kUs8aFOjvWCeGnfaxuRyA-INodCP_ApoTEQbYyRNHxdRntQ0RVyEFZXj1VL_FL4MhuNmis9eIpeHPtOQ3azJ6XAm-B-svX6GDBnqZNw4cbogtemBBOqsedoy2gwduL3kI537Xx9BH0CHtNubRn-ixXtjcI4hhzYop5NpXbb982tsVPc2Z1rwBUUX3U47lECAwkSVBHAtiQge9eCerRWseetUm3g/https://www.amazon.com/stores/page/7C3353FD-9D5A-4BD3-8B63-ECE3C196575D/?_encoding=UTF8&store_ref=SB_A0979391107JW7CPEHU6I-A050075924L1NMFIHTCDG&pd_rd_plhdr=t&aaxitk=3a95c4212baaa5892ee7b9a29ed735b2&hsa_cr_id=0&lp_asins=B0DXY833HV%2CB09BKCDXZC%2CB0DF44RTTP&lp_query=55%20inch%20LG%20LED%20TV&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_logo&pd_rd_w=BNcCa&content-id=amzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87%3Aamzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_p=cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_r=G43N4J5432C9TCHQG3HF&pd_rd_wg=LDys9&pd_rd_r=13087348-2109-4d72-a072-38d407f8ff13
+                              - img "Roku" [ref=e1179]
+                          - generic [ref=e1180]:
+                            - link [ref=e1181] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJh9_77W-nHx9WyR1F8ZGyYAAAGeBvngQQEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICAq6g3a/clv1c_ek-IBIHXFcbWDn2nI5drJ16WtD5jqoAHrtfCClVg34RvZe7-TgDD_cJvu2QztxOFvSLweFsRbtyU9rjgR3w2ELAx_-288gaD-8m5Nd6FUPwVDZjREAb4Hcz74N8gzqYljnphqdPB0l03HlYSP-Ul_dXrgN2ZhKXwm9jcr2crSocMwyWwJ_hojdQMzOtDzIObV5-DNoqKnQ1T3OGlr_5i4j6LTA839AohN_RiZa7q1jPyBRkh-wtMf3A3PYasgAtZ8RNUpYAwEJw-vNnquCZ0oHI2TtWPzv411UGsR9oa_eSQoFnL1dcEoVIjw6hfH26ZOLIeYyUQpx52chrDAyLoGx6oG5K5f3jE2QUjZr3Yc1S9XM9mD8kRcYdK3M8PDOI7fO_r6fGk0wnkowT7NJ1D1QGF4LP2yFv8cg_mqOvIOV_WvLheDskToLICc-2qfy9LMhjrzzJg5ajSxXasnRFzTtXIAmlVZsInBoSzJVVKeOqAXt1BbnMSYfnDLYKhMZScwOpeXASUOjp8RPSRzudyj2OAjTFta-Je5L6pCXiUzhQ9wu_UguOxdrYeHN70poIhHVC8GXa1BDGVVglhqriLvfdeQtnLb4iziqINjz9MgzL1scobr7EJzqkOSt88nmh1DZ6iMqmN0JtciGqPmDRvSjyqD5QyhBGJHn4ctOJB3vCFvmjfGHYG5E53VId-FLrhuElcIMgB0S-wezgfagnMGGg0Re-8-L4itQoCKVyC3jr3xwFzN6-AmU4lyNBXSk5767pkZuW8bzKM-L-qjxOHWoC6lrqHW_H-Mcs4BfcD1Nz_JSxcn7vR5s1SZtn41i41zU6B0-s5TeOMMTNxygmIoD2eD1XZu-xkcD_d-TfiY894UKP_5z62pT-TJHyDHNFNfSaSSp59p_p_UE7arOWcgb47mpFvL-cD9nnYujRdBqYJXf2f4-yy4ctNKJ4nRQTRgOfav9D0VfDwgkm2XA1flk3rXsKkIQSxFuY20IVV9fHwZBIlzut4VDVZkwSIfXnzWbRLVtOC810UsLGtIXbRLWLzaC9TZqVCwssrKtVvGMkF3uH-qfNKGEZq6dDiuOzMcHe3AXTGmrsGbx-dj9yDmZBjokkK1wEz3nPOhsxMSrPh_WZjgStNcRqLAIUvH0_FtN2G5petHWDjn7EBgSgMN_j501EQZVNh590oQRWQLaYn1yMo9Wpuzrca90DiCBqjbMHko5oeoN4VgFVxIJtxf2loKKbBX-5UpToFo_W9PLzomzV6eyvjl2rojr-suVxue1pN12REDr5I5YVzt4UUzSS3XL0XbGJwVRZf2ARg-cIuI-N90O0Biezy27aCentAEVC_W6otYxLwtKNmQQaDocPHMlekHvMT5vAbmkYPJXRKMySAfBdTTwZcLlGc1TPZ1yvnT5QBp1ZbhUsYBzKdjaIHJGI40C5KNOqJ3F9cBSz5ATS3kUs8aFOjvWCeGnfaxuRyA-INodCP_ApoTEQbYyRNHxdRntQ0RVyEFZXj1VL_FL4MhuNmis9eIpeHPtOQ3azJ6XAm-B-svX6GDBnqZNw4cbogtemBBOqsedoy2gwduL3kI537Xx9BH0CHtNubRn-ixXtjcI4hhzYop5NpXbb982tsVPc2Z1rwBUUX3U47lECAwkSVBHAtiQge9eCerRWseetUm3g/https://www.amazon.com/stores/page/7C3353FD-9D5A-4BD3-8B63-ECE3C196575D/?_encoding=UTF8&store_ref=SB_A0979391107JW7CPEHU6I-A050075924L1NMFIHTCDG&pd_rd_plhdr=t&aaxitk=3a95c4212baaa5892ee7b9a29ed735b2&hsa_cr_id=0&lp_asins=B0DXY833HV%2CB09BKCDXZC%2CB0DF44RTTP&lp_query=55%20inch%20LG%20LED%20TV&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_bkgd&pd_rd_w=BNcCa&content-id=amzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87%3Aamzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_p=cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_r=G43N4J5432C9TCHQG3HF&pd_rd_wg=LDys9&pd_rd_r=13087348-2109-4d72-a072-38d407f8ff13
+                            - link "It's time to upgrade to Roku streaming" [ref=e1182] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJh9_77W-nHx9WyR1F8ZGyYAAAGeBvngQQEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICAq6g3a/clv1c_ek-IBIHXFcbWDn2nI5drJ16WtD5jqoAHrtfCClVg34RvZe7-TgDD_cJvu2QztxOFvSLweFsRbtyU9rjgR3w2ELAx_-288gaD-8m5Nd6FUPwVDZjREAb4Hcz74N8gzqYljnphqdPB0l03HlYSP-Ul_dXrgN2ZhKXwm9jcr2crSocMwyWwJ_hojdQMzOtDzIObV5-DNoqKnQ1T3OGlr_5i4j6LTA839AohN_RiZa7q1jPyBRkh-wtMf3A3PYasgAtZ8RNUpYAwEJw-vNnquCZ0oHI2TtWPzv411UGsR9oa_eSQoFnL1dcEoVIjw6hfH26ZOLIeYyUQpx52chrDAyLoGx6oG5K5f3jE2QUjZr3Yc1S9XM9mD8kRcYdK3M8PDOI7fO_r6fGk0wnkowT7NJ1D1QGF4LP2yFv8cg_mqOvIOV_WvLheDskToLICc-2qfy9LMhjrzzJg5ajSxXasnRFzTtXIAmlVZsInBoSzJVVKeOqAXt1BbnMSYfnDLYKhMZScwOpeXASUOjp8RPSRzudyj2OAjTFta-Je5L6pCXiUzhQ9wu_UguOxdrYeHN70poIhHVC8GXa1BDGVVglhqriLvfdeQtnLb4iziqINjz9MgzL1scobr7EJzqkOSt88nmh1DZ6iMqmN0JtciGqPmDRvSjyqD5QyhBGJHn4ctOJB3vCFvmjfGHYG5E53VId-FLrhuElcIMgB0S-wezgfagnMGGg0Re-8-L4itQoCKVyC3jr3xwFzN6-AmU4lyNBXSk5767pkZuW8bzKM-L-qjxOHWoC6lrqHW_H-Mcs4BfcD1Nz_JSxcn7vR5s1SZtn41i41zU6B0-s5TeOMMTNxygmIoD2eD1XZu-xkcD_d-TfiY894UKP_5z62pT-TJHyDHNFNfSaSSp59p_p_UE7arOWcgb47mpFvL-cD9nnYujRdBqYJXf2f4-yy4ctNKJ4nRQTRgOfav9D0VfDwgkm2XA1flk3rXsKkIQSxFuY20IVV9fHwZBIlzut4VDVZkwSIfXnzWbRLVtOC810UsLGtIXbRLWLzaC9TZqVCwssrKtVvGMkF3uH-qfNKGEZq6dDiuOzMcHe3AXTGmrsGbx-dj9yDmZBjokkK1wEz3nPOhsxMSrPh_WZjgStNcRqLAIUvH0_FtN2G5petHWDjn7EBgSgMN_j501EQZVNh590oQRWQLaYn1yMo9Wpuzrca90DiCBqjbMHko5oeoN4VgFVxIJtxf2loKKbBX-5UpToFo_W9PLzomzV6eyvjl2rojr-suVxue1pN12REDr5I5YVzt4UUzSS3XL0XbGJwVRZf2ARg-cIuI-N90O0Biezy27aCentAEVC_W6otYxLwtKNmQQaDocPHMlekHvMT5vAbmkYPJXRKMySAfBdTTwZcLlGc1TPZ1yvnT5QBp1ZbhUsYBzKdjaIHJGI40C5KNOqJ3F9cBSz5ATS3kUs8aFOjvWCeGnfaxuRyA-INodCP_ApoTEQbYyRNHxdRntQ0RVyEFZXj1VL_FL4MhuNmis9eIpeHPtOQ3azJ6XAm-B-svX6GDBnqZNw4cbogtemBBOqsedoy2gwduL3kI537Xx9BH0CHtNubRn-ixXtjcI4hhzYop5NpXbb982tsVPc2Z1rwBUUX3U47lECAwkSVBHAtiQge9eCerRWseetUm3g/https://www.amazon.com/stores/page/7C3353FD-9D5A-4BD3-8B63-ECE3C196575D/?_encoding=UTF8&store_ref=SB_A0979391107JW7CPEHU6I-A050075924L1NMFIHTCDG&pd_rd_plhdr=t&aaxitk=3a95c4212baaa5892ee7b9a29ed735b2&hsa_cr_id=0&lp_asins=B0DXY833HV%2CB09BKCDXZC%2CB0DF44RTTP&lp_query=55%20inch%20LG%20LED%20TV&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_hl&pd_rd_w=BNcCa&content-id=amzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87%3Aamzn1.sym.cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_p=cd7c548b-a599-426f-9ffe-daa1aa803c87&pf_rd_r=G43N4J5432C9TCHQG3HF&pd_rd_wg=LDys9&pd_rd_r=13087348-2109-4d72-a072-38d407f8ff13
+                              - generic [ref=e1184]:
+                                - generic [ref=e1185]: It's time to upgrade to Roku streaming
+                                - generic [ref=e1186]: It's time to upgrade to Roku streaming
+            - generic [ref=e1192]:
+              - heading "Need help?" [level=2] [ref=e1195]
+              - generic [ref=e1196]:
+                - link "Visit the help section" [ref=e1197] [cursor=pointer]:
+                  - /url: /gp/help/customer/display.html?nodeId=468556
+                - text: or
+                - link "contact us" [ref=e1198] [cursor=pointer]:
+                  - /url: /gp/help/customer/contact-us
+          - link "Go back to filtering menu" [ref=e1199] [cursor=pointer]:
+            - /url: "#s-skipLinkTargetForFilterOptions"
+        - generic [ref=e1201]:
+          - link "Skip to main search results" [ref=e1202] [cursor=pointer]:
+            - /url: "#s-skipLinkTargetForMainSearchResults"
+          - generic [ref=e1208]:
+            - group "Screen Size" [ref=e1209]:
+              - heading "Screen Size" [level=2] [ref=e1210]
+              - list "Screen Size" [ref=e1211]:
+                - listitem [ref=e1212]:
+                  - link "Apply 44.0 to 52.9 in filter to narrow results" [ref=e1214] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_feature_two_browse-bin%3A212922947011&dc&qid=1778233499&rnid=212922942011&ref=sr_nr_p_n_feature_two_browse-bin_1&ds=v1%3AIE%2BxbK%2BBBDgaquYsUzmAiVs8ysf6P58fZVHQXFzZ2jk
+                    - checkbox [ref=e1217]
+                    - text: 44.0 to 52.9 in
+                - listitem [ref=e1219]:
+                  - link "Apply 53.0 to 61.9 in filter to narrow results" [ref=e1221] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_feature_two_browse-bin%3A212922946011&dc&qid=1778233499&rnid=212922942011&ref=sr_nr_p_n_feature_two_browse-bin_2&ds=v1%3AsVFuNMZrSe9ulHh5FJooPJmbXLmjQceSxo4%2BlfcQsNI
+                    - checkbox [ref=e1224]
+                    - text: 53.0 to 61.9 in
+                - listitem [ref=e1226]:
+                  - link "Apply 71.0 in & above filter to narrow results" [ref=e1228] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_feature_two_browse-bin%3A212922948011&dc&qid=1778233499&rnid=212922942011&ref=sr_nr_p_n_feature_two_browse-bin_3&ds=v1%3A8nL1fwMk3JvUP%2FLW%2BMAO5T%2FtWzHw%2FeMPRbZV0qvHI9g
+                    - checkbox [ref=e1231]
+                    - text: 71.0 in & above
+            - group "Brands" [ref=e1233]:
+              - heading "Brands" [level=2] [ref=e1234]
+              - list "Brands" [ref=e1235]:
+                - listitem [ref=e1236]:
+                  - link "Apply LG filter to narrow results" [ref=e1238] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_123%3A46658&dc&qid=1778233499&rnid=85457740011&ref=sr_nr_p_123_1&ds=v1%3A%2FDP9%2BW9de3ICaeKknkxmtbFIBrMABWbhS3Qcu8EFOyk
+                    - checkbox [ref=e1241]
+                    - text: LG
+                - listitem [ref=e1243]:
+                  - link "Apply Samsung filter to narrow results" [ref=e1245] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_123%3A46655&dc&qid=1778233499&rnid=85457740011&ref=sr_nr_p_123_2&ds=v1%3AM4w6Qqf8NZKff0itAuVU838mTGsvksWeyNhWxt5LDcA
+                    - checkbox [ref=e1248]
+                    - text: Samsung
+                - listitem [ref=e1250]:
+                  - link "Apply Hisense filter to narrow results" [ref=e1252] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_123%3A248315&dc&qid=1778233499&rnid=85457740011&ref=sr_nr_p_123_3&ds=v1%3ATZQ8hBZCqDEDnKe98zjxB%2F1Evy9cW7WGZtHwSH32TuU
+                    - checkbox [ref=e1255]
+                    - text: Hisense
+                - listitem [ref=e1257]:
+                  - link "Apply Sony filter to narrow results" [ref=e1259] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_123%3A237204&dc&qid=1778233499&rnid=85457740011&ref=sr_nr_p_123_4&ds=v1%3A3r4GRQtdIey5kOU4ocb6qvyG5V8nvNAhjVSDwIFV1wY
+                    - checkbox [ref=e1262]
+                    - text: Sony
+            - group "Model Year" [ref=e1264]:
+              - heading "Model Year" [level=2] [ref=e1265]
+              - list "Model Year" [ref=e1266]:
+                - listitem [ref=e1267]:
+                  - link "Apply 2024 filter to narrow results" [ref=e1269] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1004218864091%3A23732470011&dc&qid=1778233499&rnid=4972967011&ref=sr_nr_p_n_g-1004218864091_1&ds=v1%3AKGvbBOuOu3kdnhs2eX2Pohqfj8JwTVnSlmUHxc7NEAc
+                    - checkbox [ref=e1272]
+                    - text: "2024"
+                - listitem [ref=e1274]:
+                  - link "Apply 2018 filter to narrow results" [ref=e1276] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1004218864091%3A17599302011&dc&qid=1778233499&rnid=4972967011&ref=sr_nr_p_n_g-1004218864091_2&ds=v1%3AJDMZJ%2BWgg07oZZ3HfDt08g4n121V%2FZTW1uztGRJEk78
+                    - checkbox [ref=e1279]
+                    - text: "2018"
+            - group "Customer Reviews" [ref=e1281]:
+              - heading "Customer Reviews" [level=2] [ref=e1282]
+              - list "Customer Reviews" [ref=e1283]:
+                - listitem [ref=e1284]:
+                  - link "Apply 4 Stars & Up filter to narrow results" [ref=e1287] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_72%3A1248879011&dc&qid=1778233499&rnid=1248877011&ref=sr_nr_p_72_1&ds=v1%3ABu3aX7rx4uuPnXnIiJjWUtrRLOOyPS2hgSFd9578l7o
+                    - generic [ref=e1289]: 4 Stars
+                    - text: "& Up"
+            - group "Display Resolution" [ref=e1290]:
+              - heading "Display Resolution" [level=2] [ref=e1291]
+              - list "Display Resolution" [ref=e1292]:
+                - listitem [ref=e1293]:
+                  - link "Apply 4K filter to narrow results" [ref=e1295] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003296671111%3A23944737011&dc&qid=1778233499&rnid=23944718011&ref=sr_nr_p_n_g-1003296671111_1&ds=v1%3AJdTP4H0HbAMT1Cq5jJ5m1kYayh5Jhr%2FJNBwwdiQIriE
+                    - checkbox [ref=e1298]
+                    - text: 4K
+            - group "Condition" [ref=e1300]:
+              - heading "Condition" [level=2] [ref=e1301]
+              - list "Condition" [ref=e1302]:
+                - listitem [ref=e1303]:
+                  - link "Apply New filter to narrow results" [ref=e1305] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_condition-type%3A2224371011&dc&qid=1778233499&rnid=2224369011&ref=sr_nr_p_n_condition-type_1&ds=v1%3AQFKdFXWcXD5cI3kfmQZY8zprW2MF%2FY6%2FzXK7YYSRASA
+                    - checkbox [ref=e1308]
+                    - text: New
+                - listitem [ref=e1310]:
+                  - link "Apply Used filter to narrow results" [ref=e1312] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_condition-type%3A2224373011&dc&qid=1778233499&rnid=2224369011&ref=sr_nr_p_n_condition-type_2&ds=v1%3AVwcq1rNpPlMYH4b5IP%2FDUdPByOZZxP7mnz%2Bql8u%2FATg
+                    - checkbox [ref=e1315]
+                    - text: Used
+            - group "Connectivity" [ref=e1317]:
+              - heading "Connectivity" [level=2] [ref=e1318]
+              - list "Connectivity" [ref=e1319]:
+                - listitem [ref=e1320]:
+                  - link "Apply HDMI filter to narrow results" [ref=e1322] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003207971111%3A23749002011&dc&qid=1778233499&rnid=23748998011&ref=sr_nr_p_n_g-1003207971111_1&ds=v1%3AQsr3OUMqsSu0jjtPN%2FWXovxCktYZmbpJu5VBOHqfbEc
+                    - checkbox [ref=e1325]
+                    - text: HDMI
+                - listitem [ref=e1327]:
+                  - link "Apply Wi-Fi filter to narrow results" [ref=e1329] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003207971111%3A43549756011&dc&qid=1778233499&rnid=23748998011&ref=sr_nr_p_n_g-1003207971111_2&ds=v1%3AJm%2FNGDtw0eP6GEPgzZXN9PkJ9FPgtNeItAWxOj6yQqE
+                    - checkbox [ref=e1332]
+                    - text: Wi-Fi
+                - listitem [ref=e1334]:
+                  - link "Apply Ethernet filter to narrow results" [ref=e1336] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003207971111%3A23749005011&dc&qid=1778233499&rnid=23748998011&ref=sr_nr_p_n_g-1003207971111_3&ds=v1%3AiZyZxPBmZR2Q%2Fru9yzA%2FLGBs%2BHK58fl%2FIHIf9axbBYo
+                    - checkbox [ref=e1339]
+                    - text: Ethernet
+                - listitem [ref=e1341]:
+                  - link "Apply Bluetooth filter to narrow results" [ref=e1343] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003207971111%3A23749001011&dc&qid=1778233499&rnid=23748998011&ref=sr_nr_p_n_g-1003207971111_4&ds=v1%3A%2BpZI3jVK0yQ0QPu68eZ3MK8ZXPHqWIXsl9aVPHcOtI0
+                    - checkbox [ref=e1346]
+                    - text: Bluetooth
+                - listitem [ref=e1348]:
+                  - link "Apply USB filter to narrow results" [ref=e1350] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003207971111%3A23749004011&dc&qid=1778233499&rnid=23748998011&ref=sr_nr_p_n_g-1003207971111_5&ds=v1%3AHGmt5W712B68%2BrtEILAoH0SuIQMxzB3EibICgZscl4o
+                    - checkbox [ref=e1353]
+                    - text: USB
+            - group "Top Brands" [ref=e1355]:
+              - heading "Top Brands" [level=2] [ref=e1356]
+              - list "Top Brands" [ref=e1357]:
+                - listitem [ref=e1358]:
+                  - link "Apply Top Brands filter to narrow results" [ref=e1360] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101014971069111%3A119653281011&dc&qid=1778233499&rnid=119653280011&ref=sr_nr_p_n_g-101014971069111_1&ds=v1%3AsGHs1I2pUMvsOOw5fnsLBTTjcRlPzGdGSGrLRjvJ3nI
+                    - checkbox [ref=e1363]
+                    - text: Top Brands
+            - group "Mounting Type" [ref=e1365]:
+              - heading "Mounting Type" [level=2] [ref=e1366]
+              - list "Mounting Type" [ref=e1367]:
+                - listitem [ref=e1368]:
+                  - link "Apply Table Mount filter to narrow results" [ref=e1370] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003291775111%3A23934139011&dc&qid=1778233499&rnid=23934100011&ref=sr_nr_p_n_g-1003291775111_1&ds=v1%3AAQf78%2BOaG2GKjx2IZX%2Fikf%2Bqr1qlzAj6dVpm%2F6R1AYc
+                    - checkbox [ref=e1373]
+                    - text: Table Mount
+                - listitem [ref=e1375]:
+                  - link "Apply Wall Mount filter to narrow results" [ref=e1377] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003291775111%3A23934138011&dc&qid=1778233499&rnid=23934100011&ref=sr_nr_p_n_g-1003291775111_2&ds=v1%3AtTpRcrnlalInTIGwndNnGizt%2FWQFO%2FKibYJWzf46Mt0
+                    - checkbox [ref=e1380]
+                    - text: Wall Mount
+            - group "Seller" [ref=e1382]:
+              - heading "Seller" [level=2] [ref=e1383]
+              - list "Seller" [ref=e1384]:
+                - listitem [ref=e1385]:
+                  - link "Apply Amazon.com filter to narrow results" [ref=e1387] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_6%3AATVPDKIKX0DER&dc&qid=1778233499&rnid=303116011&ref=sr_nr_p_6_1&ds=v1%3Alu%2FbvSeXIRnvL23RytkO1b1sE%2BVfuwRFX1IC9dPH%2FZs
+                    - checkbox [ref=e1390]
+                    - text: Amazon.com
+                - listitem [ref=e1392]:
+                  - link "Apply IT Devices Online Inc. filter to narrow results" [ref=e1394] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_6%3AA2YMFIQYPSZOVO&dc&qid=1778233499&rnid=303116011&ref=sr_nr_p_6_2&ds=v1%3Afy08fnDx%2FpCyYqOvkhNiZNCdcuh56pAVz5Spk37%2F5tM
+                    - checkbox [ref=e1397]
+                    - text: IT Devices Online Inc.
+                - listitem [ref=e1399]:
+                  - button "See more, Seller" [ref=e1402] [cursor=pointer]: See more
+            - group "Control Method" [ref=e1404]:
+              - heading "Control Method" [level=2] [ref=e1405]
+              - list "Control Method" [ref=e1406]:
+                - listitem [ref=e1407]:
+                  - link "Apply App filter to narrow results" [ref=e1409] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1002085548111%3A23490057011&dc&qid=1778233499&rnid=23490047011&ref=sr_nr_p_n_g-1002085548111_1&ds=v1%3ApGc9IVo8a5YGPa41ftEzunrwrx1akbg1CPk4%2FJq6w9g
+                    - checkbox [ref=e1412]
+                    - text: App
+                - listitem [ref=e1414]:
+                  - link "Apply Remote filter to narrow results" [ref=e1416] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1002085548111%3A23490054011&dc&qid=1778233499&rnid=23490047011&ref=sr_nr_p_n_g-1002085548111_2&ds=v1%3A1iGi%2BAPtGcIMmI2Xd9jOA8rMY%2FTIje6DVIO6vzRWXSU
+                    - checkbox [ref=e1419]
+                    - text: Remote
+                - listitem [ref=e1421]:
+                  - link "Apply Touch filter to narrow results" [ref=e1423] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1002085548111%3A23490055011&dc&qid=1778233499&rnid=23490047011&ref=sr_nr_p_n_g-1002085548111_3&ds=v1%3AYtM7QwkGOuGLn1SentYEfd1pOsDu5LPcu%2BqGVtQnlgw
+                    - checkbox [ref=e1426]
+                    - text: Touch
+                - listitem [ref=e1428]:
+                  - link "Apply Voice filter to narrow results" [ref=e1430] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1002085548111%3A23490056011&dc&qid=1778233499&rnid=23490047011&ref=sr_nr_p_n_g-1002085548111_4&ds=v1%3AUM3chnC6eJUq2TWNu5YTD3QzzUXUBSTN%2BlA8GdlkBzM
+                    - checkbox [ref=e1433]
+                    - text: Voice
+            - group "Screen Type" [ref=e1435]:
+              - heading "Screen Type" [level=2] [ref=e1436]
+              - list "Screen Type" [ref=e1437]:
+                - listitem [ref=e1438]:
+                  - link "Apply Glossy filter to narrow results" [ref=e1440] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015680631111%3A205120572011&dc&qid=1778233499&rnid=205120571011&ref=sr_nr_p_n_g-101015680631111_1&ds=v1%3AYocKi324gY2ksXeXh2p3OAgG00k5tlCKW38HdSz%2BUag
+                    - checkbox [ref=e1443]
+                    - text: Glossy
+                - listitem [ref=e1445]:
+                  - link "Apply Matte filter to narrow results" [ref=e1447] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015680631111%3A205120573011&dc&qid=1778233499&rnid=205120571011&ref=sr_nr_p_n_g-101015680631111_2&ds=v1%3A9GJbszlX1vj5cveq%2B%2FjUuV3PuiS5zHTPgK1OuZHSy4M
+                    - checkbox [ref=e1450]
+                    - text: Matte
+            - group "HDMI Ports" [ref=e1452]:
+              - heading "HDMI Ports" [level=2] [ref=e1453]
+              - list "HDMI Ports" [ref=e1454]:
+                - listitem [ref=e1455]:
+                  - link "Apply 2 filter to narrow results" [ref=e1457] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003293678111%3A23944730011&dc&qid=1778233499&rnid=23944717011&ref=sr_nr_p_n_g-1003293678111_1&ds=v1%3Ah0f4tt0Q6w3l0OEoyO%2FNyMSEWwlQuOVc1xpSJXrkRcg
+                    - checkbox [ref=e1460]
+                    - text: "2"
+                - listitem [ref=e1462]:
+                  - link "Apply 3 filter to narrow results" [ref=e1464] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003293678111%3A23944726011&dc&qid=1778233499&rnid=23944717011&ref=sr_nr_p_n_g-1003293678111_2&ds=v1%3AhhE%2Fmfd87N6fJNysDzjaaBJggeTU2bNUwHeuHqAbhlA
+                    - checkbox [ref=e1467]
+                    - text: "3"
+                - listitem [ref=e1469]:
+                  - link "Apply 4 filter to narrow results" [ref=e1471] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003293678111%3A23944729011&dc&qid=1778233499&rnid=23944717011&ref=sr_nr_p_n_g-1003293678111_3&ds=v1%3AABAj6iPQkeAudqWGmeicb2zUyEIezOLiuKcvwAub6ZY
+                    - checkbox [ref=e1474]
+                    - text: "4"
+            - group "Deals & Discounts" [ref=e1476]:
+              - heading "Deals & Discounts" [level=2] [ref=e1477]
+              - list "Deals & Discounts" [ref=e1478]:
+                - listitem [ref=e1479]:
+                  - link "All Discounts" [ref=e1481] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_deal_type%3A23566065011&dc&qid=1778233499&rnid=23566063011&ref=sr_nr_p_n_deal_type_1&ds=v1%3Ajge0nzQf4I5uRXxjNoeI9Tega3NvjWpVMAdcviJiWCI
+            - group "Supported Internet Services" [ref=e1482]:
+              - heading "Supported Internet Services" [level=2] [ref=e1483]
+              - list "Supported Internet Services" [ref=e1484]:
+                - listitem [ref=e1485]:
+                  - link "Apply YouTube filter to narrow results" [ref=e1487] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003330408111%3A23953782011&dc&qid=1778233499&rnid=23953778011&ref=sr_nr_p_n_g-1003330408111_1&ds=v1%3AaHJ9Jqan2Hs%2F7oUmzR7QFptgQYanlpzAFazLYZ7c2dM
+                    - checkbox [ref=e1490]
+                    - text: YouTube
+                - listitem [ref=e1492]:
+                  - link "Apply Browser filter to narrow results" [ref=e1494] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003330408111%3A23953791011&dc&qid=1778233499&rnid=23953778011&ref=sr_nr_p_n_g-1003330408111_2&ds=v1%3AAgkeAmDdKdephxYFlYY54%2FlqHfxemNkz4DoLq1dZi0Y
+                    - checkbox [ref=e1497]
+                    - text: Browser
+                - listitem [ref=e1499]:
+                  - link "Apply Netflix filter to narrow results" [ref=e1501] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003330408111%3A23953792011&dc&qid=1778233499&rnid=23953778011&ref=sr_nr_p_n_g-1003330408111_3&ds=v1%3A9nECHcUOZAwn7RrGwzTgKgjKz8ljYydUvGOVwTXuueA
+                    - checkbox [ref=e1504]
+                    - text: Netflix
+                - listitem [ref=e1506]:
+                  - link "Apply Apple TV filter to narrow results" [ref=e1508] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003330408111%3A23953798011&dc&qid=1778233499&rnid=23953778011&ref=sr_nr_p_n_g-1003330408111_4&ds=v1%3AVWgsJ5M3%2B%2BpvVuRwhVDqVD28%2FiygSlHXbNQ8f4qnhXs
+                    - checkbox [ref=e1511]
+                    - text: Apple TV
+                - listitem [ref=e1513]:
+                  - link "Apply Disney Plus filter to narrow results" [ref=e1515] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003330408111%3A23953783011&dc&qid=1778233499&rnid=23953778011&ref=sr_nr_p_n_g-1003330408111_5&ds=v1%3AmcsZ8Yh1ZejHJimkgqw58c2HLmiyCk0qEtqQ831oxrc
+                    - checkbox [ref=e1518]
+                    - text: Disney Plus
+                - listitem [ref=e1520]:
+                  - link "Apply Google TV filter to narrow results" [ref=e1522] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003330408111%3A23953779011&dc&qid=1778233499&rnid=23953778011&ref=sr_nr_p_n_g-1003330408111_6&ds=v1%3AmEnwcKLChl86ES6pexvAQ1BDv3YWJT1malPqf96SG%2BU
+                    - checkbox [ref=e1525]
+                    - text: Google TV
+                - listitem [ref=e1527]:
+                  - link "Apply HBO Max filter to narrow results" [ref=e1529] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003330408111%3A23953796011&dc&qid=1778233499&rnid=23953778011&ref=sr_nr_p_n_g-1003330408111_7&ds=v1%3AEZrLA97HHnq0cfcZrrdOJRT7nqPOibUXMj4AzfzHsGw
+                    - checkbox [ref=e1532]
+                    - text: HBO Max
+                - listitem [ref=e1534]:
+                  - button "See more, Supported Internet Services" [ref=e1537] [cursor=pointer]: See more
+            - group "Features" [ref=e1539]:
+              - heading "Features" [level=2] [ref=e1540]
+              - list "Features" [ref=e1541]:
+                - listitem [ref=e1542]:
+                  - link "Apply Flat filter to narrow results" [ref=e1544] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003325186111%3A23953107011&dc&qid=1778233499&rnid=23953089011&ref=sr_nr_p_n_g-1003325186111_1&ds=v1%3AhooDjdO2cCnh1EtrR6l%2BRHmbr0M2uIraLZ%2F%2FGaFZo0E
+                    - checkbox [ref=e1547]
+                    - text: Flat
+                - listitem [ref=e1549]:
+                  - link "Apply Built-In Speaker filter to narrow results" [ref=e1551] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003325186111%3A59171228011&dc&qid=1778233499&rnid=23953089011&ref=sr_nr_p_n_g-1003325186111_2&ds=v1%3Aa4%2BBDCCzlx5PApRMQgojnufqX2aZJnkO3p0inSIupZA
+                    - checkbox [ref=e1554]
+                    - text: Built-In Speaker
+                - listitem [ref=e1556]:
+                  - link "Apply Browser filter to narrow results" [ref=e1558] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003325186111%3A23953108011&dc&qid=1778233499&rnid=23953089011&ref=sr_nr_p_n_g-1003325186111_3&ds=v1%3AHGMtKY5voSWC4YWMDPULPqnP6X0XxJGJka4dAs%2FOXrM
+                    - checkbox [ref=e1561]
+                    - text: Browser
+                - listitem [ref=e1563]:
+                  - link "Apply Game Mode filter to narrow results" [ref=e1565] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003325186111%3A122131382011&dc&qid=1778233499&rnid=23953089011&ref=sr_nr_p_n_g-1003325186111_4&ds=v1%3A6qHAf61pWkCmxyOXbdfgpYF27VmiivoK97IvHaOZcN0
+                    - checkbox [ref=e1568]
+                    - text: Game Mode
+                - listitem [ref=e1570]:
+                  - link "Apply Sleep Timer filter to narrow results" [ref=e1572] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003325186111%3A23953110011&dc&qid=1778233499&rnid=23953089011&ref=sr_nr_p_n_g-1003325186111_5&ds=v1%3A9mpP%2Fuh0rVc9fZSRYmlEvHjk%2F3NVjbW0tumr9vTWY0k
+                    - checkbox [ref=e1575]
+                    - text: Sleep Timer
+                - listitem [ref=e1577]:
+                  - link "Apply Chromecast filter to narrow results" [ref=e1579] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003325186111%3A23953104011&dc&qid=1778233499&rnid=23953089011&ref=sr_nr_p_n_g-1003325186111_6&ds=v1%3AOfTptHRKkzEjfBB2qYZPOJXoFBxzovEjROLVDs6NsVo
+                    - checkbox [ref=e1582]
+                    - text: Chromecast
+                - listitem [ref=e1584]:
+                  - link "Apply Wide Viewing Angle filter to narrow results" [ref=e1586] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003325186111%3A122131378011&dc&qid=1778233499&rnid=23953089011&ref=sr_nr_p_n_g-1003325186111_7&ds=v1%3Ag70JkJPdb6kXxUR1iFEJif6oOwJeC4LUdSsqIdbdWig
+                    - checkbox [ref=e1589]
+                    - text: Wide Viewing Angle
+            - group "Premium Brands" [ref=e1591]:
+              - heading "Premium Brands" [level=2] [ref=e1592]
+              - list "Premium Brands" [ref=e1593]:
+                - listitem [ref=e1594]:
+                  - link "Apply Premium Brands filter to narrow results" [ref=e1596] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015887018111%3A204376014011&dc&qid=1778233499&rnid=204376013011&ref=sr_nr_p_n_g-101015887018111_1&ds=v1%3AjEfh%2BKpIU8kIpR4M9qxPUT1dQxxagyjNv3XaaNCpkgU
+                    - checkbox [ref=e1599]
+                    - text: Premium Brands
+            - group "Parental Control Technology" [ref=e1601]:
+              - heading "Parental Control Technology" [level=2] [ref=e1602]
+              - list "Parental Control Technology" [ref=e1603]:
+                - listitem [ref=e1604]:
+                  - link "Apply V-Chip filter to narrow results" [ref=e1606] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015501845111%3A122268470011&dc&qid=1778233499&rnid=122268211011&ref=sr_nr_p_n_g-101015501845111_1&ds=v1%3ABWOWVveSz7vTEcGWX1zOcFO78JAqvAawmbFubOmwnaE
+                    - checkbox [ref=e1609]
+                    - text: V-Chip
+            - group "Battery Type" [ref=e1611]:
+              - heading "Battery Type" [level=2] [ref=e1612]
+              - list "Battery Type" [ref=e1613]:
+                - listitem [ref=e1614]:
+                  - link "Apply Alkaline filter to narrow results" [ref=e1616] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015503376111%3A122269689011&dc&qid=1778233499&rnid=122269529011&ref=sr_nr_p_n_g-101015503376111_1&ds=v1%3AvC6lSyZFplVU%2FG9rMH3huGWBp0W2I42pMMeT%2Bn8MkdU
+                    - checkbox [ref=e1619]
+                    - text: Alkaline
+            - group "Item Height Without Stand" [ref=e1621]:
+              - heading "Item Height Without Stand" [level=2] [ref=e1622]
+              - list "Item Height Without Stand" [ref=e1623]:
+                - listitem [ref=e1624]:
+                  - link "Apply 25 to 34 in filter to narrow results" [ref=e1626] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015506850111%3A122272715011&dc&qid=1778233499&rnid=122272604011&ref=sr_nr_p_n_g-101015506850111_1&ds=v1%3AMpWgQW1BmXphyBvrsh%2BQMVGFsbDyShTW%2F%2F%2BsuCJ%2BV1w
+                    - checkbox [ref=e1629]
+                    - text: 25 to 34 in
+            - group "Audio Output Mode" [ref=e1631]:
+              - heading "Audio Output Mode" [level=2] [ref=e1632]
+              - list "Audio Output Mode" [ref=e1633]:
+                - listitem [ref=e1634]:
+                  - link "Apply Surround filter to narrow results" [ref=e1636] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015503279111%3A122269683011&dc&qid=1778233499&rnid=122269528011&ref=sr_nr_p_n_g-101015503279111_1&ds=v1%3AgE%2FpjdN6CjMQpWB2634eVw3wq6nC09f0X1fFdNTnJTo
+                    - checkbox [ref=e1639]
+                    - text: Surround
+            - group "Item Weight Without Stand" [ref=e1641]:
+              - heading "Item Weight Without Stand" [level=2] [ref=e1642]
+              - list "Item Weight Without Stand" [ref=e1643]:
+                - listitem [ref=e1644]:
+                  - link "Apply 20 to 34 lb filter to narrow results" [ref=e1646] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015505972111%3A122272155011&dc&qid=1778233499&rnid=122272106011&ref=sr_nr_p_n_g-101015505972111_1&ds=v1%3AyZbSy7%2BvONEOay55WNg0o47X%2BjVkQJyGnldPJAn1e4Y
+                    - checkbox [ref=e1649]
+                    - text: 20 to 34 lb
+                - listitem [ref=e1651]:
+                  - link "Apply 35 to 49 lb filter to narrow results" [ref=e1653] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015505972111%3A122272153011&dc&qid=1778233499&rnid=122272106011&ref=sr_nr_p_n_g-101015505972111_2&ds=v1%3A0P%2B4HBAr6r1XGABWJZUOQhh6GrfUzO%2FDlsk%2FQsn1Bt4
+                    - checkbox [ref=e1656]
+                    - text: 35 to 49 lb
+            - group "Display Refresh Rate in Hertz" [ref=e1658]:
+              - heading "Display Refresh Rate in Hertz" [level=2] [ref=e1659]
+              - list "Display Refresh Rate in Hertz" [ref=e1660]:
+                - listitem [ref=e1661]:
+                  - link "Apply 60 filter to narrow results" [ref=e1663] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101017397150111%3A214854177011&dc&qid=1778233499&rnid=214854170011&ref=sr_nr_p_n_g-101017397150111_1&ds=v1%3AzimNFlJVDUCShXvmlSxvhfIkUvMlYMGbQwdwdNa9stE
+                    - checkbox [ref=e1666]
+                    - text: "60"
+                - listitem [ref=e1668]:
+                  - link "Apply 120 filter to narrow results" [ref=e1670] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101017397150111%3A214854185011&dc&qid=1778233499&rnid=214854170011&ref=sr_nr_p_n_g-101017397150111_2&ds=v1%3A7nprxagzRbAc4sMJWKsImastOIUnMRMm21o9JRc5Dbs
+                    - checkbox [ref=e1673]
+                    - text: "120"
+                - listitem [ref=e1675]:
+                  - link "Apply 144 filter to narrow results" [ref=e1677] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101017397150111%3A214854172011&dc&qid=1778233499&rnid=214854170011&ref=sr_nr_p_n_g-101017397150111_3&ds=v1%3Ac%2FJfzCTAgbh6BDyGNWGSWhBp1mVoOmZnJpGzKP5JBLo
+                    - checkbox [ref=e1680]
+                    - text: "144"
+            - group "Warranty Type" [ref=e1682]:
+              - heading "Warranty Type" [level=2] [ref=e1683]
+              - list "Warranty Type" [ref=e1684]:
+                - listitem [ref=e1685]:
+                  - link "Apply Limited filter to narrow results" [ref=e1687] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015364782111%3A121475866011&dc&qid=1778233499&rnid=121475823011&ref=sr_nr_p_n_g-101015364782111_1&ds=v1%3A%2FREWsc4r1aGQUh8SzR6V7nt8LtbQM1OAfq1xrD6cZhU
+                    - checkbox [ref=e1690]
+                    - text: Limited
+            - group "Item Width Without Stand" [ref=e1692]:
+              - heading "Item Width Without Stand" [level=2] [ref=e1693]
+              - list "Item Width Without Stand" [ref=e1694]:
+                - listitem [ref=e1695]:
+                  - link "Apply 40 to 49 in filter to narrow results" [ref=e1697] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015506406111%3A122272713011&dc&qid=1778233499&rnid=122272603011&ref=sr_nr_p_n_g-101015506406111_1&ds=v1%3AlcDygbRFRk%2BOOpIV9cIv8Id1Axmz3Sg4ZCtA7matXiI
+                    - checkbox [ref=e1700]
+                    - text: 40 to 49 in
+                - listitem [ref=e1702]:
+                  - link "Apply 50 to 64 in filter to narrow results" [ref=e1704] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015506406111%3A122272712011&dc&qid=1778233499&rnid=122272603011&ref=sr_nr_p_n_g-101015506406111_2&ds=v1%3AjfTJwr452OLW%2BxAKeRE%2FzMW60eeHyWpC78R334NGK54
+                    - checkbox [ref=e1707]
+                    - text: 50 to 64 in
+            - group "Width" [ref=e1709]:
+              - heading "Width" [level=2] [ref=e1710]
+              - list "Width" [ref=e1711]:
+                - listitem [ref=e1712]:
+                  - link "Apply 40 to 49 in filter to narrow results" [ref=e1714] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015506805111%3A122272702011&dc&qid=1778233499&rnid=122272600011&ref=sr_nr_p_n_g-101015506805111_1&ds=v1%3Aqv8Z54PFiwmOkhMFQPjr%2Fnr9Zm7WcM2kejo9w5Vhajo
+                    - checkbox [ref=e1717]
+                    - text: 40 to 49 in
+                - listitem [ref=e1719]:
+                  - link "Apply 50 to 59 in filter to narrow results" [ref=e1721] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015506805111%3A122272699011&dc&qid=1778233499&rnid=122272600011&ref=sr_nr_p_n_g-101015506805111_2&ds=v1%3AxNOJico37E0Ja5R6rYdWcPmEj7KCg%2FITW5VpCCu13nc
+                    - checkbox [ref=e1724]
+                    - text: 50 to 59 in
+            - group "Depth" [ref=e1726]:
+              - heading "Depth" [level=2] [ref=e1727]
+              - list "Depth" [ref=e1728]:
+                - listitem [ref=e1729]:
+                  - link "Apply Up to 8.9 in filter to narrow results" [ref=e1731] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015506708111%3A122272706011&dc&qid=1778233499&rnid=122272601011&ref=sr_nr_p_n_g-101015506708111_1&ds=v1%3AIgRJZyZNl1tEPyjn8ixY135edLUCreDLD06HtnxowIc
+                    - checkbox [ref=e1734]
+                    - text: Up to 8.9 in
+                - listitem [ref=e1736]:
+                  - link "Apply 9 to 10.9 in filter to narrow results" [ref=e1738] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015506708111%3A122272705011&dc&qid=1778233499&rnid=122272601011&ref=sr_nr_p_n_g-101015506708111_2&ds=v1%3APemALD42eTqO5TY2qADDTIiC9cyeM1E%2FiYMj00OM3pg
+                    - checkbox [ref=e1741]
+                    - text: 9 to 10.9 in
+            - group "Maximum Display Brightness" [ref=e1743]:
+              - heading "Maximum Display Brightness" [level=2] [ref=e1744]
+              - list "Maximum Display Brightness" [ref=e1745]:
+                - listitem [ref=e1746]:
+                  - link "Apply 250 to 449 filter to narrow results" [ref=e1748] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015506046111%3A122272152011&dc&qid=1778233499&rnid=122272105011&ref=sr_nr_p_n_g-101015506046111_1&ds=v1%3ALdOhUftqxA1xcFoCqDoqLptTglGKxbWFHEzd4V8flGo
+                    - checkbox [ref=e1751]
+                    - text: 250 to 449
+            - group "Screen Mirroring Technology" [ref=e1753]:
+              - heading "Screen Mirroring Technology" [level=2] [ref=e1754]
+              - list "Screen Mirroring Technology" [ref=e1755]:
+                - listitem [ref=e1756]:
+                  - link "Apply AirPlay filter to narrow results" [ref=e1758] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015501903111%3A122270132011&dc&qid=1778233499&rnid=122269813011&ref=sr_nr_p_n_g-101015501903111_1&ds=v1%3AFbeoyfA7%2FL%2B8%2FZkfy%2FUKA0JYOoZIweOsDjH463ff1%2Bs
+                    - checkbox [ref=e1761]
+                    - text: AirPlay
+                - listitem [ref=e1763]:
+                  - link "Apply AirPlay 2 filter to narrow results" [ref=e1765] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015501903111%3A122270130011&dc&qid=1778233499&rnid=122269813011&ref=sr_nr_p_n_g-101015501903111_2&ds=v1%3Aj9MioR7MPAwpJFU8hka4NKJEyskGzEIk3O6SOeiqwEM
+                    - checkbox [ref=e1768]
+                    - text: AirPlay 2
+                - listitem [ref=e1770]:
+                  - link "Apply DIAL filter to narrow results" [ref=e1772] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015501903111%3A122270128011&dc&qid=1778233499&rnid=122269813011&ref=sr_nr_p_n_g-101015501903111_3&ds=v1%3AxYG4yrQQwBBtukhyxON5Kr%2FtiVowRYCndtl2UpIHGOA
+                    - checkbox [ref=e1775]
+                    - text: DIAL
+                - listitem [ref=e1777]:
+                  - link "Apply Google Cast filter to narrow results" [ref=e1779] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015501903111%3A122270131011&dc&qid=1778233499&rnid=122269813011&ref=sr_nr_p_n_g-101015501903111_4&ds=v1%3AlRUH%2FyT7a3qqKXcqKAO%2Fw%2Fstn52a%2FiUiF1bzNtIYSCA
+                    - checkbox [ref=e1782]
+                    - text: Google Cast
+                - listitem [ref=e1784]:
+                  - link "Apply Miracast filter to narrow results" [ref=e1786] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015501903111%3A122270133011&dc&qid=1778233499&rnid=122269813011&ref=sr_nr_p_n_g-101015501903111_5&ds=v1%3AXcF2czSvjqm2gQrSegOjlsLGls6bgMkw%2BHqD8%2BL2vs8
+                    - checkbox [ref=e1789]
+                    - text: Miracast
+                - listitem [ref=e1791]:
+                  - link "Apply SmartShare filter to narrow results" [ref=e1793] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015501903111%3A122270127011&dc&qid=1778233499&rnid=122269813011&ref=sr_nr_p_n_g-101015501903111_6&ds=v1%3AUFipEqcXvoxrRaFV2yjgDim8AFvZpXLcNMyUeWbs%2FMs
+                    - checkbox [ref=e1796]
+                    - text: SmartShare
+            - group "Height" [ref=e1798]:
+              - heading "Height" [level=2] [ref=e1799]
+              - list "Height" [ref=e1800]:
+                - listitem [ref=e1801]:
+                  - link "Apply Up to 29 in filter to narrow results" [ref=e1803] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015506821111%3A122272698011&dc&qid=1778233499&rnid=122272599011&ref=sr_nr_p_n_g-101015506821111_1&ds=v1%3AJBg3zgdzDGx0gleWgeGMOsjCWVnuTIletEM0eP8w5cI
+                    - checkbox [ref=e1806]
+                    - text: Up to 29 in
+                - listitem [ref=e1808]:
+                  - link "Apply 30 to 34 in filter to narrow results" [ref=e1810] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015506821111%3A122272696011&dc&qid=1778233499&rnid=122272599011&ref=sr_nr_p_n_g-101015506821111_2&ds=v1%3AQj0SkiQC9w1w1JO67H%2Ffcd%2FM%2FKciXzZjFLT%2BfA1xTEc
+                    - checkbox [ref=e1813]
+                    - text: 30 to 34 in
+            - group "Wireless Technology" [ref=e1815]:
+              - heading "Wireless Technology" [level=2] [ref=e1816]
+              - list "Wireless Technology" [ref=e1817]:
+                - listitem [ref=e1818]:
+                  - link "Apply Bluetooth filter to narrow results" [ref=e1820] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015502298111%3A122270063011&dc&qid=1778233499&rnid=122269811011&ref=sr_nr_p_n_g-101015502298111_1&ds=v1%3AarkwQ62a%2FsdTdW8h78lT7P%2BhKXjafAc5Nr%2FJyILx5gY
+                    - checkbox [ref=e1823]
+                    - text: Bluetooth
+                - listitem [ref=e1825]:
+                  - link "Apply Radio Frequency filter to narrow results" [ref=e1827] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015502298111%3A122270062011&dc&qid=1778233499&rnid=122269811011&ref=sr_nr_p_n_g-101015502298111_2&ds=v1%3ABev0V53b3u6ZeX5QhBlSQ2J9U12YizO3NQppnaoW5rs
+                    - checkbox [ref=e1830]
+                    - text: Radio Frequency
+                - listitem [ref=e1832]:
+                  - link "Apply Wi-Fi filter to narrow results" [ref=e1834] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015502298111%3A122270065011&dc&qid=1778233499&rnid=122269811011&ref=sr_nr_p_n_g-101015502298111_3&ds=v1%3A9mxbqRj%2BKkgMZJOkXJePGwG%2FhBrI4YUoFXiFrHr8HXI
+                    - checkbox [ref=e1837]
+                    - text: Wi-Fi
+            - group "Power Consumption" [ref=e1839]:
+              - heading "Power Consumption" [level=2] [ref=e1840]
+              - list "Power Consumption" [ref=e1841]:
+                - listitem [ref=e1842]:
+                  - link "Apply Up to 34 W filter to narrow results" [ref=e1844] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015501892111%3A122268461011&dc&qid=1778233499&rnid=122268209011&ref=sr_nr_p_n_g-101015501892111_1&ds=v1%3ABoY%2FEX%2F7%2FIxAnwbloxeGIft8nUWjoGAgzsUyYdOz5ZM
+                    - checkbox [ref=e1847]
+                    - text: Up to 34 W
+                - listitem [ref=e1849]:
+                  - link "Apply 100 W & above filter to narrow results" [ref=e1851] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015501892111%3A122268463011&dc&qid=1778233499&rnid=122268209011&ref=sr_nr_p_n_g-101015501892111_2&ds=v1%3ANA0Ri%2FyIVCaWxWqUf2TFTtyIjCLg8YXu2rnq5bbDQ0U
+                    - checkbox [ref=e1854]
+                    - text: 100 W & above
+            - group "Wattage" [ref=e1856]:
+              - heading "Wattage" [level=2] [ref=e1857]
+              - list "Wattage" [ref=e1858]:
+                - listitem [ref=e1859]:
+                  - link "Apply Up to 18.9 W filter to narrow results" [ref=e1861] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003523275111%3A41943768011&dc&qid=1778233499&rnid=41942098011&ref=sr_nr_p_n_g-1003523275111_1&ds=v1%3ARw4F4tGRN3ne7Qxq3lKY%2BYQPFx4hAmvvCtxsa3ThGTI
+                    - checkbox [ref=e1864]
+                    - text: Up to 18.9 W
+                - listitem [ref=e1866]:
+                  - link "Apply 73.0 W & above filter to narrow results" [ref=e1868] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003523275111%3A41943765011&dc&qid=1778233499&rnid=41942098011&ref=sr_nr_p_n_g-1003523275111_2&ds=v1%3ATBDB05CO3j1RvDSSnwUolXKlwDZR37bX13smyg2EV8M
+                    - checkbox [ref=e1871]
+                    - text: 73.0 W & above
+            - group "Tuner Technology" [ref=e1873]:
+              - heading "Tuner Technology" [level=2] [ref=e1874]
+              - list "Tuner Technology" [ref=e1875]:
+                - listitem [ref=e1876]:
+                  - link "Apply ATSC filter to narrow results" [ref=e1878] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015678274111%3A203788624011&dc&qid=1778233499&rnid=203788615011&ref=sr_nr_p_n_g-101015678274111_1&ds=v1%3Aj8M5yE3UhDHUvJaiq1STsFFzVHDIlmErxzEd6hAE614
+                    - checkbox [ref=e1881]
+                    - text: ATSC
+                - listitem [ref=e1883]:
+                  - link "Apply NTSC filter to narrow results" [ref=e1885] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015678274111%3A203788620011&dc&qid=1778233499&rnid=203788615011&ref=sr_nr_p_n_g-101015678274111_2&ds=v1%3A2uGRoBaNLifI2tIDROv%2BYEi4exzSE4b6P%2F8Cupop5os
+                    - checkbox [ref=e1888]
+                    - text: NTSC
+            - group "Display Backlight Configuration" [ref=e1890]:
+              - heading "Display Backlight Configuration" [level=2] [ref=e1891]
+              - list "Display Backlight Configuration" [ref=e1892]:
+                - listitem [ref=e1893]:
+                  - link "Apply Direct LED filter to narrow results" [ref=e1895] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101017394918111%3A214885269011&dc&qid=1778233499&rnid=214885263011&ref=sr_nr_p_n_g-101017394918111_1&ds=v1%3AGSG4eVnrIEHDze96BrXGk7BeIDkkiNlvlpbCo667Af4
+                    - checkbox [ref=e1898]
+                    - text: Direct LED
+                - listitem [ref=e1900]:
+                  - link "Apply Edge LED filter to narrow results" [ref=e1902] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101017394918111%3A214885267011&dc&qid=1778233499&rnid=214885263011&ref=sr_nr_p_n_g-101017394918111_2&ds=v1%3AfvnOdKEeaoj1C%2BB1KaecB%2F%2BHF1NH8BXQXZGSvQFpe10
+                    - checkbox [ref=e1905]
+                    - text: Edge LED
+            - group "Voltage" [ref=e1907]:
+              - heading "Voltage" [level=2] [ref=e1908]
+              - list "Voltage" [ref=e1909]:
+                - listitem [ref=e1910]:
+                  - link "Apply Up to 118 V filter to narrow results" [ref=e1912] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015502188111%3A122269690011&dc&qid=1778233499&rnid=122269530011&ref=sr_nr_p_n_g-101015502188111_1&ds=v1%3AeJgrrb7Cq%2FN9xfyszkcayS3tmD2NssPKbIHaGQ6P4SY
+                    - checkbox [ref=e1915]
+                    - text: Up to 118 V
+                - listitem [ref=e1917]:
+                  - link "Apply 120 to 120 V filter to narrow results" [ref=e1919] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015502188111%3A122269693011&dc&qid=1778233499&rnid=122269530011&ref=sr_nr_p_n_g-101015502188111_2&ds=v1%3AZub0tSR4XYlU1Ff6l4dv0rU5KWCvCkwj5XpDhDJrUcU
+                    - checkbox [ref=e1922]
+                    - text: 120 to 120 V
+            - group "Item Package Width" [ref=e1924]:
+              - heading "Item Package Width" [level=2] [ref=e1925]
+              - list "Item Package Width" [ref=e1926]:
+                - listitem [ref=e1927]:
+                  - link "Apply Up to 9 in filter to narrow results" [ref=e1929] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015506726111%3A122272691011&dc&qid=1778233499&rnid=122272598011&ref=sr_nr_p_n_g-101015506726111_1&ds=v1%3A8sJYP21nau75IbEIGhe9IRV0jM5hLUtQBSl21nOeKSI
+                    - checkbox [ref=e1932]
+                    - text: Up to 9 in
+                - listitem [ref=e1934]:
+                  - link "Apply 25 in & above filter to narrow results" [ref=e1936] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015506726111%3A122272692011&dc&qid=1778233499&rnid=122272598011&ref=sr_nr_p_n_g-101015506726111_2&ds=v1%3AebP9WpiBoiBSLBg5PKaR57%2BmyzylqYJeYyYvXyH9eZY
+                    - checkbox [ref=e1939]
+                    - text: 25 in & above
+            - group "Viewing Angle" [ref=e1941]:
+              - heading "Viewing Angle" [level=2] [ref=e1942]
+              - list "Viewing Angle" [ref=e1943]:
+                - listitem [ref=e1944]:
+                  - link "Apply 169 to 172 ° filter to narrow results" [ref=e1946] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015502128111%3A122269708011&dc&qid=1778233499&rnid=122269534011&ref=sr_nr_p_n_g-101015502128111_1&ds=v1%3AT7hd%2FLiNEmyhv1cGY92o7%2FbTPBBsd9uJ2hWaF7C6B6A
+                    - checkbox [ref=e1949]
+                    - text: 169 to 172 °
+                - listitem [ref=e1951]:
+                  - link "Apply 177 ° & above filter to narrow results" [ref=e1953] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015502128111%3A122269709011&dc&qid=1778233499&rnid=122269534011&ref=sr_nr_p_n_g-101015502128111_2&ds=v1%3AmXPwENqxU6bh%2BZzHdGskWJYnWM%2BUTWz%2FwPxK3iszZv4
+                    - checkbox [ref=e1956]
+                    - text: 177 ° & above
+            - group "Weight" [ref=e1958]:
+              - heading "Weight" [level=2] [ref=e1959]
+              - list "Weight" [ref=e1960]:
+                - listitem [ref=e1961]:
+                  - link "Apply 20 to 44 lb filter to narrow results" [ref=e1963] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015503531111%3A122269700011&dc&qid=1778233499&rnid=122269532011&ref=sr_nr_p_n_g-101015503531111_1&ds=v1%3AwqOE%2BXQFoisuL87ePNapCmOEt32JNYTw7TXG8bMVwWM
+                    - checkbox [ref=e1966]
+                    - text: 20 to 44 lb
+                - listitem [ref=e1968]:
+                  - link "Apply 65 lb & above filter to narrow results" [ref=e1970] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015503531111%3A122269698011&dc&qid=1778233499&rnid=122269532011&ref=sr_nr_p_n_g-101015503531111_2&ds=v1%3ATiEzT1DZxGXnIXV2m4emiyDzMJwtp8ik%2BnPHvSqZxGQ
+                    - checkbox [ref=e1973]
+                    - text: 65 lb & above
+            - group "Item Package Length" [ref=e1975]:
+              - heading "Item Package Length" [level=2] [ref=e1976]
+              - list "Item Package Length" [ref=e1977]:
+                - listitem [ref=e1978]:
+                  - link "Apply Up to 19 in filter to narrow results" [ref=e1980] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015506620111%3A122272689011&dc&qid=1778233499&rnid=122272597011&ref=sr_nr_p_n_g-101015506620111_1&ds=v1%3AmrIIpUVGbDCoE61QhG1Gr71QZ5gOZSP9%2Ffswb8umStU
+                    - checkbox [ref=e1983]
+                    - text: Up to 19 in
+                - listitem [ref=e1985]:
+                  - link "Apply 40 to 59 in filter to narrow results" [ref=e1987] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015506620111%3A122272690011&dc&qid=1778233499&rnid=122272597011&ref=sr_nr_p_n_g-101015506620111_2&ds=v1%3A%2BL%2FBgyKpuci2pKwsRaCWQjEYmR9wGHLtSYD%2BztdeTeE
+                    - checkbox [ref=e1990]
+                    - text: 40 to 59 in
+            - group "Audio Input" [ref=e1992]:
+              - heading "Audio Input" [level=2] [ref=e1993]
+              - list "Audio Input" [ref=e1994]:
+                - listitem [ref=e1995]:
+                  - link "Apply HDMI filter to narrow results" [ref=e1997] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003374377111%3A24003592011&dc&qid=1778233499&rnid=24003323011&ref=sr_nr_p_n_g-1003374377111_1&ds=v1%3AhK2qAKhhpAH%2Bl398khJPwFpv3Ax5QZWRupLK8k2L7MA
+                    - checkbox [ref=e2000]
+                    - text: HDMI
+                - listitem [ref=e2002]:
+                  - link "Apply Optical filter to narrow results" [ref=e2004] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003374377111%3A24003595011&dc&qid=1778233499&rnid=24003323011&ref=sr_nr_p_n_g-1003374377111_2&ds=v1%3Asyyg%2FsoM5zMja%2ByZgcV3LaMZanU3i%2FhBxlmYh00xkeY
+                    - checkbox [ref=e2007]
+                    - text: Optical
+                - listitem [ref=e2009]:
+                  - link "Apply USB filter to narrow results" [ref=e2011] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-1003374377111%3A121469550011&dc&qid=1778233499&rnid=24003323011&ref=sr_nr_p_n_g-1003374377111_3&ds=v1%3Aacmu%2F3dTdhONdcJCbV0qSTWrB8BQkA5hJewCPryjSCM
+                    - checkbox [ref=e2014]
+                    - text: USB
+            - group "Line Voltage" [ref=e2016]:
+              - heading "Line Voltage" [level=2] [ref=e2017]
+              - list "Line Voltage" [ref=e2018]:
+                - listitem [ref=e2019]:
+                  - link "Apply 100-240 VAC 50-60 Hz filter to narrow results" [ref=e2021] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015503550111%3A122269694011&dc&qid=1778233499&rnid=122269531011&ref=sr_nr_p_n_g-101015503550111_1&ds=v1%3AcAmCuywsAwvzPc2gjwE0ZpFLOed76wiBS9PqlDKM8a4
+                    - checkbox [ref=e2024]
+                    - text: 100-240 VAC 50-60 Hz
+                - listitem [ref=e2026]:
+                  - link "Apply 110 VAC 60 Hz filter to narrow results" [ref=e2028] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015503550111%3A122269697011&dc&qid=1778233499&rnid=122269531011&ref=sr_nr_p_n_g-101015503550111_2&ds=v1%3AZobOMbV%2FaO%2BEhgY8HGCss%2BeSaX4xllFA%2BMJ1cWO7oNY
+                    - checkbox [ref=e2031]
+                    - text: 110 VAC 60 Hz
+            - group "HDR Format Supported" [ref=e2033]:
+              - heading "HDR Format Supported" [level=2] [ref=e2034]
+              - list "HDR Format Supported" [ref=e2035]:
+                - listitem [ref=e2036]:
+                  - link "Apply HDR10 filter to narrow results" [ref=e2038] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101014793910111%3A116422846011&dc&qid=1778233499&rnid=116422771011&ref=sr_nr_p_n_g-101014793910111_1&ds=v1%3AgcpxVHF5IZOJNmeOlmjipyyqJqNIuY%2FuoJygv%2FCHpDI
+                    - checkbox [ref=e2041]
+                    - text: HDR10
+                - listitem [ref=e2043]:
+                  - link "Apply Dolby Vision filter to narrow results" [ref=e2045] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101014793910111%3A116422844011&dc&qid=1778233499&rnid=116422771011&ref=sr_nr_p_n_g-101014793910111_2&ds=v1%3A3lCoyze2odX7rTSZSS4etdBuortmqPoGJD4vRlWA%2FD0
+                    - checkbox [ref=e2048]
+                    - text: Dolby Vision
+                - listitem [ref=e2050]:
+                  - link "Apply HDR10+ filter to narrow results" [ref=e2052] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101014793910111%3A116422843011&dc&qid=1778233499&rnid=116422771011&ref=sr_nr_p_n_g-101014793910111_3&ds=v1%3ArpruvsAaIhpH89mCJ3hg7oxijDIrFHMA5QqXNCv1%2FRo
+                    - checkbox [ref=e2055]
+                    - text: HDR10+
+                - listitem [ref=e2057]:
+                  - link "Apply HLG filter to narrow results" [ref=e2059] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101014793910111%3A116422847011&dc&qid=1778233499&rnid=116422771011&ref=sr_nr_p_n_g-101014793910111_4&ds=v1%3A0%2Fgx8sTj7US8QJ3aEBZe8UC14z%2FfoNWYE3MUyFgHoao
+                    - checkbox [ref=e2062]
+                    - text: HLG
+            - group "Operating System" [ref=e2064]:
+              - heading "Operating System" [level=2] [ref=e2065]
+              - list "Operating System" [ref=e2066]:
+                - listitem [ref=e2067]:
+                  - link "Apply Android filter to narrow results" [ref=e2069] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101016028402111%3A205632984011&dc&qid=1778233499&rnid=205632970011&ref=sr_nr_p_n_g-101016028402111_1&ds=v1%3AbNdDsYVBwPcAsyKID%2FAhXCwKE0TxwDSof5D%2B0P5jrB4
+                    - checkbox [ref=e2072]
+                    - text: Android
+                - listitem [ref=e2074]:
+                  - link "Apply Google TV filter to narrow results" [ref=e2076] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101016028402111%3A205632977011&dc&qid=1778233499&rnid=205632970011&ref=sr_nr_p_n_g-101016028402111_2&ds=v1%3Ac3Que9a%2F7v34hmHg2AT%2Fe4ZH1puV%2BWMmwX2LDqi2Mmo
+                    - checkbox [ref=e2079]
+                    - text: Google TV
+                - listitem [ref=e2081]:
+                  - link "Apply Tizen filter to narrow results" [ref=e2083] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101016028402111%3A205632976011&dc&qid=1778233499&rnid=205632970011&ref=sr_nr_p_n_g-101016028402111_3&ds=v1%3AiTvTGPJRtkG96GLBvK0vX0T84w2bPblwv6kYGAkfyBg
+                    - checkbox [ref=e2086]
+                    - text: Tizen
+                - listitem [ref=e2088]:
+                  - link "Apply webOS filter to narrow results" [ref=e2090] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101016028402111%3A205632980011&dc&qid=1778233499&rnid=205632970011&ref=sr_nr_p_n_g-101016028402111_4&ds=v1%3Ac%2Fo3JYoV6dtFpDl%2FMxNBQ6TNs5kSAdcVQefdWR5qzdA
+                    - checkbox [ref=e2093]
+                    - text: webOS
+            - group "Aspect Ratio" [ref=e2095]:
+              - heading "Aspect Ratio" [level=2] [ref=e2096]
+              - list "Aspect Ratio" [ref=e2097]:
+                - listitem [ref=e2098]:
+                  - link "Apply 1.78:1 filter to narrow results" [ref=e2100] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015503032111%3A122270075011&dc&qid=1778233499&rnid=122269812011&ref=sr_nr_p_n_g-101015503032111_1&ds=v1%3AVMjHUWc79NkbYCUMJg59Wf15y7rR9UZqpCEvkcCnG40
+                    - checkbox [ref=e2103]
+                    - text: 1.78:1
+                - listitem [ref=e2105]:
+                  - link "Apply 16:9 filter to narrow results" [ref=e2107] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015503032111%3A122270093011&dc&qid=1778233499&rnid=122269812011&ref=sr_nr_p_n_g-101015503032111_2&ds=v1%3AkhTU9YOfAw%2Basqmz5pWRaEHboJhfpB2mBBmNrJoxnrg
+                    - checkbox [ref=e2110]
+                    - text: 16:9
+            - group "Item Package Height" [ref=e2112]:
+              - heading "Item Package Height" [level=2] [ref=e2113]
+              - list "Item Package Height" [ref=e2114]:
+                - listitem [ref=e2115]:
+                  - link "Apply Up to 24 in filter to narrow results" [ref=e2117] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015506517111%3A122272709011&dc&qid=1778233499&rnid=122272602011&ref=sr_nr_p_n_g-101015506517111_1&ds=v1%3AgN%2F6s6pfaOAKWn7AhtRgT7Tzpvsqaz0OJN8exQC2gjk
+                    - checkbox [ref=e2120]
+                    - text: Up to 24 in
+                - listitem [ref=e2122]:
+                  - link "Apply 35 to 49 in filter to narrow results" [ref=e2124] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015506517111%3A122272710011&dc&qid=1778233499&rnid=122272602011&ref=sr_nr_p_n_g-101015506517111_2&ds=v1%3ARRlRdqOz5TQVSedz2x2VAcfee8wPv4r1Vjg3q1qK2sM
+                    - checkbox [ref=e2127]
+                    - text: 35 to 49 in
+                - listitem [ref=e2129]:
+                  - link "Apply 50 in & above filter to narrow results" [ref=e2131] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015506517111%3A122272708011&dc&qid=1778233499&rnid=122272602011&ref=sr_nr_p_n_g-101015506517111_3&ds=v1%3AcNQIwNLIfd8pb9pnWcnKo4AdkFqtJJL%2FkoYW06OJh%2BE
+                    - checkbox [ref=e2134]
+                    - text: 50 in & above
+            - group "Water Resistance Level" [ref=e2136]:
+              - heading "Water Resistance Level" [level=2] [ref=e2137]
+              - list "Water Resistance Level" [ref=e2138]:
+                - listitem [ref=e2139]:
+                  - link "Apply Not Water Resistant filter to narrow results" [ref=e2141] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015502249111%3A122269703011&dc&qid=1778233499&rnid=122269533011&ref=sr_nr_p_n_g-101015502249111_1&ds=v1%3ACHbxoBs3kGTuAmPLr0tnl98x0h2kVTZRyo9xR0V2Z3k
+                    - checkbox [ref=e2144]
+                    - text: Not Water Resistant
+                - listitem [ref=e2146]:
+                  - link "Apply Water Resistant filter to narrow results" [ref=e2148] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015502249111%3A122269705011&dc&qid=1778233499&rnid=122269533011&ref=sr_nr_p_n_g-101015502249111_2&ds=v1%3A0AdHyKtpCFuTAvu5rls8iuHZnQSl19KX5pTpaIFjtvQ
+                    - checkbox [ref=e2151]
+                    - text: Water Resistant
+            - group "Storage Capacity" [ref=e2153]:
+              - heading "Storage Capacity" [level=2] [ref=e2154]
+              - list "Storage Capacity" [ref=e2155]:
+                - listitem [ref=e2156]:
+                  - link "Apply Up to 3,999 filter to narrow results" [ref=e2158] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015501819111%3A122268465011&dc&qid=1778233499&rnid=122268210011&ref=sr_nr_p_n_g-101015501819111_1&ds=v1%3AHYYwoaCwRkV9lCzTIB1ok%2BWZ4E1Z4Fh9HaKPZCXWzBs
+                    - checkbox [ref=e2161]
+                    - text: Up to 3,999
+                - listitem [ref=e2163]:
+                  - link "Apply 8,000 & above filter to narrow results" [ref=e2165] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015501819111%3A122268466011&dc&qid=1778233499&rnid=122268210011&ref=sr_nr_p_n_g-101015501819111_2&ds=v1%3AfTU5V8hNMa3GmgYEJVxBjr0SoQsBlt95OtkQ9pee%2FUs
+                    - checkbox [ref=e2168]
+                    - text: 8,000 & above
+            - group "Video Encoding" [ref=e2170]:
+              - heading "Video Encoding" [level=2] [ref=e2171]
+              - list "Video Encoding" [ref=e2172]:
+                - listitem [ref=e2173]:
+                  - link "Apply HEVC Main 10 filter to narrow results" [ref=e2175] [cursor=pointer]:
+                    - /url: /s?k=55+inch+LG+LED+TV&rh=p_n_g-101015501924111%3A122269726011&dc&qid=1778233499&rnid=122269535011&ref=sr_nr_p_n_g-101015501924111_1&ds=v1%3A9dUIowb%2FnavykxJr8bBmcWQLwKGjNA5HDEYkczHNVsU
+                    - checkbox [ref=e2178]
+                    - text: HEVC Main 10
+    - complementary "Your recently viewed items and featured recommendations"
+    - generic [ref=e2180]:
+      - button "Back to top" [ref=e2181] [cursor=pointer]:
+        - generic [ref=e2182]: Back to top
+      - generic [ref=e2183]:
+        - generic [ref=e2184]:
+          - heading "Get to Know Us" [level=6] [ref=e2185]
+          - list [ref=e2186]:
+            - listitem [ref=e2187]:
+              - link "Careers" [ref=e2188] [cursor=pointer]:
+                - /url: https://www.amazon.jobs
+            - listitem [ref=e2189]:
+              - link "Blog" [ref=e2190] [cursor=pointer]:
+                - /url: https://blog.aboutamazon.com/?utm_source=gateway&utm_medium=footer
+            - listitem [ref=e2191]:
+              - link "About Amazon" [ref=e2192] [cursor=pointer]:
+                - /url: https://www.aboutamazon.com/?utm_source=gateway&utm_medium=footer
+            - listitem [ref=e2193]:
+              - link "Investor Relations" [ref=e2194] [cursor=pointer]:
+                - /url: https://www.amazon.com/ir
+            - listitem [ref=e2195]:
+              - link "Amazon Devices" [ref=e2196] [cursor=pointer]:
+                - /url: /gp/browse.html?node=2102313011&ref_=footer_devices
+            - listitem [ref=e2197]:
+              - link "Amazon Science" [ref=e2198] [cursor=pointer]:
+                - /url: https://www.amazon.science
+        - generic [ref=e2200]:
+          - heading "Make Money with Us" [level=6] [ref=e2201]
+          - list [ref=e2202]:
+            - listitem [ref=e2203]:
+              - link "Sell products on Amazon" [ref=e2204] [cursor=pointer]:
+                - /url: https://services.amazon.com/sell.html?ld=AZFSSOA&ref_=footer_soa
+            - listitem [ref=e2205]:
+              - link "Sell on Amazon Business" [ref=e2206] [cursor=pointer]:
+                - /url: https://services.amazon.com/amazon-business.html?ld=usb2bunifooter&ref_=footer_b2b
+            - listitem [ref=e2207]:
+              - link "Sell apps on Amazon" [ref=e2208] [cursor=pointer]:
+                - /url: https://developer.amazon.com
+            - listitem [ref=e2209]:
+              - link "Become an Affiliate" [ref=e2210] [cursor=pointer]:
+                - /url: https://affiliate-program.amazon.com/
+            - listitem [ref=e2211]:
+              - link "Advertise Your Products" [ref=e2212] [cursor=pointer]:
+                - /url: https://advertising.amazon.com/?ref=ext_amzn_ftr
+            - listitem [ref=e2213]:
+              - link "Self-Publish with Us" [ref=e2214] [cursor=pointer]:
+                - /url: /gp/seller-account/mm-summary-page.html?ld=AZFooterSelfPublish&topic=200260520&ref_=footer_publishing
+            - listitem [ref=e2215]:
+              - link "Host an Amazon Hub" [ref=e2216] [cursor=pointer]:
+                - /url: https://go.thehub-amazon.com/amazon-hub-locker
+            - listitem [ref=e2217]:
+              - text: ›
+              - link "See More Make Money with Us" [ref=e2218] [cursor=pointer]:
+                - /url: /b/?node=18190131011&ld=AZUSSOA-seemore&ref_=footer_seemore
+        - generic [ref=e2220]:
+          - heading "Amazon Payment Products" [level=6] [ref=e2221]
+          - list [ref=e2222]:
+            - listitem [ref=e2223]:
+              - link "Amazon Business Card" [ref=e2224] [cursor=pointer]:
+                - /url: /dp/B07984JN3L?plattr=ACOMFO&ie=UTF-8
+            - listitem [ref=e2225]:
+              - link "Shop with Points" [ref=e2226] [cursor=pointer]:
+                - /url: /gp/browse.html?node=16218619011&ref_=footer_swp
+            - listitem [ref=e2227]:
+              - link "Reload Your Balance" [ref=e2228] [cursor=pointer]:
+                - /url: /dp/B0CHTVMXZJ?th=1?ref_=footer_reload_us
+            - listitem [ref=e2229]:
+              - link "Amazon Currency Converter" [ref=e2230] [cursor=pointer]:
+                - /url: /gp/browse.html?node=388305011&ref_=footer_tfx
+        - generic [ref=e2232]:
+          - heading "Let Us Help You" [level=6] [ref=e2233]
+          - list [ref=e2234]:
+            - listitem [ref=e2235]:
+              - link "Amazon and COVID-19" [ref=e2236] [cursor=pointer]:
+                - /url: /gp/help/customer/display.html?nodeId=GDFU3JS5AL6SYHRD&ref_=footer_covid
+            - listitem [ref=e2237]:
+              - link "Your Account" [ref=e2238] [cursor=pointer]:
+                - /url: https://www.amazon.com/gp/css/homepage.html?ref_=footer_ya
+            - listitem [ref=e2239]:
+              - link "Your Orders" [ref=e2240] [cursor=pointer]:
+                - /url: https://www.amazon.com/gp/css/order-history?ref_=footer_yo
+            - listitem [ref=e2241]:
+              - link "Shipping Rates & Policies" [ref=e2242] [cursor=pointer]:
+                - /url: /gp/help/customer/display.html?nodeId=468520&ref_=footer_shiprates
+            - listitem [ref=e2243]:
+              - link "Returns & Replacements" [ref=e2244] [cursor=pointer]:
+                - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+            - listitem [ref=e2245]:
+              - link "Manage Your Content and Devices" [ref=e2246] [cursor=pointer]:
+                - /url: /gp/digital/fiona/manage?ref_=footer_myk
+            - listitem [ref=e2247]:
+              - link "Help" [ref=e2248] [cursor=pointer]:
+                - /url: /gp/help/customer/display.html?nodeId=508510&ref_=footer_gw_m_b_he
+      - generic [ref=e2250]:
+        - link "Amazon US Home" [ref=e2253] [cursor=pointer]:
+          - /url: /?ref_=footer_logo
+        - generic [ref=e2256]:
+          - generic [ref=e2257]:
+            - link "Choose a language for shopping. Current selection is English." [ref=e2258] [cursor=pointer]:
+              - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=footer_lang
+              - generic [ref=e2260]: English
+            - button "Expand to Change Language or Country" [ref=e2261] [cursor=pointer]
+          - link "₹ INR - Indian Rupee" [ref=e2262] [cursor=pointer]:
+            - /url: /customer-preferences/edit?ie=UTF8&ref_=footer_cop&preferencesReturnUrl=%2Fs%3Fk%3D55%2Binch%2BLG%2BLED%2BTV%26ref%3Dnb_sb_nosss%2Fref%3Dnb_sb_noss
+            - generic [ref=e2263]: ₹
+            - generic [ref=e2264]: INR - Indian Rupee
+          - button "Choose a country/region for shopping. The current selection is United States." [ref=e2265] [cursor=pointer]:
+            - generic [ref=e2267]: United States
+      - navigation "More on Amazon" [ref=e2268]:
+        - generic "More on Amazon" [ref=e2269]:
+          - list [ref=e2270]:
+            - listitem [ref=e2271]:
+              - link "Amazon Music Stream millions of songs" [ref=e2272] [cursor=pointer]:
+                - /url: https://music.amazon.com?ref=dm_aff_amz_com
+                - heading "Amazon Music" [level=5] [ref=e2273]
+                - generic [ref=e2274]:
+                  - text: Stream millions
+                  - text: of songs
+            - listitem [ref=e2275]
+            - listitem [ref=e2276]:
+              - link "Amazon Ads Reach customers wherever they spend their time" [ref=e2277] [cursor=pointer]:
+                - /url: https://advertising.amazon.com/?ref=footer_advtsing_amzn_com
+                - heading "Amazon Ads" [level=5] [ref=e2278]
+                - generic [ref=e2279]:
+                  - text: Reach customers
+                  - text: wherever they
+                  - text: spend their time
+            - listitem [ref=e2280]
+            - listitem [ref=e2281]:
+              - link "6pm Score deals on fashion brands" [ref=e2282] [cursor=pointer]:
+                - /url: https://www.6pm.com
+                - heading "6pm" [level=5] [ref=e2283]
+                - generic [ref=e2284]:
+                  - text: Score deals
+                  - text: on fashion brands
+            - listitem [ref=e2285]
+            - listitem [ref=e2286]:
+              - link "AbeBooks Books, art & collectibles" [ref=e2287] [cursor=pointer]:
+                - /url: https://www.abebooks.com
+                - heading "AbeBooks" [level=5] [ref=e2288]
+                - generic [ref=e2289]:
+                  - text: Books, art
+                  - text: "& collectibles"
+            - listitem [ref=e2290]
+            - listitem [ref=e2291]:
+              - link "ACX Audiobook Publishing Made Easy" [ref=e2292] [cursor=pointer]:
+                - /url: https://www.acx.com/
+                - heading "ACX" [level=5] [ref=e2293]
+                - generic [ref=e2294]:
+                  - text: Audiobook Publishing
+                  - text: Made Easy
+            - listitem [ref=e2295]
+            - listitem [ref=e2296]:
+              - link "Sell on Amazon Start a Selling Account" [ref=e2297] [cursor=pointer]:
+                - /url: https://sell.amazon.com/?ld=AZUSSOA-footer-aff&ref_=footer_sell
+                - heading "Sell on Amazon" [level=5] [ref=e2298]
+                - generic [ref=e2299]: Start a Selling Account
+            - listitem [ref=e2300]
+            - listitem [ref=e2301]:
+              - link "Veeqo Shipping Software Inventory Management" [ref=e2302] [cursor=pointer]:
+                - /url: https://www.veeqo.com/?utm_source=amazon&utm_medium=website&utm_campaign=footer
+                - heading "Veeqo" [level=5] [ref=e2303]
+                - generic [ref=e2304]:
+                  - text: Shipping Software
+                  - text: Inventory Management
+          - list [ref=e2305]:
+            - listitem [ref=e2306]:
+              - link "Amazon Business Everything For Your Business" [ref=e2307] [cursor=pointer]:
+                - /url: /business?ref_=footer_retail_b2b
+                - heading "Amazon Business" [level=5] [ref=e2308]
+                - generic [ref=e2309]:
+                  - text: Everything For
+                  - text: Your Business
+            - listitem [ref=e2310]
+            - listitem [ref=e2311]:
+              - link "AmazonGlobal Ship Orders Internationally" [ref=e2312] [cursor=pointer]:
+                - /url: /gp/browse.html?node=230659011&ref_=footer_amazonglobal
+                - heading "AmazonGlobal" [level=5] [ref=e2313]
+                - generic [ref=e2314]:
+                  - text: Ship Orders
+                  - text: Internationally
+            - listitem [ref=e2315]
+            - listitem [ref=e2316]:
+              - link "Amazon Web Services Scalable Cloud Computing Services" [ref=e2317] [cursor=pointer]:
+                - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=amazonfooter
+                - heading "Amazon Web Services" [level=5] [ref=e2318]
+                - generic [ref=e2319]:
+                  - text: Scalable Cloud
+                  - text: Computing Services
+            - listitem [ref=e2320]
+            - listitem [ref=e2321]:
+              - link "Audible Listen to Books & Original Audio Performances" [ref=e2322] [cursor=pointer]:
+                - /url: https://www.audible.com
+                - heading "Audible" [level=5] [ref=e2323]
+                - generic [ref=e2324]:
+                  - text: Listen to Books & Original
+                  - text: Audio Performances
+            - listitem [ref=e2325]
+            - listitem [ref=e2326]:
+              - link "Box Office Mojo Find Movie Box Office Data" [ref=e2327] [cursor=pointer]:
+                - /url: https://www.boxofficemojo.com/?ref_=amzn_nav_ftr
+                - heading "Box Office Mojo" [level=5] [ref=e2328]
+                - generic [ref=e2329]:
+                  - text: Find Movie
+                  - text: Box Office Data
+            - listitem [ref=e2330]
+            - listitem [ref=e2331]:
+              - link "Goodreads Book reviews & recommendations" [ref=e2332] [cursor=pointer]:
+                - /url: https://www.goodreads.com
+                - heading "Goodreads" [level=5] [ref=e2333]
+                - generic [ref=e2334]:
+                  - text: Book reviews
+                  - text: "& recommendations"
+            - listitem [ref=e2335]
+            - listitem [ref=e2336]:
+              - link "IMDb Movies, TV & Celebrities" [ref=e2337] [cursor=pointer]:
+                - /url: https://www.imdb.com
+                - heading "IMDb" [level=5] [ref=e2338]
+                - generic [ref=e2339]:
+                  - text: Movies, TV
+                  - text: "& Celebrities"
+          - list [ref=e2340]:
+            - listitem [ref=e2341]:
+              - link "IMDbPro Get Info Entertainment Professionals Need" [ref=e2342] [cursor=pointer]:
+                - /url: https://pro.imdb.com?ref_=amzn_nav_ftr
+                - heading "IMDbPro" [level=5] [ref=e2343]
+                - generic [ref=e2344]:
+                  - text: Get Info Entertainment
+                  - text: Professionals Need
+            - listitem [ref=e2345]
+            - listitem [ref=e2346]:
+              - link "Kindle Direct Publishing Indie Digital & Print Publishing Made Easy" [ref=e2347] [cursor=pointer]:
+                - /url: https://kdp.amazon.com
+                - heading "Kindle Direct Publishing" [level=5] [ref=e2348]
+                - generic [ref=e2349]:
+                  - text: Indie Digital & Print Publishing
+                  - text: Made Easy
+            - listitem [ref=e2350]
+            - listitem [ref=e2351]:
+              - link "Prime Video Direct Video Distribution Made Easy" [ref=e2352] [cursor=pointer]:
+                - /url: https://videodirect.amazon.com/home/landing
+                - heading "Prime Video Direct" [level=5] [ref=e2353]
+                - generic [ref=e2354]:
+                  - text: Video Distribution
+                  - text: Made Easy
+            - listitem [ref=e2355]
+            - listitem [ref=e2356]:
+              - link "Shopbop Designer Fashion Brands" [ref=e2357] [cursor=pointer]:
+                - /url: https://www.shopbop.com
+                - heading "Shopbop" [level=5] [ref=e2358]
+                - generic [ref=e2359]:
+                  - text: Designer
+                  - text: Fashion Brands
+            - listitem [ref=e2360]
+            - listitem [ref=e2361]:
+              - link "Woot! Deals and Shenanigans" [ref=e2362] [cursor=pointer]:
+                - /url: https://www.woot.com/
+                - heading "Woot!" [level=5] [ref=e2363]
+                - generic [ref=e2364]:
+                  - text: Deals and
+                  - text: Shenanigans
+            - listitem [ref=e2365]
+            - listitem [ref=e2366]:
+              - link "Zappos Shoes & Clothing" [ref=e2367] [cursor=pointer]:
+                - /url: https://www.zappos.com
+                - heading "Zappos" [level=5] [ref=e2368]
+                - generic [ref=e2369]:
+                  - text: Shoes &
+                  - text: Clothing
+            - listitem [ref=e2370]
+            - listitem [ref=e2371]:
+              - link "Ring Smart Home Security Systems" [ref=e2372] [cursor=pointer]:
+                - /url: https://ring.com
+                - heading "Ring" [level=5] [ref=e2373]
+                - generic [ref=e2374]:
+                  - text: Smart Home
+                  - text: Security Systems
+          - list [ref=e2375]:
+            - listitem [ref=e2376]
+            - listitem [ref=e2377]
+            - listitem [ref=e2378]:
+              - link "eero WiFi Stream 4K Video in Every Room" [ref=e2379] [cursor=pointer]:
+                - /url: https://eero.com/
+                - heading "eero WiFi" [level=5] [ref=e2380]
+                - generic [ref=e2381]:
+                  - text: Stream 4K Video
+                  - text: in Every Room
+            - listitem [ref=e2382]
+            - listitem [ref=e2383]:
+              - link "Blink Smart Security for Every Home" [ref=e2384] [cursor=pointer]:
+                - /url: https://blinkforhome.com/?ref=nav_footer
+                - heading "Blink" [level=5] [ref=e2385]
+                - generic [ref=e2386]:
+                  - text: Smart Security
+                  - text: for Every Home
+            - listitem [ref=e2387]
+            - listitem [ref=e2388]:
+              - link "Neighbors App Real-Time Crime & Safety Alerts" [ref=e2389] [cursor=pointer]:
+                - /url: https://shop.ring.com/pages/neighbors-app
+                - heading "Neighbors App" [level=5] [ref=e2390]
+                - generic [ref=e2391]:
+                  - text: Real-Time Crime
+                  - text: "& Safety Alerts"
+            - listitem [ref=e2392]
+            - listitem [ref=e2393]:
+              - link "PillPack Pharmacy Simplified" [ref=e2394] [cursor=pointer]:
+                - /url: https://www.pillpack.com
+                - heading "PillPack" [level=5] [ref=e2395]
+                - generic [ref=e2396]: Pharmacy Simplified
+            - listitem [ref=e2397]
+            - listitem [ref=e2398]
+            - listitem [ref=e2399]
+            - listitem [ref=e2400]
+      - generic [ref=e2401]:
+        - list [ref=e2402]:
+          - listitem [ref=e2403]:
+            - link "Conditions of Use" [ref=e2404] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=508088&ref_=footer_cou
+          - listitem [ref=e2405]:
+            - link "Privacy Notice" [ref=e2406] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ&ref_=footer_privacy
+          - listitem [ref=e2407]:
+            - link "Consumer Health Data Privacy Disclosure" [ref=e2408] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?ie=UTF8&nodeId=TnACMrGVghHocjL8KB&ref_=footer_consumer_health_data_privacy
+          - listitem [ref=e2409]:
+            - link "Your Ads Privacy Choices" [ref=e2410] [cursor=pointer]:
+              - /url: /privacyprefs?ref_=footer_iba
+          - listitem [ref=e2411]
+        - generic [ref=e2413]: © 1996-2026, Amazon.com, Inc. or its affiliates
+    - iframe [ref=e2415]:
+      - iframe [ref=f2e2]:
+        - generic [active] [ref=f3e1]:
+          - img [ref=f3e2]
+          - img [ref=f3e3]
+          - img [ref=f3e4]
+          - img [ref=f3e5]
+          - img [ref=f3e6]
+          - img [ref=f3e7]
+          - img [ref=f3e8]
+          - img [ref=f3e9]
+          - img [ref=f3e10]
+          - img [ref=f3e11]
+          - img [ref=f3e12]
+          - img [ref=f3e13]
+          - img [ref=f3e14]
+          - img [ref=f3e15]
+          - img [ref=f3e16]
+          - img [ref=f3e17]
+          - img [ref=f3e18]
+          - img [ref=f3e19]
+          - img [ref=f3e20]
+          - img [ref=f3e21]
+          - img [ref=f3e22]
+          - img [ref=f3e23]
+          - img [ref=f3e24]
+          - img [ref=f3e25]
+          - img [ref=f3e26]
+          - img [ref=f3e27]
+          - img [ref=f3e28]
+          - img [ref=f3e29]
+          - img [ref=f3e30]
+          - img [ref=f3e31]
+          - img [ref=f3e32]
+          - img [ref=f3e33]
+          - img [ref=f3e34]
+          - img [ref=f3e35]
+          - img [ref=f3e36]
+          - img [ref=f3e37]
+          - img [ref=f3e38]
+          - img [ref=f3e39]
+          - img [ref=f3e40]
+          - img [ref=f3e41]
+          - img [ref=f3e42]
+          - img [ref=f3e43]
+          - img [ref=f3e44]
+  - generic: "Test: amzn-nv-flyout-healthy-choice"
+  - generic: "Test: nav-rufus-disc-txt"
+  - generic: "Test: a-truncate-cut"
+  - generic: "Test: sp-cc-wrapper"
+  - generic: "Test: .mo-wp"
+  - generic: "Test: .a-image-container"
+  - generic: "Test: sp-cc"
+  - generic: "Test: .amzn-box-inner"
+  - generic: "Test: .js-order-card"
+  - generic: "Test: pldn-deep-link"
+  - generic: "Test: add-to-cart-btn"
+  - generic: "Test: amzn-nav-app-banner-container"
+  - generic: "Test: .sparkle-container"
+```
+
+# Test source
+
+```ts
+  1  | import { Locator, Page } from "@playwright/test";
+  2  | 
+  3  | export class AmazonSearchPage {
+  4  |     readonly firstProduct: Locator;
+  5  | 
+  6  |     constructor(page: Page) {
+  7  |         this.firstProduct = page.locator('.s-result-item h2 a').first();
+  8  |     }
+  9  | 
+  10 |     async selectFirstProduct() {
+> 11 |         await this.firstProduct.click();
+     |                                 ^ Error: locator.click: Test timeout of 30000ms exceeded.
+  12 |     }
+  13 | }
+```
