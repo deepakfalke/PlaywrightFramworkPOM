@@ -21,7 +21,7 @@ const Excelpath=XLSX.readFile("./Data/ExcelData.xlsx")
 const sheetname=Excelpath.SheetNames[0] // read the sheet name
 const Exceldata: ExcelRow[] = XLSX.utils.sheet_to_json(Excelpath.Sheets[sheetname]) // convert excel data to json format  
 
- 
+
 
 
 
