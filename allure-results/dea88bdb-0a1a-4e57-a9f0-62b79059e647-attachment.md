@@ -1,0 +1,1407 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Assertions.spec.ts >> Verify page Open login
+- Location: tests\Assertions.spec.ts:3:6
+
+# Error details
+
+```
+Error: expect(locator).toBeDisabled() failed
+
+Locator:  getByRole('textbox', { name: 'Search for Products, Brands and More' })
+Expected: disabled
+Received: enabled
+Timeout:  5000ms
+
+Call log:
+  - Expect "soft toBeDisabled" with timeout 5000ms
+  - waiting for getByRole('textbox', { name: 'Search for Products, Brands and More' })
+    8 × locator resolved to <input name="q" value="" type="text" autocomplete="off" class="nw1UBF v1zwn25" title="Search for Products, Brands and More" placeholder="Search for Products, Brands and More"/>
+      - unexpected value "enabled"
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - link "Flipkart" [ref=e10] [cursor=pointer]:
+        - /url: /
+        - img "Flipkart" [ref=e11]
+      - link "Explore Plus" [ref=e12] [cursor=pointer]:
+        - /url: /plus
+        - text: Explore Plus
+        - img [ref=e13]
+    - generic [ref=e16]:
+      - textbox "Search for products, brands and more" [ref=e18]: Mobile
+      - button [ref=e19] [cursor=pointer]:
+        - img [ref=e20]
+    - link "Login" [ref=e28] [cursor=pointer]:
+      - /url: /account/login?ret=/search%3Fq%3DMobile%26otracker%3Dsearch%26otracker1%3Dsearch%26marketplace%3DFLIPKART%26as-show%3Doff%26as%3Doff
+    - link "Become a Seller" [ref=e30] [cursor=pointer]:
+      - /url: https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect
+      - generic [ref=e31]: Become a Seller
+    - generic [ref=e33] [cursor=pointer]:
+      - generic [ref=e36]: More
+      - img [ref=e37]
+    - link "Cart" [ref=e42] [cursor=pointer]:
+      - /url: /viewcart?exploreMode=true&preference=FLIPKART
+      - img [ref=e43]
+      - generic [ref=e45]: Cart
+  - generic [ref=e49]:
+    - generic [ref=e50]:
+      - generic [ref=e52]:
+        - generic [ref=e54]:
+          - generic [ref=e57]: Filters
+          - generic [ref=e59]:
+            - generic [ref=e60]: CATEGORIES
+            - generic [ref=e62]:
+              - img [ref=e64] [cursor=pointer]
+              - link "Mobiles & Accessories" [ref=e66] [cursor=pointer]:
+                - /url: /mobiles-accessories/pr?sid=tyy&q=Mobile&otracker=categorytree
+            - generic [ref=e68]:
+              - img [ref=e70] [cursor=pointer]
+              - link "Mobiles" [ref=e72] [cursor=pointer]:
+                - /url: /mobiles/pr?sid=tyy,4io&q=Mobile&otracker=categorytree
+          - generic [ref=e73]:
+            - generic [ref=e74] [cursor=pointer]:
+              - generic [ref=e75]: Brand
+              - img [ref=e76]
+            - generic [ref=e78]:
+              - generic [ref=e79]:
+                - generic [ref=e80]:
+                  - img [ref=e81]
+                  - textbox "Search Brand" [ref=e85]
+                - generic "Apple" [ref=e86] [cursor=pointer]:
+                  - generic [ref=e90]: Apple
+                - generic "Google" [ref=e91] [cursor=pointer]:
+                  - generic [ref=e95]: Google
+                - generic "MOTOROLA" [ref=e96] [cursor=pointer]:
+                  - generic [ref=e100]: MOTOROLA
+                - generic "vivo" [ref=e101] [cursor=pointer]:
+                  - generic [ref=e105]: vivo
+                - generic "OPPO" [ref=e106] [cursor=pointer]:
+                  - generic [ref=e110]: OPPO
+                - generic "Infinix" [ref=e111] [cursor=pointer]:
+                  - generic [ref=e115]: Infinix
+              - generic [ref=e116] [cursor=pointer]: 132 MORE
+          - generic [ref=e117]:
+            - generic [ref=e118] [cursor=pointer]:
+              - generic [ref=e119]: Ram
+              - img [ref=e120]
+            - generic [ref=e123]:
+              - generic "1 GB and Below" [ref=e124] [cursor=pointer]:
+                - generic [ref=e128]: 1 GB and Below
+              - generic "1GB and Below" [ref=e129] [cursor=pointer]:
+                - generic [ref=e133]: 1GB and Below
+              - generic "2 GB" [ref=e134] [cursor=pointer]:
+                - generic [ref=e138]: 2 GB
+              - generic "3 GB" [ref=e139] [cursor=pointer]:
+                - generic [ref=e143]: 3 GB
+              - generic "4 GB" [ref=e144] [cursor=pointer]:
+                - generic [ref=e148]: 4 GB
+              - generic "6 GB" [ref=e149] [cursor=pointer]:
+                - generic [ref=e153]: 6 GB
+              - generic "8 GB and Above" [ref=e154] [cursor=pointer]:
+                - generic [ref=e158]: 8 GB and Above
+          - generic [ref=e160] [cursor=pointer]:
+            - generic [ref=e161]: Network Type
+            - img [ref=e162]
+          - generic [ref=e165] [cursor=pointer]:
+            - generic [ref=e166]: Internal Storage
+            - img [ref=e167]
+          - generic [ref=e169]:
+            - generic [ref=e171]: Price
+            - generic [ref=e182]:
+              - generic [ref=e183]: .
+              - generic [ref=e184]: .
+              - generic [ref=e185]: .
+              - generic [ref=e186]: .
+              - generic [ref=e187]: .
+              - generic: .
+            - generic [ref=e188]:
+              - combobox [ref=e190]:
+                - option "Min" [selected]
+                - option "₹10000"
+                - option "₹15000"
+                - option "₹20000"
+                - option "₹30000"
+              - generic [ref=e191]: to
+              - combobox [ref=e193]:
+                - option "₹10000"
+                - option "₹15000"
+                - option "₹20000"
+                - option "₹30000"
+                - option "₹30000+" [selected]
+          - generic [ref=e195] [cursor=pointer]:
+            - generic [ref=e196]: Processor Brand
+            - img [ref=e197]
+          - generic [ref=e200] [cursor=pointer]:
+            - generic [ref=e201]: Battery Capacity
+            - img [ref=e202]
+          - generic [ref=e205] [cursor=pointer]:
+            - generic [ref=e206]: Speciality
+            - img [ref=e207]
+          - generic [ref=e210] [cursor=pointer]:
+            - generic [ref=e211]: Resolution Type
+            - img [ref=e212]
+          - generic [ref=e215] [cursor=pointer]:
+            - generic [ref=e216]: Operating System
+            - img [ref=e217]
+          - generic [ref=e220] [cursor=pointer]:
+            - generic [ref=e221]: Clock Speed
+            - img [ref=e222]
+          - generic [ref=e225] [cursor=pointer]:
+            - generic [ref=e226]: Type
+            - img [ref=e227]
+          - generic [ref=e230] [cursor=pointer]:
+            - generic [ref=e231]: Screen Size
+            - img [ref=e232]
+          - generic [ref=e235] [cursor=pointer]:
+            - generic [ref=e236]: Primary Camera
+            - img [ref=e237]
+          - generic [ref=e240] [cursor=pointer]:
+            - generic [ref=e241]: Sim Type
+            - img [ref=e242]
+          - generic [ref=e245] [cursor=pointer]:
+            - generic [ref=e246]: Customer Ratings
+            - img [ref=e247]
+          - generic [ref=e249]:
+            - generic [ref=e250] [cursor=pointer]:
+              - generic [ref=e251]: Discount
+              - img [ref=e252]
+            - generic [ref=e255]:
+              - generic "50% or more" [ref=e256] [cursor=pointer]:
+                - generic [ref=e260]: 50% or more
+              - generic "40% or more" [ref=e261] [cursor=pointer]:
+                - generic [ref=e265]: 40% or more
+              - generic "30% or more" [ref=e266] [cursor=pointer]:
+                - generic [ref=e270]: 30% or more
+              - generic "20% or more" [ref=e271] [cursor=pointer]:
+                - generic [ref=e275]: 20% or more
+              - generic "10% or more" [ref=e276] [cursor=pointer]:
+                - generic [ref=e280]: 10% or more
+          - generic [ref=e282] [cursor=pointer]:
+            - generic [ref=e283]: Secondary Camera
+            - img [ref=e284]
+          - generic [ref=e287] [cursor=pointer]:
+            - generic [ref=e288]: Number of Cores
+            - img [ref=e289]
+          - generic [ref=e291]:
+            - img [ref=e296] [cursor=pointer]
+            - generic [ref=e298] [cursor=pointer]: "?"
+          - generic [ref=e300] [cursor=pointer]:
+            - generic [ref=e301]: Operating System Version Name
+            - img [ref=e302]
+          - generic [ref=e305] [cursor=pointer]:
+            - generic [ref=e306]: Features
+            - img [ref=e307]
+          - generic [ref=e309]:
+            - generic [ref=e310] [cursor=pointer]:
+              - generic [ref=e311]: Offers
+              - img [ref=e312]
+            - generic [ref=e315]:
+              - generic "Buy More, Save More" [ref=e316] [cursor=pointer]:
+                - generic [ref=e320]: Buy More, Save More
+              - generic "Special Price" [ref=e321] [cursor=pointer]:
+                - generic [ref=e325]: Special Price
+          - generic [ref=e327] [cursor=pointer]:
+            - generic [ref=e328]: Availability
+            - img [ref=e329]
+          - generic [ref=e332] [cursor=pointer]:
+            - generic [ref=e333]: GST Invoice Available
+            - img [ref=e334]
+        - link "Need help? Help me decide Buying Guide" [ref=e337] [cursor=pointer]:
+          - /url: /buying-guide/mobiles?sid=tyy,4io&otracker=bg_from_browse_lhs
+          - generic [ref=e338]: Need help?
+          - generic [ref=e339]:
+            - text: Help me decide
+            - img [ref=e340]
+          - img "Buying Guide" [ref=e342]
+      - generic [ref=e343]:
+        - generic [ref=e346]:
+          - generic [ref=e347]:
+            - generic [ref=e348]:
+              - link "Home" [ref=e349] [cursor=pointer]:
+                - /url: /
+              - img [ref=e350]
+            - generic [ref=e352]:
+              - link "Mobiles & Accessories" [ref=e353] [cursor=pointer]:
+                - /url: /mobiles-accessories/pr?sid=tyy&marketplace=FLIPKART
+              - img [ref=e354]
+            - link "Mobiles" [ref=e357] [cursor=pointer]:
+              - /url: /mobiles/pr?sid=tyy,4io&marketplace=FLIPKART
+          - generic [ref=e358]: Showing 1 – 24 of 9,033 results for "Mobile"
+          - generic [ref=e359]:
+            - generic [ref=e360]: Sort By
+            - generic [ref=e361]: Relevance
+            - generic [ref=e362] [cursor=pointer]: Popularity
+            - generic [ref=e363] [cursor=pointer]: Price -- Low to High
+            - generic [ref=e364] [cursor=pointer]: Price -- High to Low
+            - generic [ref=e365] [cursor=pointer]: Newest First
+        - link "Vivo T4 Lite 5G (Titanium Gold 2026) (4GB 128GB) Add to Compare Vivo T4 Lite 5G (Titanium Gold 2026) (4GB 128GB) 4.3 35,480 Ratings & 1,287 Reviews • 4 GB RAM | 128 GB ROM | Expandable Upto 2 TB • 17.12 cm (6.74 inch) HD+ Display • 50MP + 2MP | 5MP Front Camera • 6000 mAh Battery • Dimensity 6300 5G Processor • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories ₹13,999 ₹28,999 51% off Bank Offer" [ref=e370] [cursor=pointer]:
+          - /url: /vivo-t4-lite-5g-titanium-gold-2026-4gb-128gb/p/itm49fb53d099f3c?pid=MOBHNCRKN8ZBGAJR&lid=LSTMOBHNCRKN8ZBGAJRBI6C1Z&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBHNCRKN8ZBGAJR.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e371]:
+            - img "Vivo T4 Lite 5G (Titanium Gold 2026) (4GB 128GB)" [ref=e375]
+            - generic [ref=e381]: Add to Compare
+            - img [ref=e384]
+          - generic [ref=e386]:
+            - generic [ref=e387]:
+              - generic [ref=e388]: Vivo T4 Lite 5G (Titanium Gold 2026) (4GB 128GB)
+              - generic [ref=e389]:
+                - generic [ref=e391]:
+                  - text: "4.3"
+                  - img [ref=e392]
+                - generic [ref=e394]: 35,480 Ratings & 1,287 Reviews
+              - list [ref=e396]:
+                - listitem [ref=e397]: • 4 GB RAM | 128 GB ROM | Expandable Upto 2 TB
+                - listitem [ref=e398]: • 17.12 cm (6.74 inch) HD+ Display
+                - listitem [ref=e399]: • 50MP + 2MP | 5MP Front Camera
+                - listitem [ref=e400]: • 6000 mAh Battery
+                - listitem [ref=e401]: • Dimensity 6300 5G Processor
+                - listitem [ref=e402]: • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories
+            - generic [ref=e403]:
+              - generic [ref=e405]:
+                - generic [ref=e406]: ₹13,999
+                - generic [ref=e407]: ₹28,999
+                - generic [ref=e408]: 51% off
+              - img [ref=e410]
+              - generic [ref=e413]: Bank Offer
+        - link "Vivo T4 Lite 5G (Prism Blue 2026) ( 4GB 64GB) Add to Compare Vivo T4 Lite 5G (Prism Blue 2026) ( 4GB 64GB) 4.3 35,480 Ratings & 1,287 Reviews • 4 GB RAM | 64 GB ROM | Expandable Upto 2 TB • 17.12 cm (6.74 inch) HD+ Display • 50MP + 2MP | 5MP Front Camera • 6000 mAh Battery • Dimensity 6300 5G Processor • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories ₹12,999 ₹27,999 53% off Bank Offer" [ref=e418] [cursor=pointer]:
+          - /url: /vivo-t4-lite-5g-prism-blue-2026-4gb-64gb/p/itm49fb53d099f3c?pid=MOBHNCRKA4XQFSRM&lid=LSTMOBHNCRKA4XQFSRM3HV9XJ&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBHNCRKA4XQFSRM.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e419]:
+            - img "Vivo T4 Lite 5G (Prism Blue 2026) ( 4GB 64GB)" [ref=e423]
+            - generic [ref=e429]: Add to Compare
+            - img [ref=e432]
+          - generic [ref=e434]:
+            - generic [ref=e435]:
+              - generic [ref=e436]: Vivo T4 Lite 5G (Prism Blue 2026) ( 4GB 64GB)
+              - generic [ref=e437]:
+                - generic [ref=e439]:
+                  - text: "4.3"
+                  - img [ref=e440]
+                - generic [ref=e442]: 35,480 Ratings & 1,287 Reviews
+              - list [ref=e444]:
+                - listitem [ref=e445]: • 4 GB RAM | 64 GB ROM | Expandable Upto 2 TB
+                - listitem [ref=e446]: • 17.12 cm (6.74 inch) HD+ Display
+                - listitem [ref=e447]: • 50MP + 2MP | 5MP Front Camera
+                - listitem [ref=e448]: • 6000 mAh Battery
+                - listitem [ref=e449]: • Dimensity 6300 5G Processor
+                - listitem [ref=e450]: • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories
+            - generic [ref=e451]:
+              - generic [ref=e453]:
+                - generic [ref=e454]: ₹12,999
+                - generic [ref=e455]: ₹27,999
+                - generic [ref=e456]: 53% off
+              - img [ref=e458]
+              - generic [ref=e461]: Bank Offer
+        - link "IQOO Z11x 5G (Titan Black, 128 GB) Add to Compare IQOO Z11x 5G (Titan Black, 128 GB) 4.3 519 Ratings & 44 Reviews • 6 GB RAM | 128 GB ROM • 17.02 cm (6.7 inch) Display • 50MP Rear Camera • 7200 mAh Battery • 12 Months Brand Warranty ₹22,333 ₹28,999 22% off Only few left Upto ₹15,750 Off on Exchange" [ref=e466] [cursor=pointer]:
+          - /url: /iqoo-z11x-5g-titan-black-128-gb/p/itm8157cfb5645d4?pid=MOBHHHBT766ZBUSF&lid=LSTMOBHHHBT766ZBUSFGWL7MM&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_3&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBHHHBT766ZBUSF.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e467]:
+            - img "IQOO Z11x 5G (Titan Black, 128 GB)" [ref=e471]
+            - generic [ref=e477]: Add to Compare
+            - img [ref=e480]
+          - generic [ref=e482]:
+            - generic [ref=e483]:
+              - generic [ref=e484]: IQOO Z11x 5G (Titan Black, 128 GB)
+              - generic [ref=e485]:
+                - generic [ref=e487]:
+                  - text: "4.3"
+                  - img [ref=e488]
+                - generic [ref=e490]: 519 Ratings & 44 Reviews
+              - list [ref=e492]:
+                - listitem [ref=e493]: • 6 GB RAM | 128 GB ROM
+                - listitem [ref=e494]: • 17.02 cm (6.7 inch) Display
+                - listitem [ref=e495]: • 50MP Rear Camera
+                - listitem [ref=e496]: • 7200 mAh Battery
+                - listitem [ref=e497]: • 12 Months Brand Warranty
+            - generic [ref=e498]:
+              - generic [ref=e500]:
+                - generic [ref=e501]: ₹22,333
+                - generic [ref=e502]: ₹28,999
+                - generic [ref=e503]: 22% off
+              - img [ref=e505]
+              - generic [ref=e508]: Only few left
+              - generic [ref=e510]:
+                - generic [ref=e511]: Upto
+                - generic [ref=e512]: ₹15,750
+                - generic [ref=e513]: Off on Exchange
+        - link "IQOO Z11x 5G (Prismatic Green, 128 GB) Add to Compare IQOO Z11x 5G (Prismatic Green, 128 GB) 4.3 519 Ratings & 44 Reviews • 6 GB RAM | 128 GB ROM • 17.02 cm (6.7 inch) Display • 50MP Rear Camera • 7200 mAh Battery • 12 Months Brand Warranty ₹21,750 ₹28,999 24% off Only 1 left Upto ₹15,450 Off on Exchange" [ref=e518] [cursor=pointer]:
+          - /url: /iqoo-z11x-5g-prismatic-green-128-gb/p/itm8157cfb5645d4?pid=MOBHHHBTCWXSUNG5&lid=LSTMOBHHHBTCWXSUNG5TW8KCJ&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_4&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBHHHBTCWXSUNG5.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e519]:
+            - img "IQOO Z11x 5G (Prismatic Green, 128 GB)" [ref=e523]
+            - generic [ref=e529]: Add to Compare
+            - img [ref=e532]
+          - generic [ref=e534]:
+            - generic [ref=e535]:
+              - generic [ref=e536]: IQOO Z11x 5G (Prismatic Green, 128 GB)
+              - generic [ref=e537]:
+                - generic [ref=e539]:
+                  - text: "4.3"
+                  - img [ref=e540]
+                - generic [ref=e542]: 519 Ratings & 44 Reviews
+              - list [ref=e544]:
+                - listitem [ref=e545]: • 6 GB RAM | 128 GB ROM
+                - listitem [ref=e546]: • 17.02 cm (6.7 inch) Display
+                - listitem [ref=e547]: • 50MP Rear Camera
+                - listitem [ref=e548]: • 7200 mAh Battery
+                - listitem [ref=e549]: • 12 Months Brand Warranty
+            - generic [ref=e550]:
+              - generic [ref=e552]:
+                - generic [ref=e553]: ₹21,750
+                - generic [ref=e554]: ₹28,999
+                - generic [ref=e555]: 24% off
+              - img [ref=e557]
+              - generic [ref=e560]: Only 1 left
+              - generic [ref=e562]:
+                - generic [ref=e563]: Upto
+                - generic [ref=e564]: ₹15,450
+                - generic [ref=e565]: Off on Exchange
+        - link "POCO C81x (Ice Blue, 64 GB) Add to Compare POCO C81x (Ice Blue, 64 GB) 3.9 85 Ratings & 5 Reviews • 3 GB RAM | 64 GB ROM | Expandable Upto 2 TB • 17.48 cm (6.88 inch) Display • 13MP Rear Camera | 8MP Front Camera • 5200 mAh Lithium-Ion Polymer Battery • T7250 Processor • 1 Year Manufacturer Warranty for Phone and 6 Months Warranty for In the Box Accessories ₹9,999 ₹18,999 47% off Upto ₹6,650 Off on Exchange Bank Offer" [ref=e570] [cursor=pointer]:
+          - /url: /poco-c81x-ice-blue-64-gb/p/itmf2e3aacd5257e?pid=MOBHMYWRWPE4S8G6&lid=LSTMOBHMYWRWPE4S8G6INAADH&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_5&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBHMYWRWPE4S8G6.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e571]:
+            - img "POCO C81x (Ice Blue, 64 GB)" [ref=e575]
+            - generic [ref=e581]: Add to Compare
+            - img [ref=e584]
+          - generic [ref=e586]:
+            - generic [ref=e587]:
+              - generic [ref=e588]: POCO C81x (Ice Blue, 64 GB)
+              - generic [ref=e589]:
+                - generic [ref=e591]:
+                  - text: "3.9"
+                  - img [ref=e592]
+                - generic [ref=e594]: 85 Ratings & 5 Reviews
+              - list [ref=e596]:
+                - listitem [ref=e597]: • 3 GB RAM | 64 GB ROM | Expandable Upto 2 TB
+                - listitem [ref=e598]: • 17.48 cm (6.88 inch) Display
+                - listitem [ref=e599]: • 13MP Rear Camera | 8MP Front Camera
+                - listitem [ref=e600]: • 5200 mAh Lithium-Ion Polymer Battery
+                - listitem [ref=e601]: • T7250 Processor
+                - listitem [ref=e602]: • 1 Year Manufacturer Warranty for Phone and 6 Months Warranty for In the Box Accessories
+            - generic [ref=e603]:
+              - generic [ref=e605]:
+                - generic [ref=e606]: ₹9,999
+                - generic [ref=e607]: ₹18,999
+                - generic [ref=e608]: 47% off
+              - img [ref=e610]
+              - generic [ref=e612]:
+                - generic [ref=e613]: Upto
+                - generic [ref=e614]: ₹6,650
+                - generic [ref=e615]: Off on Exchange
+              - generic [ref=e618]: Bank Offer
+        - link "IQOO Z11x 5G (Prismatic Green, 128 GB) Add to Compare IQOO Z11x 5G (Prismatic Green, 128 GB) 4.4 774 Ratings & 72 Reviews • 8 GB RAM | 128 GB ROM • 17.02 cm (6.7 inch) Display • 50MP Rear Camera • 7200 mAh Battery • 12 Months Brand Warranty ₹23,194 ₹30,999 25% off Only few left Upto ₹16,400 Off on Exchange" [ref=e623] [cursor=pointer]:
+          - /url: /iqoo-z11x-5g-prismatic-green-128-gb/p/itm8157cfb5645d4?pid=MOBHHHBTGHWHZZWN&lid=LSTMOBHHHBTGHWHZZWNE0HDRK&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_6&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBHHHBTGHWHZZWN.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e624]:
+            - img "IQOO Z11x 5G (Prismatic Green, 128 GB)" [ref=e628]
+            - generic [ref=e634]: Add to Compare
+            - img [ref=e637]
+          - generic [ref=e639]:
+            - generic [ref=e640]:
+              - generic [ref=e641]: IQOO Z11x 5G (Prismatic Green, 128 GB)
+              - generic [ref=e642]:
+                - generic [ref=e644]:
+                  - text: "4.4"
+                  - img [ref=e645]
+                - generic [ref=e647]: 774 Ratings & 72 Reviews
+              - list [ref=e649]:
+                - listitem [ref=e650]: • 8 GB RAM | 128 GB ROM
+                - listitem [ref=e651]: • 17.02 cm (6.7 inch) Display
+                - listitem [ref=e652]: • 50MP Rear Camera
+                - listitem [ref=e653]: • 7200 mAh Battery
+                - listitem [ref=e654]: • 12 Months Brand Warranty
+            - generic [ref=e655]:
+              - generic [ref=e657]:
+                - generic [ref=e658]: ₹23,194
+                - generic [ref=e659]: ₹30,999
+                - generic [ref=e660]: 25% off
+              - img [ref=e662]
+              - generic [ref=e665]: Only few left
+              - generic [ref=e667]:
+                - generic [ref=e668]: Upto
+                - generic [ref=e669]: ₹16,400
+                - generic [ref=e670]: Off on Exchange
+        - link "Vivo T4 Lite 5G (Titanium Gold 2026) (4GB 64GB) Add to Compare Vivo T4 Lite 5G (Titanium Gold 2026) (4GB 64GB) 4.3 35,480 Ratings & 1,287 Reviews • 4 GB RAM | 64 GB ROM | Expandable Upto 2 TB • 17.12 cm (6.74 inch) HD+ Display • 50MP + 2MP | 5MP Front Camera • 6000 mAh Battery • Dimensity 6300 5G Processor • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories ₹12,999 ₹27,999 53% off Bank Offer" [ref=e675] [cursor=pointer]:
+          - /url: /vivo-t4-lite-5g-titanium-gold-2026-4gb-64gb/p/itm49fb53d099f3c?pid=MOBHNCRK44PF7QEN&lid=LSTMOBHNCRK44PF7QENJQHGI9&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&spotlightTagId=default_TrendingId_tyy%2F4io&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBHNCRK44PF7QEN.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e676]:
+            - img "Vivo T4 Lite 5G (Titanium Gold 2026) (4GB 64GB)" [ref=e680]
+            - generic [ref=e686]: Add to Compare
+            - img [ref=e689]
+          - generic [ref=e691]:
+            - generic [ref=e692]:
+              - generic [ref=e693]: Vivo T4 Lite 5G (Titanium Gold 2026) (4GB 64GB)
+              - generic [ref=e694]:
+                - generic [ref=e696]:
+                  - text: "4.3"
+                  - img [ref=e697]
+                - generic [ref=e699]: 35,480 Ratings & 1,287 Reviews
+              - list [ref=e701]:
+                - listitem [ref=e702]: • 4 GB RAM | 64 GB ROM | Expandable Upto 2 TB
+                - listitem [ref=e703]: • 17.12 cm (6.74 inch) HD+ Display
+                - listitem [ref=e704]: • 50MP + 2MP | 5MP Front Camera
+                - listitem [ref=e705]: • 6000 mAh Battery
+                - listitem [ref=e706]: • Dimensity 6300 5G Processor
+                - listitem [ref=e707]: • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories
+            - generic [ref=e708]:
+              - generic [ref=e710]:
+                - generic [ref=e711]: ₹12,999
+                - generic [ref=e712]: ₹27,999
+                - generic [ref=e713]: 53% off
+              - img [ref=e715]
+              - generic [ref=e718]: Bank Offer
+        - link "realme P4 Lite (Beach Gold, 128 GB) Add to Compare realme P4 Lite (Beach Gold, 128 GB) 4.1 2,461 Ratings & 142 Reviews • 4 GB RAM | 128 GB ROM • 17.14 cm (6.75 inch) HD+ Display • 13MP Rear Camera | 5MP Front Camera • 6300 mAh Battery • T7250 Processor • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories ₹13,999 Upto ₹9,700 Off on Exchange Bank Offer" [ref=e723] [cursor=pointer]:
+          - /url: /realme-p4-lite-beach-gold-128-gb/p/itm534024e2339ef?pid=MOBHK685K37ZCSPU&lid=LSTMOBHK685K37ZCSPUTZ3SXB&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBHK685K37ZCSPU.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e724]:
+            - img "realme P4 Lite (Beach Gold, 128 GB)" [ref=e728]
+            - generic [ref=e734]: Add to Compare
+            - img [ref=e737]
+          - generic [ref=e739]:
+            - generic [ref=e740]:
+              - generic [ref=e741]: realme P4 Lite (Beach Gold, 128 GB)
+              - generic [ref=e742]:
+                - generic [ref=e744]:
+                  - text: "4.1"
+                  - img [ref=e745]
+                - generic [ref=e747]: 2,461 Ratings & 142 Reviews
+              - list [ref=e749]:
+                - listitem [ref=e750]: • 4 GB RAM | 128 GB ROM
+                - listitem [ref=e751]: • 17.14 cm (6.75 inch) HD+ Display
+                - listitem [ref=e752]: • 13MP Rear Camera | 5MP Front Camera
+                - listitem [ref=e753]: • 6300 mAh Battery
+                - listitem [ref=e754]: • T7250 Processor
+                - listitem [ref=e755]: • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories
+            - generic [ref=e756]:
+              - generic [ref=e759]: ₹13,999
+              - img [ref=e761]
+              - generic [ref=e763]:
+                - generic [ref=e764]: Upto
+                - generic [ref=e765]: ₹9,700
+                - generic [ref=e766]: Off on Exchange
+              - generic [ref=e769]: Bank Offer
+        - link "realme P4x 5G (Matte Silver, 256 GB) Add to Compare realme P4x 5G (Matte Silver, 256 GB) 4.3 5,428 Ratings & 418 Reviews • 8 GB RAM | 256 GB ROM • 17.07 cm (6.72 inch) Full HD+ Display • 50MP + 2MP | 8MP Front Camera • 7000 mAh Battery • Dimensity 7400 Ultra Processor • 1 Year Manufacturer Warranty for Phone and 6 Months Warranty for In-Box Accessories ₹20,999 Upto ₹14,500 Off on Exchange Bank Offer" [ref=e774] [cursor=pointer]:
+          - /url: /realme-p4x-5g-matte-silver-256-gb/p/itm575b1540859e4?pid=MOBHHTPHKGSMJA3J&lid=LSTMOBHHTPHKGSMJA3JRPE7AF&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_9&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBHHTPHKGSMJA3J.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e775]:
+            - img "realme P4x 5G (Matte Silver, 256 GB)" [ref=e779]
+            - generic [ref=e785]: Add to Compare
+            - img [ref=e788]
+          - generic [ref=e790]:
+            - generic [ref=e791]:
+              - generic [ref=e792]: realme P4x 5G (Matte Silver, 256 GB)
+              - generic [ref=e793]:
+                - generic [ref=e795]:
+                  - text: "4.3"
+                  - img [ref=e796]
+                - generic [ref=e798]: 5,428 Ratings & 418 Reviews
+              - list [ref=e800]:
+                - listitem [ref=e801]: • 8 GB RAM | 256 GB ROM
+                - listitem [ref=e802]: • 17.07 cm (6.72 inch) Full HD+ Display
+                - listitem [ref=e803]: • 50MP + 2MP | 8MP Front Camera
+                - listitem [ref=e804]: • 7000 mAh Battery
+                - listitem [ref=e805]: • Dimensity 7400 Ultra Processor
+                - listitem [ref=e806]: • 1 Year Manufacturer Warranty for Phone and 6 Months Warranty for In-Box Accessories
+            - generic [ref=e807]:
+              - generic [ref=e810]: ₹20,999
+              - img [ref=e812]
+              - generic [ref=e814]:
+                - generic [ref=e815]: Upto
+                - generic [ref=e816]: ₹14,500
+                - generic [ref=e817]: Off on Exchange
+              - generic [ref=e820]: Bank Offer
+        - link "vivo X200T (Stellar Black, 256 GB) Add to Compare vivo X200T (Stellar Black, 256 GB) 4.6 3,954 Ratings & 777 Reviews • 12 GB RAM | 256 GB ROM • 16.94 cm (6.67 inch) Full HD+ AMOLED Display • 50MP + 50MP + 50MP | 32MP Front Camera • 6200 mAh Battery • Dimensity 9400+ Processor • 1 Year Warranty on Handset and 6 Months Warranty on Accessories ₹59,999 ₹79,999 25% off Upto ₹43,650 Off on Exchange Bank Offer" [ref=e825] [cursor=pointer]:
+          - /url: /vivo-x200t-stellar-black-256-gb/p/itm1b8452d68859b?pid=MOBHJK5MBRDS3GUQ&lid=LSTMOBHJK5MBRDS3GUQ96SN9X&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_10&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBHJK5MBRDS3GUQ.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e826]:
+            - img "vivo X200T (Stellar Black, 256 GB)" [ref=e830]
+            - generic [ref=e836]: Add to Compare
+            - img [ref=e839]
+          - generic [ref=e841]:
+            - generic [ref=e842]:
+              - generic [ref=e843]: vivo X200T (Stellar Black, 256 GB)
+              - generic [ref=e844]:
+                - generic [ref=e846]:
+                  - text: "4.6"
+                  - img [ref=e847]
+                - generic [ref=e849]: 3,954 Ratings & 777 Reviews
+              - list [ref=e851]:
+                - listitem [ref=e852]: • 12 GB RAM | 256 GB ROM
+                - listitem [ref=e853]: • 16.94 cm (6.67 inch) Full HD+ AMOLED Display
+                - listitem [ref=e854]: • 50MP + 50MP + 50MP | 32MP Front Camera
+                - listitem [ref=e855]: • 6200 mAh Battery
+                - listitem [ref=e856]: • Dimensity 9400+ Processor
+                - listitem [ref=e857]: • 1 Year Warranty on Handset and 6 Months Warranty on Accessories
+            - generic [ref=e858]:
+              - generic [ref=e860]:
+                - generic [ref=e861]: ₹59,999
+                - generic [ref=e862]: ₹79,999
+                - generic [ref=e863]: 25% off
+              - img [ref=e865]
+              - generic [ref=e867]:
+                - generic [ref=e868]: Upto
+                - generic [ref=e869]: ₹43,650
+                - generic [ref=e870]: Off on Exchange
+              - generic [ref=e873]: Bank Offer
+        - link "realme P4 Lite 5G (Mosaic Green, 64 GB) Add to Compare realme P4 Lite 5G (Mosaic Green, 64 GB) 4.3 4,871 Ratings & 299 Reviews • 4 GB RAM | 64 GB ROM • 17.27 cm (6.8 inches) HD+ Display • 13MP Rear Camera | 5MP Front Camera • 7000 mAh lithium-ion polymer Battery • Dimensity 6300 Processor • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories ₹14,999 ₹19,999 25% off Upto ₹10,350 Off on Exchange Bank Offer" [ref=e878] [cursor=pointer]:
+          - /url: /realme-p4-lite-5g-mosaic-green-64-gb/p/itm90c243961f214?pid=MOBHHFBUUUQNXRGX&lid=LSTMOBHHFBUUUQNXRGXKR3NYG&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_11&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBHHFBUUUQNXRGX.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e879]:
+            - img "realme P4 Lite 5G (Mosaic Green, 64 GB)" [ref=e883]
+            - generic [ref=e889]: Add to Compare
+            - img [ref=e892]
+          - generic [ref=e894]:
+            - generic [ref=e895]:
+              - generic [ref=e896]: realme P4 Lite 5G (Mosaic Green, 64 GB)
+              - generic [ref=e897]:
+                - generic [ref=e899]:
+                  - text: "4.3"
+                  - img [ref=e900]
+                - generic [ref=e902]: 4,871 Ratings & 299 Reviews
+              - list [ref=e904]:
+                - listitem [ref=e905]: • 4 GB RAM | 64 GB ROM
+                - listitem [ref=e906]: • 17.27 cm (6.8 inches) HD+ Display
+                - listitem [ref=e907]: • 13MP Rear Camera | 5MP Front Camera
+                - listitem [ref=e908]: • 7000 mAh lithium-ion polymer Battery
+                - listitem [ref=e909]: • Dimensity 6300 Processor
+                - listitem [ref=e910]: • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories
+            - generic [ref=e911]:
+              - generic [ref=e913]:
+                - generic [ref=e914]: ₹14,999
+                - generic [ref=e915]: ₹19,999
+                - generic [ref=e916]: 25% off
+              - img [ref=e918]
+              - generic [ref=e920]:
+                - generic [ref=e921]: Upto
+                - generic [ref=e922]: ₹10,350
+                - generic [ref=e923]: Off on Exchange
+              - generic [ref=e926]: Bank Offer
+        - link "HOTLINE 106 Add to Compare HOTLINE 106 3.4 1,255 Ratings & 65 Reviews • 32 MB RAM | 32 MB ROM • 4.5 cm (1.77 inch) Display • 1.3MP Rear Camera • 1000 mAh Battery • The Hotline Mobiles has 3 Months Manufacture’s Warranty & after Warranty period we would like to help our customers with the best possible service under low expenses ₹480 ₹999 51% off Only few left Bank Offer" [ref=e931] [cursor=pointer]:
+          - /url: /hotline-106/p/itmfbc1e145ac937?pid=MOBHF5ZNCUHPYRYZ&lid=LSTMOBHF5ZNCUHPYRYZ2YHISW&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_12&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBHF5ZNCUHPYRYZ.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e932]:
+            - img "HOTLINE 106" [ref=e936]
+            - generic [ref=e942]: Add to Compare
+            - img [ref=e945]
+          - generic [ref=e947]:
+            - generic [ref=e948]:
+              - generic [ref=e949]: HOTLINE 106
+              - generic [ref=e950]:
+                - generic [ref=e952]:
+                  - text: "3.4"
+                  - img [ref=e953]
+                - generic [ref=e955]: 1,255 Ratings & 65 Reviews
+              - list [ref=e957]:
+                - listitem [ref=e958]: • 32 MB RAM | 32 MB ROM
+                - listitem [ref=e959]: • 4.5 cm (1.77 inch) Display
+                - listitem [ref=e960]: • 1.3MP Rear Camera
+                - listitem [ref=e961]: • 1000 mAh Battery
+                - listitem [ref=e962]: • The Hotline Mobiles has 3 Months Manufacture’s Warranty & after Warranty period we would like to help our customers with the best possible service under low expenses
+            - generic [ref=e963]:
+              - generic [ref=e965]:
+                - generic [ref=e966]: ₹480
+                - generic [ref=e967]: ₹999
+                - generic [ref=e968]: 51% off
+              - generic [ref=e971]: Only few left
+              - generic [ref=e974]: Bank Offer
+        - link "IQOO Z11x 5G (Titan Black, 128 GB) Add to Compare IQOO Z11x 5G (Titan Black, 128 GB) 4.4 774 Ratings & 72 Reviews • 8 GB RAM | 128 GB ROM • 17.02 cm (6.7 inch) Display • 50MP Rear Camera • 7200 mAh Battery • 12 Months Brand Warranty ₹24,845 ₹30,999 19% off Only 2 left Upto ₹17,550 Off on Exchange" [ref=e979] [cursor=pointer]:
+          - /url: /iqoo-z11x-5g-titan-black-128-gb/p/itm8157cfb5645d4?pid=MOBHHHBTR7NAWRZV&lid=LSTMOBHHHBTR7NAWRZV7BLGNL&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_13&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBHHHBTR7NAWRZV.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e980]:
+            - img "IQOO Z11x 5G (Titan Black, 128 GB)" [ref=e984]
+            - generic [ref=e990]: Add to Compare
+            - img [ref=e993]
+          - generic [ref=e995]:
+            - generic [ref=e996]:
+              - generic [ref=e997]: IQOO Z11x 5G (Titan Black, 128 GB)
+              - generic [ref=e998]:
+                - generic [ref=e1000]:
+                  - text: "4.4"
+                  - img [ref=e1001]
+                - generic [ref=e1003]: 774 Ratings & 72 Reviews
+              - list [ref=e1005]:
+                - listitem [ref=e1006]: • 8 GB RAM | 128 GB ROM
+                - listitem [ref=e1007]: • 17.02 cm (6.7 inch) Display
+                - listitem [ref=e1008]: • 50MP Rear Camera
+                - listitem [ref=e1009]: • 7200 mAh Battery
+                - listitem [ref=e1010]: • 12 Months Brand Warranty
+            - generic [ref=e1011]:
+              - generic [ref=e1013]:
+                - generic [ref=e1014]: ₹24,845
+                - generic [ref=e1015]: ₹30,999
+                - generic [ref=e1016]: 19% off
+              - img [ref=e1018]
+              - generic [ref=e1021]: Only 2 left
+              - generic [ref=e1023]:
+                - generic [ref=e1024]: Upto
+                - generic [ref=e1025]: ₹17,550
+                - generic [ref=e1026]: Off on Exchange
+        - link "IQOO 15R 5G (Triumph Silver, 256 GB) Add to Compare IQOO 15R 5G (Triumph Silver, 256 GB) 4.6 122 Ratings & 17 Reviews • 8 GB RAM | 256 GB ROM • 16.74 cm (6.59 inch) Display • 50MP Rear Camera • 7600 mAh Battery • 12 Months Brand Warranty ₹47,380 ₹53,999 12% off Only 5 left Bank Offer" [ref=e1031] [cursor=pointer]:
+          - /url: /iqoo-15r-5g-triumph-silver-256-gb/p/itm7bc8aee18f590?pid=MOBHHY4ADUVBCEEY&lid=LSTMOBHHY4ADUVBCEEY8HPWUA&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_14&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBHHY4ADUVBCEEY.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e1032]:
+            - img "IQOO 15R 5G (Triumph Silver, 256 GB)" [ref=e1036]
+            - generic [ref=e1042]: Add to Compare
+            - img [ref=e1045]
+          - generic [ref=e1047]:
+            - generic [ref=e1048]:
+              - generic [ref=e1049]: IQOO 15R 5G (Triumph Silver, 256 GB)
+              - generic [ref=e1050]:
+                - generic [ref=e1052]:
+                  - text: "4.6"
+                  - img [ref=e1053]
+                - generic [ref=e1055]: 122 Ratings & 17 Reviews
+              - list [ref=e1057]:
+                - listitem [ref=e1058]: • 8 GB RAM | 256 GB ROM
+                - listitem [ref=e1059]: • 16.74 cm (6.59 inch) Display
+                - listitem [ref=e1060]: • 50MP Rear Camera
+                - listitem [ref=e1061]: • 7600 mAh Battery
+                - listitem [ref=e1062]: • 12 Months Brand Warranty
+            - generic [ref=e1063]:
+              - generic [ref=e1065]:
+                - generic [ref=e1066]: ₹47,380
+                - generic [ref=e1067]: ₹53,999
+                - generic [ref=e1068]: 12% off
+              - img [ref=e1070]
+              - generic [ref=e1073]: Only 5 left
+              - generic [ref=e1076]: Bank Offer
+        - link "Samsung M06 5G (Blazing Black, 128 GB) Add to Compare Samsung M06 5G (Blazing Black, 128 GB) 4.1 1,967 Ratings & 126 Reviews • 4 GB RAM | 128 GB ROM • 17.02 cm (6.7 inch) Display • 50MP Rear Camera • 5000 mAh Battery • 1 Year Manufacturer Warranty for Phone and 6 Months Warranty for In the Box Accessories ₹11,731 ₹15,499 24% off Only few left Bank Offer" [ref=e1081] [cursor=pointer]:
+          - /url: /samsung-m06-5g-blazing-black-128-gb/p/itmcafa42dadc15c?pid=MOBH9UYF4GZXGWW6&lid=LSTMOBH9UYF4GZXGWW6UCJUBN&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_15&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBH9UYF4GZXGWW6.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e1082]:
+            - img "Samsung M06 5G (Blazing Black, 128 GB)" [ref=e1086]
+            - generic [ref=e1092]: Add to Compare
+            - img [ref=e1095]
+          - generic [ref=e1097]:
+            - generic [ref=e1098]:
+              - generic [ref=e1099]: Samsung M06 5G (Blazing Black, 128 GB)
+              - generic [ref=e1100]:
+                - generic [ref=e1102]:
+                  - text: "4.1"
+                  - img [ref=e1103]
+                - generic [ref=e1105]: 1,967 Ratings & 126 Reviews
+              - list [ref=e1107]:
+                - listitem [ref=e1108]: • 4 GB RAM | 128 GB ROM
+                - listitem [ref=e1109]: • 17.02 cm (6.7 inch) Display
+                - listitem [ref=e1110]: • 50MP Rear Camera
+                - listitem [ref=e1111]: • 5000 mAh Battery
+                - listitem [ref=e1112]: • 1 Year Manufacturer Warranty for Phone and 6 Months Warranty for In the Box Accessories
+            - generic [ref=e1113]:
+              - generic [ref=e1115]:
+                - generic [ref=e1116]: ₹11,731
+                - generic [ref=e1117]: ₹15,499
+                - generic [ref=e1118]: 24% off
+              - img [ref=e1120]
+              - generic [ref=e1123]: Only few left
+              - generic [ref=e1126]: Bank Offer
+        - link "Nokia 105 Classic Single Sim Keypad Phone, Without Charger Add to Compare Nokia 105 Classic Single Sim Keypad Phone, Without Charger 4 16,496 Ratings & 719 Reviews • 32 MB RAM | 32 MB ROM • 4.5 cm (1.77 inch) Display • 0MP Front Camera • 800 mAh Battery • SC6531E Processor • 1 Month Company Domestic Warranty by Company Authorized Service Center. ₹1,054 ₹1,349 21% off Upto ₹300 Off on Exchange Bank Offer" [ref=e1131] [cursor=pointer]:
+          - /url: /nokia-105-classic-single-sim-keypad-phone-without-charger/p/itmfdb404ec1d0f4?pid=MOBGWZUWPTFTQZAH&lid=LSTMOBGWZUWPTFTQZAHSIXCDR&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_16&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBGWZUWPTFTQZAH.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e1132]:
+            - img "Nokia 105 Classic Single Sim Keypad Phone, Without Charger" [ref=e1136]
+            - generic [ref=e1142]: Add to Compare
+            - img [ref=e1145]
+          - generic [ref=e1147]:
+            - generic [ref=e1148]:
+              - generic [ref=e1149]: Nokia 105 Classic Single Sim Keypad Phone, Without Charger
+              - generic [ref=e1150]:
+                - generic [ref=e1152]:
+                  - text: "4"
+                  - img [ref=e1153]
+                - generic [ref=e1155]: 16,496 Ratings & 719 Reviews
+              - list [ref=e1157]:
+                - listitem [ref=e1158]: • 32 MB RAM | 32 MB ROM
+                - listitem [ref=e1159]: • 4.5 cm (1.77 inch) Display
+                - listitem [ref=e1160]: • 0MP Front Camera
+                - listitem [ref=e1161]: • 800 mAh Battery
+                - listitem [ref=e1162]: • SC6531E Processor
+                - listitem [ref=e1163]: • 1 Month Company Domestic Warranty by Company Authorized Service Center.
+            - generic [ref=e1164]:
+              - generic [ref=e1166]:
+                - generic [ref=e1167]: ₹1,054
+                - generic [ref=e1168]: ₹1,349
+                - generic [ref=e1169]: 21% off
+              - img [ref=e1171]
+              - generic [ref=e1173]:
+                - generic [ref=e1174]: Upto
+                - generic [ref=e1175]: ₹300
+                - generic [ref=e1176]: Off on Exchange
+              - generic [ref=e1179]: Bank Offer
+        - link "HOTLINE Power Add to Compare HOTLINE Power 3.9 453 Ratings & 25 Reviews • 32 MB RAM | 32 MB ROM • 4.57 cm (1.8 inch) Display • 0.3MP Rear Camera • 3000 mAh Battery • 3 Months Manufacturer warranty ₹599 ₹999 40% off Only few left Bank Offer" [ref=e1184] [cursor=pointer]:
+          - /url: /hotline-power/p/itm77b26ad80f365?pid=MOBHFCYZWZB7AD3W&lid=LSTMOBHFCYZWZB7AD3WZQD1XX&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_17&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBHFCYZWZB7AD3W.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e1185]:
+            - img "HOTLINE Power" [ref=e1189]
+            - generic [ref=e1195]: Add to Compare
+            - img [ref=e1198]
+          - generic [ref=e1200]:
+            - generic [ref=e1201]:
+              - generic [ref=e1202]: HOTLINE Power
+              - generic [ref=e1203]:
+                - generic [ref=e1205]:
+                  - text: "3.9"
+                  - img [ref=e1206]
+                - generic [ref=e1208]: 453 Ratings & 25 Reviews
+              - list [ref=e1210]:
+                - listitem [ref=e1211]: • 32 MB RAM | 32 MB ROM
+                - listitem [ref=e1212]: • 4.57 cm (1.8 inch) Display
+                - listitem [ref=e1213]: • 0.3MP Rear Camera
+                - listitem [ref=e1214]: • 3000 mAh Battery
+                - listitem [ref=e1215]: • 3 Months Manufacturer warranty
+            - generic [ref=e1216]:
+              - generic [ref=e1218]:
+                - generic [ref=e1219]: ₹599
+                - generic [ref=e1220]: ₹999
+                - generic [ref=e1221]: 40% off
+              - img [ref=e1223]
+              - generic [ref=e1226]: Only few left
+              - generic [ref=e1229]: Bank Offer
+        - link "POCO M7 Plus 5G (Aqua Blue, 128 GB) Add to Compare POCO M7 Plus 5G (Aqua Blue, 128 GB) 4.2 5,180 Ratings & 341 Reviews • 8 GB RAM | 128 GB ROM | Expandable Upto 2 TB • 17.53 cm (6.9 inch) Display • 50MP AI Dual Camera • 7000 mAh Battery • Snapdragon 6s Gen 3 5G Processor • 1 Year Manufacturer Warranty for Phone and 6 Months Warranty for In the Box Accessories ₹16,999 ₹17,999 5% off Only few left Upto ₹11,900 Off on Exchange" [ref=e1234] [cursor=pointer]:
+          - /url: /poco-m7-plus-5g-aqua-blue-128-gb/p/itmd9444b12bdb68?pid=MOBHETX6GZAJWQME&lid=LSTMOBHETX6GZAJWQMEDZLMD8&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_18&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBHETX6GZAJWQME.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e1235]:
+            - img "POCO M7 Plus 5G (Aqua Blue, 128 GB)" [ref=e1239]
+            - generic [ref=e1245]: Add to Compare
+            - img [ref=e1248]
+          - generic [ref=e1250]:
+            - generic [ref=e1251]:
+              - generic [ref=e1252]: POCO M7 Plus 5G (Aqua Blue, 128 GB)
+              - generic [ref=e1253]:
+                - generic [ref=e1255]:
+                  - text: "4.2"
+                  - img [ref=e1256]
+                - generic [ref=e1258]: 5,180 Ratings & 341 Reviews
+              - list [ref=e1260]:
+                - listitem [ref=e1261]: • 8 GB RAM | 128 GB ROM | Expandable Upto 2 TB
+                - listitem [ref=e1262]: • 17.53 cm (6.9 inch) Display
+                - listitem [ref=e1263]: • 50MP AI Dual Camera
+                - listitem [ref=e1264]: • 7000 mAh Battery
+                - listitem [ref=e1265]: • Snapdragon 6s Gen 3 5G Processor
+                - listitem [ref=e1266]: • 1 Year Manufacturer Warranty for Phone and 6 Months Warranty for In the Box Accessories
+            - generic [ref=e1267]:
+              - generic [ref=e1269]:
+                - generic [ref=e1270]: ₹16,999
+                - generic [ref=e1271]: ₹17,999
+                - generic [ref=e1272]: 5% off
+              - img [ref=e1274]
+              - generic [ref=e1277]: Only few left
+              - generic [ref=e1279]:
+                - generic [ref=e1280]: Upto
+                - generic [ref=e1281]: ₹11,900
+                - generic [ref=e1282]: Off on Exchange
+        - link "IQOO 15R 5G (Dark Knight, 256 GB) Add to Compare IQOO 15R 5G (Dark Knight, 256 GB) 4.6 122 Ratings & 17 Reviews • 8 GB RAM | 256 GB ROM • 16.74 cm (6.59 inch) Display • 50MP Rear Camera • 7600 mAh Battery • 12 Months Brand Warranty ₹47,890 ₹53,999 11% off Only few left Bank Offer" [ref=e1287] [cursor=pointer]:
+          - /url: /iqoo-15r-5g-dark-knight-256-gb/p/itm7bc8aee18f590?pid=MOBHHY4GYEHGVW3X&lid=LSTMOBHHY4GYEHGVW3XARBDFD&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_19&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBHHY4GYEHGVW3X.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e1288]:
+            - img "IQOO 15R 5G (Dark Knight, 256 GB)" [ref=e1292]
+            - generic [ref=e1298]: Add to Compare
+            - img [ref=e1301]
+          - generic [ref=e1303]:
+            - generic [ref=e1304]:
+              - generic [ref=e1305]: IQOO 15R 5G (Dark Knight, 256 GB)
+              - generic [ref=e1306]:
+                - generic [ref=e1308]:
+                  - text: "4.6"
+                  - img [ref=e1309]
+                - generic [ref=e1311]: 122 Ratings & 17 Reviews
+              - list [ref=e1313]:
+                - listitem [ref=e1314]: • 8 GB RAM | 256 GB ROM
+                - listitem [ref=e1315]: • 16.74 cm (6.59 inch) Display
+                - listitem [ref=e1316]: • 50MP Rear Camera
+                - listitem [ref=e1317]: • 7600 mAh Battery
+                - listitem [ref=e1318]: • 12 Months Brand Warranty
+            - generic [ref=e1319]:
+              - generic [ref=e1321]:
+                - generic [ref=e1322]: ₹47,890
+                - generic [ref=e1323]: ₹53,999
+                - generic [ref=e1324]: 11% off
+              - img [ref=e1326]
+              - generic [ref=e1329]: Only few left
+              - generic [ref=e1332]: Bank Offer
+        - link "vivo T5x 5G (Cyber Green, 256 GB) Add to Compare vivo T5x 5G (Cyber Green, 256 GB) 4.4 9,736 Ratings & 808 Reviews • 8 GB RAM | 256 GB ROM • 17.17 cm (6.76 inch) Display • 50MP + 2MP | 32MP Front Camera • 7200 mAh Li-ion Battery • Dimensity 7400-Turbo Processor • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories ₹26,999 ₹33,999 20% off Upto ₹18,800 Off on Exchange Bank Offer" [ref=e1337] [cursor=pointer]:
+          - /url: /vivo-t5x-5g-cyber-green-256-gb/p/itm7da8aa253e72b?pid=MOBHH69NQGVVYQSG&lid=LSTMOBHH69NQGVVYQSGAVFZV6&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_20&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBHH69NQGVVYQSG.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e1338]:
+            - img "vivo T5x 5G (Cyber Green, 256 GB)" [ref=e1342]
+            - generic [ref=e1348]: Add to Compare
+            - img [ref=e1351]
+          - generic [ref=e1353]:
+            - generic [ref=e1354]:
+              - generic [ref=e1355]: vivo T5x 5G (Cyber Green, 256 GB)
+              - generic [ref=e1356]:
+                - generic [ref=e1358]:
+                  - text: "4.4"
+                  - img [ref=e1359]
+                - generic [ref=e1361]: 9,736 Ratings & 808 Reviews
+              - list [ref=e1363]:
+                - listitem [ref=e1364]: • 8 GB RAM | 256 GB ROM
+                - listitem [ref=e1365]: • 17.17 cm (6.76 inch) Display
+                - listitem [ref=e1366]: • 50MP + 2MP | 32MP Front Camera
+                - listitem [ref=e1367]: • 7200 mAh Li-ion Battery
+                - listitem [ref=e1368]: • Dimensity 7400-Turbo Processor
+                - listitem [ref=e1369]: • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories
+            - generic [ref=e1370]:
+              - generic [ref=e1372]:
+                - generic [ref=e1373]: ₹26,999
+                - generic [ref=e1374]: ₹33,999
+                - generic [ref=e1375]: 20% off
+              - img [ref=e1377]
+              - generic [ref=e1379]:
+                - generic [ref=e1380]: Upto
+                - generic [ref=e1381]: ₹18,800
+                - generic [ref=e1382]: Off on Exchange
+              - generic [ref=e1385]: Bank Offer
+        - link "vivo X200T (Seaside Lilac, 256 GB) Add to Compare vivo X200T (Seaside Lilac, 256 GB) 4.6 3,954 Ratings & 777 Reviews • 12 GB RAM | 256 GB ROM • 16.94 cm (6.67 inch) Full HD+ AMOLED Display • 50MP + 50MP + 50MP | 32MP Front Camera • 6200 mAh Battery • Dimensity 9400+ Processor • 1 Year Warranty on Handset and 6 Months Warranty on Accessories ₹59,999 ₹79,999 25% off Upto ₹43,650 Off on Exchange Bank Offer" [ref=e1390] [cursor=pointer]:
+          - /url: /vivo-x200t-seaside-lilac-256-gb/p/itm1b8452d68859b?pid=MOBHJK5M62ZH9FAM&lid=LSTMOBHJK5M62ZH9FAMR92PUT&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_21&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBHJK5M62ZH9FAM.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e1391]:
+            - img "vivo X200T (Seaside Lilac, 256 GB)" [ref=e1395]
+            - generic [ref=e1401]: Add to Compare
+            - img [ref=e1404]
+          - generic [ref=e1406]:
+            - generic [ref=e1407]:
+              - generic [ref=e1408]: vivo X200T (Seaside Lilac, 256 GB)
+              - generic [ref=e1409]:
+                - generic [ref=e1411]:
+                  - text: "4.6"
+                  - img [ref=e1412]
+                - generic [ref=e1414]: 3,954 Ratings & 777 Reviews
+              - list [ref=e1416]:
+                - listitem [ref=e1417]: • 12 GB RAM | 256 GB ROM
+                - listitem [ref=e1418]: • 16.94 cm (6.67 inch) Full HD+ AMOLED Display
+                - listitem [ref=e1419]: • 50MP + 50MP + 50MP | 32MP Front Camera
+                - listitem [ref=e1420]: • 6200 mAh Battery
+                - listitem [ref=e1421]: • Dimensity 9400+ Processor
+                - listitem [ref=e1422]: • 1 Year Warranty on Handset and 6 Months Warranty on Accessories
+            - generic [ref=e1423]:
+              - generic [ref=e1425]:
+                - generic [ref=e1426]: ₹59,999
+                - generic [ref=e1427]: ₹79,999
+                - generic [ref=e1428]: 25% off
+              - img [ref=e1430]
+              - generic [ref=e1432]:
+                - generic [ref=e1433]: Upto
+                - generic [ref=e1434]: ₹43,650
+                - generic [ref=e1435]: Off on Exchange
+              - generic [ref=e1438]: Bank Offer
+        - link "HOTLINE H310 Add to Compare HOTLINE H310 3.5 7,908 Ratings & 504 Reviews • 32 MB RAM | 32 MB ROM • 4.57 cm (1.8 inch) Display • 0.3MP Rear Camera • 1000 mAh Battery • 6 Months Warranty ₹499 ₹999 50% off Only few left Bank Offer" [ref=e1443] [cursor=pointer]:
+          - /url: /hotline-h310/p/itm70088e15b6793?pid=MOBGTJHMZPYQ8VP7&lid=LSTMOBGTJHMZPYQ8VP7T9MN7H&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_22&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBGTJHMZPYQ8VP7.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e1444]:
+            - img "HOTLINE H310" [ref=e1448]
+            - generic [ref=e1454]: Add to Compare
+            - img [ref=e1457]
+          - generic [ref=e1459]:
+            - generic [ref=e1460]:
+              - generic [ref=e1461]: HOTLINE H310
+              - generic [ref=e1462]:
+                - generic [ref=e1464]:
+                  - text: "3.5"
+                  - img [ref=e1465]
+                - generic [ref=e1467]: 7,908 Ratings & 504 Reviews
+              - list [ref=e1469]:
+                - listitem [ref=e1470]: • 32 MB RAM | 32 MB ROM
+                - listitem [ref=e1471]: • 4.57 cm (1.8 inch) Display
+                - listitem [ref=e1472]: • 0.3MP Rear Camera
+                - listitem [ref=e1473]: • 1000 mAh Battery
+                - listitem [ref=e1474]: • 6 Months Warranty
+            - generic [ref=e1475]:
+              - generic [ref=e1477]:
+                - generic [ref=e1478]: ₹499
+                - generic [ref=e1479]: ₹999
+                - generic [ref=e1480]: 50% off
+              - generic [ref=e1483]: Only few left
+              - generic [ref=e1486]: Bank Offer
+        - link "Samsung Galaxy F70e 5G (Limelight Green, 128 GB) Add to Compare Samsung Galaxy F70e 5G (Limelight Green, 128 GB) 4.2 2,073 Ratings & 198 Reviews • 6 GB RAM | 128 GB ROM | Expandable Upto 2 TB • 17.12 cm (6.74 inch) HD+ Display • 50MP + 2MP | 8MP Front Camera • 6000 mAh Li-ion Battery • Dimensity 6300 Processor • 1 Year Manufacturer Warranty for Device and 6 Months for In-Box Accessories ₹17,499 ₹20,999 16% off GRWM Deals Upto ₹12,200 Off on Exchange" [ref=e1491] [cursor=pointer]:
+          - /url: /samsung-galaxy-f70e-5g-limelight-green-128-gb/p/itm639bb81aa42d9?pid=MOBHMGHQ9NY7Q4JR&lid=LSTMOBHMGHQ9NY7Q4JRSUK0XY&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_23&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBHMGHQ9NY7Q4JR.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e1492]:
+            - img "Samsung Galaxy F70e 5G (Limelight Green, 128 GB)" [ref=e1496]
+            - generic [ref=e1502]: Add to Compare
+            - img [ref=e1505]
+          - generic [ref=e1507]:
+            - generic [ref=e1508]:
+              - generic [ref=e1509]: Samsung Galaxy F70e 5G (Limelight Green, 128 GB)
+              - generic [ref=e1510]:
+                - generic [ref=e1512]:
+                  - text: "4.2"
+                  - img [ref=e1513]
+                - generic [ref=e1515]: 2,073 Ratings & 198 Reviews
+              - list [ref=e1517]:
+                - listitem [ref=e1518]: • 6 GB RAM | 128 GB ROM | Expandable Upto 2 TB
+                - listitem [ref=e1519]: • 17.12 cm (6.74 inch) HD+ Display
+                - listitem [ref=e1520]: • 50MP + 2MP | 8MP Front Camera
+                - listitem [ref=e1521]: • 6000 mAh Li-ion Battery
+                - listitem [ref=e1522]: • Dimensity 6300 Processor
+                - listitem [ref=e1523]: • 1 Year Manufacturer Warranty for Device and 6 Months for In-Box Accessories
+            - generic [ref=e1524]:
+              - generic [ref=e1526]:
+                - generic [ref=e1527]: ₹17,499
+                - generic [ref=e1528]: ₹20,999
+                - generic [ref=e1529]: 16% off
+              - img [ref=e1531]
+              - generic [ref=e1534]: GRWM Deals
+              - generic [ref=e1536]:
+                - generic [ref=e1537]: Upto
+                - generic [ref=e1538]: ₹12,200
+                - generic [ref=e1539]: Off on Exchange
+        - link "Kechaoda K115 Add to Compare Kechaoda K115 4.1 44,236 Ratings & 2,732 Reviews • 32 MB RAM | 32 MB ROM • 3.66 cm (1.44 inch) QVGA Display • 0.3MP Rear Camera • 850 mAh Battery • 3 Months Company Warranty ₹1,029 ₹1,499 31% off Only few left Bank Offer" [ref=e1544] [cursor=pointer]:
+          - /url: /kechaoda-k115/p/itmexfz2mgxnzhnd?pid=MOBGN26HBEU5QHSH&lid=LSTMOBGN26HBEU5QHSH5OBHQ9&marketplace=FLIPKART&q=Mobile&store=tyy%2F4io&srno=s_1_24&otracker=search&otracker1=search&fm=organic&iid=8e7ba766-d1e0-4cfd-adef-a6c8ab26dcdc.MOBGN26HBEU5QHSH.SEARCH&ppt=None&ppn=None&ssid=e5d2cvvi1s0000001780229610603&qH=87d17f4624a514e8&ov_redirect=true
+          - generic [ref=e1545]:
+            - img "Kechaoda K115" [ref=e1549]
+            - generic [ref=e1555]: Add to Compare
+            - img [ref=e1558]
+          - generic [ref=e1560]:
+            - generic [ref=e1561]:
+              - generic [ref=e1562]: Kechaoda K115
+              - generic [ref=e1563]:
+                - generic [ref=e1565]:
+                  - text: "4.1"
+                  - img [ref=e1566]
+                - generic [ref=e1568]: 44,236 Ratings & 2,732 Reviews
+              - list [ref=e1570]:
+                - listitem [ref=e1571]: • 32 MB RAM | 32 MB ROM
+                - listitem [ref=e1572]: • 3.66 cm (1.44 inch) QVGA Display
+                - listitem [ref=e1573]: • 0.3MP Rear Camera
+                - listitem [ref=e1574]: • 850 mAh Battery
+                - listitem [ref=e1575]: • 3 Months Company Warranty
+            - generic [ref=e1576]:
+              - generic [ref=e1578]:
+                - generic [ref=e1579]: ₹1,029
+                - generic [ref=e1580]: ₹1,499
+                - generic [ref=e1581]: 31% off
+              - img [ref=e1583]
+              - generic [ref=e1586]: Only few left
+              - generic [ref=e1589]: Bank Offer
+        - generic [ref=e1592]:
+          - generic [ref=e1593]: Page 1 of 377
+          - navigation [ref=e1594]:
+            - link "1" [ref=e1595] [cursor=pointer]:
+              - /url: /search?q=Mobile&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=1
+            - link "2" [ref=e1596] [cursor=pointer]:
+              - /url: /search?q=Mobile&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=2
+            - link "3" [ref=e1597] [cursor=pointer]:
+              - /url: /search?q=Mobile&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=3
+            - link "4" [ref=e1598] [cursor=pointer]:
+              - /url: /search?q=Mobile&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=4
+            - link "5" [ref=e1599] [cursor=pointer]:
+              - /url: /search?q=Mobile&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=5
+            - link "6" [ref=e1600] [cursor=pointer]:
+              - /url: /search?q=Mobile&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=6
+            - link "7" [ref=e1601] [cursor=pointer]:
+              - /url: /search?q=Mobile&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=7
+            - link "8" [ref=e1602] [cursor=pointer]:
+              - /url: /search?q=Mobile&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=8
+            - link "9" [ref=e1603] [cursor=pointer]:
+              - /url: /search?q=Mobile&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=9
+            - link "10" [ref=e1604] [cursor=pointer]:
+              - /url: /search?q=Mobile&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=10
+            - link "Next" [ref=e1605] [cursor=pointer]:
+              - /url: /search?q=Mobile&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=2
+        - generic [ref=e1607]:
+          - text: Did you find what you were looking for?
+          - generic [ref=e1608]: YesNo
+    - generic [ref=e1610]:
+      - generic [ref=e1611]: Reviews for Popular Mobiles
+      - generic [ref=e1612]:
+        - generic [ref=e1613]:
+          - generic [ref=e1615]:
+            - img "POCO M7 Plus 5G (Aqua Blue, 128 GB)"
+          - generic [ref=e1616]:
+            - link "1. POCO M7 Plus 5G (Aqua Blue,... 4.2 5,180 Ratings&341 Reviews ₹16,999 5% off" [ref=e1617] [cursor=pointer]:
+              - /url: /poco-m7-plus-5g-aqua-blue-128-gb/p/itmd9444b12bdb68?pid=MOBHETX6GZAJWQME&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1619]: 1. POCO M7 Plus 5G (Aqua Blue,...
+              - generic [ref=e1620]:
+                - generic [ref=e1621]:
+                  - text: "4.2"
+                  - img [ref=e1622]
+                - generic [ref=e1623]:
+                  - text: 5,180 Ratings
+                  - generic [ref=e1624]: "&341 Reviews"
+              - generic [ref=e1626]:
+                - generic [ref=e1627]: ₹16,999
+                - generic [ref=e1628]: 5% off
+            - list [ref=e1629]:
+              - listitem [ref=e1630]: 8 GB RAM | 128 GB ROM | Expandable Upto 2 TB
+              - listitem [ref=e1631]: 17.53 cm (6.9 inch) Display
+              - listitem [ref=e1632]: 50MP AI Dual Camera
+        - generic [ref=e1633]:
+          - generic [ref=e1634]: Most Helpful Review
+          - generic [ref=e1636]:
+            - generic [ref=e1637]:
+              - generic [ref=e1638]:
+                - text: "5"
+                - img [ref=e1639]
+              - paragraph [ref=e1640]: Mind-blowing purchase
+            - generic [ref=e1644]: Very good mobil value of money
+            - generic [ref=e1646]:
+              - paragraph [ref=e1647]: Srikanth Berugu srikanth
+              - img [ref=e1648]
+              - paragraph [ref=e1652]: Certified Buyer
+              - paragraph [ref=e1653]: 9 months ago
+        - generic [ref=e1654]:
+          - generic [ref=e1655]: Recent Review
+          - generic [ref=e1657]:
+            - generic [ref=e1658]:
+              - generic [ref=e1659]:
+                - text: "1"
+                - img [ref=e1660]
+              - paragraph [ref=e1661]: Absolute rubbish!
+            - generic [ref=e1665]:
+              - text: Too much hang don't purchase it
+              - text: Totally money waste product by pocco
+            - generic [ref=e1667]:
+              - paragraph [ref=e1668]: Flipkart Customer
+              - img [ref=e1669]
+              - paragraph [ref=e1673]: Certified Buyer
+              - paragraph [ref=e1674]: 3 days ago
+      - generic [ref=e1675]:
+        - generic [ref=e1676]:
+          - generic [ref=e1678]:
+            - img "POCO C81x (Ice Blue, 64 GB)"
+          - generic [ref=e1679]:
+            - link "2. POCO C81x (Ice Blue, 64 GB) 3.9 85 Ratings&5 Reviews ₹9,999 47% off" [ref=e1680] [cursor=pointer]:
+              - /url: /poco-c81x-ice-blue-64-gb/p/itmf2e3aacd5257e?pid=MOBHMYWRWPE4S8G6&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1682]: 2. POCO C81x (Ice Blue, 64 GB)
+              - generic [ref=e1683]:
+                - generic [ref=e1684]:
+                  - text: "3.9"
+                  - img [ref=e1685]
+                - generic [ref=e1686]:
+                  - text: 85 Ratings
+                  - generic [ref=e1687]: "&5 Reviews"
+              - generic [ref=e1689]:
+                - generic [ref=e1690]: ₹9,999
+                - generic [ref=e1691]: 47% off
+            - list [ref=e1692]:
+              - listitem [ref=e1693]: 3 GB RAM | 64 GB ROM | Expandable Upto 2 TB
+              - listitem [ref=e1694]: 17.48 cm (6.88 inch) Display
+              - listitem [ref=e1695]: 13MP Rear Camera | 8MP Front Camera
+        - generic [ref=e1696]:
+          - generic [ref=e1697]: Most Helpful Review
+          - generic [ref=e1699]:
+            - generic [ref=e1700]:
+              - generic [ref=e1701]:
+                - text: "2"
+                - img [ref=e1702]
+              - paragraph [ref=e1703]: Could be way better
+            - generic [ref=e1707]: Not worth money flibcart cheating
+            - generic [ref=e1709]:
+              - paragraph [ref=e1710]: Vetrivel V
+              - img [ref=e1711]
+              - paragraph [ref=e1715]: Certified Buyer
+              - paragraph [ref=e1716]: 3 days ago
+        - generic [ref=e1717]:
+          - generic [ref=e1718]: Recent Review
+          - generic [ref=e1720]:
+            - generic [ref=e1721]:
+              - generic [ref=e1722]:
+                - text: "2"
+                - img [ref=e1723]
+              - paragraph [ref=e1724]: Could be way better
+            - generic [ref=e1728]: Not worth money flibcart cheating
+            - generic [ref=e1730]:
+              - paragraph [ref=e1731]: Vetrivel V
+              - img [ref=e1732]
+              - paragraph [ref=e1736]: Certified Buyer
+              - paragraph [ref=e1737]: 3 days ago
+      - generic [ref=e1738]:
+        - generic [ref=e1739]:
+          - generic [ref=e1741]:
+            - img "realme P4 Lite 5G (Mosaic Green, 64 GB)"
+          - generic [ref=e1742]:
+            - link "3. realme P4 Lite 5G (Mosaic G... 4.3 4,871 Ratings&299 Reviews ₹14,999 25% off" [ref=e1743] [cursor=pointer]:
+              - /url: /realme-p4-lite-5g-mosaic-green-64-gb/p/itm90c243961f214?pid=MOBHHFBUUUQNXRGX&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1745]: 3. realme P4 Lite 5G (Mosaic G...
+              - generic [ref=e1746]:
+                - generic [ref=e1747]:
+                  - text: "4.3"
+                  - img [ref=e1748]
+                - generic [ref=e1749]:
+                  - text: 4,871 Ratings
+                  - generic [ref=e1750]: "&299 Reviews"
+              - generic [ref=e1752]:
+                - generic [ref=e1753]: ₹14,999
+                - generic [ref=e1754]: 25% off
+            - list [ref=e1755]:
+              - listitem [ref=e1756]: 4 GB RAM | 64 GB ROM
+              - listitem [ref=e1757]: 17.27 cm (6.8 inches) HD+ Display
+              - listitem [ref=e1758]: 13MP Rear Camera | 5MP Front Camera
+        - generic [ref=e1759]:
+          - generic [ref=e1760]: Most Helpful Review
+          - generic [ref=e1762]:
+            - generic [ref=e1763]:
+              - generic [ref=e1764]:
+                - text: "5"
+                - img [ref=e1765]
+              - paragraph [ref=e1766]: Mind-blowing purchase
+            - generic [ref=e1770]:
+              - text: Value for money
+              - text: Loved this phone ❤️
+            - generic [ref=e1772]:
+              - paragraph [ref=e1773]: Flipkart Customer
+              - img [ref=e1774]
+              - paragraph [ref=e1778]: Certified Buyer
+              - paragraph [ref=e1779]: 1 month ago
+        - generic [ref=e1780]:
+          - generic [ref=e1781]: Recent Review
+          - generic [ref=e1783]:
+            - generic [ref=e1784]:
+              - generic [ref=e1785]:
+                - text: "1"
+                - img [ref=e1786]
+              - paragraph [ref=e1787]: Hated it!
+            - generic [ref=e1791]: Dont buy this phone totally west of money
+            - generic [ref=e1793]:
+              - paragraph [ref=e1794]: Sachin
+              - img [ref=e1795]
+              - paragraph [ref=e1799]: Certified Buyer
+              - paragraph [ref=e1800]: Today
+      - generic [ref=e1801]:
+        - generic [ref=e1802]:
+          - generic [ref=e1804]:
+            - img "vivo T5x 5G (Cyber Green, 256 GB)"
+          - generic [ref=e1805]:
+            - link "4. vivo T5x 5G (Cyber Green, 2... 4.4 9,736 Ratings&808 Reviews ₹26,999 20% off" [ref=e1806] [cursor=pointer]:
+              - /url: /vivo-t5x-5g-cyber-green-256-gb/p/itm7da8aa253e72b?pid=MOBHH69NQGVVYQSG&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1808]: 4. vivo T5x 5G (Cyber Green, 2...
+              - generic [ref=e1809]:
+                - generic [ref=e1810]:
+                  - text: "4.4"
+                  - img [ref=e1811]
+                - generic [ref=e1812]:
+                  - text: 9,736 Ratings
+                  - generic [ref=e1813]: "&808 Reviews"
+              - generic [ref=e1815]:
+                - generic [ref=e1816]: ₹26,999
+                - generic [ref=e1817]: 20% off
+            - list [ref=e1818]:
+              - listitem [ref=e1819]: 8 GB RAM | 256 GB ROM
+              - listitem [ref=e1820]: 17.17 cm (6.76 inch) Display
+              - listitem [ref=e1821]: 50MP + 2MP | 32MP Front Camera
+        - generic [ref=e1822]:
+          - generic [ref=e1823]: Most Helpful Review
+          - generic [ref=e1825]:
+            - generic [ref=e1826]:
+              - generic [ref=e1827]:
+                - text: "4"
+                - img [ref=e1828]
+              - paragraph [ref=e1829]: Really Nice
+            - generic [ref=e1832]:
+              - generic [ref=e1833]:
+                - text: I am sharing my thoughts on this phone after using it for 4 days straight.
+                - text: Battery (4 out of 5) - The battery looks big on paper, but because it has an LCD ...
+              - generic [ref=e1834] [cursor=pointer]: Read full review
+            - generic [ref=e1836]:
+              - paragraph [ref=e1837]: Muktesh Nandy
+              - img [ref=e1838]
+              - paragraph [ref=e1842]: Certified Buyer
+              - paragraph [ref=e1843]: 2 months ago
+        - generic [ref=e1844]:
+          - generic [ref=e1845]: Recent Review
+          - generic [ref=e1847]:
+            - generic [ref=e1848]:
+              - generic [ref=e1849]:
+                - text: "5"
+                - img [ref=e1850]
+              - paragraph [ref=e1851]: Great product
+            - generic [ref=e1855]: This is really a advance quality of Smart Phone
+            - generic [ref=e1857]:
+              - paragraph [ref=e1858]: SHRADHAKAR MISTRY
+              - img [ref=e1859]
+              - paragraph [ref=e1863]: Certified Buyer
+              - paragraph [ref=e1864]: Today
+      - generic [ref=e1865]:
+        - generic [ref=e1866]:
+          - generic [ref=e1868]:
+            - img "Samsung M06 5G (Blazing Black, 128 GB)"
+          - generic [ref=e1869]:
+            - link "5. Samsung M06 5G (Blazing Bla... 4.1 1,967 Ratings&126 Reviews ₹11,731 24% off" [ref=e1870] [cursor=pointer]:
+              - /url: /samsung-m06-5g-blazing-black-128-gb/p/itmcafa42dadc15c?pid=MOBH9UYF4GZXGWW6&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1872]: 5. Samsung M06 5G (Blazing Bla...
+              - generic [ref=e1873]:
+                - generic [ref=e1874]:
+                  - text: "4.1"
+                  - img [ref=e1875]
+                - generic [ref=e1876]:
+                  - text: 1,967 Ratings
+                  - generic [ref=e1877]: "&126 Reviews"
+              - generic [ref=e1879]:
+                - generic [ref=e1880]: ₹11,731
+                - generic [ref=e1881]: 24% off
+            - list [ref=e1882]:
+              - listitem [ref=e1883]: 4 GB RAM | 128 GB ROM
+              - listitem [ref=e1884]: 17.02 cm (6.7 inch) Display
+              - listitem [ref=e1885]: 50MP Rear Camera
+        - generic [ref=e1886]:
+          - generic [ref=e1887]: Most Helpful Review
+          - generic [ref=e1889]:
+            - generic [ref=e1890]:
+              - generic [ref=e1891]:
+                - text: "5"
+                - img [ref=e1892]
+              - paragraph [ref=e1893]: Terrific purchase
+            - generic [ref=e1897]: Good looking...thank you filpkart
+            - generic [ref=e1899]:
+              - paragraph [ref=e1900]: Animesh Naskar
+              - img [ref=e1901]
+              - paragraph [ref=e1905]: Certified Buyer
+              - paragraph [ref=e1906]: May, 2025
+        - generic [ref=e1907]:
+          - generic [ref=e1908]: Recent Review
+          - generic [ref=e1910]:
+            - generic [ref=e1911]:
+              - generic [ref=e1912]:
+                - text: "3"
+                - img [ref=e1913]
+              - paragraph [ref=e1914]: Nice
+            - generic [ref=e1918]:
+              - text: Performance not best for this price range.
+              - text: On this price range motorola offer best Performance phones
+            - generic [ref=e1920]:
+              - paragraph [ref=e1921]: Harshal Mahale
+              - img [ref=e1922]
+              - paragraph [ref=e1926]: Certified Buyer
+              - paragraph [ref=e1927]: Today
+  - contentinfo [ref=e1928]:
+    - generic [ref=e1930]:
+      - generic [ref=e1931]:
+        - generic [ref=e1932]:
+          - generic [ref=e1933]: ABOUT
+          - link "Contact Us" [ref=e1934] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+          - link "About Us" [ref=e1935] [cursor=pointer]:
+            - /url: https://corporate.flipkart.net/corporate-home
+          - link "Careers" [ref=e1936] [cursor=pointer]:
+            - /url: https://www.flipkartcareers.com/?otracker=footer_navlinks
+          - link "Flipkart Stories" [ref=e1937] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/?otracker=footer_navlinks
+          - link "Press" [ref=e1938] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/category/top-stories/news/
+          - link "Corporate Information" [ref=e1939] [cursor=pointer]:
+            - /url: /corporate-information
+        - generic [ref=e1940]:
+          - generic [ref=e1941]: GROUP COMPANIES
+          - link "Myntra" [ref=e1942] [cursor=pointer]:
+            - /url: https://www.myntra.com/
+          - link "Cleartrip" [ref=e1943] [cursor=pointer]:
+            - /url: https://www.cleartrip.com/
+          - link "Shopsy" [ref=e1944] [cursor=pointer]:
+            - /url: https://www.shopsy.in/
+        - generic [ref=e1945]:
+          - generic [ref=e1946]: HELP
+          - link "Payments" [ref=e1947] [cursor=pointer]:
+            - /url: /pages/payments
+          - link "Shipping" [ref=e1948] [cursor=pointer]:
+            - /url: /pages/shipping
+          - link "Cancellation & Returns" [ref=e1949] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG
+          - link "FAQ" [ref=e1950] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG
+        - generic [ref=e1951]:
+          - generic [ref=e1952]: CONSUMER POLICY
+          - link "Cancellation & Returns" [ref=e1953] [cursor=pointer]:
+            - /url: /pages/returnpolicy?otracker=footer_navlinks
+          - link "Terms Of Use" [ref=e1954] [cursor=pointer]:
+            - /url: /pages/terms?otracker=footer_navlinks
+          - link "Security" [ref=e1955] [cursor=pointer]:
+            - /url: /pages/paymentsecurity?otracker=footer_navlinks
+          - link "Privacy" [ref=e1956] [cursor=pointer]:
+            - /url: /pages/privacypolicy?otracker=footer_navlinks
+          - link "Sitemap" [ref=e1957] [cursor=pointer]:
+            - /url: /sitemap?otracker=footer_navlinks
+          - link "Grievance Redressal" [ref=e1958] [cursor=pointer]:
+            - /url: /pages/grievance-redressal-mechanism?otracker=footer_navlinks
+          - link "EPR Compliance" [ref=e1959] [cursor=pointer]:
+            - /url: /pages/ewaste-compliance-tnc?otracker=footer_navlinks
+          - link "FSSAI Food Safety Connect App" [ref=e1960] [cursor=pointer]:
+            - /url: https://fssai.gov.in/cms/food-safety-connect.php
+        - generic [ref=e1962]:
+          - generic [ref=e1963]: "Mail Us:"
+          - generic [ref=e1966]:
+            - paragraph [ref=e1967]: Flipkart Internet Private Limited,
+            - paragraph [ref=e1968]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e1969]: Clove Embassy Tech Village,
+            - paragraph [ref=e1970]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e1971]: Bengaluru, 560103,
+            - paragraph [ref=e1972]: Karnataka, India
+          - generic [ref=e1973]: Social
+          - generic [ref=e1974]:
+            - link [ref=e1976] [cursor=pointer]:
+              - /url: https://www.facebook.com/flipkart
+              - img [ref=e1977]
+            - link [ref=e1979] [cursor=pointer]:
+              - /url: https://www.twitter.com/flipkart
+              - img [ref=e1980]
+            - link [ref=e1982] [cursor=pointer]:
+              - /url: https://www.youtube.com/flipkart
+              - img [ref=e1983]
+            - link [ref=e1985] [cursor=pointer]:
+              - /url: https://www.instagram.com/flipkart
+              - img [ref=e1986]
+        - generic [ref=e1988]:
+          - generic [ref=e1989]: "Registered Office Address:"
+          - generic [ref=e1992]:
+            - paragraph [ref=e1993]: Flipkart Internet Private Limited,
+            - paragraph [ref=e1994]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e1995]: Clove Embassy Tech Village,
+            - paragraph [ref=e1996]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e1997]: Bengaluru, 560103,
+            - paragraph [ref=e1998]: Karnataka, India
+            - paragraph [ref=e1999]: "CIN : U51109KA2012PTC066107"
+            - paragraph [ref=e2000]:
+              - text: "Telephone:"
+              - link "044-45614700" [ref=e2001] [cursor=pointer]:
+                - /url: tel:044-45614700
+              - text: /
+              - link "044-67415800" [ref=e2002] [cursor=pointer]:
+                - /url: tel:044-67415800
+      - generic [ref=e2004]:
+        - generic [ref=e2005]:
+          - img [ref=e2006]
+          - link "Become a Seller" [ref=e2007] [cursor=pointer]:
+            - /url: https://seller.flipkart.com/?utm_source=fkwebsite&utm_medium=websitedirect
+        - generic [ref=e2008]:
+          - img [ref=e2009]
+          - text: Advertise
+        - generic [ref=e2010]:
+          - img [ref=e2011]
+          - link "Gift Cards" [ref=e2012] [cursor=pointer]:
+            - /url: /the-gift-card-store?otracker=footer_navlinks
+        - generic [ref=e2013]:
+          - img [ref=e2014]
+          - link "Help Center" [ref=e2015] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+        - generic [ref=e2016]: © 2007-2026 Flipkart.com
+        - img [ref=e2017]
+```
+
+# Test source
+
+```ts
+  1  | import {test,expect} from '@playwright/test';
+  2  | 
+  3  | test.only("Verify page Open login",async({page})=>{
+  4  | 
+  5  | //await page.goto("https://playwright.dev/docs/intro");
+  6  | 
+  7  | await page.goto("https://www.flipkart.com/")
+  8  | 
+  9  | console.log("Title",await page.url())
+  10 | 
+  11 | await expect(page).toHaveURL("https://www.flipkart.com/")
+  12 | 
+  13 | 
+  14 | await expect.soft(page).toHaveTitle("Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!")
+  15 | 
+  16 | const searchbox=page.getByRole('textbox', { name: 'Search for Products, Brands and More' })
+  17 |  
+  18 | await expect.soft(searchbox).toBeVisible()
+  19 | await expect.soft(searchbox).toBeEnabled()
+  20 | await expect.soft(searchbox).toBeEditable()
+> 21 | await expect.soft(searchbox).toBeDisabled()
+     |                              ^ Error: expect(locator).toBeDisabled() failed
+  22 | 
+  23 | await page.getByRole('textbox', { name: 'Search for Products, Brands and More' }).fill("Mobile");
+  24 | 
+  25 | 
+  26 | await page.keyboard.press("Enter")
+  27 | 
+  28 | 
+  29 | 
+  30 | 
+  31 | 
+  32 | 
+  33 | 
+  34 | })
+```
