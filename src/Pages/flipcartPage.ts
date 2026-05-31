@@ -34,13 +34,13 @@ export class Flipcartpage
        async flipcartLogin(login_emailId:string)
         { 
          //await this.userLogin_button.waitFor({state:"visible",timeout:2000});
-         await this.userLogin_button.click({timeout:10000 });
-         await this.userSignUp_button.waitFor({state:"visible",timeout:10000});
-         await this.userSignUp_button.click({timeout:10000 });
-         await this.emailId.waitFor({state:"visible",timeout:10000});
-         await this.emailId.fill(login_emailId,{timeout:10000});
-         await this.requestOtp.waitFor({state:"visible",timeout:10000});
-         await this.requestOtp.click({timeout:10000 });
+         await this.userLogin_button.click({timeout:20000 });
+         await this.userSignUp_button.waitFor({state:"visible",timeout:20000});
+         await this.userSignUp_button.click({timeout:20000 });
+         await this.emailId.waitFor({state:"visible",timeout:20000});
+         await this.emailId.fill(login_emailId,{timeout:20000});
+         await this.requestOtp.waitFor({state:"visible",timeout:20000});
+         await this.requestOtp.click({timeout:20000 });
         }
 
 }
